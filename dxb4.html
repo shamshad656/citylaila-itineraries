@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityLaila - Dubai Itinerary - Bhuvnesh Gupta (4N/5D)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0066cc;
+            --secondary: #ff6600;
+            --dark: #0A192F;
+            --light: #F8FAFC;
+            --gray: #718096;
+            --border: #E2E8F0;
+            --success: #38A169;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Montserrat', sans-serif; color: #2D3748; background-color: #F7FAFC; padding: 20px 0; }
+        
+        .slide {
+            width: 297mm;
+            height: 210mm;
+            max-height: 210mm;
+            page-break-after: always;
+            break-after: page;
+            break-inside: avoid;
+            position: relative;
+            background: #ffffff;
+            margin: 0 auto 30px auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            padding: 35px 45px 80px 45px;
+            overflow: hidden;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 12px;
+            margin-bottom: 16px;
+        }
+        .header .logo-container { display: flex; align-items: center; gap: 12px; }
+        .header .logo-img { max-height: 46px; width: auto; object-fit: contain; display: block; }
+        .header .tagline { font-size: 14px; color: var(--gray); font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 16px 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--border);
+            background: var(--light);
+            font-size: 14px;
+            color: var(--gray);
+            font-weight: 700;
+        }
+        .footer .contacts { display: flex; gap: 18px; }
+
+        /* COVER BG */
+        .cover-bg {
+            display: flex;
+            background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), 
+                        url('https://images.squarespace-cdn.com/content/v1/5c7976ec11f78465c3ab8a2d/374bf0e1-70cc-4d06-85e7-29668692b586/Dubai_December+12%2C+2025_12374.jpg') #1a2a3a;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cover-card {
+            background: rgba(10, 25, 47, 0.65);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 35px 50px;
+            border-radius: 20px;
+            width: 88%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+        }
+        .cover-title { font-size: 34px; font-weight: 900; letter-spacing: 1px; color: #FFF; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size: 16px; color: #ff9933; font-weight: 700; margin-bottom: 22px; letter-spacing: 1.5px; text-transform: uppercase; text-shadow: 0 1px 2px rgba(0,0,0,0.5); }
+        
+        .cover-highlights {
+            display: flex;
+            gap: 10px;
+            margin: 12px 0 22px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .cover-tag {
+            background: rgba(255, 96, 0, 0.35);
+            border: 1px solid var(--secondary);
+            padding: 8px 18px;
+            font-size: 14px;
+            font-weight: 800;
+            border-radius: 20px;
+            color: #FFF;
+            backdrop-filter: blur(4px);
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.25);
+            padding-top: 22px;
+            width: 100%;
+        }
+        .meta-grid-item h4 { font-size: 13px; color: #CBD5E1; text-transform: uppercase; margin-bottom: 5px; letter-spacing: 1px; }
+        .meta-grid-item p { font-size: 17px; font-weight: 800; color: white; }
+
+        .content-body { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+        .slide-title { font-size: 30px; font-weight: 900; color: var(--dark); margin-bottom: 18px; display: flex; align-items: center; gap: 12px; }
+        .slide-title span { color: var(--primary); }
+
+        .full-banner-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 14px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* TIMELINE OVERVIEW */
+        .timeline-container { display: flex; flex-direction: column; gap: 8px; }
+        .timeline-row { display: grid; grid-template-columns: 100px 1fr 240px; gap: 12px; align-items: center; padding: 10px 18px; background: white; border: 1px solid var(--border); border-radius: 10px; }
+        .timeline-row:nth-child(even) { background: var(--light); }
+        .timeline-day { font-weight: 900; font-size: 15.5px; color: var(--primary); }
+        .timeline-events { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+        .timeline-badge { background: #EBF8FF; color: #2B6CB0; font-size: 14px; font-weight: 700; padding: 4px 10px; border-radius: 5px; border: 1px solid #BEE3F8; }
+        .timeline-badge.highlight-attraction { background: #E6FFFA; color: #234E52; border: 1px solid #99F6E4; font-weight: 900; }
+        .timeline-stay { font-size: 15px; font-weight: 900; color: var(--dark); text-align: right; }
+
+        /* DAY LAYOUT */
+        .day-layout { 
+            display: grid; 
+            grid-template-columns: 0.82fr 1.18fr; 
+            gap: 40px; 
+            flex: 1; 
+            align-items: stretch; 
+        }
+        
+        .day-info { 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between; 
+            height: 100%; 
+        }
+        .day-badge { background: var(--secondary); color: white; padding: 8px 18px; font-weight: 900; border-radius: 6px; display: inline-block; width: fit-content; margin-bottom: 12px; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; }
+        .day-title { font-size: 26px; font-weight: 900; color: var(--dark); margin-bottom: 12px; line-height: 1.25; }
+        .day-desc { font-size: 16.5px; color: #334155; line-height: 1.55; margin-bottom: 15px; font-weight: 600; }
+        
+        .tour-inclusion-box {
+            background: #F8FAFC;
+            border: 1px solid var(--border);
+            padding: 16px 18px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+        }
+        .tour-inclusion-box h4 {
+            font-size: 15px;
+            font-weight: 900;
+            color: #004499;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        .day-timeline-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .day-timeline-list li {
+            font-size: 15px;
+            font-weight: 700;
+            color: #1E293B;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: #FFFFFF;
+            padding: 9px 14px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+        }
+        .day-timeline-list li .emoji-icon {
+            font-size: 18px;
+            min-width: 26px;
+            text-align: center;
+        }
+
+        .day-image-container {
+            width: 100%;
+            height: 100%;
+            min-height: 480px;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+            border: 1px solid var(--border);
+            background-color: #0A192F;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .day-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
+        /* CARDS & TABLES */
+        .card { background: #FFFFFF; border: 1px solid var(--border); padding: 40px; border-radius: 22px; box-shadow: 0 8px 30px rgba(0,0,0,0.05); display: flex; flex-direction: column; gap: 24px; }
+        .hotel-header-block { background: #F8FAFC; border: 1px solid var(--border); padding: 22px; border-radius: 16px; margin-bottom: 6px; }
+        .hotel-tag-luxury { background: linear-gradient(135deg, #0066cc, #004499); color: white; padding: 8px 16px; font-size: 14px; font-weight: 800; border-radius: 8px; }
+        .hotel-spec-row { display: grid; grid-template-columns: 180px 1fr; align-items: center; padding: 16px 20px; background: #F8FAFC; border-radius: 12px; border: 1px solid rgba(226, 232, 240, 0.8); }
+        .hotel-spec-label { font-size: 15px; font-weight: 800; color: var(--gray); text-transform: uppercase; }
+        .hotel-spec-value { font-size: 18px; font-weight: 900; color: var(--dark); }
+
+        .meal-matrix-table { width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 16px; overflow: hidden; border: 2px solid var(--border); box-shadow: 0 8px 25px rgba(0,0,0,0.06); margin-bottom: 18px; }
+        .meal-matrix-table th { background: #0A192F; color: white; padding: 13px 18px; font-size: 14px; font-weight: 900; text-transform: uppercase; text-align: left; }
+        .meal-matrix-table td { padding: 11px 18px; font-size: 14.5px; border-bottom: 1.5px solid var(--border); background: white; font-weight: 800; }
+        .meal-matrix-table tr:nth-child(even) td { background: #F8FAFC; }
+        .meal-badge-included { background: #E6FFFA; color: #047481; padding: 5px 12px; border-radius: 6px; font-weight: 900; font-size: 13.5px; border: 1.5px solid #99F6E4; display: inline-block; }
+        .meal-badge-excluded { background: #EDF2F7; color: #718096; padding: 5px 12px; border-radius: 6px; font-weight: 800; font-size: 13.5px; border: 1.5px solid #99F6E4; display: inline-block; }
+
+        .price-layout { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; align-items: stretch; flex: 1; }
+        .total-box { background: linear-gradient(135deg, #0A192F 0%, #1E3A8A 50%, #0F172A 100%); color: #FFFFFF !important; padding: 26px; border-radius: 16px; text-align: center; display: flex; flex-direction: column; justify-content: center; box-shadow: 0 12px 30px rgba(10, 25, 47, 0.35); border: 1px solid rgba(255, 215, 0, 0.3); flex: 1; }
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; flex: 1; align-items: stretch; }
+
+        .global-section { display: flex; flex-direction: column; gap: 14px; height: 100%; }
+        .map-and-contacts { display: grid; grid-template-columns: 2.1fr 1fr; gap: 18px; flex: 1; }
+        .locations-box { background: #F8FAFC; border-radius: 15px; padding: 16px; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); gap: 14px; border: 1px solid var(--border); height: 100%; }
+        .loc-card { position: relative; padding: 16px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.3); box-shadow: 0 4px 10px rgba(0,0,0,0.12); display: flex; flex-direction: column; justify-content: center; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat; background-color: #1A2A3A; }
+        .loc-card::before { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10, 25, 47, 0.45) 0%, rgba(10, 25, 47, 0.75) 100%); z-index: 1; }
+        .loc-card-title, .loc-card-info, .loc-card-custom { position: relative; z-index: 2; }
+        .loc-card-title { font-size: 15px; font-weight: 900; color: #FFFFFF; display: flex; align-items: center; gap: 6px; margin-bottom: 5px; text-shadow: 0 1px 3px rgba(0,0,0,0.8); }
+        .loc-card-info { font-size: 13.5px; color: #F1F5F9; font-weight: 700; line-height: 1.55; text-shadow: 0 1px 2px rgba(0,0,0,0.8); }
+        .inquiry-box { background: #0A192F; color: white; border-radius: 15px; padding: 20px; display: flex; flex-direction: column; justify-content: space-around; }
+        .features-bar { background: #0A192F; color: white; border-radius: 10px; padding: 13px; display: flex; justify-content: space-around; align-items: center; font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; }
+
+        @media print {
+            @page { size: A4 landscape; margin: 0; }
+            body { background: none; padding: 0; margin: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .slide { width: 297mm; height: 210mm; max-height: 210mm; page-break-after: always; break-after: page; break-inside: avoid; box-shadow: none; margin: 0; padding: 35px 45px 80px 45px; overflow: hidden; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SLIDE 1: COVER -->
+    <div class="slide cover-bg">
+        <div class="cover-card">
+            <div style="margin-bottom: 20px;">
+                <img src="images/logo.png" alt="CityLaila Logo" style="height: 110px; width: auto; object-fit: contain; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4)); display: block;" onerror="this.outerHTML='<span style=\'font-size:34px;color:#FFF;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+
+            <h1 class="cover-title">🇦🇪 Dubai Itinerary – Bhuvnesh Gupta</h1>
+            <div class="cover-subtitle">Private City Tour, Burj Khalifa, Abu Dhabi Tour & Premium Desert Safari</div>
+            
+            <div class="cover-highlights">
+                <div class="cover-tag">🏨 Premier Inn Dubai Ibn Battuta Mall</div>
+                <div class="cover-tag">🏙️ Private Dubai City Tour & Burj Khalifa (124th & 125th Floor)</div>
+                <div class="cover-tag">🕌 Full-Day Abu Dhabi Tour & Shared Desert Safari</div>
+            </div>
+
+            <div style="font-size: 14.5px; font-weight: 800; background: var(--secondary); display: inline-block; padding: 10px 30px; border-radius: 30px; letter-spacing: 1px; text-transform: uppercase; color: #FFF; margin-top: 6px;">Travel Dates: 7th–11th February 2027 • Guest: Bhuvnesh Gupta • 2 Pax (Canadian)</div>
+            
+            <div class="meta-grid">
+                <div class="meta-grid-item">
+                    <h4>Duration</h4>
+                    <p>4 Nights / 5 Days</p>
+                </div>
+                <div class="meta-grid-item">
+                    <h4>Travelers</h4>
+                    <p>2 Pax (Canadian)</p>
+                </div>
+                <div class="meta-grid-item">
+                    <h4>Hotel Stay</h4>
+                    <p>Premier Inn Ibn Battuta (4N)</p>
+                </div>
+                <div class="meta-grid-item">
+                    <h4>Grand Total</h4>
+                    <p>AED 3,259</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div>www.citylaila.com</div>
+            <div>Page 01</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 2: WHY BOOK WITH US -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:20px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+            <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+        <div class="content-body">
+            <img src="images/why_book_with_us_full.png" alt="Why Book With Us" class="full-banner-image" onerror="this.outerHTML='<div style=\'padding:40px;text-align:center;background:#F8FAFC;border-radius:12px;border:1px solid #E2E8F0;\'><h2>Why Book With CityLaila?</h2><p>Award Winning Service • 24/7 Dedicated Support • Handpicked Premium Hotels • Best Price Guarantee</p></div>'">
+        </div>
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>📞 +971 55 546 3698</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 02</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 3: ITINERARY OVERVIEW SUMMARY -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:22px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+            <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+
+        <div class="content-body">
+            <h2 class="slide-title" style="font-size: 30px; margin-bottom: 20px;">Itinerary Overview Summary <span>(All 5 Days)</span></h2>
+            
+            <div class="timeline-container">
+                <div class="timeline-row">
+                    <div class="timeline-day" style="font-size: 17px;">Day 01 <span style="font-size:12px; color:var(--gray);">7 Feb</span></div>
+                    <div class="timeline-events">
+                        <span class="timeline-badge" style="background: #FFFFAF; color: #B7791F; font-size: 15px; padding: 6px 14px;">🛬 Dubai Airport Arrival & Private Transfer</span>
+                    </div>
+                    <div class="timeline-stay" style="font-size: 17px;">🏨 Premier Inn Ibn Battuta</div>
+                </div>
+
+                <div class="timeline-row">
+                    <div class="timeline-day" style="font-size: 17px;">Day 02 <span style="font-size:12px; color:var(--gray);">8 Feb</span></div>
+                    <div class="timeline-events">
+                        <span class="timeline-badge highlight-attraction" style="font-size: 15px; padding: 6px 14px;">🏙️ Private Dubai City Tour & Burj Khalifa (124th & 125th Floor)</span>
+                    </div>
+                    <div class="timeline-stay" style="font-size: 17px;">🏨 Premier Inn Ibn Battuta</div>
+                </div>
+
+                <div class="timeline-row">
+                    <div class="timeline-day" style="font-size: 17px;">Day 03 <span style="font-size:12px; color:var(--gray);">9 Feb</span></div>
+                    <div class="timeline-events">
+                        <span class="timeline-badge highlight-attraction" style="font-size: 15px; padding: 6px 14px;">🕌 Full-Day Shared Abu Dhabi Tour & Grand Mosque</span>
+                    </div>
+                    <div class="timeline-stay" style="font-size: 17px;">🏨 Premier Inn Ibn Battuta</div>
+                </div>
+
+                <div class="timeline-row">
+                    <div class="timeline-day" style="font-size: 17px;">Day 04 <span style="font-size:12px; color:var(--gray);">10 Feb</span></div>
+                    <div class="timeline-events">
+                        <span class="timeline-badge highlight-attraction" style="font-size: 15px; padding: 6px 14px;">🏜️ Premium Evening Desert Safari (Shared) with BBQ</span>
+                    </div>
+                    <div class="timeline-stay" style="font-size: 17px;">🏨 Premier Inn Ibn Battuta</div>
+                </div>
+
+                <div class="timeline-row">
+                    <div class="timeline-day" style="font-size: 17px;">Day 05 <span style="font-size:12px; color:var(--gray);">11 Feb</span></div>
+                    <div class="timeline-events">
+                        <span class="timeline-badge" style="font-size: 15px; padding: 6px 14px;">🍳 Breakfast & Check-out</span>
+                        <span class="timeline-badge highlight-attraction" style="font-size: 15px; padding: 6px 14px;">🛫 Private Airport Departure Transfer</span>
+                    </div>
+                    <div class="timeline-stay" style="color: var(--success); font-size: 17px;">✨ Tour Wrap Up</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 03</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 4: ACCOMMODATION PROFILE -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:22px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+            <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+
+        <div class="content-body" style="justify-content: center;">
+            <h2 class="slide-title" style="font-size: 32px; margin-bottom: 25px;">Handpicked <span>Accommodation Profile (4 Nights)</span></h2>
+            
+            <div style="display: flex; justify-content: center; align-items: stretch; width: 100%;">
+                <div class="card" style="width: 100%; padding: 40px; border-radius: 24px; gap: 24px;">
+                    <div class="hotel-header-block" style="padding: 22px; border-radius: 14px;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <h3 style="font-size: 22px; font-weight: 900; color: var(--dark); margin: 0;">Premier Inn Dubai Ibn Battuta Mall</h3>
+                            <span class="hotel-tag-luxury" style="font-size: 14px; padding: 7px 16px;">4 Nights Stay</span>
+                        </div>
+                        <p style="font-size: 15px; color: var(--primary); font-weight: 800;">Dubai, UAE (Travel Dates: 7th–11th February 2027)</p>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr; gap: 16px;">
+                        <div class="hotel-spec-row">
+                            <div class="hotel-spec-label">Room & Guests</div>
+                            <div class="hotel-spec-value">Standard Double Room — 2 Pax (Canadian)</div>
+                        </div>
+                        <div class="hotel-spec-row">
+                            <div class="hotel-spec-label">Meal Plan</div>
+                            <div class="hotel-spec-value">Breakfast Included</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 04</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 5: DAY 1 - ARRIVAL -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:20px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+            <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+        <div class="content-body">
+            <div class="day-layout">
+                <div class="day-info">
+                    <div>
+                        <div class="day-badge">DAY 01 – 7 FEB | ARRIVAL IN DUBAI</div>
+                        <h3 class="day-title">Arrival & Hotel Check-in</h3>
+                        <p class="day-desc">Arrival at Dubai International Airport, meet & greet, private airport transfer to Premier Inn Dubai Ibn Battuta Mall, check-in, and evening at leisure.</p>
+                        
+                        <div class="tour-inclusion-box">
+                            <h4>Included Services & Details:</h4>
+                            <ul class="day-timeline-list">
+                                <li><span class="emoji-icon">✈️</span> <span>Arrival at Dubai International Airport</span></li>
+                                <li><span class="emoji-icon">🤝</span> <span>Meet & greet service</span></li>
+                                <li><span class="emoji-icon">🚐</span> <span>Private airport transfer to hotel & check-in</span></li>
+                                <li><span class="emoji-icon">🌙</span> <span>Evening at leisure & overnight stay in Dubai</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="day-image-container">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5c7976ec11f78465c3ab8a2d/374bf0e1-70cc-4d06-85e7-29668692b586/Dubai_December+12%2C+2025_12374.jpg" alt="Dubai Arrival">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 05</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 6: DAY 2 - DUBAI CITY TOUR & BURJ KHALIFA -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:20px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+            <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+        <div class="content-body">
+            <div class="day-layout">
+                <div class="day-info">
+                    <div>
+                        <div class="day-badge">DAY 02 – 8 FEB | CITY TOUR & BURJ KHALIFA</div>
+                        <h3 class="day-title">Private City Tour & Burj Khalifa</h3>
+                        <p class="day-desc">Private Dubai City Tour covering Jumeirah Beach, Burj Al Arab, Palm Jumeirah & Marina, followed by Burj Khalifa 124th & 125th floor and Dubai Mall.</p>
+                        
+                        <div class="tour-inclusion-box">
+                            <h4>Included Services & Details:</h4>
+                            <ul class="day-timeline-list">
+                                <li><span class="emoji-icon">🍳</span> <span>Breakfast at the hotel</span></li>
+                                <li><span class="emoji-icon">🏙️</span> <span>Private Dubai City Tour: Jumeirah Beach, Burj Al Arab photo stop, Palm Jumeirah & Atlantis photo stop, Dubai Marina & JBR</span></li>
+                                <li><span class="emoji-icon">🌆</span> <span>Evening visit to Downtown Dubai & Burj Khalifa – At The Top (124th & 125th Floor)</span></li>
+                                <li><span class="emoji-icon">🛍️</span> <span>Visit Dubai Mall and return to hotel</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="day-image-container">
+                    <img src="https://res.klook.com/image/upload/fl_lossy.progressive,q_60/v1760437946/destination/vovea0rrgjojr9pgdp7b.jpg" alt="Burj Khalifa Dubai Mall">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 06</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 7: DAY 3 - ABU DHABI TOUR -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:22px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+            <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+        <div class="content-body">
+            <div class="day-layout">
+                <div class="day-info">
+                    <div>
+                        <div class="day-badge">DAY 03 – 9 FEB | ABU DHABI TOUR</div>
+                        <h3 class="day-title">Full-Day Shared Abu Dhabi Tour</h3>
+                        <p class="day-desc">Full-day shared Abu Dhabi sightseeing covering Sheikh Zayed Grand Mosque, Corniche, Emirates Palace & Qasr Al Watan photo stops.</p>
+                        
+                        <div class="tour-inclusion-box">
+                            <h4>Included Services & Details:</h4>
+                            <ul class="day-timeline-list">
+                                <li><span class="emoji-icon">🍳</span> <span>Breakfast at the hotel</span></li>
+                                <li><span class="emoji-icon">🕌</span> <span>Full-day shared Abu Dhabi sightseeing tour</span></li>
+                                <li><span class="emoji-icon">🏛️</span> <span>Visit Sheikh Zayed Grand Mosque & Abu Dhabi Corniche</span></li>
+                                <li><span class="emoji-icon">📸</span> <span>Emirates Palace & Qasr Al Watan photo stops, then return to Dubai hotel</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="day-image-container">
+                    <img src="https://www.timeoutabudhabi.com/cloud/timeoutabudhabi/2022/04/04/Sheikh-Zayed-Grand-Mosque-1.jpg" alt="Abu Dhabi Mosque">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 07</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 8: DAY 4 - PREMIUM DESERT SAFARI -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:22px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+            <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+        <div class="content-body">
+            <div class="day-layout">
+                <div class="day-info">
+                    <div>
+                        <div class="day-badge">DAY 04 – 10 FEB | DESERT SAFARI</div>
+                        <h3 class="day-title">Premium Evening Desert Safari</h3>
+                        <p class="day-desc">Breakfast at hotel, morning at leisure, afternoon pickup for Premium Evening Desert Safari (Shared) with dune bashing, BBQ dinner & live show.</p>
+                        
+                        <div class="tour-inclusion-box">
+                            <h4>Included Services & Details:</h4>
+                            <ul class="day-timeline-list">
+                                <li><span class="emoji-icon">🍳</span> <span>Breakfast at the hotel & morning at leisure</span></li>
+                                <li><span class="emoji-icon">🏜️</span> <span>Afternoon pickup for Premium Evening Desert Safari – Shared</span></li>
+                                <li><span class="emoji-icon">🚙</span> <span>Dune bashing, sunset photo stop, camel ride & desert camp experience</span></li>
+                                <li><span class="emoji-icon">🍖</span> <span>BBQ dinner, live entertainment & return to hotel</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="day-image-container">
+                    <img src="https://www.desertsafariuae.ae/wp-content/uploads/2024/10/Red-Dune-Desert-Safari-1.png" alt="Desert Safari Dubai">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 08</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 9: DAY 5 - DEPARTURE -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:22px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+            <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+        <div class="content-body">
+            <div class="day-layout">
+                <div class="day-info">
+                    <div>
+                        <div class="day-badge" style="background: var(--success);">DAY 05 – 11 FEB | DEPARTURE</div>
+                        <h3 class="day-title">Check-out & Departure</h3>
+                        <p class="day-desc">Enjoy breakfast, check-out from Premier Inn Dubai Ibn Battuta Mall, and private airport transfer to Dubai International Airport for departure.</p>
+                        
+                        <div class="tour-inclusion-box">
+                            <h4>Included Services & Details:</h4>
+                            <ul class="day-timeline-list">
+                                <li><span class="emoji-icon">🍳</span> <span>Breakfast at the hotel</span></li>
+                                <li><span class="emoji-icon">🧳</span> <span>Hotel check-out</span></li>
+                                <li><span class="emoji-icon">🚐</span> <span>Private airport transfer to Dubai International Airport</span></li>
+                                <li><span class="emoji-icon">🛫</span> <span>Departure from Dubai with wonderful memories</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="day-image-container">
+                    <img src="https://m.media-amazon.com/images/I/71nXbtmuQlL.jpg" alt="Dubai Airport Departure">
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 09</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 10: DEDICATED MEAL MATRIX -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:22px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+            <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+
+        <div class="content-body">
+            <h2 class="slide-title">Complete <span>Day-Wise Meal Plan Summary</span></h2>
+            
+            <table class="meal-matrix-table">
+                <thead>
+                    <tr>
+                        <th style="width: 25%;">Day & Date</th>
+                        <th style="width: 25%;">Breakfast Plan</th>
+                        <th style="width: 25%;">Lunch Arrangement</th>
+                        <th style="width: 25%;">Dinner Plan & Venue</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><b>Day 1 (7 Feb)</b></td><td><span class="meal-badge-excluded">Arrival Day</span></td><td><span class="meal-badge-excluded">Not Included</span></td><td><span class="meal-badge-excluded">Not Included</span></td></tr>
+                    <tr><td><b>Day 2 (8 Feb)</b></td><td><span class="meal-badge-included">✓ Included (Hotel)</span></td><td><span class="meal-badge-excluded">Direct Payment</span></td><td><span class="meal-badge-excluded">Direct Payment</span></td></tr>
+                    <tr><td><b>Day 3 (9 Feb)</b></td><td><span class="meal-badge-included">✓ Included (Hotel)</span></td><td><span class="meal-badge-excluded">Direct Payment</span></td><td><span class="meal-badge-excluded">Direct Payment</span></td></tr>
+                    <tr><td><b>Day 4 (10 Feb)</b></td><td><span class="meal-badge-included">✓ Included (Hotel)</span></td><td><span class="meal-badge-excluded">Direct Payment</span></td><td><span class="meal-badge-included">✓ Included (Desert Safari)</span></td></tr>
+                    <tr><td><b>Day 5 (11 Feb)</b></td><td><span class="meal-badge-included">✓ Included (Hotel)</span></td><td><span class="meal-badge-excluded">Departure Day</span></td><td><span class="meal-badge-excluded">Departure Day</span></td></tr>
+                </tbody>
+            </table>
+
+            <div style="background: #EBF8FF; border: 1.5px solid #BEE3F8; border-radius: 12px; padding: 10px 16px; font-size: 13.5px; color: #2B6CB0; font-weight: 700;">
+                💡 <b>Meal Note:</b> Daily breakfast included at Premier Inn Dubai Ibn Battuta Mall. BBQ Dinner included on Day 4 (Desert Safari). Lunches and other dinners are excluded.
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 10</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 11: INCLUSIONS & EXCLUSIONS -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:22px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+            <div class="tagline" style="font-size: 15px; font-weight: 800;">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+
+        <div class="content-body" style="justify-content: center;">
+            <h2 class="slide-title" style="font-size: 32px; font-weight: 900; margin-bottom: 20px;">Trip <span>Inclusions & Exclusions Breakdown</span></h2>
+            
+            <div class="two-col" style="gap: 35px;">
+                <!-- Inclusions Card -->
+                <div class="card" style="background: #FFFFFF; border: 1px solid var(--border); border-top: 6px solid #38A169; padding: 35px; gap: 20px;">
+                    <div>
+                        <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid #E6FFFA; padding-bottom: 12px; margin-bottom: 16px;">
+                            <span style="background: #E6FFFA; color: #276749; font-size: 20px; padding: 6px 14px; border-radius: 8px; font-weight: 900;">✅</span>
+                            <h3 style="color: #276749; font-size: 22px; font-weight: 900; border: none; padding: 0; margin: 0;">What's Included In Package</h3>
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; gap: 12px; font-size: 15px; color: #2D3748; line-height: 1.5; font-weight: 700;">
+                            <div><b>🏨 Accommodation:</b> 4 Nights at Premier Inn Dubai Ibn Battuta Mall (Standard Double Room)</div>
+                            <div><b>🍳 Meal Plan:</b> Breakfast included daily</div>
+                            <div><b>🚐 Transfers:</b> Private airport arrival/departure transfers</div>
+                            <div><b>🗺️ Sightseeing & Tickets:</b> Private City Tour, Burj Khalifa (124th & 125th Floor), Shared Abu Dhabi Tour & Shared Desert Safari</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exclusions Card -->
+                <div class="card" style="background: #FFF5F5; border: 1px solid #FEB2B2; border-top: 6px solid #E53E3E; padding: 35px; gap: 20px;">
+                    <div>
+                        <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid #FED7D7; padding-bottom: 12px; margin-bottom: 16px;">
+                            <span style="background: #FED7D7; color: #9B2C2C; font-size: 20px; padding: 6px 14px; border-radius: 8px; font-weight: 900;">❌</span>
+                            <h3 style="color: #9B2C2C; font-size: 22px; font-weight: 900; border: none; padding: 0; margin: 0;">What's Excluded From Package</h3>
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; gap: 14px; font-size: 15px; color: #334155; line-height: 1.5; font-weight: 700;">
+                            <div><b>✈️ Flights:</b> International flights</div>
+                            <div><b>🍽️ Meals:</b> Lunches and dinners except Desert Safari BBQ dinner</div>
+                            <div><b>🛡️ Personal:</b> Personal expenses, shopping, tips & travel insurance</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 11</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 12: PACKAGE PRICE SUMMARY -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:22px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'" src="images/logo.png">
+            </div>
+            <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+
+        <div class="content-body">
+            <h2 class="slide-title">Package <span>Price Summary & Breakdown</span></h2>
+            
+            <div class="price-layout">
+                <div style="display: flex; flex-direction: column; justify-content: space-between; gap: 18px;">
+                    <div class="total-box">
+                        <span style="font-size: 13.5px; text-transform: uppercase; letter-spacing: 2px; color: #F59E0B; font-weight: 800; margin-bottom: 6px;">GRAND TOTAL PACKAGE PRICE</span>
+                        <div style="font-size: 36px; font-weight: 900; color: #FFFFFF; margin-bottom: 4px; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">AED 3,259</div>
+                        <p style="font-size: 14.5px; font-weight: 700; color: #FDE047;">For 2 Pax (Premier Inn Ibn Battuta Mall)</p>
+                    </div>
+                    
+                    <div style="background: #FFFFFF; border: 1px solid var(--border); border-radius: 16px; padding: 20px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                        <div>
+                            <h4 style="font-size: 17px; font-weight: 900; color: var(--dark);">Scan to Pay</h4>
+                            <p style="font-size: 13.5px; color: var(--gray); font-weight: 600; margin-top: 2px;">Secure payment via Gateway or Wire.</p>
+                        </div>
+                        <div style="background: #F8FAFC; padding: 6px; border-radius: 10px; border: 1px solid var(--border);">
+                            <img src="images/payment-qr.jpg" alt="QR" style="width: 85px; height: 85px;" onerror="this.outerHTML='<div style=\'width:85px;height:85px;background:#F8FAFC;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:10px;color:gray;text-align:center;padding:5px;\'>[QR CODE]</div>'">
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: column; justify-content: space-between; gap: 18px;">
+                    <div style="background: #F8FAFC; border: 1px solid var(--border); border-left: 5px solid var(--primary); padding: 22px; border-radius: 16px;">
+                        <h4 style="font-size: 16px; font-weight: 900; color: var(--dark); text-transform: uppercase; margin-bottom: 10px;">📊 Itemized Fare Breakdown</h4>
+                        <div style="display: flex; flex-direction: column; gap: 10px; font-size: 14.5px;">
+                            <div style="display: flex; justify-content: space-between; padding: 10px; background: #FFF; border-radius: 8px; border: 1px solid var(--border);">
+                                <span><b>Hotel, Transfers & Attractions:</b></span> <b>Included</b>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 10px; background: #E6FFFA; border-radius: 8px; border: 1.5px solid #99F6E4; color: #047481; font-weight: 900; font-size: 15.5px;">
+                                <span>Grand Total Payable:</span> <span>AED 3,259</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: #FFFDF5; border: 1px solid #FEFCBF; border-left: 5px solid #D69E2E; padding: 20px; border-radius: 16px;">
+                        <h4 style="font-size: 16px; font-weight: 900; color: #B7791F; text-transform: uppercase; margin-bottom: 8px;">📜 Operational Policies</h4>
+                        <ul style="font-size: 14px; color: #4A5568; line-height: 1.45; padding-left: 16px;">
+                            <li><b>Guest:</b> Bhuvnesh Gupta (Travel Dates: 7th–11th February 2027). Nationality: Canadian.</li>
+                            <li><b>Availability:</b> Rates and bookings subject to formal confirmation.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 12</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 13: GLOBAL PRESENCE & CONTACT US -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:22px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'" src="images/logo.png">
+            </div>
+            <div class="tagline" style="font-size: 13.5px; font-weight: 800;">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+
+        <div class="content-body">
+            <h2 class="slide-title" style="font-size: 28px; font-weight: 900; margin-bottom: 14px;">📍 Global Presence <span style="color: var(--primary);">& Contact Us</span></h2>
+            
+            <div class="global-section" style="display: flex; flex-direction: column; gap: 14px; height: 100%;">
+                <div class="map-and-contacts" style="display: grid; grid-template-columns: 2.1fr 1fr; gap: 18px; flex: 1;">
+                    <div class="locations-box" style="padding: 16px; gap: 12px;">
+                        <div class="loc-card" style="background-image: url('https://cdn.britannica.com/17/102117-050-1B43B4B4/mosque-Abu-al--Abbas-al-Mursi-Egypt-Alexandria.jpg'); padding: 16px;">
+                            <div class="loc-card-title">🇪🇬 Alexandria, Egypt</div>
+                            <div class="loc-card-info">✉️ info@citylaila.com<br>📞 +20 112 909 0043</div>
+                        </div>
+
+                        <div class="loc-card" style="background-image: url('https://media.assettype.com/outlooktraveller/2024-07/34203ad1-fd27-4b76-b45b-ef066154f574/Ras%20Al%20Khaimah?w=1200&auto=format%2Ccompress&fit=max&format=webp&dpr=1.0'); padding: 16px;">
+                            <div class="loc-card-title">🇦🇪 Ras Al-Khaimah, UAE</div>
+                            <div class="loc-card-info">✉️ info@citylaila.com<br>📞 +971 52 674 6682</div>
+                        </div>
+
+                        <div class="loc-card" style="background-image: url('images/countries/dubai.jpg'); padding: 16px;">
+                            <div class="loc-card-title">🇦🇪 Dubai, UAE</div>
+                            <div class="loc-card-info">✉️ info@citylaila.com<br>📞 +971 50 680 0227</div>
+                        </div>
+
+                        <div class="loc-card" style="background-image: url('https://ayxhtlzyhpsjykxxnqqh.supabase.co/storage/v1/object/public/area_images/hsr-layout-bangalore/image-5.jpg'); padding: 16px;">
+                            <div class="loc-card-title">🇮🇳 Bangalore, India</div>
+                            <div class="loc-card-info">✉️ info@citylaila.com<br>📞 +91 95910 52942</div>
+                        </div>
+
+                        <div class="loc-card" style="background-image: url('images/countries/singapore.webp'); padding: 16px;">
+                            <div class="loc-card-title">🇸🇬 Singapore City</div>
+                            <div class="loc-card-info">✉️ info@citylaila.com<br>📞 +65 9231 0720</div>
+                        </div>
+
+                        <div class="loc-card" style="background-image: url('images/countries/global.avif'); text-align: center; align-items: center; padding: 16px;">
+                            <div class="loc-card-custom">
+                                <span style="font-size: 13.5px; font-weight: 900; color: #FFD700; display: block; text-shadow: 0 1px 3px #000;">🌐 GLOBAL NETWORK</span>
+                                <span style="font-size: 11.5px; font-weight: 800; color: #F1F5F9; margin-top: 3px; display: block; text-shadow: 0 1px 2px #000;">Expanding across 44+ countries</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inquiry-box" style="background:  #0A192F; color: white; border-radius: 15px; padding: 20px; display: flex; flex-direction: column; justify-content: space-around; border: 1px solid rgba(255,255,255,0.15);">
+                        <div class="inquiry-title" style="font-size: 14.5px; font-weight: 900; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 8px; color: #FFD700; text-transform: uppercase; letter-spacing: 0.5px;">
+                            🎧 Instant Tour Concierge
+                        </div>
+                        
+                        <div style="display: flex; flex-direction: column; gap: 10px; margin: 8px 0;">
+                            <div class="inquiry-item" style="display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.06); padding: 10px; border-radius: 9px;">
+                                <div class="inquiry-icon" style="background: var(--primary); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">🌐</div>
+                                <div class="inquiry-details">
+                                    <h5 style="font-size: 11.5px; font-weight: 900; color: #63B3ED; text-transform: uppercase;">For B2B Partnerships</h5>
+                                    <p style="font-size: 11px; font-weight: 700; color: #F1F5F9; margin-top: 2px;">b2b@citylaila.com • +971 4 4451 625</p>
+                                </div>
+                            </div>
+
+                            <div class="inquiry-item" style="display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.06); padding: 10px; border-radius: 9px;">
+                                <div class="inquiry-icon" style="background: var(--secondary); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">📢</div>
+                                <div class="inquiry-details">
+                                    <h5 style="font-size: 11.5px; font-weight: 900; color: #FF9933; text-transform: uppercase;">Marketing & Media</h5>
+                                    <p style="font-size: 11px; font-weight: 700; color: #F1F5F9; margin-top: 2px;">marketing@citylaila.com</p>
+                                </div>
+                            </div>
+
+                            <div class="inquiry-item" style="display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.06); padding: 10px; border-radius: 9px;">
+                                <div class="inquiry-icon" style="background: var(--success); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">💬</div>
+                                <div class="inquiry-details">
+                                    <h5 style="font-size: 11.5px; font-weight: 900; color: #68D391; text-transform: uppercase;">Direct Traveler Desk</h5>
+                                    <p style="font-size: 11px; font-weight: 700; color: #F1F5F9; margin-top: 2px;">info@citylaila.com • +971 55 536 5508</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="background: rgba(255,215,0,0.15); border: 1.5px solid rgba(255,215,0,0.4); border-radius: 9px; padding: 8px; text-align: center; font-size: 12px; font-weight: 800; color: #FFD700;">
+                            ⚡ Fast Response Guarantee
+                        </div>
+                    </div>
+                </div>
+
+                <div class="branches-and-reach" style="display: grid; grid-template-columns: 0.9fr 2.1fr; gap: 12px; margin-top: 3px;">
+                    <div class="coming-soon-card" style="background: #F8FAFC; border-radius: 12px; padding: 12px; border: 1px solid var(--border);">
+                        <h4 style="font-size: 12.5px; font-weight: 900; color: var(--dark); margin-bottom: 5px; text-transform: uppercase;">🆕 Upcoming Global Hubs</h4>
+                        <div class="coming-soon-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4px; font-size: 12px; font-weight: 800; color: var(--gray);">
+                            <div>1. Russia</div><div>2. UK</div><div>3. USA</div><div>4. South Africa</div>
+                        </div>
+                    </div>
+
+                    <div class="global-reach-card" style="background: linear-gradient(135deg, #EBF8FF 0%, #E6FFFA 100%); border: 1.5px solid #BEE3F8; border-radius: 12px; padding: 12px 16px;">
+                        <h4 style="font-size: 13px; font-weight: 900; color: #2B6CB0; margin-bottom: 3px;">🌍 Guaranteed Best Tour Rates in 44+ Countries Globally</h4>
+                        <p style="font-size: 11.5px; color: #2D3748; line-height: 1.4; font-weight: 700; margin: 0;">
+                            Georgia, Armenia, Vietnam, Azerbaijan, Turkey, Oman, India, UAE, Egypt, Uzbekistan, Indonesia, UK, USA, Singapore, Kazakhstan, Italy, Switzerland, Japan, South Korea, China, Australia & more.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="features-bar" style="background: #0A192F; color: white; border-radius: 10px; padding: 11px 14px; display: flex; justify-content: space-around; align-items: center; font-size: 11.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; border: 1px solid rgba(255,255,255,0.15);">
+                    <div>📍 Global Footprint</div>
+                    <div>🏆 100K+ Happy Guests</div>
+                    <div>🎧 24/7 Live Support</div>
+                    <div>🛡️ Price Match Protection</div>
+                    <div>🧳 Tailored Experiences</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 13</div>
+        </div>
+    </div>
+</body>
+</html>
