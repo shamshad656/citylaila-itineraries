@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CityLaila Itineraries</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:#f5f7fb;color:#172033}
+.container{max-width:1100px;margin:0 auto;padding:32px 20px 50px}
+.hero{background:linear-gradient(135deg,#ffffff,#eef4ff);border:1px solid #e1e7f0;border-radius:22px;padding:30px;margin-bottom:22px;box-shadow:0 8px 30px rgba(25,45,80,.06)}
+h1{margin:0 0 8px;font-size:32px}
+.sub{color:#687386;margin:0}
+.toolbar{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+input,select{border:1px solid #d7deea;background:#fff;border-radius:12px;padding:12px 14px;font-size:15px;outline:none}
+input{flex:1;min-width:240px}
+.status{margin:18px 0;color:#697386;font-size:14px}
+.list{display:grid;gap:12px}
+.card{background:#fff;border:1px solid #e1e6ef;border-radius:16px;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px;box-shadow:0 4px 18px rgba(20,35,60,.04)}
+.name{font-weight:700;font-size:17px;word-break:break-word}
+.meta{font-size:13px;color:#7a8494;margin-top:6px}
+.actions{display:flex;gap:8px;flex-shrink:0}
+.btn{display:inline-block;text-decoration:none;border-radius:10px;padding:9px 13px;font-size:13px;font-weight:600}
+.open{background:#eef4ff;color:#2458c6}.edit{background:#f3f4f6;color:#4b5563}
+.empty{background:#fff;border:1px dashed #ccd4e0;border-radius:16px;padding:35px;text-align:center;color:#748096}
+.badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#eaf8ef;color:#237a43;font-size:11px;font-weight:700;margin-left:8px}
+@media(max-width:650px){.card{align-items:flex-start;flex-direction:column}.actions{width:100%}.btn{flex:1;text-align:center}}
+</style>
+</head>
+<body>
+<div class="container">
+  <section class="hero">
+    <h1>✈️ CityLaila Itineraries</h1>
+    <p class="sub">All itinerary HTML files • automatically sorted by latest GitHub update</p>
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="🔎 Search itinerary...">
+      <select id="sort">
+        <option value="new">Latest updated first</option>
+        <option value="old">Oldest updated first</option>
+        <option value="az">Name A–Z</option>
+      </select>
+    </div>
+  </section>
+
+  <div id="status" class="status">Loading itineraries from GitHub…</div>
+  <div id="list" class="list"></div>
+</div>
+
+<script>
+const OWNER = "shamshad656";
+const REPO = "citylaila-itineraries";
+const BRANCH = "main";
+const API = `https://api.github.com/repos/${OWNER}/${REPO}/contents/`;
+
+let files = [];
+
+function esc(s){
+  return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+
+function formatDate(d){
+  return new Intl.DateTimeFormat('en-IN',{
+    day:'2-digit',month:'short',year:'numeric',
+    hour:'2-digit',minute:'2-digit'
+  }).format(new Date(d));
+}
+
+async function getJson(url){
+  const r = await fetch(url,{headers:{Accept:'application/vnd.github+json'}});
+  if(!r.ok) throw new Error(`GitHub API error ${r.status}`);
+  return r.json();
+}
+
+/*
+  GitHub's normal repository view does not provide a sorting control.
+  This page uses the public GitHub API to discover HTML files and then
+  reads each file's latest commit date. No GitHub token is required for
+  a public repository.
+*/
+async function load(){
+  const status=document.getElementById('status');
+  try{
+    const contents=await getJson(`${API}?ref=${encodeURIComponent(BRANCH)}`);
+    const htmlFiles=contents.filter(x=>x.type==='file' && x.name.toLowerCase().endsWith('.html'));
+
+    status.textContent=`Found ${htmlFiles.length} itinerary HTML file${htmlFiles.length===1?'':'s'}. Reading update times…`;
+
+    // Read latest commit time for each HTML file. Limit concurrency to avoid
+    // hammering the public API.
+    const queue=[...htmlFiles];
+    const result=[];
+    const workers=Array.from({length:5},async()=>{
+      while(queue.length){
+        const f=queue.shift();
+        try{
+          const commits=await getJson(
+            `https://api.github.com/repos/${OWNER}/${REPO}/commits?path=${encodeURIComponent(f.path)}&sha=${encodeURIComponent(BRANCH)}&per_page=1`
+          );
+          result.push({
+            name:f.name,
+            path:f.path,
+            url:`https://${OWNER}.github.io/${REPO}/${f.path}`,
+            github:`https://github.com/${OWNER}/${REPO}/blob/${BRANCH}/${f.path}`,
+            updated:commits[0]?.commit?.committer?.date || commits[0]?.commit?.author?.date || null
+          });
+        }catch(e){
+          result.push({name:f.name,path:f.path,updated:null,
+            github:`https://github.com/${OWNER}/${REPO}/blob/${BRANCH}/${f.path}`});
+        }
+      }
+    });
+    await Promise.all(workers);
+
+    files=result;
+    render();
+    status.textContent=`${files.length} itinerary file${files.length===1?'':'s'} loaded • Last updated times are from GitHub commits`;
+  }catch(e){
+    status.innerHTML=`Could not load the GitHub file list. <b>${esc(e.message)}</b><br>
+    If you just uploaded this page, wait a few seconds and refresh.`;
+  }
+}
+
+function render(){
+  const q=document.getElementById('search').value.trim().toLowerCase();
+  const sort=document.getElementById('sort').value;
+  let arr=files.filter(f=>f.name.toLowerCase().includes(q));
+
+  if(sort==='new') arr.sort((a,b)=>(b.updated||'').localeCompare(a.updated||''));
+  if(sort==='old') arr.sort((a,b)=>(a.updated||'').localeCompare(b.updated||''));
+  if(sort==='az') arr.sort((a,b)=>a.name.localeCompare(b.name));
+
+  const list=document.getElementById('list');
+  if(!arr.length){
+    list.innerHTML='<div class="empty">No matching itineraries found.</div>';
+    return;
+  }
+
+  list.innerHTML=arr.map(f=>{
+    const live=f.updated ? formatDate(f.updated) : 'Update time unavailable';
+    return `<article class="card">
+      <div>
+        <div class="name">📄 ${esc(f.name)} ${f.updated?'<span class="badge">UPDATED</span>':''}</div>
+        <div class="meta">Last updated: ${esc(live)}</div>
+      </div>
+      <div class="actions">
+        <a class="btn open" href="${esc(f.url)}" target="_blank" rel="noopener">Open</a>
+        <a class="btn edit" href="${esc(f.github)}" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </article>`;
+  }).join('');
+}
+
+document.getElementById('search').addEventListener('input',render);
+document.getElementById('sort').addEventListener('change',render);
+load();
+</script>
+</body>
+</html>
