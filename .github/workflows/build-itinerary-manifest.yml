@@ -1,0 +1,60 @@
+name: Build itinerary manifest
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build manifest.json
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+
+          rows = []
+          for p in Path(".").rglob("*.html"):
+              if ".git" in p.parts:
+                  continue
+              path = p.as_posix()
+              try:
+                  stamp = subprocess.check_output(
+                      ["git", "log", "-1", "--format=%cI", "--", path],
+                      text=True
+                  ).strip()
+              except Exception:
+                  stamp = ""
+              rows.append({
+                  "name": p.name,
+                  "path": path,
+                  "updated": stamp,
+                  "url": f"https://shamshad656.github.io/citylaila-itineraries/{path}",
+                  "github": f"https://github.com/shamshad656/citylaila-itineraries/blob/main/{path}"
+              })
+
+          rows.sort(key=lambda x: x["updated"], reverse=True)
+          Path("manifest.json").write_text(
+              json.dumps(rows, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8"
+          )
+          PY
+
+      - name: Commit manifest
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add manifest.json
+          git diff --cached --quiet || git commit -m "chore: update itinerary manifest"
+          git push
