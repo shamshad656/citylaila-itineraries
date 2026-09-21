@@ -1,158 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CityLaila Itineraries</title>
+
+<style id="citylaila-lock-css">
+#citylailaLock{position:fixed;inset:0;z-index:999999;background:linear-gradient(135deg,#f5f7fb,#eaf1ff);display:flex;align-items:center;justify-content:center;padding:20px}
+.lockbox{width:min(410px,100%);background:#fff;border:1px solid #e1e7f0;border-radius:22px;padding:34px;box-shadow:0 20px 60px rgba(30,55,100,.14);text-align:center}
+.lockicon{font-size:42px;margin-bottom:10px}.lockbox h1{margin:0 0 8px;font-size:25px}.lockbox p{margin:0 0 22px;color:#697386;font-size:14px}
+.lockinput{width:100%;border:1px solid #d5dce7;border-radius:11px;padding:13px 14px;font-size:15px;outline:none;margin-bottom:12px}
+.lockinput:focus{border-color:#2563eb;box-shadow:0 0 0 3px #2563eb18}
+.lockbtn{width:100%;padding:12px;border:0;border-radius:11px;background:#2563eb;color:#fff;font-weight:800;font-size:15px;cursor:pointer}
+.lockbtn:hover{background:#1d4ed8}.lockerror{height:20px;color:#c62828;font-size:13px;margin-top:10px}
+.lockhint{font-size:11px;color:#9aa3b2;margin-top:18px}
+</style>
+
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CityLaila • Itinerary Manager</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:#f5f7fb;color:#172033}
-.container{max-width:1100px;margin:0 auto;padding:32px 20px 50px}
-.hero{background:linear-gradient(135deg,#ffffff,#eef4ff);border:1px solid #e1e7f0;border-radius:22px;padding:30px;margin-bottom:22px;box-shadow:0 8px 30px rgba(25,45,80,.06)}
-h1{margin:0 0 8px;font-size:32px}
-.sub{color:#687386;margin:0}
-.toolbar{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
-input,select{border:1px solid #d7deea;background:#fff;border-radius:12px;padding:12px 14px;font-size:15px;outline:none}
-input{flex:1;min-width:240px}
-.status{margin:18px 0;color:#697386;font-size:14px}
-.list{display:grid;gap:12px}
-.card{background:#fff;border:1px solid #e1e6ef;border-radius:16px;padding:18px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px;box-shadow:0 4px 18px rgba(20,35,60,.04)}
-.name{font-weight:700;font-size:17px;word-break:break-word}
-.meta{font-size:13px;color:#7a8494;margin-top:6px}
-.actions{display:flex;gap:8px;flex-shrink:0}
-.btn{display:inline-block;text-decoration:none;border-radius:10px;padding:9px 13px;font-size:13px;font-weight:600}
-.open{background:#eef4ff;color:#2458c6}.edit{background:#f3f4f6;color:#4b5563}
-.empty{background:#fff;border:1px dashed #ccd4e0;border-radius:16px;padding:35px;text-align:center;color:#748096}
-.badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#eaf8ef;color:#237a43;font-size:11px;font-weight:700;margin-left:8px}
-@media(max-width:650px){.card{align-items:flex-start;flex-direction:column}.actions{width:100%}.btn{flex:1;text-align:center}}
+:root{--bg:#f5f7fb;--card:#fff;--text:#172033;--muted:#697386;--line:#e2e8f0;--brand:#2563eb;--soft:#eef4ff;--good:#15803d}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px Inter,Segoe UI,Arial,sans-serif}.app{display:flex;min-height:100vh}.side{width:245px;background:#fff;border-right:1px solid var(--line);padding:20px 14px;position:sticky;top:0;height:100vh}.logo{font-size:21px;font-weight:800;padding:8px 12px 25px}.logo span{color:var(--brand)}.nav button{display:block;width:100%;border:0;background:transparent;text-align:left;padding:12px;border-radius:10px;margin:2px 0;color:#536174;font-weight:600;cursor:pointer}.nav button.active,.nav button:hover{background:var(--soft);color:var(--brand)}.sidefoot{position:absolute;bottom:18px;left:20px;color:var(--muted);font-size:12px}.main{flex:1;min-width:0}.top{position:sticky;top:0;z-index:4;background:#fff;border-bottom:1px solid var(--line);padding:18px 28px;display:flex;align-items:center;justify-content:space-between;gap:12px}.top h1{margin:0;font-size:21px}.top p{margin:4px 0 0;color:var(--muted);font-size:12px}.wrap{max-width:1250px;margin:auto;padding:24px 28px}.page{display:none}.page.active{display:block}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.stat,.panel{background:var(--card);border:1px solid var(--line);border-radius:16px}.stat{padding:18px}.stat small,.meta{color:var(--muted)}.stat .n{font-size:28px;font-weight:800;margin:7px 0}.panel{padding:20px;margin-top:18px}.panel h2{margin:0 0 14px;font-size:17px}.toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:18px 0}.search{flex:1;min-width:230px}.search input{width:100%}input,select{border:1px solid #d4dce8;border-radius:10px;background:#fff;padding:11px 12px;outline:none}.btn{display:inline-block;border:0;border-radius:10px;padding:10px 14px;font-weight:700;text-decoration:none;cursor:pointer}.primary{background:var(--brand);color:#fff}.ghost{background:#fff;border:1px solid var(--line);color:#475569}.mini{border:0;border-radius:8px;padding:7px 9px;background:#f1f4f8;color:#475569;text-decoration:none;font-size:12px;font-weight:700}.table{width:100%;border-collapse:collapse}.table th,.table td{padding:13px 10px;border-bottom:1px solid var(--line);text-align:left}.table th{font-size:12px;color:var(--muted)}.file{font-weight:700}.actions{display:flex;gap:6px;flex-wrap:wrap}.notice{background:#fff8e7;border:1px solid #f1d487;border-radius:11px;padding:12px 14px;color:#755700}.ok{background:#edf9f1;border-color:#bfe4ca;color:#176b3e}.drop{border:2px dashed #b9c9e5;background:#fafcff;border-radius:15px;text-align:center;padding:35px}.drop.drag{background:var(--soft);border-color:var(--brand)}.fileitem{display:flex;justify-content:space-between;gap:10px;border:1px solid var(--line);border-radius:10px;padding:11px;margin-top:8px}.monthgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.month{border:1px solid var(--line);border-radius:12px;padding:15px}.month small{display:block;color:var(--muted);margin-top:5px}.empty{text-align:center;padding:30px;color:var(--muted)}code{background:#f1f4f8;border-radius:5px;padding:2px 5px}@media(max-width:900px){.side{width:72px}.logo{font-size:0;text-align:center}.logo:first-letter{font-size:23px}.nav button{font-size:0;text-align:center}.nav button:first-letter{font-size:19px}.sidefoot{display:none}.cards{grid-template-columns:repeat(2,1fr)}}@media(max-width:620px){.side{display:none}.wrap{padding:16px 12px}.top{padding:14px}.cards,.monthgrid{grid-template-columns:1fr}.table th:nth-child(2),.table td:nth-child(2){display:none}}
 </style>
 </head>
 <body>
-<div class="container">
-  <section class="hero">
-    <h1>✈️ CityLaila Itineraries</h1>
-    <p class="sub">All itinerary HTML files • automatically sorted by latest GitHub update</p>
-    <div class="toolbar">
-      <input id="search" type="search" placeholder="🔎 Search itinerary...">
-      <select id="sort">
-        <option value="new">Latest updated first</option>
-        <option value="old">Oldest updated first</option>
-        <option value="az">Name A–Z</option>
-      </select>
-    </div>
-  </section>
 
-  <div id="status" class="status">Loading itineraries from GitHub…</div>
-  <div id="list" class="list"></div>
+<div id="citylailaLock">
+  <div class="lockbox">
+    <div class="lockicon">🔐</div>
+    <h1>CityLaila</h1>
+    <p>Itinerary Manager</p>
+    <input id="citylailaPassword" class="lockinput" type="password"
+           placeholder="Enter password" autocomplete="current-password">
+    <button id="citylailaUnlock" class="lockbtn">Unlock Dashboard</button>
+    <div id="citylailaLockError" class="lockerror"></div>
+    <div class="lockhint">Private dashboard</div>
+  </div>
 </div>
 
+<div class="app">
+<aside class="side">
+<div class="logo">✈️ <span>CityLaila</span></div>
+<nav class="nav">
+<button class="active" data-page="dashboard">📊 Dashboard</button>
+<button data-page="files">📁 All Itineraries</button>
+<button data-page="upload">⬆️ Upload</button>
+<button data-page="months">🗂️ Month Manager</button>
+<button data-page="tools">🛠️ Tools</button>
+</nav>
+<div class="sidefoot">Itinerary Manager<br>Manifest powered</div>
+</aside>
+<main class="main">
+<header class="top"><div><h1 id="title">Dashboard</h1><p id="subtitle">CityLaila itinerary library</p></div><button class="btn primary" onclick="go('upload')">＋ New Upload</button></header>
+<div class="wrap">
+<section id="dashboard" class="page active">
+<div class="cards">
+<div class="stat"><small>HTML files</small><div class="n" id="total">—</div><small>From repository manifest</small></div>
+<div class="stat"><small>Last updated</small><div class="n" id="latest">—</div><small>Latest file change</small></div>
+<div class="stat"><small>Current month</small><div class="n" id="month">—</div><small>Folder planning</small></div>
+<div class="stat"><small>Data status</small><div class="n" id="status">…</div><small>Local manifest</small></div>
+</div>
+<div class="panel"><h2>⚡ Quick actions</h2><div class="toolbar">
+<button class="btn primary" onclick="go('upload')">Upload itineraries</button>
+<button class="btn ghost" onclick="go('months')">Manage months</button>
+<button class="btn ghost" onclick="go('files')">Browse all files</button>
+<a class="btn ghost" target="_blank" href="https://github.com/shamshad656/citylaila-itineraries">Open GitHub</a>
+</div></div>
+<div class="panel"><h2>🕐 Recently updated</h2><div id="recent"></div></div>
+</section>
+<section id="files" class="page">
+<div class="toolbar"><div class="search"><input id="q" placeholder="🔎 Search itinerary..." oninput="renderFiles()"></div><select id="sort" onchange="renderFiles()"><option value="new">Latest updated</option><option value="old">Oldest updated</option><option value="az">Name A–Z</option></select><button class="btn ghost" onclick="loadManifest()">↻ Refresh</button></div>
+<div class="panel"><div id="count" class="meta"></div><div style="overflow:auto"><table class="table"><thead><tr><th>Itinerary</th><th>Updated</th><th>Actions</th></tr></thead><tbody id="body"></tbody></table></div></div>
+</section>
+<section id="upload" class="page">
+<div class="notice">🔐 This dashboard never stores a GitHub Personal Access Token. The actual repository upload is performed by GitHub's own upload page.</div>
+<div class="panel"><h2>⬆️ Prepare new itinerary upload</h2><div id="drop" class="drop"><div style="font-size:30px">📄</div><h3>Drag & drop HTML files here</h3><p>or choose one or multiple .html files</p><input id="picker" type="file" accept=".html,text/html" multiple hidden><button class="btn primary" onclick="picker.click()">Choose HTML files</button></div><div id="uploads"></div></div>
+<div class="panel"><h2>📦 Target folder</h2><div class="toolbar"><select id="uy"></select><select id="um"></select></div><div class="notice ok">Recommended: <code>itineraries/2026/09-September/</code></div><button class="btn primary" onclick="openUpload()">Continue to GitHub Upload</button></div>
+</section>
+<section id="months" class="page">
+<div class="panel"><h2>🗂️ Month-wise archive</h2><p class="meta">Recommended structure keeps each year's itineraries separate.</p><div id="monthgrid" class="monthgrid"></div></div>
+<div class="panel"><h2>➕ Open a month folder</h2><div class="toolbar"><select id="fy"></select><select id="fm"></select><button class="btn primary" onclick="openFolder()">Open GitHub folder</button></div><p class="meta">Git does not keep empty folders; the folder appears after the first file is committed there.</p></div>
+</section>
+<section id="tools" class="page">
+<div class="panel"><h2>🛠️ Repository tools</h2><div class="toolbar">
+<button class="btn ghost" onclick="copyUrl()">📋 Copy Pages URL</button><a class="btn ghost" target="_blank" href="https://github.com/shamshad656/citylaila-itineraries/commits/main">🕐 Commit history</a><a class="btn ghost" target="_blank" href="https://github.com/shamshad656/citylaila-itineraries/actions">⚙️ Actions</a></div></div>
+<div class="panel"><h2>💡 Why this version works</h2><p>The dashboard reads <code>manifest.json</code> generated inside your repository by GitHub Actions. It does not call the public GitHub API from your browser, so API 403/rate-limit errors do not block the dashboard.</p></div>
+</section>
+</div></main></div>
 <script>
-const OWNER = "shamshad656";
-const REPO = "citylaila-itineraries";
-const BRANCH = "main";
-const API = `https://api.github.com/repos/${OWNER}/${REPO}/contents/`;
-
-let files = [];
-
-function esc(s){
-  return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-}
-
-function formatDate(d){
-  return new Intl.DateTimeFormat('en-IN',{
-    day:'2-digit',month:'short',year:'numeric',
-    hour:'2-digit',minute:'2-digit'
-  }).format(new Date(d));
-}
-
-async function getJson(url){
-  const r = await fetch(url,{headers:{Accept:'application/vnd.github+json'}});
-  if(!r.ok) throw new Error(`GitHub API error ${r.status}`);
-  return r.json();
-}
-
-/*
-  GitHub's normal repository view does not provide a sorting control.
-  This page uses the public GitHub API to discover HTML files and then
-  reads each file's latest commit date. No GitHub token is required for
-  a public repository.
-*/
-async function load(){
-  const status=document.getElementById('status');
-  try{
-    const contents=await getJson(`${API}?ref=${encodeURIComponent(BRANCH)}`);
-    const htmlFiles=contents.filter(x=>x.type==='file' && x.name.toLowerCase().endsWith('.html'));
-
-    status.textContent=`Found ${htmlFiles.length} itinerary HTML file${htmlFiles.length===1?'':'s'}. Reading update times…`;
-
-    // Read latest commit time for each HTML file. Limit concurrency to avoid
-    // hammering the public API.
-    const queue=[...htmlFiles];
-    const result=[];
-    const workers=Array.from({length:5},async()=>{
-      while(queue.length){
-        const f=queue.shift();
-        try{
-          const commits=await getJson(
-            `https://api.github.com/repos/${OWNER}/${REPO}/commits?path=${encodeURIComponent(f.path)}&sha=${encodeURIComponent(BRANCH)}&per_page=1`
-          );
-          result.push({
-            name:f.name,
-            path:f.path,
-            url:`https://${OWNER}.github.io/${REPO}/${f.path}`,
-            github:`https://github.com/${OWNER}/${REPO}/blob/${BRANCH}/${f.path}`,
-            updated:commits[0]?.commit?.committer?.date || commits[0]?.commit?.author?.date || null
-          });
-        }catch(e){
-          result.push({name:f.name,path:f.path,updated:null,
-            github:`https://github.com/${OWNER}/${REPO}/blob/${BRANCH}/${f.path}`});
-        }
-      }
-    });
-    await Promise.all(workers);
-
-    files=result;
-    render();
-    status.textContent=`${files.length} itinerary file${files.length===1?'':'s'} loaded • Last updated times are from GitHub commits`;
-  }catch(e){
-    status.innerHTML=`Could not load the GitHub file list. <b>${esc(e.message)}</b><br>
-    If you just uploaded this page, wait a few seconds and refresh.`;
-  }
-}
-
-function render(){
-  const q=document.getElementById('search').value.trim().toLowerCase();
-  const sort=document.getElementById('sort').value;
-  let arr=files.filter(f=>f.name.toLowerCase().includes(q));
-
-  if(sort==='new') arr.sort((a,b)=>(b.updated||'').localeCompare(a.updated||''));
-  if(sort==='old') arr.sort((a,b)=>(a.updated||'').localeCompare(b.updated||''));
-  if(sort==='az') arr.sort((a,b)=>a.name.localeCompare(b.name));
-
-  const list=document.getElementById('list');
-  if(!arr.length){
-    list.innerHTML='<div class="empty">No matching itineraries found.</div>';
-    return;
-  }
-
-  list.innerHTML=arr.map(f=>{
-    const live=f.updated ? formatDate(f.updated) : 'Update time unavailable';
-    return `<article class="card">
-      <div>
-        <div class="name">📄 ${esc(f.name)} ${f.updated?'<span class="badge">UPDATED</span>':''}</div>
-        <div class="meta">Last updated: ${esc(live)}</div>
-      </div>
-      <div class="actions">
-        <a class="btn open" href="${esc(f.url)}" target="_blank" rel="noopener">Open</a>
-        <a class="btn edit" href="${esc(f.github)}" target="_blank" rel="noopener">GitHub</a>
-      </div>
-    </article>`;
-  }).join('');
-}
-
-document.getElementById('search').addEventListener('input',render);
-document.getElementById('sort').addEventListener('change',render);
-load();
+const OWNER="shamshad656",REPO="citylaila-itineraries",BRANCH="main",BASE=`https://${OWNER}.github.io/${REPO}`;
+const months=["01-January","02-February","03-March","04-April","05-May","06-June","07-July","08-August","09-September","10-October","11-November","12-December"];
+let files=[],selected=[];
+function esc(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
+function fmt(d){if(!d)return"—";return new Intl.DateTimeFormat("en-IN",{day:"2-digit",month:"short",year:"numeric",hour:"2-digit",minute:"2-digit"}).format(new Date(d))}
+function go(p){document.querySelectorAll(".page").forEach(x=>x.classList.remove("active"));document.getElementById(p).classList.add("active");document.querySelectorAll(".nav button").forEach(x=>x.classList.toggle("active",x.dataset.page===p));let n={dashboard:["Dashboard","CityLaila itinerary library"],files:["All Itineraries","Search, sort and open every HTML itinerary"],upload:["Upload","Prepare new itinerary uploads"],months:["Month Manager","Plan your year/month archive"],tools:["Tools","Useful repository shortcuts"]};title.textContent=n[p][0];subtitle.textContent=n[p][1];if(p==="files")renderFiles();if(p==="months")renderMonths()}
+document.querySelectorAll(".nav button").forEach(b=>b.onclick=()=>go(b.dataset.page));
+async function loadManifest(){
+ try{let r=await fetch("./manifest.json?ts="+Date.now(),{cache:"no-store"});if(!r.ok)throw Error("manifest.json not found yet");files=await r.json();files.sort((a,b)=>(b.updated||"").localeCompare(a.updated||""));status.textContent="Ready";total.textContent=files.length;latest.textContent=files[0]?.updated?new Date(files[0].updated).toLocaleDateString("en-IN",{day:"2-digit",month:"short"}):"—";let d=new Date();month.textContent=months[d.getMonth()].split("-")[1];renderRecent();renderFiles()}catch(e){status.textContent="Waiting";recent.innerHTML=`<div class="notice">⚠️ ${esc(e.message)}<br><br>First, add the GitHub Action file supplied with this dashboard, commit it, then wait for the Action to generate <code>manifest.json</code>.</div>`}}
+function renderRecent(){let a=files.slice(0,10);recent.innerHTML=a.length?`<table class="table"><tbody>${a.map(f=>`<tr><td><div class="file">📄 ${esc(f.name)}</div><div class="meta">${esc(f.path)}</div></td><td>${fmt(f.updated)}</td><td><a class="mini" target="_blank" href="${esc(f.url)}">Open</a> <a class="mini" target="_blank" href="${esc(f.github)}">GitHub</a></td></tr>`).join("")}</tbody></table>`:"<div class='empty'>No itinerary files in manifest.</div>"}
+function renderFiles(){let q=(document.getElementById("q")?.value||"").toLowerCase(),s=document.getElementById("sort")?.value||"new",a=files.filter(f=>(f.name+" "+f.path).toLowerCase().includes(q));if(s==="new")a.sort((x,y)=>(y.updated||"").localeCompare(x.updated||""));if(s==="old")a.sort((x,y)=>(x.updated||"").localeCompare(y.updated||""));if(s==="az")a.sort((x,y)=>x.name.localeCompare(y.name));count.textContent=`Showing ${a.length} of ${files.length} HTML files`;body.innerHTML=a.map(f=>`<tr><td><div class="file">📄 ${esc(f.name)}</div><div class="meta">${esc(f.path)}</div></td><td>${fmt(f.updated)}</td><td><a class="mini" target="_blank" href="${esc(f.url)}">Open</a> <a class="mini" target="_blank" href="${esc(f.github)}">GitHub</a></td></tr>`).join("")}
+function fill(id,arr,sel){document.getElementById(id).innerHTML=arr.map(v=>`<option ${v===sel?"selected":""}>${v}</option>`).join("")}
+function init(){let y=new Date().getFullYear(),ys=[];for(let i=y-2;i<=y+3;i++)ys.push(String(i));fill("uy",ys,String(y));fill("fy",ys,String(y));fill("um",months,months[new Date().getMonth()]);fill("fm",months,months[new Date().getMonth()]);renderMonths()}
+function renderMonths(){let y=new Date().getFullYear();monthgrid.innerHTML=months.map(m=>`<div class="month"><b>📁 ${y}/${m}</b><small>itineraries/${y}/${m}/</small></div>`).join("")}
+picker.onchange=e=>{selected=[...e.target.files].filter(f=>f.name.toLowerCase().endsWith(".html"));showSelected()};drop.ondragover=e=>{e.preventDefault();drop.classList.add("drag")};drop.ondragleave=()=>drop.classList.remove("drag");drop.ondrop=e=>{e.preventDefault();drop.classList.remove("drag");selected=[...e.dataTransfer.files].filter(f=>f.name.toLowerCase().endsWith(".html"));showSelected()}
+function showSelected(){uploads.innerHTML=selected.length?selected.map((f,i)=>`<div class="fileitem"><b>📄 ${esc(f.name)}</b><span>${(f.size/1024).toFixed(1)} KB <button class="mini" onclick="selected.splice(${i},1);showSelected()">Remove</button></span></div>`).join(""):""}
+function openUpload(){if(!selected.length){alert("Please select at least one HTML file.");return}let y=uy.value,m=um.value;window.open(`https://github.com/${OWNER}/${REPO}/upload/${BRANCH}/itineraries/${y}/${m}`,"_blank")}
+function openFolder(){window.open(`https://github.com/${OWNER}/${REPO}/tree/${BRANCH}/itineraries/${fy.value}/${fm.value}`,"_blank")}
+function copyUrl(){navigator.clipboard.writeText(BASE+"/").then(()=>alert("GitHub Pages URL copied."))}
+init();loadManifest();
 </script>
-</body>
-</html>
+
+<script id="citylaila-lock-js">
+(function(){
+  const HASH="77230358bec277e5fcf7a1bdf6e639e7506000e0c94275d2320c022f9866cbf8";
+  const lock=document.getElementById("citylailaLock");
+  const input=document.getElementById("citylailaPassword");
+  const btn=document.getElementById("citylailaUnlock");
+  const error=document.getElementById("citylailaLockError");
+
+  async function sha256(text){
+    const data=new TextEncoder().encode(text);
+    const hash=await crypto.subtle.digest("SHA-256",data);
+    return Array.from(new Uint8Array(hash)).map(b=>b.toString(16).padStart(2,"0")).join("");
+  }
+
+  async function unlock(){
+    error.textContent="";
+    if(!input.value){ error.textContent="Please enter the password."; return; }
+    try{
+      const hash=await sha256(input.value);
+      if(hash===HASH){
+        lock.remove();
+        sessionStorage.setItem("citylaila_unlocked","1");
+      }else{
+        error.textContent="Incorrect password.";
+        input.select();
+      }
+    }catch(e){
+      error.textContent="Unable to verify password in this browser.";
+    }
+  }
+
+  btn.addEventListener("click",unlock);
+  input.addEventListener("keydown",e=>{if(e.key==="Enter")unlock();});
+  // Do not persist the password across browser sessions.
+  if(sessionStorage.getItem("citylaila_unlocked")==="1") lock.remove();
+})();
+</script>
+
+</body></html>
