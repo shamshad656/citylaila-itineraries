@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CityLaila | Georgia Tour Package 4N/5D | Gallery Palace Hotel</title>
+    <meta property="og:title" content="CityLaila | Georgia Tour Package 4N/5D | Gallery Palace Hotel">
+    <meta property="og:description" content="Explore your customized Georgia 4N/5D Tour itinerary with CityLaila.">
+    <meta property="og:image" content="https://packageimage.s3.ap-south-1.amazonaws.com/Georgia/image_1752671312.jpg">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0066cc;
+            --secondary: #ff6600;
+            --dark: #0A192F;
+            --light: #F8FAFC;
+            --gray: #718096;
+            --border: #E2E8F0;
+            --success: #38A169;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Montserrat', sans-serif; color: #2D3748; background-color: #F7FAFC; padding: 20px 0; }
+        
+        .slide {
+            width: 297mm;
+            height: 210mm;
+            max-height: 210mm;
+            page-break-after: always;
+            break-after: page;
+            break-inside: avoid;
+            position: relative;
+            background: #ffffff;
+            margin: 0 auto 30px auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            padding: 35px 45px 80px 45px;
+            overflow: hidden;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 12px;
+            margin-bottom: 16px;
+        }
+        .header .logo-container { display: flex; align-items: center; gap: 12px; }
+        .header .logo-img { max-height: 48px; width: auto; object-fit: contain; display: block; }
+        .header .tagline { font-size: 14px; color: var(--gray); font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 16px 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--border);
+            background: var(--light);
+            font-size: 14px;
+            color: var(--gray);
+            font-weight: 700;
+        }
+        .footer .contacts { display: flex; gap: 18px; }
+
+        /* COVER BG */
+        .cover-bg {
+            display: flex;
+            background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), 
+                        url('https://packageimage.s3.ap-south-1.amazonaws.com/Georgia/image_1752671312.jpg') #1a2a3a;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cover-card {
+            background: rgba(10, 25, 47, 0.65);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            padding: 35px 50px;
+            border-radius: 20px;
+            width: 88%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+        }
+        .cover-title { font-size: 34px; font-weight: 900; letter-spacing: 1px; color: #FFF; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+        .cover-subtitle { font-size: 16px; color: #ff9933; font-weight: 700; margin-bottom: 22px; letter-spacing: 1.5px; text-transform: uppercase; text-shadow: 0 1px 2px rgba(0,0,0,0.5); }
+        
+        .cover-highlights {
+            display: flex;
+            gap: 10px;
+            margin: 10px 0 20px 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .cover-tag {
+            background: rgba(255, 96, 0, 0.35);
+            border: 1px solid var(--secondary);
+            padding: 8px 18px;
+            font-size: 14.5px;
+            font-weight: 800;
+            border-radius: 20px;
+            color: #FFF;
+            backdrop-filter: blur(4px);
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 18px;
+            border-top: 1px solid rgba(255,255,255,0.25);
+            padding-top: 20px;
+            width: 100%;
+        }
+        .meta-grid-item h4 { font-size: 13px; color: #CBD5E1; text-transform: uppercase; margin-bottom: 4px; letter-spacing: 1px; }
+        .meta-grid-item p { font-size: 17px; font-weight: 800; color: white; }
+
+        .content-body { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+        .slide-title { font-size: 30px; font-weight: 900; color: var(--dark); margin-bottom: 18px; display: flex; align-items: center; gap: 12px; }
+        .slide-title span { color: var(--primary); }
+
+        .full-banner-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 14px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* TIMELINE OVERVIEW */
+        .timeline-container { display: flex; flex-direction: column; gap: 8px; }
+        .timeline-row { display: grid; grid-template-columns: 110px 1fr 220px; gap: 12px; align-items: center; padding: 9px 16px; background: white; border: 1px solid var(--border); border-radius: 10px; }
+        .timeline-row:nth-child(even) { background: var(--light); }
+        .timeline-day { font-weight: 900; font-size: 15px; color: var(--primary); }
+        .timeline-events { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+        .timeline-badge { background: #EBF8FF; color: #2B6CB0; font-size: 14px; font-weight: 700; padding: 5px 12px; border-radius: 6px; border: 1px solid #BEE3F8; }
+        .timeline-badge.highlight-attraction { background: #E6FFFA; color: #234E52; border: 1px solid #99F6E4; font-weight: 900; }
+        .timeline-stay { font-size: 15px; font-weight: 900; color: var(--dark); text-align: right; }
+
+        /* DAY LAYOUT WITH DUAL IMAGE CAROUSEL */
+        .day-layout { 
+            display: grid; 
+            grid-template-columns: 0.85fr 1.15fr; 
+            gap: 35px; 
+            flex: 1; 
+            align-items: stretch; 
+        }
+        
+        .day-info { 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: space-between; 
+            height: 100%; 
+        }
+        .day-badge { background: var(--secondary); color: white; padding: 9px 20px; font-weight: 900; border-radius: 6px; display: inline-block; width: fit-content; margin-bottom: 12px; font-size: 15.5px; letter-spacing: 1px; text-transform: uppercase; }
+        .day-title { font-size: 28px; font-weight: 900; color: var(--dark); margin-bottom: 10px; line-height: 1.25; }
+        .day-desc { font-size: 17px; color: #334155; line-height: 1.55; margin-bottom: 14px; font-weight: 600; }
+        
+        .tour-inclusion-box {
+            background: #F8FAFC;
+            border: 1px solid var(--border);
+            padding: 16px 20px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+        }
+        .tour-inclusion-box h4 {
+            font-size: 16px;
+            font-weight: 900;
+            color: #004499;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+        .day-timeline-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .day-timeline-list li {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1E293B;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: #FFFFFF;
+            padding: 11px 15px;
+            border-radius: 9px;
+            border: 1px solid var(--border);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+        }
+        .day-timeline-list li .emoji-icon {
+            font-size: 18px;
+            min-width: 26px;
+            text-align: center;
+        }
+
+        /* UNIVERSAL DYNAMIC CAROUSEL CONTAINER */
+        .day-image-container {
+            width: 100%;
+            height: 100%;
+            min-height: 480px;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+            border: 1px solid var(--border);
+            background-color: #0A192F;
+            position: relative;
+        }
+        .carousel-track {
+            display: flex;
+            height: 100%;
+            transition: transform 0.4s ease-in-out;
+            will-change: transform;
+        }
+        .carousel-slide {
+            height: 100%;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(10, 25, 47, 0.7);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 12px 14px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-weight: 900;
+            font-size: 14px;
+            z-index: 10;
+            backdrop-filter: blur(4px);
+            transition: background 0.2s;
+        }
+        .carousel-btn:hover { background: var(--primary); }
+        .carousel-btn.prev { left: 12px; }
+        .carousel-btn.next { right: 12px; }
+
+        /* CARDS & TABLES */
+        .card { background: #FFFFFF; border: 1px solid var(--border); padding: 35px 40px; border-radius: 22px; box-shadow: 0 8px 30px rgba(0,0,0,0.05); display: flex; flex-direction: column; gap: 18px; }
+        .meal-matrix-table { width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 16px; overflow: hidden; border: 2px solid var(--border); box-shadow: 0 8px 25px rgba(0,0,0,0.06); margin-bottom: 18px; }
+        .meal-matrix-table th { background: #0A192F; color: white; padding: 14px 20px; font-size: 14.5px; font-weight: 900; text-transform: uppercase; text-align: left; }
+        .meal-matrix-table td { padding: 12px 20px; font-size: 15px; border-bottom: 1.5px solid var(--border); background: white; font-weight: 800; }
+        .meal-matrix-table tr:nth-child(even) td { background: #F8FAFC; }
+        .meal-badge-included { background: #E6FFFA; color: #047481; padding: 5px 12px; border-radius: 6px; font-weight: 900; font-size: 14px; border: 1.5px solid #99F6E4; display: inline-block; }
+        .meal-badge-excluded { background: #EDF2F7; color: #718096; padding: 5px 12px; border-radius: 6px; font-weight: 800; font-size: 14px; border: 1.5px solid #99F6E4; display: inline-block; }
+
+        .price-layout { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 32px; align-items: stretch; flex: 1; }
+        .total-box { background: linear-gradient(135deg, #0A192F 0%, #1E3A8A 50%, #0F172A 100%); color: #FFFFFF !important; padding: 26px; border-radius: 16px; text-align: center; display: flex; flex-direction: column; justify-content: center; box-shadow: 0 12px 30px rgba(10, 25, 47, 0.35); border: 1px solid rgba(255, 215, 0, 0.3); flex: 1; }
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; flex: 1; align-items: stretch; }
+
+        .global-section { display: flex; flex-direction: column; gap: 14px; height: 100%; }
+        .map-and-contacts { display: grid; grid-template-columns: 2.1fr 1fr; gap: 18px; flex: 1; }
+        .locations-box { background: #F8FAFC; border-radius: 15px; padding: 16px; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); gap: 14px; border: 1px solid var(--border); height: 100%; }
+        .loc-card { position: relative; padding: 16px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.3); box-shadow: 0 4px 10px rgba(0,0,0,0.12); display: flex; flex-direction: column; justify-content: center; overflow: hidden; background-size: cover; background-position: center; background-repeat: no-repeat; background-color: #1A2A3A; }
+        .loc-card::before { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10, 25, 47, 0.45) 0%, rgba(10, 25, 47, 0.75) 100%); z-index: 1; }
+        .loc-card-title, .loc-card-info, .loc-card-custom { position: relative; z-index: 2; }
+        .loc-card-title { font-size: 15.5px; font-weight: 900; color: #FFFFFF; display: flex; align-items: center; gap: 6px; margin-bottom: 5px; text-shadow: 0 1px 3px rgba(0,0,0,0.8); }
+        .loc-card-info { font-size: 14px; color: #F1F5F9; font-weight: 700; line-height: 1.55; text-shadow: 0 1px 2px rgba(0,0,0,0.8); }
+        .inquiry-box { background: #0A192F; color: white; border-radius: 15px; padding: 20px; display: flex; flex-direction: column; justify-content: space-around; }
+        .features-bar { background: #0A192F; color: white; border-radius: 10px; padding: 13px; display: flex; justify-content: space-around; align-items: center; font-size: 13.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; }
+
+        @media print {
+            @page { size: A4 landscape; margin: 0; }
+            body { background: none; padding: 0; margin: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .slide { width: 297mm; height: 210mm; max-height: 210mm; page-break-after: always; break-after: page; break-inside: avoid; box-shadow: none; margin: 0; padding: 35px 45px 80px 45px; overflow: hidden; }
+            .carousel-btn { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SLIDE 1: COVER -->
+    <div class="slide cover-bg">
+        <div class="cover-card">
+            <div style="margin-bottom: 20px;">
+                <img src="images/logo.png" alt="CityLaila Logo" style="height: 110px; width: auto; object-fit: contain; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.4)); display: block;" onerror="this.outerHTML='<span style=\'font-size:34px;color:#FFF;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+
+            <h1 class="cover-title">🇬🇪 Georgia Tour Package – Gallery Palace Hotel</h1>
+            <div class="cover-subtitle">Tbilisi City Tour, Mtskheta, Ananuri Fortress, Gudauri, Kazbegi 4x4 Jeep & Kakheti Wine Tasting</div>
+            
+            <div class="cover-highlights">
+                <div class="cover-tag">🏨 Gallery Palace Hotel, Tbilisi (4 Nights, Bed & Breakfast)</div>
+                <div class="cover-tag">🚐 Mini Van with English-Speaking Driver</div>
+                <div class="cover-tag">🍷 KTW Wine Factory Tasting (5–6 Types of Wine)</div>
+            </div>
+
+            <div style="font-size: 15px; font-weight: 800; background: var(--secondary); display: inline-block; padding: 9px 26px; border-radius: 30px; letter-spacing: 1px; text-transform: uppercase; color: #FFF; margin-top: 6px;">Travel Period: 1st – 5th January • Group Size: 3 Pax • 4N/5D</div>
+            
+            <div class="meta-grid">
+                <div class="meta-grid-item">
+                    <h4>Duration</h4>
+                    <p>4 Nights / 5 Days</p>
+                </div>
+                <div class="meta-grid-item">
+                    <h4>Travelers</h4>
+                    <p>3 Pax</p>
+                </div>
+                <div class="meta-grid-item">
+                    <h4>Hotel Stay</h4>
+                    <p>Gallery Palace (4N)</p>
+                </div>
+                <div class="meta-grid-item">
+                    <h4>Grand Total</h4>
+                    <p>AED 3,999</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div>www.citylaila.com</div>
+            <div>Page 01</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 2: WHY BOOK WITH US -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:20px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+            <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+        <div class="content-body">
+            <img src="images/why_book_with_us_full.png" alt="Why Book With Us" class="full-banner-image" onerror="this.outerHTML='<div style=\'padding:40px;text-align:center;background:#F8FAFC;border-radius:12px;border:1px solid #E2E8F0;\'><h2>Why Book With CityLaila?</h2><p>Award Winning Service • 24/7 Dedicated Support • Handpicked Premium Hotels • Best Price Guarantee</p></div>'">
+        </div>
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>📞 +971 55 546 3698</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 02</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 3: ITINERARY OVERVIEW SUMMARY -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:22px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+            <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+
+        <div class="content-body">
+            <h2 class="slide-title" style="font-size: 28px; margin-bottom: 14px;">Itinerary Overview Summary <span>(All 5 Days)</span></h2>
+            
+            <div class="timeline-container">
+                <div class="timeline-row">
+                    <div class="timeline-day">Day 01 <span style="font-size:11px; color:var(--gray);">1 Jan</span></div>
+                    <div class="timeline-events"><span class="timeline-badge" style="background: #FFFFAF; color: #B7791F;">🛬 Arrival in Tbilisi, Driver Meet & Greet & Gallery Palace Check-in</span></div>
+                    <div class="timeline-stay">🏨 Gallery Palace Hotel</div>
+                </div>
+                <div class="timeline-row">
+                    <div class="timeline-day">Day 02 <span style="font-size:11px; color:var(--gray);">2 Jan</span></div>
+                    <div class="timeline-events"><span class="timeline-badge highlight-attraction">⛪ Mtskheta (Svetitskhoveli, Jvari) & Tbilisi City Tour (Narikala Cable Car 2-Way)</span></div>
+                    <div class="timeline-stay">🏨 Gallery Palace Hotel</div>
+                </div>
+                <div class="timeline-row">
+                    <div class="timeline-day">Day 03 <span style="font-size:11px; color:var(--gray);">3 Jan</span></div>
+                    <div class="timeline-events"><span class="timeline-badge highlight-attraction">🏔️ Jinvali Reservoir, Ananuri Castle, Gudauri Panorama & Kazbegi 4x4 Jeep Ride</span></div>
+                    <div class="timeline-stay">🏨 Gallery Palace Hotel</div>
+                </div>
+                <div class="timeline-row">
+                    <div class="timeline-day">Day 04 <span style="font-size:11px; color:var(--gray);">4 Jan</span></div>
+                    <div class="timeline-events"><span class="timeline-badge highlight-attraction">🍷 Kakheti Wine Region (KTW Tasting 5–6 Types), Bodbe Monastery & Signagi</span></div>
+                    <div class="timeline-stay">🏨 Gallery Palace Hotel</div>
+                </div>
+                <div class="timeline-row">
+                    <div class="timeline-day">Day 05 <span style="font-size:11px; color:var(--gray);">5 Jan</span></div>
+                    <div class="timeline-events"><span class="timeline-badge">🍳 Breakfast & Check-out</span><span class="timeline-badge highlight-attraction">🛫 Airport Departure Transfer</span></div>
+                    <div class="timeline-stay" style="color: var(--success);">✨ Tour Ends</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 03</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 4: HOTEL & STAY PROFILE -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:22px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+            <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+
+        <div class="content-body" style="justify-content: center;">
+            <h2 class="slide-title" style="font-size: 28px; margin-bottom: 18px;">Your Stay Experience <span>(Gallery Palace Hotel)</span></h2>
+            
+            <div style="display: flex; justify-content: center; align-items: stretch; width: 100%;">
+                <div class="card" style="width: 100%; padding: 28px 36px; border-radius: 22px; gap: 16px; background: #FFFFFF; border: 1.5px solid var(--border); box-shadow: 0 12px 35px rgba(0,0,0,0.05); position: relative; overflow: hidden;">
+                    
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 6px; background: linear-gradient(90deg, var(--primary), var(--secondary));"></div>
+
+                    <div style="background: linear-gradient(135deg, #0A192F 0%, #1E3A8A 100%); color: white; padding: 18px 24px; border-radius: 14px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 6px 20px rgba(10,25,47,0.12);">
+                        <div>
+                            <div style="display: flex; gap: 8px; margin-bottom: 5px;">
+                                <span style="background: rgba(255,102,0,0.3); border: 1px solid var(--secondary); color: #FFF; font-size: 11px; font-weight: 800; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 1px;">Confirmed Hotel</span>
+                                <span style="background: rgba(255,255,255,0.15); color: #FFD700; font-size: 11px; font-weight: 800; padding: 3px 10px; border-radius: 20px; text-transform: uppercase;">Bed & Breakfast</span>
+                            </div>
+                            <h3 style="font-size: 22px; font-weight: 900; color: #FFFFFF; margin: 0; text-shadow: 0 1px 3px rgba(0,0,0,0.3);">Gallery Palace Hotel, Tbilisi</h3>
+                            <p style="font-size: 13.5px; color: #CBD5E1; font-weight: 700; margin-top: 3px;">📍 Tbilisi, Georgia &nbsp;•&nbsp; 🗓️ 1st – 5th January</p>
+                        </div>
+                        <div style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.25); backdrop-filter: blur(6px); padding: 10px 16px; border-radius: 12px; text-align: center; flex-shrink: 0;">
+                            <span style="font-size: 10.5px; text-transform: uppercase; color: #CBD5E1; font-weight: 800; display: block;">Total Stay</span>
+                            <span style="font-size: 16px; font-weight: 900; color: #FFD700;">4 Nights</span>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;">
+                        <div style="background: #F8FAFC; border: 1px solid var(--border); padding: 12px 16px; border-radius: 12px; display: flex; align-items: center; gap: 12px;">
+                            <div style="font-size: 22px; background: #EBF8FF; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">🚐</div>
+                            <div>
+                                <span style="font-size: 11px; color: var(--gray); font-weight: 800; text-transform: uppercase; display: block;">Transportation</span>
+                                <span style="font-size: 14.5px; font-weight: 900; color: var(--dark);">Mini Van with English-Speaking Driver</span>
+                            </div>
+                        </div>
+
+                        <div style="background: #F8FAFC; border: 1px solid var(--border); padding: 12px 16px; border-radius: 12px; display: flex; align-items: center; gap: 12px;">
+                            <div style="font-size: 22px; background: #E6FFFA; width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">👥</div>
+                            <div>
+                                <span style="font-size: 11px; color: var(--gray); font-weight: 800; text-transform: uppercase; display: block;">Group Size</span>
+                                <span style="font-size: 14.5px; font-weight: 900; color: var(--dark);">3 Pax (3 Adults)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%); border: 1.5px solid #BAE6FD; padding: 12px 18px; border-radius: 12px; display: flex; justify-content: space-between; align-items: center;">
+                        <div style="font-size: 13.5px; font-weight: 900; color: #0369A1;">
+                            ✨ <b>Note:</b> Includes 2-way cable car, Gergeti 4x4 Jeep ride, and KTW wine tasting (5–6 types).
+                        </div>
+                        <span style="font-size: 12px; font-weight: 800; color: #0284C7; background: #BAE6FD; padding: 3px 10px; border-radius: 6px;">⭐ Confirmed Stay</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 04</div>
+        </div>
+    </div>
+
+    <!-- UNIVERSAL DYNAMIC CAROUSEL SCRIPT -->
+    <script>
+        function moveSlide(trackId, direction) {
+            const track = document.getElementById(trackId);
+            const slides = track.querySelectorAll('.carousel-slide');
+            const totalSlides = slides.length;
+            if (totalSlides <= 1) return;
+
+            let index = parseInt(track.dataset.index || 0);
+            index += direction;
+
+            if (index < 0) index = totalSlides - 1;
+            if (index >= totalSlides) index = 0;
+
+            track.dataset.index = index;
+            track.style.transform = `translateX(-${index * (100 / totalSlides)}%)`;
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.carousel-track').forEach(track => {
+                const slides = track.querySelectorAll('.carousel-slide');
+                const count = slides.length;
+                track.style.width = `${count * 100}%`;
+                slides.forEach(slide => {
+                    slide.style.width = `${100 / count}%`;
+                    slide.style.minWidth = `${100 / count}%`;
+                });
+            });
+        });
+    </script>
+
+    <!-- SLIDE 5: DAY 1 -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:20px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+            <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+        <div class="content-body">
+            <div class="day-layout">
+                <div class="day-info">
+                    <div>
+                        <div class="day-badge">DAY 1 – 1 JAN | ARRIVAL IN TBILISI</div>
+                        <h3 class="day-title">Arrival in Tbilisi & Hotel Check-in</h3>
+                        <p class="day-desc">Arrival at Tbilisi International Airport, meet and greet by the driver, transfer to Gallery Palace Hotel, check-in, and rest of the day at leisure.</p>
+                        
+                        <div class="tour-inclusion-box">
+                            <h4>Included Highlights & Services (Dual Images):</h4>
+                            <ul class="day-timeline-list">
+                                <li><span class="emoji-icon">🛬</span> <span>Arrival at Tbilisi International Airport on 1st January</span></li>
+                                <li><span class="emoji-icon">🚐</span> <span>Meet and greet by driver & transfer to Gallery Palace Hotel, Tbilisi</span></li>
+                                <li><span class="emoji-icon">🏨</span> <span>Check-in and relax at the hotel</span></li>
+                                <li><span class="emoji-icon">🌙</span> <span>Rest of the day at leisure (Overnight at Gallery Palace)</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- DUAL IMAGE CAROUSEL -->
+                <div class="day-image-container">
+                    <div class="carousel-track" id="track-day1" data-index="0">
+                        <div class="carousel-slide"><img src="https://eurasianet.org/sites/default/files/styles/article/public/2023-06/tav%20tbilisi%20airport.jpg?h=3f560db1&itok=A_Aetqrf" alt="Tbilisi Airport Arrival"></div>
+                        <div class="carousel-slide"><img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/125164787.jpg?k=d72099f94a25495b6d37b00d233d96a14da6a47d029c9707f092427bc9c5a553&o=" alt="Gallery Palace Hotel Tbilisi"></div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="moveSlide('track-day1', -1)">❮</button>
+                    <button class="carousel-btn next" onclick="moveSlide('track-day1', 1)">❯</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 05</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 6: DAY 2 -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:20px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+            <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+        <div class="content-body">
+            <div class="day-layout">
+                <div class="day-info">
+                    <div>
+                        <div class="day-badge">DAY 2 – 2 JAN | MTSKHETA & TBILISI TOUR</div>
+                        <h3 class="day-title">Mtskheta Excursion & Tbilisi City Tour</h3>
+                        <p class="day-desc">Morning excursion to Mtskheta (Svetitskhoveli & Jvari), followed by an afternoon Tbilisi city tour covering Old Tbilisi landmarks and Narikala Cable Car 2-way.</p>
+                        
+                        <div class="tour-inclusion-box">
+                            <h4>Included Highlights & Services (Dual Images):</h4>
+                            <ul class="day-timeline-list">
+                                <li><span class="emoji-icon">🍳</span> <span>Breakfast at the hotel</span></li>
+                                <li><span class="emoji-icon">⛪</span> <span>Mtskheta Excursion: Svetitskhoveli Cathedral & Jvari Monastery</span></li>
+                                <li><span class="emoji-icon">🏙️</span> <span>Metekhi Church, Old Baths, Meidani Square, Shardeni Street, Clock Tower, Anchiskhati, Peace Bridge & Narikala Fortress (Cable Car 2-way)</span></li>
+                                <li><span class="emoji-icon">🌙</span> <span>Holy Trinity Cathedral (Sameba) & return to hotel</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- DUAL IMAGE CAROUSEL -->
+                <div class="day-image-container">
+                    <div class="carousel-track" id="track-day2" data-index="0">
+                        <div class="carousel-slide"><img src="https://storage.georgia.travel/images/svetitskhoveli-cathedral-gnta.webp" alt="Svetitskhoveli Cathedral Mtskheta"></div>
+                        <div class="carousel-slide"><img src="https://cdn.georgia.to/img/thumbnails/39zZAYpdGbPcagcmuYUnY4_medium.jpg" alt="Old Tbilisi City Tour"></div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="moveSlide('track-day2', -1)">❮</button>
+                    <button class="carousel-btn next" onclick="moveSlide('track-day2', 1)">❯</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 06</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 7: DAY 3 -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:20px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+            <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+        <div class="content-body">
+            <div class="day-layout">
+                <div class="day-info">
+                    <div>
+                        <div class="day-badge">DAY 3 – 3 JAN | ANANURI, GUDAURI & KAZBEGI</div>
+                        <h3 class="day-title">Ananuri, Gudauri & Kazbegi Mountain Tour</h3>
+                        <p class="day-desc">After breakfast, full-day excursion towards the Greater Caucasus Mountains covering Jinvali Reservoir, Ananuri Castle, Gudauri Panorama, and Gergeti 4x4 Jeep.</p>
+                        
+                        <div class="tour-inclusion-box">
+                            <h4>Included Highlights & Services (Dual Images):</h4>
+                            <ul class="day-timeline-list">
+                                <li><span class="emoji-icon">🍳</span> <span>Breakfast at the hotel</span></li>
+                                <li><span class="emoji-icon">🏰</span> <span>Jinvali Reservoir & Ananuri Castle</span></li>
+                                <li><span class="emoji-icon">🏔️</span> <span>Black & White Aragvi Rivers confluence & Gudauri Panorama (Friendship Monument)</span></li>
+                                <li><span class="emoji-icon">🚙</span> <span>Kazbegi Village & 4x4 Jeep transfer to Gergeti Trinity Church</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- DUAL IMAGE CAROUSEL -->
+                <div class="day-image-container">
+                    <div class="carousel-track" id="track-day3" data-index="0">
+                        <div class="carousel-slide"><img src="https://img.avianexperiences.com/attractions/d16f1332-775f-43aa-807e-0cb47be7b295" alt="Ananuri Castle Reservoir"></div>
+                        <div class="carousel-slide"><img src="https://eurasia.travel/wp-content/uploads/2025/04/11.-Bodbe-Monastery.jpg" alt="Kazbegi Gergeti Trinity Church"></div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="moveSlide('track-day3', -1)">❮</button>
+                    <button class="carousel-btn next" onclick="moveSlide('track-day3', 1)">❯</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 07</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 8: DAY 4 -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:20px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+            <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+        <div class="content-body">
+            <div class="day-layout">
+                <div class="day-info">
+                    <div>
+                        <div class="day-badge">DAY 4 – 4 JAN | KAKHETI WINE REGION & SIGNAGI</div>
+                        <h3 class="day-title">Kakheti Wine Tasting, Bodbe & Signagi</h3>
+                        <p class="day-desc">After breakfast, proceed to Kakheti Wine Region for KTW wine tasting (5–6 types), visit Bodbe Monastery, and explore Signagi, the "City of Love".</p>
+                        
+                        <div class="tour-inclusion-box">
+                            <h4>Included Highlights & Services (Dual Images):</h4>
+                            <ul class="day-timeline-list">
+                                <li><span class="emoji-icon">🍳</span> <span>Breakfast at the hotel</span></li>
+                                <li><span class="emoji-icon">🍷</span> <span>Visit KTW Wine Factory & enjoy 5–6 types of Georgian wine tasting</span></li>
+                                <li><span class="emoji-icon">⛪</span> <span>Visit historic Bodbe Monastery</span></li>
+                                <li><span class="emoji-icon>🏘️</span> <span>Explore Signagi ("City of Love") & panoramic views of Alazani Valley</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- DUAL IMAGE CAROUSEL -->
+                <div class="day-image-container">
+                    <div class="carousel-track" id="track-day4" data-index="0">
+                        <div class="carousel-slide"><img src="https://georgia24.ge/images/uploads/176338893472576.webp" alt="Georgian Wine Tasting"></div>
+                        <div class="carousel-slide"><img src="https://www.winetourism.com/files/2021/09/ktw-wine-house-patardzeuli-wine-display.jpg" alt="Signagi City of Love"></div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="moveSlide('track-day4', -1)">❮</button>
+                    <button class="carousel-btn next" onclick="moveSlide('track-day4', 1)">❯</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 08</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 9: DAY 5 -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:20px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+            <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+        <div class="content-body">
+            <div class="day-layout">
+                <div class="day-info">
+                    <div>
+                        <div class="day-badge" style="background: var(--success);">DAY 5 – 5 JAN | DEPARTURE</div>
+                        <h3 class="day-title">Departure from Tbilisi</h3>
+                        <p class="day-desc">Breakfast at the hotel, check out, and transfer to Tbilisi International Airport according to your flight schedule. Tour concludes with beautiful memories!</p>
+                        
+                        <div class="tour-inclusion-box">
+                            <h4>Departure Services (Dual Images):</h4>
+                            <ul class="day-timeline-list">
+                                <li><span class="emoji-icon">🍳</span> <span>Breakfast at Gallery Palace Hotel, Tbilisi</span></li>
+                                <li><span class="emoji-icon">🧳</span> <span>Check-out from the hotel</span></li>
+                                <li><span class="emoji-icon">🚐</span> <span>Transfer to Tbilisi International Airport according to flight schedule</span></li>
+                                <li><span class="emoji-icon">🛫</span> <span>Tour concludes with beautiful memories of Georgia!</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- DUAL IMAGE CAROUSEL -->
+                <div class="day-image-container">
+                    <div class="carousel-track" id="track-day5" data-index="0">
+                        <div class="carousel-slide"><img src="https://m.media-amazon.com/images/I/71nXbtmuQlL.jpg" alt="Tbilisi Airport Departure"></div>
+                        <div class="carousel-slide"><img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=800&q=80" alt="Flight Departure Sky"></div>
+                    </div>
+                    <button class="carousel-btn prev" onclick="moveSlide('track-day5', -1)">❮</button>
+                    <button class="carousel-btn next" onclick="moveSlide('track-day5', 1)">❯</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 09</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 10: DEDICATED MEAL MATRIX -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:22px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+            <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+
+        <div class="content-body">
+            <h2 class="slide-title">Complete <span>Day-Wise Meal Plan Summary</span></h2>
+            
+            <table class="meal-matrix-table">
+                <thead>
+                    <tr>
+                        <th style="width: 25%;">Day & Date</th>
+                        <th style="width: 25%;">Breakfast Plan</th>
+                        <th style="width: 25%;">Lunch Arrangement</th>
+                        <th style="width: 25%;">Dinner Plan & Venue</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><b>Day 1 (1 Jan)</b></td><td><span class="meal-badge-excluded">Arrival Day</span></td><td><span class="meal-badge-excluded">Direct Payment</span></td><td><span class="meal-badge-excluded">Direct Payment</span></td></tr>
+                    <tr><td><b>Day 2 (2 Jan)</b></td><td><span class="meal-badge-included">✓ Included (Hotel)</span></td><td><span class="meal-badge-excluded">Direct Payment</span></td><td><span class="meal-badge-excluded">Direct Payment</span></td></tr>
+                    <tr><td><b>Day 3 (3 Jan)</b></td><td><span class="meal-badge-included">✓ Included (Hotel)</span></td><td><span class="meal-badge-excluded">Direct Payment</span></td><td><span class="meal-badge-excluded">Direct Payment</span></td></tr>
+                    <tr><td><b>Day 4 (4 Jan)</b></td><td><span class="meal-badge-included">✓ Included (Hotel)</span></td><td><span class="meal-badge-excluded">Direct Payment</span></td><td><span class="meal-badge-excluded">Direct Payment</span></td></tr>
+                    <tr><td><b>Day 5 (5 Jan)</b></td><td><span class="meal-badge-included">✓ Included (Hotel)</span></td><td><span class="meal-badge-excluded">Departure Day</span></td><td><span class="meal-badge-excluded">Departure Day</span></td></tr>
+                </tbody>
+            </table>
+
+            <div style="background: #EBF8FF; border: 1.5px solid #BEE3F8; border-radius: 12px; padding: 12px 18px; font-size: 14.5px; color: #2B6CB0; font-weight: 700;">
+                💡 <b>Meal Note:</b> Daily breakfast is included at Gallery Palace Hotel. Lunches and dinners are on direct payment basis. 2 bottles of water per person per day are provided.
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 10</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 11: INCLUSIONS & EXCLUSIONS -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" src="images/logo.png" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:22px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'">
+            </div>
+            <div class="tagline" style="font-size: 15px; font-weight: 800;">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+
+        <div class="content-body" style="justify-content: center;">
+            <h2 class="slide-title" style="font-size: 30px; font-weight: 900; margin-bottom: 18px;">Trip <span>Inclusions & Exclusions Breakdown</span></h2>
+            
+            <div class="two-col" style="gap: 30px;">
+                <!-- Inclusions Card -->
+                <div class="card" style="background: #FFFFFF; border: 1px solid var(--border); border-top: 6px solid #38A169; padding: 25px 30px; gap: 14px;">
+                    <div>
+                        <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid #E6FFFA; padding-bottom: 10px; margin-bottom: 12px;">
+                            <span style="background: #E6FFFA; color: #276749; font-size: 18px; padding: 6px 12px; border-radius: 8px; font-weight: 900;">✅</span>
+                            <h3 style="color: #276749; font-size: 19px; font-weight: 900; border: none; padding: 0; margin: 0;">What's Included In Package</h3>
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; gap: 8px; font-size: 17px; color: #2D3748; line-height: 1.4; font-weight: 700;">
+                            <div><b>🏨 Accommodation:</b> 4 nights' accommodation at Gallery Palace Hotel, Tbilisi with daily breakfast</div>
+                            <div><b>🚐 Transport:</b> Transportation as per program by Mini Van with English-speaking driver (Driver only, NOT a Guide)</div>
+                            <div><b>🍷 Special Experiences:</b> Tbilisi Cable Car 2-way ticket, 4x4 Jeep transfer to Gergeti Trinity Church & wine tasting at KTW Wine Factory (5–6 types)</div>
+                            <div><b>💧 Extras:</b> 2 bottles of water per person per day & all airport/sightseeing transfers</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Exclusions Card -->
+                <div class="card" style="background: #FFF5F5; border: 1px solid #FEB2B2; border-top: 6px solid #E53E3E; padding: 25px 30px; gap: 14px;">
+                    <div>
+                        <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid #FED7D7; padding-bottom: 10px; margin-bottom: 12px;">
+                            <span style="background: #FED7D7; color: #9B2C2C; font-size: 18px; padding: 6px 12px; border-radius: 8px; font-weight: 900;">❌</span>
+                            <h3 style="color: #9B2C2C; font-size: 19px; font-weight: 900; border: none; padding: 0; margin: 0;">What's Excluded From Package</h3>
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; gap: 8px; font-size: 17px; color: #334155; line-height: 1.45; font-weight: 700;">
+                            <div><b>🍽️ Meals:</b> Lunches and dinners</div>
+                            <div><b>🛡️ Personal:</b> Personal expenses, shopping and laundry</div>
+                            <div><b>📌 Misc:</b> Optional activities, tips, porterage and incidental expenses</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 10</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 12: PACKAGE PRICE SUMMARY -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:22px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'" src="images/logo.png">
+            </div>
+            <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+
+        <div class="content-body">
+            <h2 class="slide-title">Package <span>Price Summary & Breakdown</span></h2>
+            
+            <div class="price-layout">
+                <div style="display: flex; flex-direction: column; justify-content: space-between; gap: 18px;">
+                    <div class="total-box">
+                        <span style="font-size: 15px; text-transform: uppercase; letter-spacing: 2px; color: #F59E0B; font-weight: 800; margin-bottom: 6px;">GRAND TOTAL PACKAGE PRICE</span>
+                        <div style="font-size: 34px; font-weight: 900; color: #FFFFFF; margin-bottom: 4px; text-shadow: 0 2px 10px rgba(0,0,0,0.5);">AED 3,999</div>
+                        <p style="font-size: 14px; font-weight: 700; color: #FDE047;">For 3 Pax • 4N/5D Georgia New Year Holiday</p>
+                    </div>
+                    
+                    <div style="background: #FFFFFF; border: 1px solid var(--border); border-radius: 16px; padding: 18px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+                        <div>
+                            <h4 style="font-size: 16px; font-weight: 900; color: var(--dark);">Scan to Pay</h4>
+                            <p style="font-size: 13px; color: var(--gray); font-weight: 600; margin-top: 2px;">Secure payment via Gateway or Wire.</p>
+                        </div>
+                        <div style="background: #F8FAFC; padding: 6px; border-radius: 10px; border: 1px solid var(--border);">
+                            <img src="images/payment-qr.jpg" alt="QR" style="width: 100px; height: 100px;" onerror="this.outerHTML='<div style=\'width:100px;height:100px;background:#F8FAFC;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:10px;color:gray;text-align:center;padding:5px;\'>[QR CODE]</div>'">
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: column; justify-content: space-between; gap: 18px;">
+                    <div style="background: #F8FAFC; border: 1px solid var(--border); border-left: 5px solid var(--primary); padding: 20px; border-radius: 16px;">
+                        <h4 style="font-size: 16px; font-weight: 900; color: var(--dark); text-transform: uppercase; margin-bottom: 8px;">📊 Itemized Fare Breakdown</h4>
+                        <div style="display: flex; flex-direction: column; gap: 8px; font-size: 15px;">
+                            <div style="display: flex; justify-content: space-between; padding: 9px 12px; background: #FFF; border-radius: 6px; border: 1px solid var(--border);">
+                                <span><b>Gallery Palace (4N) + Mini Van & All Tours:</b></span> <b>Included</b>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 9px 12px; background: #E6FFFA; border-radius: 6px; border: 1.5px solid #99F6E4; color: #047481; font-weight: 900; font-size: 15.5px;">
+                                <span>Grand Total Payable:</span> <span>AED 3,999</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: #FFFDF5; border: 1px solid #FEFCBF; border-left: 5px solid #D69E2E; padding: 18px; border-radius: 16px;">
+                        <h4 style="font-size: 15px; font-weight: 900; color: #B7791F; text-transform: uppercase; margin-bottom: 6px;">📜 Operational Policies</h4>
+                        <ul style="font-size: 15px; color: #4A5568; line-height: 1.4; padding-left: 15px;">
+                            <li><b>Travel Period:</b> 1st – 5th January.</li>
+                            <li><b>Group Size:</b> 3 Pax at Gallery Palace Hotel.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 11</div>
+        </div>
+    </div>
+
+    <!-- SLIDE 13: GLOBAL PRESENCE & CONTACT US -->
+    <div class="slide">
+        <div class="header">
+            <div class="logo-container">
+                <img class="logo-img" alt="CityLaila Logo" onerror="this.outerHTML='<span style=\'font-size:22px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'" src="images/logo.png">
+            </div>
+            <div class="tagline" style="font-size: 13.5px; font-weight: 800;">WHERE LUXURY MEETS AFFORDABILITY</div>
+        </div>
+
+        <div class="content-body">
+            <h2 class="slide-title" style="font-size: 28px; font-weight: 900; margin-bottom: 14px;">📍 Global Presence <span style="color: var(--primary);">& Contact Us</span></h2>
+            
+            <div class="global-section" style="display: flex; flex-direction: column; gap: 14px; height: 100%;">
+                <div class="map-and-contacts" style="display: grid; grid-template-columns: 2.1fr 1fr; gap: 18px; flex: 1;">
+                    <div class="locations-box" style="padding: 16px; gap: 12px;">
+                        <div class="loc-card" style="background-image: url('https://cdn.britannica.com/17/102117-050-1B43B4B4/mosque-Abu-al--Abbas-al-Mursi-Egypt-Alexandria.jpg'); padding: 16px;">
+                            <div class="loc-card-title">🇪🇬 Alexandria, Egypt</div>
+                            <div class="loc-card-info">✉️ info@citylaila.com<br>📞 +20 112 909 0043</div>
+                        </div>
+
+                        <div class="loc-card" style="background-image: url('https://media.assettype.com/outlooktraveller/2024-07/34203ad1-fd27-4b76-b45b-ef066154f574/Ras%20Al%20Khaimah?w=1200&auto=format%2Ccompress&fit=max&format=webp&dpr=1.0'); padding: 16px;">
+                            <div class="loc-card-title">🇦🇪 Ras Al-Khaimah, UAE</div>
+                            <div class="loc-card-info">✉️ info@citylaila.com<br>📞 +971 52 674 6682</div>
+                        </div>
+
+                        <div class="loc-card" style="background-image: url('images/countries/dubai.jpg'); padding: 16px;">
+                            <div class="loc-card-title">🇦🇪 Dubai, UAE</div>
+                            <div class="loc-card-info">✉️ info@citylaila.com<br>📞 +971 50 680 0227</div>
+                        </div>
+
+                        <div class="loc-card" style="background-image: url('https://ayxhtlzyhpsjykxxnqqh.supabase.co/storage/v1/object/public/area_images/hsr-layout-bangalore/image-5.jpg'); padding: 16px;">
+                            <div class="loc-card-title">🇮🇳 Bangalore, India</div>
+                            <div class="loc-card-info">✉️ info@citylaila.com<br>📞 +91 95910 52942</div>
+                        </div>
+
+                        <div class="loc-card" style="background-image: url('images/countries/singapore.webp'); padding: 16px;">
+                            <div class="loc-card-title">🇸🇬 Singapore City</div>
+                            <div class="loc-card-info">✉️ info@citylaila.com<br>📞 +65 9231 0720</div>
+                        </div>
+
+                        <div class="loc-card" style="background-image: url('images/countries/global.avif'); text-align: center; align-items: center; padding: 16px;">
+                            <div class="loc-card-custom">
+                                <span style="font-size: 13.5px; font-weight: 900; color: #FFD700; display: block; text-shadow: 0 1px 3px #000;">🌐 GLOBAL NETWORK</span>
+                                <span style="font-size: 11.5px; font-weight: 800; color: #F1F5F9; margin-top: 3px; display: block; text-shadow: 0 1px 2px #000;">Expanding across 44+ countries</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inquiry-box" style="background: #0A192F; color: white; border-radius: 15px; padding: 20px; display: flex; flex-direction: column; justify-content: space-around; border: 1px solid rgba(255,255,255,0.15);">
+                        <div class="inquiry-title" style="font-size: 14.5px; font-weight: 900; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 8px; color: #FFD700; text-transform: uppercase; letter-spacing: 0.5px;">
+                            🎧 Instant Tour Concierge
+                        </div>
+                        
+                        <div style="display: flex; flex-direction: column; gap: 10px; margin: 8px 0;">
+                            <div class="inquiry-item" style="display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.06); padding: 10px; border-radius: 9px;">
+                                <div class="inquiry-icon" style="background: var(--primary); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">🌐</div>
+                                <div class="inquiry-details">
+                                    <h5 style="font-size: 11.5px; font-weight: 900; color: #63B3ED; text-transform: uppercase;">For B2B Partnerships</h5>
+                                    <p style="font-size: 11px; font-weight: 700; color: #F1F5F9; margin-top: 2px;">b2b@citylaila.com • +971 4 4451 625</p>
+                                </div>
+                            </div>
+
+                            <div class="inquiry-item" style="display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.06); padding: 10px; border-radius: 9px;">
+                                <div class="inquiry-icon" style="background: var(--secondary); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">📢</div>
+                                <div class="inquiry-details">
+                                    <h5 style="font-size: 11.5px; font-weight: 900; color: #FF9933; text-transform: uppercase;">Marketing & Media</h5>
+                                    <p style="font-size: 11px; font-weight: 700; color: #F1F5F9; margin-top: 2px;">marketing@citylaila.com</p>
+                                </div>
+                            </div>
+
+                            <div class="inquiry-item" style="display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.06); padding: 10px; border-radius: 9px;">
+                                <div class="inquiry-icon" style="background: var(--success); width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">💬</div>
+                                <div class="inquiry-details">
+                                    <h5 style="font-size: 11.5px; font-weight: 900; color: #68D391; text-transform: uppercase;">Direct Traveler Desk</h5>
+                                    <p style="font-size: 11px; font-weight: 700; color: #F1F5F9; margin-top: 2px;">info@citylaila.com • +971 55 536 5508</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="background: rgba(255,215,0,0.15); border: 1.5px solid rgba(255,215,0,0.4); border-radius: 9px; padding: 8px; text-align: center; font-size: 12px; font-weight: 800; color: #FFD700;">
+                            ⚡ Fast Response Guarantee
+                        </div>
+                    </div>
+                </div>
+
+                <div class="branches-and-reach" style="display: grid; grid-template-columns: 0.9fr 2.1fr; gap: 12px; margin-top: 3.3px;">
+                    <div class="coming-soon-card" style="background: #F8FAFC; border-radius: 12px; padding: 12px; border: 1px solid var(--border);">
+                        <h4 style="font-size: 12.5px; font-weight: 900; color: var(--dark); margin-bottom: 5px; text-transform: uppercase;">🆕 Upcoming Global Hubs</h4>
+                        <div class="coming-soon-list" style="display: grid; grid-template-columns: 1.1fr 1fr; gap: 4px; font-size: 12px; font-weight: 800; color: var(--gray);">
+                            <div>1. Russia</div><div>2. UK</div><div>3. USA</div><div>4. South Africa</div>
+                        </div>
+                    </div>
+
+                    <div class="global-reach-card" style="background: linear-gradient(135deg, #EBF8FF 0%, #E6FFFA 100%); border: 1.5px solid #BEE3F8; border-radius: 12px; padding: 12px 16px;">
+                        <h4 style="font-size: 13px; font-weight: 900; color: #2B6CB0; margin-bottom: 3px;">🌍 Guaranteed Best Tour Rates in 44+ Countries Globally</h4>
+                        <p style="font-size: 11.5px; color: #2D3748; line-height: 1.4; font-weight: 700; margin: 0;">
+                            Georgia, Armenia, Vietnam, Azerbaijan, Turkey, Oman, India, UAE, Egypt, Uzbekistan, Indonesia, UK, USA, Singapore, Kazakhstan, Italy, Switzerland, Japan, South Korea, China, Australia & more.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="features-bar" style="background: #0A192F; color: white; border-radius: 10px; padding: 11px 14px; display: flex; justify-content: space-around; align-items: center; font-size: 11.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; border: 1.5px solid rgba(255,255,255,0.15);">
+                    <div>📍 Global Footprint</div>
+                    <div>🏆 100K+ Happy Guests</div>
+                    <div>🎧 24/7 Live Support</div>
+                    <div>🛡️ Policies & Protection</div>
+                    <div>🧳 Tailored Experiences</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+            <div>Page 12</div>
+        </div>
+    </div>
+</body>
+</html>
