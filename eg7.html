@@ -1,0 +1,3008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CityLaila | Cairo & Alexandria Holiday 4N/5D | Nile Jewel Aquapark</title>
+
+    <meta property="og:title" content="CityLaila | Cairo & Alexandria Holiday 4N/5D | Nile Jewel Aquapark">
+    <meta property="og:description" content="Customized Cairo & Alexandria 4 Nights / 5 Days holiday itinerary with CityLaila.">
+    <meta property="og:image" content="https://www.touristegypt.com/wp-content/uploads/2023/03/giza-pyramids-cairo-egypt-with-palm.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #0066cc;
+            --secondary: #ff6600;
+            --dark: #0A192F;
+            --light: #F8FAFC;
+            --gray: #718096;
+            --border: #E2E8F0;
+            --success: #38A169;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #2D3748;
+            background-color: #F7FAFC;
+            padding: 20px 0;
+        }
+
+        /* =========================
+           MASTER A4 LANDSCAPE SLIDE
+           ========================= */
+
+        .slide {
+            width: 297mm;
+            height: 210mm;
+            max-height: 210mm;
+            page-break-after: always;
+            break-after: page;
+            break-inside: avoid;
+            position: relative;
+            background: #FFFFFF;
+            margin: 0 auto 30px auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            padding: 35px 45px 80px 45px;
+            overflow: hidden;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 12px;
+            margin-bottom: 16px;
+            flex-shrink: 0;
+        }
+
+        .header .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .header .logo-img {
+            max-height: 48px;
+            width: auto;
+            object-fit: contain;
+            display: block;
+        }
+
+        .header .tagline {
+            font-size: 14px;
+            color: var(--gray);
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 16px 45px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--border);
+            background: var(--light);
+            font-size: 14px;
+            color: var(--gray);
+            font-weight: 700;
+        }
+
+        .footer .contacts {
+            display: flex;
+            gap: 18px;
+        }
+
+        .content-body {
+            flex: 1;
+            min-height: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* =========================
+           COVER
+           ========================= */
+
+        .cover-bg {
+            display: flex;
+            background:
+                linear-gradient(rgba(0,0,0,0.42), rgba(0,0,0,0.58)),
+                url('https://www.touristegypt.com/wp-content/uploads/2023/03/giza-pyramids-cairo-egypt-with-palm.jpg') #1A2A3A;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #FFFFFF;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cover-card {
+            background: rgba(10,25,47,0.67);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.25);
+            padding: 32px 46px;
+            border-radius: 20px;
+            width: 88%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+        }
+
+        .cover-title {
+            font-size: 34px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            color: #FFFFFF;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .cover-subtitle {
+            font-size: 16px;
+            color: #FF9933;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .cover-highlights {
+            display: flex;
+            gap: 10px;
+            margin: 8px 0 18px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .cover-tag {
+            background: rgba(255,96,0,0.35);
+            border: 1px solid var(--secondary);
+            padding: 8px 17px;
+            font-size: 14px;
+            font-weight: 800;
+            border-radius: 20px;
+            color: #FFFFFF;
+        }
+
+        .cover-info-strip {
+            font-size: 15px;
+            font-weight: 800;
+            background: var(--secondary);
+            padding: 9px 24px;
+            border-radius: 30px;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-top: 4px;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+            margin-top: 18px;
+            border-top: 1px solid rgba(255,255,255,0.25);
+            padding-top: 18px;
+            width: 100%;
+        }
+
+        .meta-grid-item h4 {
+            font-size: 13px;
+            color: #CBD5E1;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+            letter-spacing: 1px;
+        }
+
+        .meta-grid-item p {
+            font-size: 17px;
+            font-weight: 800;
+            color: #FFFFFF;
+        }
+
+        /* =========================
+           TITLES
+           ========================= */
+
+        .slide-title {
+            font-size: 30px;
+            font-weight: 900;
+            color: var(--dark);
+            margin-bottom: 18px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            line-height: 1.2;
+        }
+
+        .slide-title span {
+            color: var(--primary);
+        }
+
+        /* Bigger summary headings as locked */
+        .summary-title {
+            font-size: 34px !important;
+            font-weight: 900 !important;
+            line-height: 1.18;
+            margin-bottom: 20px !important;
+        }
+
+        /* =========================
+           WHY BOOK
+           ========================= */
+
+        .full-banner-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 14px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* =========================
+           OVERVIEW
+           ========================= */
+
+        .timeline-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .timeline-row {
+            display: grid;
+            grid-template-columns: 120px 1fr 165px;
+            gap: 12px;
+            align-items: center;
+            padding: 12px 16px;
+            background: #FFFFFF;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+        }
+
+        .timeline-row:nth-child(even) {
+            background: var(--light);
+        }
+
+        .timeline-day {
+            font-weight: 900;
+            font-size: 16px;
+            color: var(--primary);
+        }
+
+        .timeline-events {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            align-items: center;
+        }
+
+        .timeline-badge {
+            background: #EBF8FF;
+            color: #2B6CB0;
+            font-size: 14px;
+            font-weight: 800;
+            padding: 7px 12px;
+            border-radius: 7px;
+            border: 1px solid #BEE3F8;
+            line-height: 1.3;
+        }
+
+        .timeline-badge.highlight-attraction {
+            background: #E6FFFA;
+            color: #234E52;
+            border-color: #99F6E4;
+            font-weight: 900;
+        }
+
+        .timeline-stay {
+            font-size: 15px;
+            font-weight: 900;
+            color: var(--dark);
+            text-align: right;
+        }
+
+        /* =========================
+           CARDS
+           ========================= */
+
+        .card {
+            background: #FFFFFF;
+            border: 1px solid var(--border);
+            padding: 28px 34px;
+            border-radius: 22px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        /* =========================
+           DAY PAGE
+           ========================= */
+
+        .day-layout {
+            display: grid;
+            grid-template-columns: 0.86fr 1.14fr;
+            gap: 34px;
+            flex: 1;
+            min-height: 0;
+            align-items: stretch;
+        }
+
+        .day-info {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            min-height: 0;
+        }
+
+        .day-badge {
+            background: var(--secondary);
+            color: #FFFFFF;
+            padding: 9px 20px;
+            font-weight: 900;
+            border-radius: 6px;
+            display: inline-block;
+            width: fit-content;
+            margin-bottom: 12px;
+            font-size: 15.5px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .day-title {
+            font-size: 28px;
+            font-weight: 900;
+            color: var(--dark);
+            margin-bottom: 10px;
+            line-height: 1.25;
+        }
+
+        .day-desc {
+            font-size: 17px;
+            color: #334155;
+            line-height: 1.5;
+            margin-bottom: 14px;
+            font-weight: 600;
+        }
+
+        .tour-inclusion-box {
+            background: #F8FAFC;
+            border: 1px solid var(--border);
+            padding: 16px 20px;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+        }
+
+        .tour-inclusion-box h4 {
+            font-size: 16px;
+            font-weight: 900;
+            color: #004499;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .day-timeline-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .day-timeline-list li {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1E293B;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: #FFFFFF;
+            padding: 11px 15px;
+            border-radius: 9px;
+            border: 1px solid var(--border);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+            line-height: 1.28;
+        }
+
+        .emoji-icon {
+            font-size: 18px;
+            min-width: 26px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        /* =========================
+           CAROUSEL
+           ========================= */
+
+        .day-image-container {
+            width: 100%;
+            height: 100%;
+            min-height: 480px;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+            border: 1px solid var(--border);
+            background-color: #0A192F;
+            position: relative;
+        }
+
+        .carousel-track {
+            display: flex;
+            height: 100%;
+            transition: transform 0.4s ease-in-out;
+            will-change: transform;
+        }
+
+        .carousel-slide {
+            height: 100%;
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(10,25,47,0.72);
+            color: #FFFFFF;
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 12px 14px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-weight: 900;
+            font-size: 14px;
+            z-index: 10;
+            backdrop-filter: blur(4px);
+        }
+
+        .carousel-btn.prev {
+            left: 12px;
+        }
+
+        .carousel-btn.next {
+            right: 12px;
+        }
+
+        /* =========================
+           MEAL PLAN
+           ========================= */
+
+        .meal-matrix-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 2px solid var(--border);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+            margin-bottom: 16px;
+        }
+
+        .meal-matrix-table th {
+            background: #0A192F;
+            color: #FFFFFF;
+            padding: 14px 18px;
+            font-size: 15px;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: left;
+        }
+
+        .meal-matrix-table td {
+            padding: 13px 18px;
+            font-size: 15px;
+            border-bottom: 1.5px solid var(--border);
+            background: #FFFFFF;
+            font-weight: 800;
+            line-height: 1.3;
+        }
+
+        .meal-matrix-table tr:nth-child(even) td {
+            background: #F8FAFC;
+        }
+
+        .meal-badge-included {
+            background: #E6FFFA;
+            color: #047481;
+            padding: 5px 10px;
+            border-radius: 6px;
+            font-weight: 900;
+            font-size: 14px;
+            border: 1.5px solid #99F6E4;
+            display: inline-block;
+        }
+
+        .meal-badge-excluded {
+            background: #EDF2F7;
+            color: #718096;
+            padding: 5px 10px;
+            border-radius: 6px;
+            font-weight: 800;
+            font-size: 14px;
+            border: 1.5px solid #CBD5E0;
+            display: inline-block;
+        }
+
+        /* =========================
+           INCLUSION / EXCLUSION
+           ========================= */
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 28px;
+            flex: 1;
+            min-height: 0;
+            align-items: stretch;
+        }
+
+        .ie-list {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            font-size: 15px;
+            color: #2D3748;
+            line-height: 1.4;
+            font-weight: 700;
+        }
+
+        /* =========================
+           PRICE
+           ========================= */
+
+        .price-layout {
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            gap: 30px;
+            align-items: stretch;
+            flex: 1;
+        }
+
+        .total-box {
+            background: linear-gradient(135deg,#0A192F 0%,#1E3A8A 50%,#0F172A 100%);
+            color: #FFFFFF;
+            padding: 26px;
+            border-radius: 16px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 12px 30px rgba(10,25,47,0.35);
+            border: 1px solid rgba(255,215,0,0.3);
+            flex: 1;
+        }
+
+        /* =========================
+           CONTACT / GLOBAL
+           ========================= */
+
+        .global-section {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            height: 100%;
+        }
+
+        .map-and-contacts {
+            display: grid;
+            grid-template-columns: 2.1fr 1fr;
+            gap: 18px;
+            flex: 1;
+        }
+
+        .locations-box {
+            background: #F8FAFC;
+            border-radius: 15px;
+            padding: 16px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 14px;
+            border: 1px solid var(--border);
+            height: 100%;
+        }
+
+        .loc-card {
+            position: relative;
+            padding: 16px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #1A2A3A;
+        }
+
+        .loc-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                180deg,
+                rgba(10,25,47,0.42) 0%,
+                rgba(10,25,47,0.78) 100%
+            );
+            z-index: 1;
+        }
+
+        .loc-card-title,
+        .loc-card-info,
+        .loc-card-custom {
+            position: relative;
+            z-index: 2;
+        }
+
+        .loc-card-title {
+            font-size: 15px;
+            font-weight: 900;
+            color: #FFFFFF;
+            margin-bottom: 5px;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+        }
+
+        .loc-card-info {
+            font-size: 13px;
+            color: #F1F5F9;
+            font-weight: 700;
+            line-height: 1.5;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+        }
+
+        .inquiry-box {
+            background: #0A192F;
+            color: #FFFFFF;
+            border-radius: 15px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .features-bar {
+            background: #0A192F;
+            color: #FFFFFF;
+            border-radius: 10px;
+            padding: 12px 14px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        @media print {
+            @page {
+                size: A4 landscape;
+                margin: 0;
+            }
+
+            body {
+                background: none;
+                padding: 0;
+                margin: 0;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .slide {
+                width: 297mm;
+                height: 210mm;
+                max-height: 210mm;
+                page-break-after: always;
+                break-after: page;
+                break-inside: avoid;
+                box-shadow: none;
+                margin: 0;
+                padding: 35px 45px 80px 45px;
+                overflow: hidden;
+            }
+
+            .carousel-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- =========================================================
+     PAGE 01 - COVER
+     ========================================================= -->
+
+<div class="slide cover-bg">
+
+    <div class="cover-card">
+
+        <div style="margin-bottom:18px;">
+            <img
+                src="images/logo.png"
+                alt="CityLaila Logo"
+                style="height:110px;width:auto;object-fit:contain;filter:drop-shadow(0 4px 10px rgba(0,0,0,0.4));display:block;"
+                onerror="this.outerHTML='<span style=\'font-size:34px;color:#FFF;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'"
+            >
+        </div>
+
+        <h1 class="cover-title">🇪🇬 Cairo & Alexandria Holiday</h1>
+
+        <div class="cover-subtitle">
+            4 Nights / 5 Days — Nile Jewel Aquapark
+        </div>
+
+        <div class="cover-highlights">
+            <div class="cover-tag">🏨 4 Nights with Breakfast</div>
+            <div class="cover-tag">🚗 Private Transfers & Sightseeing</div>
+            <div class="cover-tag">🧑‍🏫 Private Guided Cairo & Alexandria Tours</div>
+        </div>
+
+        <div class="cover-info-strip">
+            Cairo • Alexandria • Nile Dinner Cruise • Pyramids • Grand Egyptian Museum
+        </div>
+
+        <div class="meta-grid">
+
+            <div class="meta-grid-item">
+                <h4>Duration</h4>
+                <p>4 Nights / 5 Days</p>
+            </div>
+
+            <div class="meta-grid-item">
+                <h4>Hotel</h4>
+                <p>Nile Jewel Aquapark</p>
+            </div>
+
+            <div class="meta-grid-item">
+                <h4>Meal Plan</h4>
+                <p>Breakfast + Tour Meals</p>
+            </div>
+
+            <div class="meta-grid-item">
+                <h4>Package Rate</h4>
+                <p>USD 500 / Person</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div>www.citylaila.com</div>
+        <div>Page 01</div>
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     PAGE 02 - WHY BOOK WITH US
+     ========================================================= -->
+
+<div class="slide">
+
+    <div class="header">
+
+        <div class="logo-container">
+            <img
+                class="logo-img"
+                src="images/logo.png"
+                alt="CityLaila Logo"
+                onerror="this.outerHTML='<span style=\'font-size:20px;color:#0066cc;font-weight:800;\'>City<span style=\'color:#ff6600;\'>laila</span></span>'"
+            >
+        </div>
+
+        <div class="tagline">
+            WHERE LUXURY MEETS AFFORDABILITY
+        </div>
+
+    </div>
+
+    <div class="content-body">
+
+        <img
+            src="images/why_book_with_us_full.png"
+            alt="Why Book With Us"
+            class="full-banner-image"
+            onerror="this.outerHTML='<div style=\'padding:40px;text-align:center;background:#F8FAFC;border-radius:12px;border:1px solid #E2E8F0;\'><h2 style=\'font-size:30px;color:#0A192F;\'>Why Book With CityLaila?</h2><p style=\'margin-top:15px;font-size:18px;font-weight:700;line-height:1.7;\'>Private Guided Tours • Airport Assistance • Selected Accommodation • Dedicated Travel Support</p></div>'"
+        >
+
+    </div>
+
+    <div class="footer">
+        <div class="contacts">
+            <span>📞 +971 55 536 5508</span>
+            <span>📞 +971 55 546 3698</span>
+            <span>✉️ info@citylaila.com</span>
+        </div>
+        <div>Page 02</div>
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     PAGE 03 - ITINERARY OVERVIEW
+     ========================================================= -->
+
+<div class="slide">
+
+    <div class="header">
+        <div class="logo-container">
+            <img class="logo-img" src="images/logo.png" alt="CityLaila Logo">
+        </div>
+        <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+    </div>
+
+    <div class="content-body">
+
+        <h2 class="slide-title summary-title">
+            Itinerary Overview Summary
+            <span>(All 5 Days)</span>
+        </h2>
+
+        <div class="timeline-container">
+
+            <div class="timeline-row">
+                <div class="timeline-day">Day 01</div>
+
+                <div class="timeline-events">
+                    <span class="timeline-badge">
+                        🛬 Cairo Arrival, Airport Assistance & Nile Dinner Cruise
+                    </span>
+                </div>
+
+                <div class="timeline-stay">
+                    🏨 Cairo
+                </div>
+            </div>
+
+            <div class="timeline-row">
+                <div class="timeline-day">Day 02</div>
+
+                <div class="timeline-events">
+                    <span class="timeline-badge highlight-attraction">
+                        🏜️ Giza Pyramids, Great Sphinx & Grand Egyptian Museum
+                    </span>
+                </div>
+
+                <div class="timeline-stay">
+                    🏨 Cairo
+                </div>
+            </div>
+
+            <div class="timeline-row">
+                <div class="timeline-day">Day 03</div>
+
+                <div class="timeline-events">
+                    <span class="timeline-badge highlight-attraction">
+                        🌊 Alexandria, Catacombs, Roman Theater & Bibliotheca
+                    </span>
+                </div>
+
+                <div class="timeline-stay">
+                    🏨 Cairo
+                </div>
+            </div>
+
+            <div class="timeline-row">
+                <div class="timeline-day">Day 04</div>
+
+                <div class="timeline-events">
+                    <span class="timeline-badge highlight-attraction">
+                        ⛪ Old Cairo Religious Sites & Khan El Khalili
+                    </span>
+                </div>
+
+                <div class="timeline-stay">
+                    🏨 Cairo
+                </div>
+            </div>
+
+            <div class="timeline-row">
+                <div class="timeline-day">Day 05</div>
+
+                <div class="timeline-events">
+                    <span class="timeline-badge">
+                        🛫 Breakfast, Check-out & Cairo Airport Departure
+                    </span>
+                </div>
+
+                <div class="timeline-stay" style="color:var(--success);">
+                    ✨ Tour Ends
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="contacts">
+            <span>📞 +971 55 536 5508</span>
+            <span>✉️ info@citylaila.com</span>
+        </div>
+        <div>Page 03</div>
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     PAGE 04 - HOTEL & PACKAGE PROFILE
+     ========================================================= -->
+
+<div class="slide">
+
+    <div class="header">
+        <div class="logo-container">
+            <img class="logo-img" src="images/logo.png" alt="CityLaila Logo">
+        </div>
+        <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+    </div>
+
+    <div class="content-body">
+
+        <h2 class="slide-title">
+            Your Stay & Service Experience
+            <span>(Nile Jewel Aquapark)</span>
+        </h2>
+
+        <div class="card"
+             style="padding:26px 34px;gap:15px;position:relative;overflow:hidden;">
+
+            <div style="position:absolute;top:0;left:0;width:100%;height:6px;background:linear-gradient(90deg,var(--primary),var(--secondary));"></div>
+
+            <div style="
+                background:linear-gradient(135deg,#0A192F 0%,#1E3A8A 100%);
+                color:#FFF;
+                padding:17px 22px;
+                border-radius:14px;
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+            ">
+
+                <div>
+
+                    <div style="display:flex;gap:8px;margin-bottom:5px;flex-wrap:wrap;">
+
+                        <span style="
+                            background:rgba(255,102,0,0.3);
+                            border:1px solid var(--secondary);
+                            color:#FFF;
+                            font-size:11px;
+                            font-weight:800;
+                            padding:3px 10px;
+                            border-radius:20px;
+                            text-transform:uppercase;
+                        ">
+                            Cairo Stay
+                        </span>
+
+                        <span style="
+                            background:rgba(255,255,255,0.15);
+                            color:#FFD700;
+                            font-size:11px;
+                            font-weight:800;
+                            padding:3px 10px;
+                            border-radius:20px;
+                            text-transform:uppercase;
+                        ">
+                            Bed & Breakfast
+                        </span>
+
+                    </div>
+
+                    <h3 style="font-size:22px;font-weight:900;color:#FFF;margin:0;">
+                        Nile Jewel Aquapark
+                    </h3>
+
+                    <p style="font-size:13.5px;color:#CBD5E1;font-weight:700;margin-top:3px;">
+                        📍 Cairo, Egypt
+                    </p>
+
+                </div>
+
+                <div style="
+                    background:rgba(255,255,255,0.1);
+                    border:1px solid rgba(255,255,255,0.25);
+                    padding:10px 16px;
+                    border-radius:12px;
+                    text-align:center;
+                    flex-shrink:0;
+                ">
+                    <span style="
+                        font-size:10.5px;
+                        text-transform:uppercase;
+                        color:#CBD5E1;
+                        font-weight:800;
+                        display:block;
+                    ">
+                        Total Stay
+                    </span>
+
+                    <span style="
+                        font-size:16px;
+                        font-weight:900;
+                        color:#FFD700;
+                    ">
+                        4 Nights
+                    </span>
+                </div>
+
+            </div>
+
+            <div style="
+                display:grid;
+                grid-template-columns:repeat(2,1fr);
+                gap:12px;
+            ">
+
+                <div style="
+                    background:#F8FAFC;
+                    border:1px solid var(--border);
+                    padding:12px 16px;
+                    border-radius:12px;
+                    display:flex;
+                    align-items:center;
+                    gap:12px;
+                ">
+
+                    <div style="
+                        font-size:22px;
+                        background:#EBF8FF;
+                        width:40px;
+                        height:40px;
+                        border-radius:10px;
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                    ">
+                        🛏️
+                    </div>
+
+                    <div>
+                        <span style="
+                            font-size:11px;
+                            color:var(--gray);
+                            font-weight:800;
+                            text-transform:uppercase;
+                            display:block;
+                        ">
+                            Room Basis
+                        </span>
+
+                        <span style="
+                            font-size:14.5px;
+                            font-weight:900;
+                            color:#0A192F;
+                        ">
+                            Double or Triple Room
+                        </span>
+                    </div>
+
+                </div>
+
+                <div style="
+                    background:#F8FAFC;
+                    border:1px solid var(--border);
+                    padding:12px 16px;
+                    border-radius:12px;
+                    display:flex;
+                    align-items:center;
+                    gap:12px;
+                ">
+
+                    <div style="
+                        font-size:22px;
+                        background:#E6FFFA;
+                        width:40px;
+                        height:40px;
+                        border-radius:10px;
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                    ">
+                        🍳
+                    </div>
+
+                    <div>
+                        <span style="
+                            font-size:11px;
+                            color:var(--gray);
+                            font-weight:800;
+                            text-transform:uppercase;
+                            display:block;
+                        ">
+                            Meal Plan
+                        </span>
+
+                        <span style="
+                            font-size:14.5px;
+                            font-weight:900;
+                            color:#0A192F;
+                        ">
+                            Daily Breakfast
+                        </span>
+                    </div>
+
+                </div>
+
+                <div style="
+                    background:#F8FAFC;
+                    border:1px solid var(--border);
+                    padding:12px 16px;
+                    border-radius:12px;
+                    display:flex;
+                    align-items:center;
+                    gap:12px;
+                ">
+
+                    <div style="
+                        font-size:22px;
+                        background:#FFF7ED;
+                        width:40px;
+                        height:40px;
+                        border-radius:10px;
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                    ">
+                        🚗
+                    </div>
+
+                    <div>
+                        <span style="
+                            font-size:11px;
+                            color:var(--gray);
+                            font-weight:800;
+                            text-transform:uppercase;
+                            display:block;
+                        ">
+                            Transportation
+                        </span>
+
+                        <span style="
+                            font-size:14.5px;
+                            font-weight:900;
+                            color:#0A192F;
+                        ">
+                            Air-Conditioned Vehicle
+                        </span>
+                    </div>
+
+                </div>
+
+                <div style="
+                    background:#F8FAFC;
+                    border:1px solid var(--border);
+                    padding:12px 16px;
+                    border-radius:12px;
+                    display:flex;
+                    align-items:center;
+                    gap:12px;
+                ">
+
+                    <div style="
+                        font-size:22px;
+                        background:#FEF3C7;
+                        width:40px;
+                        height:40px;
+                        border-radius:10px;
+                        display:flex;
+                        align-items:center;
+                        justify-content:center;
+                    ">
+                        🧑‍🏫
+                    </div>
+
+                    <div>
+                        <span style="
+                            font-size:11px;
+                            color:var(--gray);
+                            font-weight:800;
+                            text-transform:uppercase;
+                            display:block;
+                        ">
+                            Tour Service
+                        </span>
+
+                        <span style="
+                            font-size:14.5px;
+                            font-weight:900;
+                            color:#0A192F;
+                        ">
+                            Private Guided Sightseeing
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div style="
+                background:linear-gradient(135deg,#F0F9FF 0%,#E0F2FE 100%);
+                border:1.5px solid #BAE6FD;
+                padding:12px 18px;
+                border-radius:12px;
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+            ">
+
+                <div style="
+                    font-size:13.5px;
+                    font-weight:900;
+                    color:#0369A1;
+                ">
+                    ✨ Airport meet & assist • 1 local SIM per family • English-speaking guide • Tour lunches • Water during tours
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="contacts">
+            <span>📞 +971 55 536 5508</span>
+            <span>✉️ info@citylaila.com</span>
+        </div>
+        <div>Page 04</div>
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     CAROUSEL SCRIPT
+     ========================================================= -->
+
+<script>
+
+function moveSlide(trackId, direction) {
+
+    const track = document.getElementById(trackId);
+    const slides = track.querySelectorAll('.carousel-slide');
+    const totalSlides = slides.length;
+
+    if (totalSlides <= 1) return;
+
+    let index = parseInt(track.dataset.index || 0);
+
+    index += direction;
+
+    if (index < 0) index = totalSlides - 1;
+    if (index >= totalSlides) index = 0;
+
+    track.dataset.index = index;
+
+    track.style.transform =
+        `translateX(-${index * (100 / totalSlides)}%)`;
+}
+
+
+window.addEventListener('DOMContentLoaded', () => {
+
+    document.querySelectorAll('.carousel-track').forEach(track => {
+
+        const slides = track.querySelectorAll('.carousel-slide');
+        const count = slides.length;
+
+        track.style.width = `${count * 100}%`;
+
+        slides.forEach(slide => {
+            slide.style.width = `${100 / count}%`;
+            slide.style.minWidth = `${100 / count}%`;
+        });
+
+    });
+
+});
+
+</script>
+
+
+<!-- =========================================================
+     PAGE 05 - DAY 1
+     Exact matched images:
+     Cairo International Airport
+     Nile Cruise ship
+     ========================================================= -->
+
+<div class="slide">
+
+    <div class="header">
+        <div class="logo-container">
+            <img class="logo-img" src="images/logo.png" alt="CityLaila Logo">
+        </div>
+        <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+    </div>
+
+    <div class="content-body">
+
+        <div class="day-layout">
+
+            <div class="day-info">
+
+                <div>
+
+                    <div class="day-badge">
+                        DAY 1
+                    </div>
+
+                    <h3 class="day-title">
+                        Cairo Arrival & Nile Dinner Cruise
+                    </h3>
+
+                    <p class="day-desc">
+                        Arrive in Cairo, receive airport assistance and transfer to the hotel. In the evening, enjoy a two-hour Nile dinner cruise with entertainment.
+                    </p>
+
+                    <div class="tour-inclusion-box">
+
+                        <h4>
+                            Included Highlights & Services:
+                        </h4>
+
+                        <ul class="day-timeline-list">
+
+                            <li>
+                                <span class="emoji-icon">🛬</span>
+                                <span>
+                                    Meet & assist at Cairo International Airport
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="emoji-icon">🚗</span>
+                                <span>
+                                    Private transfer to hotel & check-in
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="emoji-icon">🚢</span>
+                                <span>
+                                    Two-hour Nile Dinner Cruise with dinner & entertainment
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="emoji-icon">🌙</span>
+                                <span>
+                                    Return transfer & overnight stay in Cairo
+                                </span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="day-image-container">
+
+                <div
+                    class="carousel-track"
+                    id="track-day1"
+                    data-index="0"
+                >
+
+                    <!-- Exact match: Cairo International Airport -->
+                    <div class="carousel-slide">
+                        <img
+                            src="https://egyptianstreets.com/wp-content/uploads/2026/04/cairo-airport-guide.jpg"
+                            alt="Cairo International Airport"
+                        >
+                    </div>
+
+                    <!-- Exact/clear master match: Nile Cruise ship -->
+                    <div class="carousel-slide">
+                        <img
+                            src="https://www.egypttoursportal.com/images/2024/04/5-Days-Hidden-Treasures-Nile-Cruise-for-Returning-Visitors-Egypt-Tours-Portal.jpg"
+                            alt="Nile Cruise ship"
+                        >
+                    </div>
+
+                </div>
+
+                <button
+                    class="carousel-btn prev"
+                    onclick="moveSlide('track-day1',-1)"
+                >
+                    ❮
+                </button>
+
+                <button
+                    class="carousel-btn next"
+                    onclick="moveSlide('track-day1',1)"
+                >
+                    ❯
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="contacts">
+            <span>📞 +971 55 536 5508</span>
+            <span>✉️ info@citylaila.com</span>
+        </div>
+        <div>Page 05</div>
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     PAGE 06 - DAY 2
+     Exact matched images:
+     Giza Pyramids
+     Grand Egyptian Museum
+     ========================================================= -->
+
+<div class="slide">
+
+    <div class="header">
+        <div class="logo-container">
+            <img class="logo-img" src="images/logo.png" alt="CityLaila Logo">
+        </div>
+        <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+    </div>
+
+    <div class="content-body">
+
+        <div class="day-layout">
+
+            <div class="day-info">
+
+                <div>
+
+                    <div class="day-badge">
+                        DAY 2
+                    </div>
+
+                    <h3 class="day-title">
+                        Great Pyramids & Grand Egyptian Museum
+                    </h3>
+
+                    <p class="day-desc">
+                        After breakfast, explore the Giza Pyramids complex and Grand Egyptian Museum with your private guide, with lunch and a shopping stop included.
+                    </p>
+
+                    <div class="tour-inclusion-box">
+
+                        <h4>
+                            Included Highlights & Services:
+                        </h4>
+
+                        <ul class="day-timeline-list">
+
+                            <li>
+                                <span class="emoji-icon">🏜️</span>
+                                <span>
+                                    Great Pyramids of Giza, Great Sphinx & panoramic viewpoint
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="emoji-icon">🍽️</span>
+                                <span>
+                                    Set-menu lunch at an Egyptian restaurant near the Pyramids
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="emoji-icon">🏺</span>
+                                <span>
+                                    Grand Egyptian Museum & major archaeological galleries
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="emoji-icon">🛍️</span>
+                                <span>
+                                    Oil & perfume shopping stop, then return to hotel
+                                </span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="day-image-container">
+
+                <div
+                    class="carousel-track"
+                    id="track-day2"
+                    data-index="0"
+                >
+
+                    <!-- Exact match: Giza Pyramids -->
+                    <div class="carousel-slide">
+                        <img
+                            src="https://cdn.mos.cms.futurecdn.net/YMa7Wx2FyjQFUjEeqa72Rm.jpg"
+                            alt="Giza Pyramids"
+                        >
+                    </div>
+
+                    <!-- Exact match: GRAND EGYPTIAN MUSEUM -->
+                    <div class="carousel-slide">
+                        <img
+                            src="https://soulofegypttravel.com/wp-content/uploads/2025/08/ChatGPT-Image-Aug-25-2025-05_12_57-PM.png"
+                            alt="Grand Egyptian Museum"
+                        >
+                    </div>
+
+                    <!-- Second exact option from GRAND EGYPTIAN MUSEUM row -->
+                    <div class="carousel-slide">
+                        <img
+                            src="https://www.egypttoursplus.com/wp-content/uploads/2025/07/Giza-Egypt-April-13-2024-The-Grand-Egyptian-Museum-Giza-Museum-Egypts-gift-to-the-world-the-largest-archaeological-museum-in-the-world-about-2-kilometers-from-Giza-pyramid-complex-1.webp"
+                            alt="Grand Egyptian Museum"
+                        >
+                    </div>
+
+                </div>
+
+                <button
+                    class="carousel-btn prev"
+                    onclick="moveSlide('track-day2',-1)"
+                >
+                    ❮
+                </button>
+
+                <button
+                    class="carousel-btn next"
+                    onclick="moveSlide('track-day2',1)"
+                >
+                    ❯
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="contacts">
+            <span>📞 +971 55 536 5508</span>
+            <span>✉️ info@citylaila.com</span>
+        </div>
+        <div>Page 06</div>
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     PAGE 07 - DAY 3
+     Exact matched images:
+     Full-day Alexandria tour with key Greco-Roman highlights
+     Catacombs Egypt
+     Bibliotheca Alexandrina Egypt
+     ========================================================= -->
+
+<div class="slide">
+
+    <div class="header">
+        <div class="logo-container">
+            <img class="logo-img" src="images/logo.png" alt="CityLaila Logo">
+        </div>
+        <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+    </div>
+
+    <div class="content-body">
+
+        <div class="day-layout">
+
+            <div class="day-info">
+
+                <div>
+
+                    <div class="day-badge">
+                        DAY 3
+                    </div>
+
+                    <h3 class="day-title">
+                        Alexandria Day Tour
+                    </h3>
+
+                    <p class="day-desc">
+                        After breakfast, travel to Alexandria for a private guided tour of its major Greco-Roman and cultural landmarks, followed by lunch overlooking the Mediterranean.
+                    </p>
+
+                    <div class="tour-inclusion-box">
+
+                        <h4>
+                            Included Highlights & Services:
+                        </h4>
+
+                        <ul class="day-timeline-list">
+
+                            <li>
+                                <span class="emoji-icon">🚗</span>
+                                <span>
+                                    Private transfer from Cairo to Alexandria
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="emoji-icon">🏛️</span>
+                                <span>
+                                    Catacombs & Roman Theater sightseeing
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="emoji-icon">📚</span>
+                                <span>
+                                    Visit Bibliotheca Alexandrina
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="emoji-icon">🍽️</span>
+                                <span>
+                                    Lunch overlooking the Mediterranean & return to Cairo
+                                </span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="day-image-container">
+
+                <div
+                    class="carousel-track"
+                    id="track-day3"
+                    data-index="0"
+                >
+
+                    <!-- Exact master match:
+                         Full-day Alexandria tour with key Greco-Roman highlights -->
+                    <div class="carousel-slide">
+                        <img
+                            src="https://www.shouf.io/cdn/shop/files/FromCairoFull-DayGuidedTourofHistoricalAlexandria_3.webp?v=1777370902"
+                            alt="Full-day Alexandria Tour"
+                        >
+                    </div>
+
+                    <!-- Exact match: catacombs egypt -->
+                    <div class="carousel-slide">
+                        <img
+                            src="https://www.egypttoursportal.com/images/2025/06/Catacombs-of-Kom-El-Shoqafa-in-Alexandria-Egypt-Tours-Portal.jpg"
+                            alt="Catacombs Egypt"
+                        >
+                    </div>
+
+                    <!-- Exact match: Bibliotheca Alexandrina egypt -->
+                    <div class="carousel-slide">
+                        <img
+                            src="https://egypttoursclub.com/storage/8211/%D8%AA%D8%B5%D9%85%D9%8A%D9%85-%D8%A8%D8%AF%D9%88%D9%86-%D8%B9%D9%86%D9%88%D8%A7%D9%86---2026-04-08T171300.038.jpg"
+                            alt="Bibliotheca Alexandrina Egypt"
+                        >
+                    </div>
+
+                </div>
+
+                <button
+                    class="carousel-btn prev"
+                    onclick="moveSlide('track-day3',-1)"
+                >
+                    ❮
+                </button>
+
+                <button
+                    class="carousel-btn next"
+                    onclick="moveSlide('track-day3',1)"
+                >
+                    ❯
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="contacts">
+            <span>📞 +971 55 536 5508</span>
+            <span>✉️ info@citylaila.com</span>
+        </div>
+        <div>Page 07</div>
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     PAGE 08 - DAY 4
+     Exact matched images:
+     Old Cairo
+     Khan El Khalili bazaar walking tour
+     ========================================================= -->
+
+<div class="slide">
+
+    <div class="header">
+        <div class="logo-container">
+            <img class="logo-img" src="images/logo.png" alt="CityLaila Logo">
+        </div>
+        <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+    </div>
+
+    <div class="content-body">
+
+        <div class="day-layout">
+
+            <div class="day-info">
+
+                <div>
+
+                    <div class="day-badge">
+                        DAY 4
+                    </div>
+
+                    <h3 class="day-title">
+                        Old Cairo & Khan El Khalili
+                    </h3>
+
+                    <p class="day-desc">
+                        Explore Old Cairo’s historic religious quarter with your private guide, enjoy a traditional Koshari lunch and finish with a walking tour through Khan El Khalili.
+                    </p>
+
+                    <div class="tour-inclusion-box">
+
+                        <h4>
+                            Included Highlights & Services:
+                        </h4>
+
+                        <ul class="day-timeline-list">
+
+                            <li>
+                                <span class="emoji-icon">⛪</span>
+                                <span>
+                                    Old Cairo, Hanging Church & historic religious sites
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="emoji-icon">📜</span>
+                                <span>
+                                    Papyrus shopping stop
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="emoji-icon">🍲</span>
+                                <span>
+                                    Traditional Koshari lunch at a local restaurant
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="emoji-icon">🛍️</span>
+                                <span>
+                                    Khan El Khalili walking tour & return to hotel
+                                </span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="day-image-container">
+
+                <div
+                    class="carousel-track"
+                    id="track-day4"
+                    data-index="0"
+                >
+
+                    <!-- Exact match: Old Cairo -->
+                    <div class="carousel-slide">
+                        <img
+                            src="https://pohcdn.com/sites/default/files/styles/paragraph__hero_banner__hb_image__1880bp/public/hero_banner/old-cairo_optimized.jpg"
+                            alt="Old Cairo"
+                        >
+                    </div>
+
+                    <!-- Second exact Old Cairo entry from master -->
+                    <div class="carousel-slide">
+                        <img
+                            src="https://egyptdaytours.com/wp-content/uploads/2025/05/A-wonderful-picture-of-Sultan-Hassan-Mosque.jpg"
+                            alt="Old Cairo"
+                        >
+                    </div>
+
+                    <!-- Exact match: Khan El Khalili bazaar walking tour -->
+                    <div class="carousel-slide">
+                        <img
+                            src="https://www.sharm-club.com/assets/images/cities/cairo/khan-el-khalili-bazaar-tour.jpg"
+                            alt="Khan El Khalili Bazaar Walking Tour"
+                        >
+                    </div>
+
+                </div>
+
+                <button
+                    class="carousel-btn prev"
+                    onclick="moveSlide('track-day4',-1)"
+                >
+                    ❮
+                </button>
+
+                <button
+                    class="carousel-btn next"
+                    onclick="moveSlide('track-day4',1)"
+                >
+                    ❯
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="contacts">
+            <span>📞 +971 55 536 5508</span>
+            <span>✉️ info@citylaila.com</span>
+        </div>
+        <div>Page 08</div>
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     PAGE 09 - DAY 5
+     Exact matched images:
+     Cairo International Airport
+     Departure
+     ========================================================= -->
+
+<div class="slide">
+
+    <div class="header">
+        <div class="logo-container">
+            <img class="logo-img" src="images/logo.png" alt="CityLaila Logo">
+        </div>
+        <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+    </div>
+
+    <div class="content-body">
+
+        <div class="day-layout">
+
+            <div class="day-info">
+
+                <div>
+
+                    <div
+                        class="day-badge"
+                        style="background:var(--success);"
+                    >
+                        DAY 5
+                    </div>
+
+                    <h3 class="day-title">
+                        Final Departure
+                    </h3>
+
+                    <p class="day-desc">
+                        Enjoy breakfast, check out from the hotel and take your arranged transfer to Cairo International Airport for your final departure.
+                    </p>
+
+                    <div class="tour-inclusion-box">
+
+                        <h4>
+                            Departure Services:
+                        </h4>
+
+                        <ul class="day-timeline-list">
+
+                            <li>
+                                <span class="emoji-icon">🍳</span>
+                                <span>
+                                    Breakfast at the hotel
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="emoji-icon">🧳</span>
+                                <span>
+                                    Hotel check-out
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="emoji-icon">🚗</span>
+                                <span>
+                                    Transfer to Cairo International Airport
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="emoji-icon">🛫</span>
+                                <span>
+                                    Final departure from Cairo
+                                </span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="day-image-container">
+
+                <div
+                    class="carousel-track"
+                    id="track-day5"
+                    data-index="0"
+                >
+
+                    <!-- Exact match: Cairo International Airport -->
+                    <div class="carousel-slide">
+                        <img
+                            src="https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1"
+                            alt="Cairo International Airport"
+                        >
+                    </div>
+
+                    <!-- Exact match: Departure -->
+                    <div class="carousel-slide">
+                        <img
+                            src="https://m.media-amazon.com/images/I/71nXbtmuQlL.jpg"
+                            alt="Departure"
+                        >
+                    </div>
+
+                </div>
+
+                <button
+                    class="carousel-btn prev"
+                    onclick="moveSlide('track-day5',-1)"
+                >
+                    ❮
+                </button>
+
+                <button
+                    class="carousel-btn next"
+                    onclick="moveSlide('track-day5',1)"
+                >
+                    ❯
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="contacts">
+            <span>📞 +971 55 536 5508</span>
+            <span>✉️ info@citylaila.com</span>
+        </div>
+        <div>Page 09</div>
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     PAGE 10 - MEAL PLAN
+     ========================================================= -->
+
+<div class="slide">
+
+    <div class="header">
+        <div class="logo-container">
+            <img class="logo-img" src="images/logo.png" alt="CityLaila Logo">
+        </div>
+        <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+    </div>
+
+    <div class="content-body">
+
+        <h2 class="slide-title summary-title">
+            Complete
+            <span>Day-Wise Meal Plan Summary</span>
+        </h2>
+
+        <table class="meal-matrix-table">
+
+            <thead>
+                <tr>
+                    <th style="width:20%;">Day</th>
+                    <th style="width:25%;">Breakfast</th>
+                    <th style="width:27.5%;">Lunch</th>
+                    <th style="width:27.5%;">Dinner</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td><b>Day 1</b></td>
+
+                    <td>
+                        <span class="meal-badge-excluded">
+                            Arrival Day
+                        </span>
+                    </td>
+
+                    <td>
+                        <span class="meal-badge-excluded">
+                            Not Mentioned
+                        </span>
+                    </td>
+
+                    <td>
+                        <span class="meal-badge-included">
+                            ✓ Nile Dinner Cruise
+                        </span>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td><b>Day 2</b></td>
+
+                    <td>
+                        <span class="meal-badge-included">
+                            ✓ Hotel Breakfast
+                        </span>
+                    </td>
+
+                    <td>
+                        <span class="meal-badge-included">
+                            ✓ Egyptian Restaurant
+                        </span>
+                    </td>
+
+                    <td>
+                        <span class="meal-badge-excluded">
+                            Not Mentioned
+                        </span>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td><b>Day 3</b></td>
+
+                    <td>
+                        <span class="meal-badge-included">
+                            ✓ Hotel Breakfast
+                        </span>
+                    </td>
+
+                    <td>
+                        <span class="meal-badge-included">
+                            ✓ Alexandria Lunch
+                        </span>
+                    </td>
+
+                    <td>
+                        <span class="meal-badge-excluded">
+                            Not Mentioned
+                        </span>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td><b>Day 4</b></td>
+
+                    <td>
+                        <span class="meal-badge-included">
+                            ✓ Hotel Breakfast
+                        </span>
+                    </td>
+
+                    <td>
+                        <span class="meal-badge-included">
+                            ✓ Traditional Koshari
+                        </span>
+                    </td>
+
+                    <td>
+                        <span class="meal-badge-excluded">
+                            Not Mentioned
+                        </span>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td><b>Day 5</b></td>
+
+                    <td>
+                        <span class="meal-badge-included">
+                            ✓ Hotel Breakfast
+                        </span>
+                    </td>
+
+                    <td>
+                        <span class="meal-badge-excluded">
+                            Departure Day
+                        </span>
+                    </td>
+
+                    <td>
+                        <span class="meal-badge-excluded">
+                            Departure Day
+                        </span>
+                    </td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+        <div style="
+            background:#EBF8FF;
+            border:1.5px solid #BEE3F8;
+            border-radius:12px;
+            padding:12px 17px;
+            font-size:14.5px;
+            color:#2B6CB0;
+            font-weight:700;
+            line-height:1.45;
+        ">
+            💡 <b>Meal Note:</b>
+            Package includes daily breakfast and lunches during the sightseeing tours as mentioned.
+            Vegetarian, non-vegetarian and Indian food options are stated as available during tour meals.
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="contacts">
+            <span>📞 +971 55 536 5508</span>
+            <span>✉️ info@citylaila.com</span>
+        </div>
+        <div>Page 10</div>
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     PAGE 11 - INCLUSIONS & EXCLUSIONS
+     ========================================================= -->
+
+<div class="slide">
+
+    <div class="header">
+        <div class="logo-container">
+            <img class="logo-img" src="images/logo.png" alt="CityLaila Logo">
+        </div>
+        <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+    </div>
+
+    <div class="content-body">
+
+        <h2
+            class="slide-title"
+            style="font-size:32px;margin-bottom:20px;"
+        >
+            Trip
+            <span>Inclusions & Exclusions</span>
+        </h2>
+
+        <div class="two-col">
+
+            <!-- INCLUDED -->
+            <div
+                class="card"
+                style="
+                    border-top:6px solid #38A169;
+                    padding:24px 30px;
+                    gap:13px;
+                "
+            >
+
+                <div style="
+                    display:flex;
+                    align-items:center;
+                    gap:12px;
+                    border-bottom:2px solid #E6FFFA;
+                    padding-bottom:10px;
+                ">
+
+                    <span style="
+                        background:#E6FFFA;
+                        color:#276749;
+                        font-size:20px;
+                        padding:8px 13px;
+                        border-radius:8px;
+                        font-weight:900;
+                    ">
+                        ✅
+                    </span>
+
+                    <h3 style="
+                        color:#276749;
+                        font-size:21px;
+                        font-weight:900;
+                        margin:0;
+                    ">
+                        What's Included
+                    </h3>
+
+                </div>
+
+
+                <div class="ie-list">
+
+                    <div>
+                        <b>🏨 Accommodation:</b>
+                        4 nights at Nile Jewel Aquapark in a double or triple room on Bed & Breakfast basis
+                    </div>
+
+                    <div>
+                        <b>🛬 Airport Service:</b>
+                        Meet & assist service by airport representative
+                    </div>
+
+                    <div>
+                        <b>📱 Local SIM:</b>
+                        1 complimentary local SIM card per family
+                    </div>
+
+                    <div>
+                        <b>🚗 Transfers:</b>
+                        Airport transfers and sightseeing transfers by air-conditioned vehicle
+                    </div>
+
+                    <div>
+                        <b>🧑‍🏫 Tours:</b>
+                        Private guided sightseeing in Cairo and Alexandria with English-speaking tour guide
+                    </div>
+
+                    <div>
+                        <b>🎟️ Entrance Fees:</b>
+                        Entrance fees to sites indicated in the itinerary
+                    </div>
+
+                    <div>
+                        <b>🍽️ Meals:</b>
+                        Daily breakfast plus tour lunches as mentioned
+                    </div>
+
+                    <div>
+                        <b>💧 Water:</b>
+                        3 bottles of water during tours
+                    </div>
+
+                    <div>
+                        <b>🧾 Charges:</b>
+                        All service charges and taxes
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- EXCLUDED -->
+            <div
+                class="card"
+                style="
+                    background:#FFF5F5;
+                    border:1px solid #FEB2B2;
+                    border-top:6px solid #E53E3E;
+                    padding:24px 30px;
+                    gap:13px;
+                "
+            >
+
+                <div style="
+                    display:flex;
+                    align-items:center;
+                    gap:12px;
+                    border-bottom:2px solid #FED7D7;
+                    padding-bottom:10px;
+                ">
+
+                    <span style="
+                        background:#FED7D7;
+                        color:#9B2C2C;
+                        font-size:20px;
+                        padding:8px 13px;
+                        border-radius:8px;
+                        font-weight:900;
+                    ">
+                        ❌
+                    </span>
+
+                    <h3 style="
+                        color:#9B2C2C;
+                        font-size:21px;
+                        font-weight:900;
+                        margin:0;
+                    ">
+                        What's Excluded
+                    </h3>
+
+                </div>
+
+
+                <div class="ie-list">
+
+                    <div>
+                        <b>✈️ International Airfare:</b>
+                        Not included
+                    </div>
+
+                    <div>
+                        <b>🛂 Egypt Visa:</b>
+                        USD 30 on arrival
+                    </div>
+
+                    <div>
+                        <b>🏺 Special Archaeological Sites:</b>
+                        Entrance inside one of the Pyramids or other specially charged sites
+                    </div>
+
+                    <div>
+                        <b>🥤 Drinks:</b>
+                        Drinks during outside meals
+                    </div>
+
+                    <div>
+                        <b>🎟️ Optional Tours:</b>
+                        Any optional tour or activity
+                    </div>
+
+                    <div>
+                        <b>🛍️ Personal Spending:</b>
+                        Shopping and personal expenses
+                    </div>
+
+                    <div>
+                        <b>💵 Tipping:</b>
+                        Tips and gratuities
+                    </div>
+
+                </div>
+
+                <div style="
+                    margin-top:auto;
+                    background:#FFF;
+                    border:1px solid #FEB2B2;
+                    border-radius:10px;
+                    padding:11px 14px;
+                    font-size:13.5px;
+                    font-weight:800;
+                    color:#9B2C2C;
+                    line-height:1.4;
+                ">
+                    📌 Any service or entrance not specifically stated as included should be treated as excluded.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="contacts">
+            <span>📞 +971 55 536 5508</span>
+            <span>✉️ info@citylaila.com</span>
+        </div>
+        <div>Page 11</div>
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     PAGE 12 - PRICE + CHILD POLICY
+     ========================================================= -->
+
+<div class="slide">
+
+    <div class="header">
+        <div class="logo-container">
+            <img class="logo-img" src="images/logo.png" alt="CityLaila Logo">
+        </div>
+        <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+    </div>
+
+    <div class="content-body">
+
+        <h2 class="slide-title">
+            Package
+            <span>Price Summary & Child Policy</span>
+        </h2>
+
+        <div class="price-layout">
+
+            <!-- LEFT -->
+            <div style="
+                display:flex;
+                flex-direction:column;
+                gap:18px;
+                justify-content:space-between;
+            ">
+
+                <div class="total-box">
+
+                    <span style="
+                        font-size:15px;
+                        text-transform:uppercase;
+                        letter-spacing:2px;
+                        color:#F59E0B;
+                        font-weight:800;
+                        margin-bottom:7px;
+                    ">
+                        PACKAGE RATE
+                    </span>
+
+                    <div style="
+                        font-size:38px;
+                        font-weight:900;
+                        color:#FFFFFF;
+                        margin-bottom:6px;
+                    ">
+                        USD 500
+                    </div>
+
+                    <p style="
+                        font-size:15px;
+                        font-weight:800;
+                        color:#FDE047;
+                    ">
+                        Per Person in Double Occupancy
+                    </p>
+
+                    <p style="
+                        font-size:13.5px;
+                        font-weight:700;
+                        color:#E2E8F0;
+                        margin-top:8px;
+                        line-height:1.5;
+                    ">
+                        Cairo & Alexandria • 4 Nights / 5 Days
+                    </p>
+
+                </div>
+
+
+                <div style="
+                    background:#FFFFFF;
+                    border:1px solid var(--border);
+                    border-radius:16px;
+                    padding:18px 20px;
+                    box-shadow:0 4px 15px rgba(0,0,0,0.05);
+                ">
+
+                    <h4 style="
+                        font-size:16px;
+                        font-weight:900;
+                        color:var(--dark);
+                        margin-bottom:8px;
+                    ">
+                        🏨 Rate Basis
+                    </h4>
+
+                    <p style="
+                        font-size:14.5px;
+                        color:#4A5568;
+                        font-weight:700;
+                        line-height:1.5;
+                    ">
+                        Supplied rate is USD 500 per person based on double occupancy.
+                        A total family package amount cannot be calculated unless guest ages and final room configuration are confirmed.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT -->
+            <div style="
+                display:flex;
+                flex-direction:column;
+                gap:16px;
+            ">
+
+                <div style="
+                    background:#F8FAFC;
+                    border:1px solid var(--border);
+                    border-left:5px solid var(--primary);
+                    padding:20px;
+                    border-radius:16px;
+                ">
+
+                    <h4 style="
+                        font-size:17px;
+                        font-weight:900;
+                        color:var(--dark);
+                        text-transform:uppercase;
+                        margin-bottom:12px;
+                    ">
+                        👨‍👩‍👧‍👦 Children Policy
+                    </h4>
+
+                    <div style="
+                        display:flex;
+                        flex-direction:column;
+                        gap:9px;
+                        font-size:15px;
+                        font-weight:800;
+                    ">
+
+                        <div style="
+                            display:flex;
+                            justify-content:space-between;
+                            padding:11px 13px;
+                            background:#E6FFFA;
+                            border:1px solid #99F6E4;
+                            border-radius:8px;
+                        ">
+                            <span>Age 0 – 5.99 Years</span>
+                            <b style="color:#047481;">Free of Charge</b>
+                        </div>
+
+                        <div style="
+                            display:flex;
+                            justify-content:space-between;
+                            padding:11px 13px;
+                            background:#FFFDF5;
+                            border:1px solid #F6E05E;
+                            border-radius:8px;
+                        ">
+                            <span>Age 6 – 11.99 Years</span>
+                            <b style="color:#B7791F;">50% of Tour Price</b>
+                        </div>
+
+                        <div style="
+                            display:flex;
+                            justify-content:space-between;
+                            padding:11px 13px;
+                            background:#EBF8FF;
+                            border:1px solid #BEE3F8;
+                            border-radius:8px;
+                        ">
+                            <span>Age 12+ Years</span>
+                            <b style="color:#2B6CB0;">Adult Price</b>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div style="
+                    background:#FFFDF5;
+                    border:1px solid #FEFCBF;
+                    border-left:5px solid #D69E2E;
+                    padding:18px;
+                    border-radius:16px;
+                ">
+
+                    <h4 style="
+                        font-size:15px;
+                        font-weight:900;
+                        color:#B7791F;
+                        text-transform:uppercase;
+                        margin-bottom:7px;
+                    ">
+                        📜 Important Pricing Notes
+                    </h4>
+
+                    <ul style="
+                        font-size:14px;
+                        color:#4A5568;
+                        line-height:1.5;
+                        padding-left:18px;
+                        font-weight:700;
+                    ">
+                        <li>Rate supplied: USD 500 per person in DBL.</li>
+                        <li>Hotel: Nile Jewel Aquapark.</li>
+                        <li>Travel dates were not supplied in the raw itinerary.</li>
+                        <li>Final child pricing depends on confirmed child ages.</li>
+                        <li>Egypt visa is excluded and stated as USD 30 on arrival.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="contacts">
+            <span>📞 +971 55 536 5508</span>
+            <span>✉️ info@citylaila.com</span>
+        </div>
+        <div>Page 12</div>
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     PAGE 13 - GLOBAL PRESENCE / CONTACT
+     ========================================================= -->
+
+<div class="slide">
+
+    <div class="header">
+
+        <div class="logo-container">
+            <img class="logo-img" src="images/logo.png" alt="CityLaila Logo">
+        </div>
+
+        <div class="tagline">
+            WHERE LUXURY MEETS AFFORDABILITY
+        </div>
+
+    </div>
+
+
+    <div class="content-body">
+
+        <h2
+            class="slide-title"
+            style="font-size:28px;margin-bottom:14px;"
+        >
+            📍 Global Presence
+            <span>& Contact Us</span>
+        </h2>
+
+
+        <div class="global-section">
+
+            <div class="map-and-contacts">
+
+                <div class="locations-box">
+
+                    <div
+                        class="loc-card"
+                        style="background-image:url('https://cdn.britannica.com/17/102117-050-1B43B4B4/mosque-Abu-al--Abbas-al-Mursi-Egypt-Alexandria.jpg');"
+                    >
+                        <div class="loc-card-title">
+                            🇪🇬 Alexandria, Egypt
+                        </div>
+
+                        <div class="loc-card-info">
+                            ✉️ info@citylaila.com<br>
+                            📞 +20 112 909 0043
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="loc-card"
+                        style="background-image:url('https://www.touristegypt.com/wp-content/uploads/2023/03/giza-pyramids-cairo-egypt-with-palm.jpg');"
+                    >
+                        <div class="loc-card-title">
+                            🇪🇬 Egypt Holidays
+                        </div>
+
+                        <div class="loc-card-info">
+                            Cairo • Giza • Alexandria<br>
+                            Private Guided Experiences
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="loc-card"
+                        style="background-image:url('images/countries/dubai.jpg');"
+                    >
+                        <div class="loc-card-title">
+                            🇦🇪 Dubai, UAE
+                        </div>
+
+                        <div class="loc-card-info">
+                            ✉️ info@citylaila.com<br>
+                            📞 +971 50 680 0227
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="loc-card"
+                        style="background-image:url('https://ayxhtlzyhpsjykxxnqqh.supabase.co/storage/v1/object/public/area_images/hsr-layout-bangalore/image-5.jpg');"
+                    >
+                        <div class="loc-card-title">
+                            🇮🇳 Bangalore, India
+                        </div>
+
+                        <div class="loc-card-info">
+                            ✉️ info@citylaila.com<br>
+                            📞 +91 95910 52942
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="loc-card"
+                        style="background-image:url('images/countries/singapore.webp');"
+                    >
+                        <div class="loc-card-title">
+                            🇸🇬 Singapore
+                        </div>
+
+                        <div class="loc-card-info">
+                            ✉️ info@citylaila.com<br>
+                            📞 +65 9231 0720
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="loc-card"
+                        style="
+                            background-image:url('images/countries/global.avif');
+                            text-align:center;
+                            align-items:center;
+                        "
+                    >
+
+                        <div class="loc-card-custom">
+
+                            <span style="
+                                font-size:13.5px;
+                                font-weight:900;
+                                color:#FFD700;
+                                display:block;
+                                text-shadow:0 1px 3px #000;
+                            ">
+                                🌐 GLOBAL NETWORK
+                            </span>
+
+                            <span style="
+                                font-size:11.5px;
+                                font-weight:800;
+                                color:#F1F5F9;
+                                margin-top:3px;
+                                display:block;
+                                text-shadow:0 1px 2px #000;
+                            ">
+                                Tailored holidays worldwide
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="inquiry-box">
+
+                    <div style="
+                        font-size:14.5px;
+                        font-weight:900;
+                        text-align:center;
+                        border-bottom:1px solid rgba(255,255,255,0.2);
+                        padding-bottom:8px;
+                        color:#FFD700;
+                        text-transform:uppercase;
+                    ">
+                        🎧 Instant Tour Concierge
+                    </div>
+
+
+                    <div style="
+                        display:flex;
+                        flex-direction:column;
+                        gap:11px;
+                        margin:8px 0;
+                    ">
+
+                        <div style="
+                            background:rgba(255,255,255,0.06);
+                            padding:11px;
+                            border-radius:9px;
+                        ">
+                            <h5 style="
+                                font-size:12px;
+                                font-weight:900;
+                                color:#63B3ED;
+                                text-transform:uppercase;
+                            ">
+                                B2B Partnerships
+                            </h5>
+
+                            <p style="
+                                font-size:11.5px;
+                                font-weight:700;
+                                color:#F1F5F9;
+                                margin-top:3px;
+                            ">
+                                b2b@citylaila.com<br>
+                                +971 4 4451 625
+                            </p>
+                        </div>
+
+
+                        <div style="
+                            background:rgba(255,255,255,0.06);
+                            padding:11px;
+                            border-radius:9px;
+                        ">
+                            <h5 style="
+                                font-size:12px;
+                                font-weight:900;
+                                color:#FF9933;
+                                text-transform:uppercase;
+                            ">
+                                Marketing & Media
+                            </h5>
+
+                            <p style="
+                                font-size:11.5px;
+                                font-weight:700;
+                                color:#F1F5F9;
+                                margin-top:3px;
+                            ">
+                                marketing@citylaila.com
+                            </p>
+                        </div>
+
+
+                        <div style="
+                            background:rgba(255,255,255,0.06);
+                            padding:11px;
+                            border-radius:9px;
+                        ">
+                            <h5 style="
+                                font-size:12px;
+                                font-weight:900;
+                                color:#68D391;
+                                text-transform:uppercase;
+                            ">
+                                Direct Traveler Desk
+                            </h5>
+
+                            <p style="
+                                font-size:11.5px;
+                                font-weight:700;
+                                color:#F1F5F9;
+                                margin-top:3px;
+                            ">
+                                info@citylaila.com<br>
+                                +971 55 536 5508
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div style="
+                        background:rgba(255,215,0,0.15);
+                        border:1.5px solid rgba(255,215,0,0.4);
+                        border-radius:9px;
+                        padding:9px;
+                        text-align:center;
+                        font-size:12px;
+                        font-weight:800;
+                        color:#FFD700;
+                    ">
+                        ⚡ Fast Response Support
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="features-bar">
+
+                <div>📍 Global Footprint</div>
+                <div>🏆 Trusted Travel Support</div>
+                <div>🎧 24/7 Assistance</div>
+                <div>🚗 Private Tours</div>
+                <div>🧳 Tailored Experiences</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+
+        <div class="contacts">
+            <span>📞 +971 55 536 5508</span>
+            <span>✉️ info@citylaila.com</span>
+        </div>
+
+        <div>Page 13</div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
