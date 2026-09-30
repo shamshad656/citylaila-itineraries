@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CityLaila | Dubai & Abu Dhabi Holiday Package 5N/6D</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+ --primary:#0066cc;--secondary:#ff6600;--dark:#0A192F;
+ --light:#F8FAFC;--gray:#718096;--border:#E2E8F0;--success:#38A169;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Montserrat',sans-serif;color:#2D3748;background:#F7FAFC;padding:20px 0}
+
+.slide{
+ width:297mm;height:210mm;max-height:210mm;position:relative;background:#fff;
+ margin:0 auto 30px;box-shadow:0 4px 15px rgba(0,0,0,.05);
+ display:flex;flex-direction:column;padding:35px 45px 80px;overflow:hidden;
+ page-break-after:always;break-after:page;break-inside:avoid;
+}
+.header{
+ display:flex;justify-content:space-between;align-items:center;
+ border-bottom:2px solid var(--border);padding-bottom:12px;margin-bottom:16px;flex-shrink:0;
+}
+.logo-img{max-height:48px;width:auto;object-fit:contain}
+.tagline{font-size:14px;color:var(--gray);font-weight:700;letter-spacing:1.2px;text-transform:uppercase}
+.footer{
+ position:absolute;bottom:0;left:0;width:100%;padding:16px 45px;
+ display:flex;justify-content:space-between;align-items:center;
+ border-top:1px solid var(--border);background:var(--light);
+ font-size:14px;color:var(--gray);font-weight:700;
+}
+.footer .contacts{display:flex;gap:18px}
+.content-body{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center}
+
+.slide-title{
+ font-size:30px;font-weight:900;color:var(--dark);margin-bottom:18px;
+ display:flex;align-items:center;gap:12px;line-height:1.2;
+}
+.slide-title span{color:var(--primary)}
+.summary-title{font-size:34px!important;font-weight:900!important;margin-bottom:20px!important}
+
+/* COVER */
+.cover-bg{
+ background:
+ linear-gradient(rgba(0,0,0,.42),rgba(0,0,0,.58)),
+ url('https://media.assettype.com/outlooktraveller/2024-08-20/0nbfvji7/shutterstock_2473580625.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100');
+ background-size:cover;background-position:center;color:#fff;
+ justify-content:center;align-items:center;text-align:center;
+}
+.cover-card{
+ background:rgba(10,25,47,.67);backdrop-filter:blur(5px);
+ border:1px solid rgba(255,255,255,.25);padding:32px 46px;
+ border-radius:20px;width:88%;display:flex;flex-direction:column;align-items:center;
+ box-shadow:0 8px 32px rgba(0,0,0,.25);
+}
+.cover-title{font-size:34px;font-weight:900;margin-bottom:10px;color:#fff}
+.cover-subtitle{font-size:16px;color:#ff9933;font-weight:700;margin-bottom:20px;letter-spacing:1.5px;text-transform:uppercase}
+.cover-highlights{display:flex;gap:10px;margin:8px 0 18px;flex-wrap:wrap;justify-content:center}
+.cover-tag{background:rgba(255,96,0,.35);border:1px solid var(--secondary);padding:8px 17px;font-size:14px;font-weight:800;border-radius:20px}
+.cover-info-strip{font-size:15px;font-weight:800;background:var(--secondary);padding:9px 24px;border-radius:30px;letter-spacing:.8px}
+.meta-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:18px;border-top:1px solid rgba(255,255,255,.25);padding-top:18px;width:100%}
+.meta-grid h4{font-size:13px;color:#CBD5E1;text-transform:uppercase;margin-bottom:4px}
+.meta-grid p{font-size:17px;font-weight:800;color:#fff}
+
+/* OVERVIEW */
+.full-banner-image{width:100%;height:100%;object-fit:contain;border-radius:14px;border:1px solid var(--border)}
+.timeline-container{display:flex;flex-direction:column;gap:8px}
+.timeline-row{
+ display:grid;grid-template-columns:120px 1fr 165px;gap:12px;align-items:center;
+ padding:10px 16px;background:#fff;border:1px solid var(--border);border-radius:10px;
+}
+.timeline-row:nth-child(even){background:var(--light)}
+.timeline-day{font-weight:900;font-size:16px;color:var(--primary)}
+.timeline-badge{background:#EBF8FF;color:#2B6CB0;font-size:14px;font-weight:800;padding:6px 12px;border-radius:7px;border:1px solid #BEE3F8}
+.timeline-badge.highlight{background:#E6FFFA;color:#234E52;border-color:#99F6E4}
+.timeline-stay{font-size:15px;font-weight:900;color:var(--dark);text-align:right}
+
+/* HOTEL */
+.hotel-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.hotel-card{background:#fff;border:1px solid var(--border);border-radius:20px;overflow:hidden;box-shadow:0 8px 25px rgba(0,0,0,.05)}
+.hotel-head{background:linear-gradient(135deg,#0A192F,#1E3A8A);color:#fff;padding:20px 22px}
+.hotel-head h3{font-size:21px;font-weight:900}
+.hotel-head p{font-size:13px;color:#CBD5E1;font-weight:700;margin-top:4px}
+.hotel-body{padding:18px 20px;display:flex;flex-direction:column;gap:10px}
+.hotel-row{background:#F8FAFC;border:1px solid var(--border);padding:10px 13px;border-radius:10px;font-size:14.5px;font-weight:800}
+
+/* DAY */
+.day-layout{display:grid;grid-template-columns:.86fr 1.14fr;gap:34px;flex:1;min-height:0}
+.day-badge{
+ background:var(--secondary);color:#fff;padding:9px 20px;font-weight:900;
+ border-radius:6px;display:inline-block;margin-bottom:12px;font-size:15.5px;letter-spacing:1px;
+}
+.day-title{font-size:28px;font-weight:900;color:var(--dark);margin-bottom:10px;line-height:1.25}
+.day-desc{font-size:17px;color:#334155;line-height:1.5;margin-bottom:14px;font-weight:600}
+.tour-inclusion-box{background:#F8FAFC;border:1px solid var(--border);padding:16px 20px;border-radius:16px}
+.tour-inclusion-box h4{font-size:16px;font-weight:900;color:#004499;margin-bottom:10px}
+.day-timeline-list{list-style:none;display:flex;flex-direction:column;gap:10px}
+.day-timeline-list li{
+ font-size:16px;font-weight:700;color:#1E293B;display:flex;align-items:center;gap:14px;
+ background:#fff;padding:11px 15px;border-radius:9px;border:1px solid var(--border);line-height:1.28;
+}
+.emoji-icon{font-size:18px;min-width:26px;text-align:center}
+
+.day-image-container{
+ width:100%;height:100%;min-height:480px;border-radius:18px;overflow:hidden;
+ box-shadow:0 12px 30px rgba(0,0,0,.12);border:1px solid var(--border);
+ background:#0A192F;position:relative;
+}
+.carousel-track{display:flex;height:100%;transition:transform .4s ease-in-out}
+.carousel-slide{height:100%;flex-shrink:0}
+.carousel-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.carousel-btn{
+ position:absolute;top:50%;transform:translateY(-50%);
+ background:rgba(10,25,47,.72);color:#fff;border:1px solid rgba(255,255,255,.3);
+ padding:12px 14px;border-radius:50%;cursor:pointer;font-weight:900;z-index:10;
+}
+.carousel-btn.prev{left:12px}.carousel-btn.next{right:12px}
+
+.activity-visual{
+ height:100%;min-height:480px;border-radius:18px;
+ background:linear-gradient(135deg,#0A192F,#123C69);
+ display:flex;align-items:center;justify-content:center;text-align:center;
+ padding:40px;color:#fff;box-shadow:0 12px 30px rgba(0,0,0,.12);
+}
+.activity-visual h3{font-size:30px;font-weight:900;margin-bottom:10px}
+.activity-visual p{font-size:16px;font-weight:700;color:#CBD5E1;line-height:1.5}
+
+/* MEALS */
+.meal-matrix-table{width:100%;border-collapse:separate;border-spacing:0;border-radius:16px;overflow:hidden;border:2px solid var(--border);margin-bottom:16px}
+.meal-matrix-table th{background:#0A192F;color:#fff;padding:14px 18px;font-size:15px;font-weight:900;text-transform:uppercase;text-align:left}
+.meal-matrix-table td{padding:11px 18px;font-size:15px;border-bottom:1.5px solid var(--border);background:#fff;font-weight:800}
+.meal-matrix-table tr:nth-child(even) td{background:#F8FAFC}
+.meal-in{background:#E6FFFA;color:#047481;padding:5px 10px;border-radius:6px;font-weight:900;font-size:14px;border:1.5px solid #99F6E4;display:inline-block}
+.meal-na{background:#EDF2F7;color:#718096;padding:5px 10px;border-radius:6px;font-weight:800;font-size:14px;border:1.5px solid #CBD5E0;display:inline-block}
+
+/* INCLUSION */
+.inc-layout{display:grid;grid-template-columns:1.35fr .75fr;gap:24px;flex:1;min-height:0}
+.inc-panel{background:#fff;border:1px solid var(--border);border-radius:20px;padding:20px 24px;box-shadow:0 8px 24px rgba(0,0,0,.05)}
+.inc-panel.green{border-top:6px solid #38A169}
+.inc-panel.red{border-top:6px solid #E53E3E;background:#FFF8F8}
+.inc-head{display:flex;align-items:center;gap:12px;padding-bottom:11px;border-bottom:2px solid #EDF2F7;margin-bottom:12px}
+.inc-head h3{font-size:21px;font-weight:900}
+.inc-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.inc-item{background:#F8FAFC;border:1px solid var(--border);border-radius:10px;padding:10px 12px;font-size:13.5px;font-weight:800;line-height:1.35}
+.exc-item{background:#fff;border:1px solid #FED7D7;border-radius:11px;padding:14px;margin-bottom:11px}
+.exc-item h4{font-size:15px;font-weight:900;color:#9B2C2C;margin-bottom:4px}
+.exc-item p{font-size:12.5px;font-weight:700;color:#718096;line-height:1.4}
+
+/* PRICE */
+.price-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;flex:1}
+.total-box{
+ background:linear-gradient(135deg,#0A192F,#1E3A8A 50%,#0F172A);
+ color:#fff;padding:26px;border-radius:16px;text-align:center;
+ display:flex;flex-direction:column;justify-content:center;
+ box-shadow:0 12px 30px rgba(10,25,47,.35);
+}
+
+/* CONTACT */
+.global-section{display:flex;flex-direction:column;gap:14px;height:100%}
+.map-and-contacts{display:grid;grid-template-columns:2.1fr 1fr;gap:18px;flex:1}
+.locations-box{
+ background:#F8FAFC;border-radius:15px;padding:16px;display:grid;
+ grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);
+ gap:14px;border:1px solid var(--border);
+}
+.loc-card{
+ position:relative;padding:16px;border-radius:12px;overflow:hidden;background-size:cover;
+ background-position:center;background-color:#1A2A3A;display:flex;flex-direction:column;justify-content:center;
+}
+.loc-card:before{content:'';position:absolute;inset:0;background:linear-gradient(rgba(10,25,47,.42),rgba(10,25,47,.78));z-index:1}
+.loc-card-title,.loc-card-info{position:relative;z-index:2}
+.loc-card-title{font-size:15px;font-weight:900;color:#fff;margin-bottom:5px}
+.loc-card-info{font-size:13px;color:#F1F5F9;font-weight:700;line-height:1.5}
+.inquiry-box{background:#0A192F;color:#fff;border-radius:15px;padding:20px;display:flex;flex-direction:column;justify-content:space-around}
+.features-bar{background:#0A192F;color:#fff;border-radius:10px;padding:12px 14px;display:flex;justify-content:space-around;font-size:12px;font-weight:800}
+
+@media print{
+ @page{size:A4 landscape;margin:0}
+ body{background:none;padding:0;margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ .slide{width:297mm;height:210mm;box-shadow:none;margin:0}
+ .carousel-btn{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1: COVER -->
+<div class="slide cover-bg">
+ <div class="cover-card">
+  <!-- EDIT: Logo -->
+  <img src="images/logo.png" style="height:110px;width:auto;margin-bottom:18px" alt="CityLaila">
+
+  <!-- EDIT: Package title -->
+  <h1 class="cover-title">🇦🇪 Dubai & Abu Dhabi Holiday Package</h1>
+  <div class="cover-subtitle">5 Nights / 6 Days • 4 Pax</div>
+
+  <div class="cover-highlights">
+   <div class="cover-tag">🎢 2 Yas Island Theme Parks</div>
+   <div class="cover-tag">🏨 5 Nights Accommodation</div>
+   <div class="cover-tag">🚗 Private Transfers & Tours</div>
+  </div>
+
+  <!-- EDIT: Dates -->
+  <div class="cover-info-strip">9th – 14th September</div>
+
+  <div class="meta-grid">
+   <div><h4>Duration</h4><p>5 Nights / 6 Days</p></div>
+   <div><h4>Guests</h4><p>4 Pax</p></div>
+   <div><h4>Destinations</h4><p>Abu Dhabi + Dubai</p></div>
+
+   <!-- EDIT: Price -->
+   <div><h4>Grand Total</h4><p>AED 8,540</p></div>
+  </div>
+ </div>
+
+ <div class="footer"><div>www.citylaila.com</div><div>Page 01</div></div>
+</div>
+
+
+<!-- PAGE 2: WHY BOOK -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <!-- EDIT: Why Book image -->
+ <div class="content-body">
+  <img class="full-banner-image" src="images/why_book_with_us_full.png" alt="Why Book With Us">
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 02</div>
+ </div>
+</div>
+
+
+<!-- PAGE 3: OVERVIEW -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body">
+  <!-- EDIT: Overview -->
+  <h2 class="slide-title summary-title">Itinerary Overview Summary <span>(All 6 Days)</span></h2>
+
+  <div class="timeline-container">
+   <div class="timeline-row">
+    <div class="timeline-day">Day 01<br><small>09 Sep</small></div>
+    <div><span class="timeline-badge">🛬 Abu Dhabi Arrival & Yas Island Transfer</span></div>
+    <div class="timeline-stay">🏨 Abu Dhabi</div>
+   </div>
+
+   <div class="timeline-row">
+    <div class="timeline-day">Day 02<br><small>10 Sep</small></div>
+    <div><span class="timeline-badge highlight">🏎️ Ferrari World Abu Dhabi</span></div>
+    <div class="timeline-stay">🏨 Abu Dhabi</div>
+   </div>
+
+   <div class="timeline-row">
+    <div class="timeline-day">Day 03<br><small>11 Sep</small></div>
+    <div><span class="timeline-badge highlight">🌊 SeaWorld Abu Dhabi & Dubai Transfer</span></div>
+    <div class="timeline-stay">🏨 Dubai</div>
+   </div>
+
+   <div class="timeline-row">
+    <div class="timeline-day">Day 04<br><small>12 Sep</small></div>
+    <div><span class="timeline-badge highlight">🏙️ Dubai City Tour & Premium Desert Safari</span></div>
+    <div class="timeline-stay">🏨 Dubai</div>
+   </div>
+
+   <div class="timeline-row">
+    <div class="timeline-day">Day 05<br><small>13 Sep</small></div>
+    <div><span class="timeline-badge">✨ Full Day at Leisure</span></div>
+    <div class="timeline-stay">🏨 Dubai</div>
+   </div>
+
+   <div class="timeline-row">
+    <div class="timeline-day">Day 06<br><small>14 Sep</small></div>
+    <div><span class="timeline-badge">🛫 Hotel Check-out & Dubai Airport Transfer</span></div>
+    <div class="timeline-stay" style="color:var(--success)">✨ Tour Ends</div>
+   </div>
+  </div>
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 03</div>
+ </div>
+</div>
+
+
+<!-- PAGE 4: HOTELS -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body">
+  <h2 class="slide-title">Your <span>Hotel Stay Details</span></h2>
+
+  <div class="hotel-grid">
+
+   <!-- EDIT: Abu Dhabi hotel -->
+   <div class="hotel-card">
+    <div class="hotel-head">
+     <h3>🇦🇪 Yas Plaza Circuit</h3>
+     <p>Abu Dhabi • 2 Nights</p>
+    </div>
+
+    <div class="hotel-body">
+     <div class="hotel-row">🛏️ Queen Family Suite</div>
+     <div class="hotel-row">🍳 Breakfast Included</div>
+     <div class="hotel-row">📅 Check-in: 9th September</div>
+     <div class="hotel-row">📅 Check-out: 11th September</div>
+
+     <div style="background:#E6FFFA;border:1px solid #99F6E4;padding:12px 14px;border-radius:11px;font-size:14px;font-weight:900;color:#047481">
+      🎟️ Complimentary Access to 2 Yas Island Theme Parks
+     </div>
+    </div>
+   </div>
+
+   <!-- EDIT: Dubai hotel -->
+   <div class="hotel-card">
+    <div class="hotel-head">
+     <h3>🌆 Dusit Thani Dubai – 5 Star</h3>
+     <p>Dubai • 3 Nights</p>
+    </div>
+
+    <div class="hotel-body">
+     <div class="hotel-row">🛏️ 2-Bedroom Apartment</div>
+     <div class="hotel-row">🍳 Breakfast Included</div>
+     <div class="hotel-row">🌇 Downtown & Burj Khalifa View</div>
+     <div class="hotel-row">📅 Check-in: 11th September</div>
+     <div class="hotel-row">📅 Check-out: 14th September</div>
+    </div>
+   </div>
+
+  </div>
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 04</div>
+ </div>
+</div>
+
+
+<script>
+function moveSlide(id,d){
+ const t=document.getElementById(id),s=t.querySelectorAll('.carousel-slide');
+ if(s.length<=1)return;
+ let i=parseInt(t.dataset.index||0)+d;
+ if(i<0)i=s.length-1;
+ if(i>=s.length)i=0;
+ t.dataset.index=i;
+ t.style.transform=`translateX(-${i*(100/s.length)}%)`;
+}
+window.addEventListener('DOMContentLoaded',()=>{
+ document.querySelectorAll('.carousel-track').forEach(t=>{
+  const s=t.querySelectorAll('.carousel-slide'),c=s.length;
+  t.style.width=`${c*100}%`;
+  s.forEach(x=>{x.style.width=`${100/c}%`;x.style.minWidth=`${100/c}%`});
+ });
+});
+</script>
+
+
+<!-- PAGE 5: DAY 1 -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body">
+  <div class="day-layout">
+
+   <div>
+    <!-- EDIT: Day 1 -->
+    <div class="day-badge">DAY 1 – 9TH SEPTEMBER</div>
+    <h3 class="day-title">Arrival in Abu Dhabi</h3>
+
+    <p class="day-desc">
+     Arrive in Abu Dhabi and take your private transfer to Yas Island for hotel check-in and leisure time.
+    </p>
+
+    <div class="tour-inclusion-box">
+     <h4>Included Highlights & Services:</h4>
+     <ul class="day-timeline-list">
+      <li><span class="emoji-icon">🛬</span><span>Arrival in Abu Dhabi</span></li>
+      <li><span class="emoji-icon">🚐</span><span>Private transfer to Yas Island</span></li>
+      <li><span class="emoji-icon">🏨</span><span>Check-in at Yas Plaza Circuit</span></li>
+      <li><span class="emoji-icon">✨</span><span>Leisure time & overnight in Abu Dhabi</span></li>
+     </ul>
+    </div>
+   </div>
+
+   <!-- IMG: Day 1 carousel -->
+<div class="day-image-container">
+ <div class="carousel-track" id="track-day1" data-index="0">
+
+  <div class="carousel-slide">
+   <img src="https://visitabudhabi.ae/-/media/project/vad/plan-your-trip/travelling-to-abu-dhabi/zayed-international-airport/header/zayed-airport-terminal.jpg?rev=ccbd8b85cc2340d59a89b9634755ee1b"
+        alt="Abu Dhabi Arrival">
+  </div>
+
+  <div class="carousel-slide">
+   <img src="https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1"
+        alt="Private Transfer to Yas Island">
+  </div>
+
+ </div>
+
+ <button class="carousel-btn prev" onclick="moveSlide('track-day1',-1)">❮</button>
+ <button class="carousel-btn next" onclick="moveSlide('track-day1',1)">❯</button>
+</div>
+
+  </div>
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 05</div>
+ </div>
+</div>
+
+
+<!-- PAGE 6: DAY 2 -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body">
+  <div class="day-layout">
+
+   <div>
+    <!-- EDIT: Day 2 -->
+    <div class="day-badge">DAY 2 – 10TH SEPTEMBER</div>
+    <h3 class="day-title">Ferrari World Abu Dhabi</h3>
+
+    <p class="day-desc">
+     Enjoy a full day at Ferrari World Abu Dhabi with convenient Yas Island shuttle access from the hotel.
+    </p>
+
+    <div class="tour-inclusion-box">
+     <h4>Included Highlights & Services:</h4>
+     <ul class="day-timeline-list">
+      <li><span class="emoji-icon">🍳</span><span>Breakfast at hotel</span></li>
+      <li><span class="emoji-icon">🏎️</span><span>Full-day Ferrari World Abu Dhabi visit</span></li>
+      <li><span class="emoji-icon">🚌</span><span>Yas Island shuttle bus access from hotel</span></li>
+      <li><span class="emoji-icon">🌙</span><span>Return to hotel & overnight in Abu Dhabi</span></li>
+     </ul>
+    </div>
+   </div>
+
+   <!-- IMG: Day 2 Ferrari World carousel -->
+<div class="day-image-container">
+ <div class="carousel-track" id="track-day2" data-index="0">
+
+  <div class="carousel-slide">
+   <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/27/fc/84/super-thrills-await-our.jpg?w=1200&h=1200&s=1"
+        alt="Ferrari World Abu Dhabi">
+  </div>
+
+  <div class="carousel-slide">
+   <img src="https://blooloop.com/media-library/mission-ferrari-coaster-abu-dhabi.jpg?id=56464220&width=2000&height=1500&coordinates=66%2C0%2C67%2C0"
+        alt="Ferrari World Abu Dhabi Exterior">
+  </div>
+
+ </div>
+
+ <button class="carousel-btn prev" onclick="moveSlide('track-day2',-1)">❮</button>
+ <button class="carousel-btn next" onclick="moveSlide('track-day2',1)">❯</button>
+</div>
+
+  </div>
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 06</div>
+ </div>
+</div>
+
+
+<!-- PAGE 7: DAY 3 -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body">
+  <div class="day-layout">
+
+   <div>
+    <!-- EDIT: Day 3 -->
+    <div class="day-badge">DAY 3 – 11TH SEPTEMBER</div>
+    <h3 class="day-title">SeaWorld Abu Dhabi & Dubai Transfer</h3>
+
+    <p class="day-desc">
+     Check out from Abu Dhabi, visit SeaWorld Abu Dhabi, then continue by private transfer to your Dubai hotel.
+    </p>
+
+    <div class="tour-inclusion-box">
+     <h4>Included Highlights & Services:</h4>
+     <ul class="day-timeline-list">
+      <li><span class="emoji-icon">🍳</span><span>Breakfast & Abu Dhabi hotel check-out</span></li>
+      <li><span class="emoji-icon">🌊</span><span>Visit SeaWorld Abu Dhabi</span></li>
+      <li><span class="emoji-icon">🚐</span><span>Private transfer from Abu Dhabi to Dubai</span></li>
+      <li><span class="emoji-icon">🏨</span><span>Check-in at Dusit Thani Dubai & leisure</span></li>
+     </ul>
+    </div>
+   </div>
+
+   <!-- IMG: SeaWorld + transfer -->
+   <div class="day-image-container">
+    <div class="carousel-track" id="track-day3" data-index="0">
+     <div class="carousel-slide">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/29/44/88/b6/one-ocean-serving-as.jpg?w=1200&h=1200&s=1" alt="SeaWorld Abu Dhabi">
+     </div>
+
+     <div class="carousel-slide">
+      <img src="https://blooloop.com/media-library/seaworld-abu-dhabi-opening.jpg?id=56466936&width=2000&height=1500&coordinates=83%2C0%2C83%2C0" alt="Private Transfer">
+     </div>
+    </div>
+
+    <button class="carousel-btn prev" onclick="moveSlide('track-day3',-1)">❮</button>
+    <button class="carousel-btn next" onclick="moveSlide('track-day3',1)">❯</button>
+   </div>
+
+  </div>
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 07</div>
+ </div>
+</div>
+
+
+<!-- PAGE 8: DAY 4 -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body">
+  <div class="day-layout">
+
+   <div>
+    <!-- EDIT: Day 4 -->
+    <div class="day-badge">DAY 4 – 12TH SEPTEMBER</div>
+    <h3 class="day-title">Dubai City Tour & Premium Desert Safari</h3>
+
+    <p class="day-desc">
+     Explore Dubai’s key landmarks on a private half-day city tour, followed by a Premium Desert Safari in a private Land Cruiser.
+    </p>
+
+    <div class="tour-inclusion-box">
+     <h4>Included Highlights & Services:</h4>
+     <ul class="day-timeline-list">
+      <li><span class="emoji-icon">🌴</span><span>Palm Jumeirah, Atlantis & Dubai Marina</span></li>
+      <li><span class="emoji-icon">🏖️</span><span>Jumeirah Beach & Burj Al Arab photo stop</span></li>
+      <li><span class="emoji-icon">💍</span><span>Gold Souk & Spice Souk</span></li>
+      <li><span class="emoji-icon">🏜️</span><span>Private Land Cruiser Safari, dune bashing, sunset & camel ride</span></li>
+      <li><span class="emoji-icon">🍖</span><span>BBQ dinner, live entertainment & hotel return</span></li>
+     </ul>
+    </div>
+   </div>
+
+   <!-- IMG: Day 4 exact attractions -->
+   <div class="day-image-container">
+    <div class="carousel-track" id="track-day4" data-index="0">
+
+     <div class="carousel-slide">
+      <img src="https://media.assettype.com/gulfnews%2F2026-09-01%2F6xosofko%2FDubai?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100" alt="Palm Jumeirah">
+     </div>
+
+     <div class="carousel-slide">
+      <img src="https://cdn.britannica.com/68/250068-050-B0AD857A/Burj-Al-Arab-luxury-hotel-Dubai.jpg" alt="Burj Al Arab">
+     </div>
+
+     <div class="carousel-slide">
+      <img src="https://image-tc.galaxy.tf/wijpeg-2lm45ex25ruhe9mqmjcrtglmt/file.jpg" alt="Gold Souk">
+     </div>
+
+     <div class="carousel-slide">
+      <img src="https://www.desertsafariuae.ae/wp-content/uploads/2024/10/Red-Dune-Desert-Safari-1.png" alt="Premium Desert Safari Dubai">
+     </div>
+
+    </div>
+
+    <button class="carousel-btn prev" onclick="moveSlide('track-day4',-1)">❮</button>
+    <button class="carousel-btn next" onclick="moveSlide('track-day4',1)">❯</button>
+   </div>
+
+  </div>
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 08</div>
+ </div>
+</div>
+
+
+<!-- PAGE 9: DAY 5 -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body">
+  <div class="day-layout">
+
+   <div>
+    <!-- EDIT: Day 5 -->
+    <div class="day-badge">DAY 5 – 13TH SEPTEMBER</div>
+    <h3 class="day-title">Dubai Leisure Day</h3>
+
+    <p class="day-desc">
+     Enjoy a relaxed full day at leisure in Dubai. Optional activities can be arranged separately upon request.
+    </p>
+
+    <div class="tour-inclusion-box">
+     <h4>Day Plan:</h4>
+     <ul class="day-timeline-list">
+      <li><span class="emoji-icon">🍳</span><span>Breakfast at hotel</span></li>
+      <li><span class="emoji-icon">✨</span><span>Full day at leisure</span></li>
+      <li><span class="emoji-icon">🎟️</span><span>Optional activities available on request</span></li>
+      <li><span class="emoji-icon">🌙</span><span>Overnight stay in Dubai</span></li>
+     </ul>
+    </div>
+   </div>
+
+   <!-- VISUAL: No unrelated attraction image -->
+   <div class="activity-visual">
+    <div>
+     <div style="font-size:58px;margin-bottom:14px">✨</div>
+     <h3>Dubai Leisure Day</h3>
+     <p>
+      Relax, explore independently or request an optional Dubai experience based on your preference.
+     </p>
+    </div>
+   </div>
+
+  </div>
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 09</div>
+ </div>
+</div>
+
+
+<!-- PAGE 10: DAY 6 -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body">
+  <div class="day-layout">
+
+   <div>
+    <!-- EDIT: Departure -->
+    <div class="day-badge" style="background:var(--success)">DAY 6 – 14TH SEPTEMBER</div>
+    <h3 class="day-title">Departure from Dubai</h3>
+
+    <p class="day-desc">
+     Check out from Dusit Thani Dubai and take your private transfer to Dubai Airport for departure.
+    </p>
+
+    <div class="tour-inclusion-box">
+     <h4>Departure Services:</h4>
+     <ul class="day-timeline-list">
+      <li><span class="emoji-icon">🍳</span><span>Breakfast at hotel</span></li>
+      <li><span class="emoji-icon">🧳</span><span>Hotel check-out</span></li>
+      <li><span class="emoji-icon">🚐</span><span>Private transfer to Dubai Airport</span></li>
+      <li><span class="emoji-icon">🛫</span><span>Departure flight</span></li>
+     </ul>
+    </div>
+   </div>
+
+   <!-- IMG: Locked departure images -->
+   <div class="day-image-container">
+    <div class="carousel-track" id="track-day6" data-index="0">
+
+     <div class="carousel-slide">
+      <img src="https://static.toiimg.com/thumb/106057438/Hotel-checkout.jpg?width=1200&height=900" alt="Hotel Checkout">
+     </div>
+
+     <div class="carousel-slide">
+      <img src="https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1" alt="Private Transfer">
+     </div>
+
+     <div class="carousel-slide">
+      <img src="https://m.media-amazon.com/images/I/71nXbtmuQlL.jpg" alt="Departure">
+     </div>
+
+    </div>
+
+    <button class="carousel-btn prev" onclick="moveSlide('track-day6',-1)">❮</button>
+    <button class="carousel-btn next" onclick="moveSlide('track-day6',1)">❯</button>
+   </div>
+
+  </div>
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 10</div>
+ </div>
+</div>
+
+
+<!-- PAGE 11: MEALS -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body">
+
+  <!-- EDIT: Meal table -->
+  <h2 class="slide-title summary-title">Complete <span>Day-Wise Meal Plan Summary</span></h2>
+
+  <table class="meal-matrix-table">
+   <thead>
+    <tr>
+     <th>Day</th>
+     <th>Breakfast</th>
+     <th>Lunch</th>
+     <th>Dinner</th>
+    </tr>
+   </thead>
+
+   <tbody>
+    <tr>
+     <td>Day 1 – 09 Sep</td>
+     <td><span class="meal-na">Arrival Day</span></td>
+     <td><span class="meal-na">Not Mentioned</span></td>
+     <td><span class="meal-na">Not Mentioned</span></td>
+    </tr>
+
+    <tr>
+     <td>Day 2 – 10 Sep</td>
+     <td><span class="meal-in">✓ Hotel Breakfast</span></td>
+     <td><span class="meal-na">Not Mentioned</span></td>
+     <td><span class="meal-na">Not Mentioned</span></td>
+    </tr>
+
+    <tr>
+     <td>Day 3 – 11 Sep</td>
+     <td><span class="meal-in">✓ Hotel Breakfast</span></td>
+     <td><span class="meal-na">Not Mentioned</span></td>
+     <td><span class="meal-na">Not Mentioned</span></td>
+    </tr>
+
+    <tr>
+     <td>Day 4 – 12 Sep</td>
+     <td><span class="meal-in">✓ Hotel Breakfast</span></td>
+     <td><span class="meal-na">Not Mentioned</span></td>
+     <td><span class="meal-in">✓ Safari BBQ Dinner</span></td>
+    </tr>
+
+    <tr>
+     <td>Day 5 – 13 Sep</td>
+     <td><span class="meal-in">✓ Hotel Breakfast</span></td>
+     <td><span class="meal-na">Not Mentioned</span></td>
+     <td><span class="meal-na">Not Mentioned</span></td>
+    </tr>
+
+    <tr>
+     <td>Day 6 – 14 Sep</td>
+     <td><span class="meal-in">✓ Hotel Breakfast</span></td>
+     <td><span class="meal-na">Departure Day</span></td>
+     <td><span class="meal-na">Departure Day</span></td>
+    </tr>
+   </tbody>
+  </table>
+
+  <div style="background:#EBF8FF;border:1px solid #BEE3F8;border-radius:12px;padding:12px 17px;font-size:14px;color:#2B6CB0;font-weight:700">
+   💡 <b>Meal Note:</b> Breakfast is included with both hotel stays. Premium Desert Safari includes BBQ dinner as stated in the itinerary.
+  </div>
+
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 11</div>
+ </div>
+</div>
+
+
+<!-- PAGE 12: INCLUSIONS -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body">
+
+  <h2 class="slide-title" style="font-size:32px;margin-bottom:14px">
+   Package <span>Inclusions & On-Request Services</span>
+  </h2>
+
+  <div class="inc-layout">
+
+   <!-- EDIT: Included -->
+   <div class="inc-panel green">
+
+    <div class="inc-head">
+     <div style="font-size:26px">✅</div>
+     <div>
+      <h3 style="color:#276749">What's Included</h3>
+      <div style="font-size:12px;color:var(--gray);font-weight:700">
+       Accommodation, sightseeing, transfers & listed activities
+      </div>
+     </div>
+    </div>
+
+    <div class="inc-grid">
+     <div class="inc-item">🏨 2 Nights at Yas Plaza Circuit</div>
+     <div class="inc-item">🏨 3 Nights at Dusit Thani Dubai – 5 Star</div>
+
+     <div class="inc-item">🍳 Breakfast at Both Hotels</div>
+     <div class="inc-item">🚐 Private Airport & Intercity Transfers</div>
+
+     <div class="inc-item">🏎️ Ferrari World Abu Dhabi</div>
+     <div class="inc-item">🌊 SeaWorld Abu Dhabi</div>
+
+     <div class="inc-item">🎟️ Complimentary Access to 2 Yas Island Theme Parks</div>
+     <div class="inc-item">🏙️ Private Half-Day Dubai City Tour</div>
+
+     <div class="inc-item">🌴 Palm Jumeirah, Atlantis & Dubai Marina</div>
+     <div class="inc-item">🏖️ Jumeirah Beach & Burj Al Arab Photo Stop</div>
+
+     <div class="inc-item">💍 Gold Souk & Spice Souk</div>
+     <div class="inc-item">🏜️ Premium Desert Safari in Private Land Cruiser</div>
+
+     <div class="inc-item" style="grid-column:1/3">
+      🍖 Dune Bashing, Sunset Stop, Camel Ride, BBQ Dinner & Live Entertainment
+     </div>
+    </div>
+   </div>
+
+   <!-- EDIT: Optional -->
+   <div class="inc-panel red">
+
+    <div class="inc-head">
+     <div style="font-size:26px">➕</div>
+     <div>
+      <h3 style="color:#C05621">On Request / Extra</h3>
+      <div style="font-size:12px;color:var(--gray);font-weight:700">
+       Not part of the listed package unless selected
+      </div>
+     </div>
+    </div>
+
+    <div class="exc-item">
+     <h4>🎟️ Day 5 Optional Activities</h4>
+     <p>
+      The itinerary keeps Day 5 at leisure. Any activity requested for this day will be arranged separately.
+     </p>
+    </div>
+
+    <div class="exc-item">
+     <h4>📌 Other Services</h4>
+     <p>
+      Any service or activity not specifically mentioned in the itinerary should be confirmed separately before booking.
+     </p>
+    </div>
+
+    <div style="margin-top:auto;background:#E6FFFA;border:1px solid #99F6E4;border-radius:11px;padding:13px;font-size:12.5px;font-weight:800;color:#047481;line-height:1.45">
+     ✓ Hotel accommodation, sightseeing, transfers and activities specifically listed in this itinerary are included.
+    </div>
+
+   </div>
+  </div>
+
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 12</div>
+ </div>
+</div>
+
+
+<!-- PAGE 13: PRICE -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body" style="justify-content:center;">
+
+  <!-- EDIT: Page title -->
+  <h2 class="slide-title" style="margin-bottom:20px;">
+   Package <span>Price Summary</span>
+  </h2>
+
+  <div class="price-layout"
+       style="
+        flex:none;
+        min-height:390px;
+        align-items:stretch;
+       ">
+
+   <!-- LEFT -->
+   <div style="
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:16px;
+   ">
+
+    <!-- EDIT: Final price -->
+    <div class="total-box" style="flex:none;min-height:255px;">
+     <div style="
+      font-size:15px;
+      text-transform:uppercase;
+      letter-spacing:2px;
+      color:#F59E0B;
+      font-weight:800;
+     ">
+      GRAND TOTAL PACKAGE PRICE
+     </div>
+
+     <div style="
+      font-size:42px;
+      font-weight:900;
+      margin:10px 0;
+     ">
+      AED 8,540
+     </div>
+
+     <p style="
+      font-size:16px;
+      font-weight:800;
+      color:#FDE047;
+     ">
+      For 4 Pax
+     </p>
+
+     <p style="
+      font-size:14px;
+      color:#E2E8F0;
+      margin-top:9px;
+      font-weight:700;
+     ">
+      5 Nights / 6 Days • Dubai & Abu Dhabi
+     </p>
+    </div>
+
+    <!-- EDIT: Package coverage -->
+    <div style="
+     background:#fff;
+     border:1px solid var(--border);
+     padding:17px 19px;
+     border-radius:16px;
+    ">
+     <h4 style="font-size:16px;font-weight:900;">
+      ✨ Package Coverage
+     </h4>
+
+     <p style="
+      font-size:14px;
+      font-weight:700;
+      color:#4A5568;
+      margin-top:6px;
+      line-height:1.5;
+     ">
+      Hotel accommodation, breakfast, sightseeing, transfers and activities mentioned in the itinerary are included.
+     </p>
+    </div>
+
+   </div>
+
+
+   <!-- RIGHT -->
+   <div style="
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+   ">
+
+    <!-- EDIT: Trip summary -->
+    <div style="
+     background:#F8FAFC;
+     border:1px solid var(--border);
+     border-left:5px solid var(--primary);
+     padding:22px 24px;
+     border-radius:16px;
+     min-height:365px;
+     display:flex;
+     flex-direction:column;
+     justify-content:center;
+    ">
+
+     <h4 style="
+      font-size:18px;
+      font-weight:900;
+      margin-bottom:16px;
+      color:var(--dark);
+     ">
+      📋 TRIP SUMMARY
+     </h4>
+
+     <div style="
+      font-size:15px;
+      font-weight:700;
+      display:flex;
+      flex-direction:column;
+      gap:11px;
+     ">
+      <div><b>📅 Travel:</b> 9th – 14th September</div>
+      <div><b>👥 Guests:</b> 4 Pax</div>
+      <div><b>🏨 Abu Dhabi:</b> Yas Plaza Circuit • 2 Nights</div>
+      <div><b>🌆 Dubai:</b> Dusit Thani Dubai • 3 Nights</div>
+      <div><b>🍳 Meal Plan:</b> Daily Breakfast</div>
+      <div><b>🎟️ Special Benefit:</b> Access to 2 Yas Island Theme Parks</div>
+     </div>
+
+     <!-- EDIT: Optional note -->
+     <div style="
+      margin-top:18px;
+      background:#FFFDF5;
+      border:1px solid #F6E05E;
+      border-left:4px solid #D69E2E;
+      border-radius:11px;
+      padding:11px 14px;
+      font-size:13px;
+      font-weight:800;
+      color:#975A16;
+      line-height:1.45;
+     ">
+      📌 Day 5 is at leisure. Optional activities can be arranged separately upon request.
+     </div>
+
+    </div>
+
+   </div>
+
+  </div>
+ </div>
+
+ <div class="footer">
+  <div class="contacts">
+   <span>📞 +971 55 536 5508</span>
+   <span>✉️ info@citylaila.com</span>
+  </div>
+  <div>Page 13</div>
+ </div>
+</div>
+
+
+<!-- PAGE 14: CONTACT -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body">
+
+  <!-- EDIT: Contact page -->
+  <h2 class="slide-title" style="font-size:28px">📍 Global Presence <span>& Contact Us</span></h2>
+
+  <div class="global-section">
+
+   <div class="map-and-contacts">
+
+    <div class="locations-box">
+
+     <div class="loc-card" style="background-image:url('https://media.assettype.com/outlooktraveller/2024-08-20/0nbfvji7/shutterstock_2473580625.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100')">
+      <div class="loc-card-title">🇦🇪 Abu Dhabi</div>
+      <div class="loc-card-info">Yas Island • Theme Parks • Private Tours</div>
+     </div>
+
+     <div class="loc-card" style="background-image:url('images/countries/dubai.jpg')">
+      <div class="loc-card-title">🇦🇪 Dubai</div>
+      <div class="loc-card-info">Sightseeing • Attractions • Desert Safari</div>
+     </div>
+
+     <div class="loc-card" style="background-image:url('images/countries/dubai.jpg')">
+      <div class="loc-card-title">🇦🇪 Dubai Office</div>
+      <div class="loc-card-info">📞 +971 50 680 0227</div>
+     </div>
+
+     <div class="loc-card" style="background-image:url('https://ayxhtlzyhpsjykxxnqqh.supabase.co/storage/v1/object/public/area_images/hsr-layout-bangalore/image-5.jpg')">
+      <div class="loc-card-title">🇮🇳 Bangalore</div>
+      <div class="loc-card-info">📞 +91 95910 52942</div>
+     </div>
+
+     <div class="loc-card" style="background-image:url('images/countries/singapore.webp')">
+      <div class="loc-card-title">🇸🇬 Singapore</div>
+      <div class="loc-card-info">📞 +65 9231 0720</div>
+     </div>
+
+     <div class="loc-card" style="background-image:url('images/countries/global.avif')">
+      <div class="loc-card-title">🌐 Global Network</div>
+      <div class="loc-card-info">Tailored Holidays Worldwide</div>
+     </div>
+
+    </div>
+
+    <!-- EDIT: Contact -->
+    <div class="inquiry-box">
+     <div style="font-size:14.5px;font-weight:900;text-align:center;color:#FFD700">🎧 INSTANT TOUR CONCIERGE</div>
+
+     <div>
+      <b style="color:#63B3ED">B2B Partnerships</b><br>
+      <small>b2b@citylaila.com<br>+971 4 4451 625</small>
+     </div>
+
+     <div>
+      <b style="color:#FF9933">Marketing & Media</b><br>
+      <small>marketing@citylaila.com</small>
+     </div>
+
+     <div>
+      <b style="color:#68D391">Direct Traveler Desk</b><br>
+      <small>info@citylaila.com<br>+971 55 536 5508</small>
+     </div>
+
+    </div>
+   </div>
+
+   <div class="features-bar">
+    <div>📍 UAE Specialists</div>
+    <div>🏨 Hotel Packages</div>
+    <div>🎧 Travel Support</div>
+    <div>🚗 Private Tours</div>
+    <div>🎟️ Attractions</div>
+   </div>
+
+  </div>
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 14</div>
+ </div>
+</div>
+
+</body>
+</html>
