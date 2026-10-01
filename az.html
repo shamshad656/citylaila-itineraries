@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CityLaila | Baku Holiday Package 3N/4D</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+ --primary:#0066cc;--secondary:#ff6600;--dark:#0A192F;
+ --light:#F8FAFC;--gray:#718096;--border:#E2E8F0;--success:#38A169;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Montserrat',sans-serif;color:#2D3748;background:#F7FAFC;padding:20px 0}
+
+.slide{
+ width:297mm;height:210mm;max-height:210mm;position:relative;background:#fff;
+ margin:0 auto 30px;box-shadow:0 4px 15px rgba(0,0,0,.05);
+ display:flex;flex-direction:column;padding:35px 45px 80px;overflow:hidden;
+ page-break-after:always;break-after:page;break-inside:avoid;
+}
+.header{
+ display:flex;justify-content:space-between;align-items:center;
+ border-bottom:2px solid var(--border);padding-bottom:12px;margin-bottom:16px;flex-shrink:0;
+}
+.logo-img{max-height:48px;width:auto;object-fit:contain}
+.tagline{font-size:14px;color:var(--gray);font-weight:700;letter-spacing:1.2px;text-transform:uppercase}
+.footer{
+ position:absolute;bottom:0;left:0;width:100%;padding:16px 45px;
+ display:flex;justify-content:space-between;align-items:center;
+ border-top:1px solid var(--border);background:var(--light);
+ font-size:14px;color:var(--gray);font-weight:700;
+}
+.footer .contacts{display:flex;gap:18px}
+.content-body{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center}
+
+.slide-title{
+ font-size:30px;font-weight:900;color:var(--dark);margin-bottom:18px;
+ display:flex;align-items:center;gap:12px;line-height:1.2;
+}
+.slide-title span{color:var(--primary)}
+.summary-title{font-size:34px!important;font-weight:900!important;margin-bottom:20px!important}
+
+/* COVER */
+.cover-bg{
+ background:
+ linear-gradient(rgba(0,0,0,.43),rgba(0,0,0,.62)),
+ url('https://images.adsttc.com/media/images/5285/1f2b/e8e4/4e52/4b00/01ab/large_jpg/HAC_photo_by_Iwan_Baan_(2).jpg?1384455904');
+ background-size:cover;background-position:center;color:#fff;
+ justify-content:center;align-items:center;text-align:center;
+}
+.cover-card{
+ background:rgba(10,25,47,.69);backdrop-filter:blur(5px);
+ border:1px solid rgba(255,255,255,.25);padding:32px 46px;
+ border-radius:20px;width:88%;display:flex;flex-direction:column;align-items:center;
+ box-shadow:0 8px 32px rgba(0,0,0,.25);
+}
+.cover-title{font-size:34px;font-weight:900;margin-bottom:10px}
+.cover-subtitle{font-size:16px;color:#ff9933;font-weight:700;margin-bottom:20px;letter-spacing:1.5px;text-transform:uppercase}
+.cover-highlights{display:flex;gap:10px;margin:8px 0 18px;flex-wrap:wrap;justify-content:center}
+.cover-tag{background:rgba(255,96,0,.35);border:1px solid var(--secondary);padding:8px 17px;font-size:14px;font-weight:800;border-radius:20px}
+.cover-info-strip{font-size:15px;font-weight:800;background:var(--secondary);padding:9px 24px;border-radius:30px;letter-spacing:.8px}
+.meta-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:18px;border-top:1px solid rgba(255,255,255,.25);padding-top:18px;width:100%}
+.meta-grid h4{font-size:13px;color:#CBD5E1;text-transform:uppercase;margin-bottom:4px}
+.meta-grid p{font-size:17px;font-weight:800;color:#fff}
+
+/* COMMON */
+.full-banner-image{width:100%;height:100%;object-fit:contain;border-radius:14px;border:1px solid var(--border)}
+.card{background:#fff;border:1px solid var(--border);border-radius:20px;padding:25px 30px;box-shadow:0 8px 25px rgba(0,0,0,.05)}
+
+/* OVERVIEW */
+.timeline-container{display:flex;flex-direction:column;gap:12px}
+.timeline-row{
+ display:grid;grid-template-columns:125px 1fr 165px;gap:12px;align-items:center;
+ padding:14px 16px;background:#fff;border:1px solid var(--border);border-radius:10px;
+}
+.timeline-row:nth-child(even){background:var(--light)}
+.timeline-day{font-weight:900;font-size:16px;color:var(--primary)}
+.timeline-badge{background:#EBF8FF;color:#2B6CB0;font-size:14px;font-weight:800;padding:7px 12px;border-radius:7px;border:1px solid #BEE3F8;line-height:1.3}
+.timeline-badge.highlight{background:#E6FFFA;color:#234E52;border-color:#99F6E4}
+.timeline-stay{font-size:15px;font-weight:900;color:var(--dark);text-align:right}
+
+/* FLIGHTS */
+.flight-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.flight-card{background:#fff;border:1px solid var(--border);border-radius:20px;box-shadow:0 8px 25px rgba(0,0,0,.05);overflow:hidden}
+.flight-head{background:linear-gradient(135deg,#0A192F,#1E3A8A);color:#fff;padding:18px 22px}
+.flight-head h3{font-size:20px;font-weight:900}
+.flight-head p{font-size:13px;font-weight:700;color:#CBD5E1;margin-top:4px}
+.flight-body{padding:18px 20px;display:flex;flex-direction:column;gap:10px}
+.flight-route{font-size:21px;font-weight:900;color:var(--dark);text-align:center;padding:8px}
+.flight-row{display:flex;justify-content:space-between;background:#F8FAFC;border:1px solid var(--border);padding:10px 12px;border-radius:9px;font-size:14px;font-weight:800}
+
+/* HOTEL */
+.hotel-banner{
+ background:linear-gradient(135deg,#0A192F,#1E3A8A);color:#fff;
+ padding:18px 22px;border-radius:14px;display:flex;justify-content:space-between;align-items:center;
+ margin-bottom:16px;
+}
+.hotel-details{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.hotel-item{background:#F8FAFC;border:1px solid var(--border);padding:13px 16px;border-radius:11px;font-size:14.5px;font-weight:800}
+
+/* DAYS */
+.day-layout{display:grid;grid-template-columns:.86fr 1.14fr;gap:34px;flex:1;min-height:0}
+.day-badge{
+ background:var(--secondary);color:#fff;padding:9px 20px;font-weight:900;
+ border-radius:6px;display:inline-block;margin-bottom:12px;font-size:15.5px;letter-spacing:1px;
+}
+.day-title{font-size:28px;font-weight:900;color:var(--dark);margin-bottom:10px;line-height:1.25}
+.day-desc{font-size:17px;color:#334155;line-height:1.5;margin-bottom:14px;font-weight:600}
+.tour-inclusion-box{background:#F8FAFC;border:1px solid var(--border);padding:16px 20px;border-radius:16px}
+.tour-inclusion-box h4{font-size:16px;font-weight:900;color:#004499;margin-bottom:10px}
+.day-timeline-list{list-style:none;display:flex;flex-direction:column;gap:10px}
+.day-timeline-list li{
+ font-size:16px;font-weight:700;color:#1E293B;display:flex;align-items:center;gap:14px;
+ background:#fff;padding:11px 15px;border-radius:9px;border:1px solid var(--border);line-height:1.28;
+}
+.emoji-icon{font-size:18px;min-width:26px;text-align:center}
+
+/* CAROUSEL */
+.day-image-container{
+ width:100%;height:100%;min-height:480px;border-radius:18px;overflow:hidden;
+ box-shadow:0 12px 30px rgba(0,0,0,.12);border:1px solid var(--border);
+ background:#0A192F;position:relative;
+}
+.carousel-track{display:flex;height:100%;transition:transform .4s ease-in-out}
+.carousel-slide{height:100%;flex-shrink:0}
+.carousel-slide img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.carousel-btn{
+ position:absolute;top:50%;transform:translateY(-50%);
+ background:rgba(10,25,47,.72);color:#fff;border:1px solid rgba(255,255,255,.3);
+ padding:12px 14px;border-radius:50%;cursor:pointer;font-weight:900;z-index:10;
+}
+.carousel-btn.prev{left:12px}.carousel-btn.next{right:12px}
+
+/* MEALS */
+.meal-matrix-table{width:100%;border-collapse:separate;border-spacing:0;border-radius:16px;overflow:hidden;border:2px solid var(--border);margin-bottom:16px}
+.meal-matrix-table th{background:#0A192F;color:#fff;padding:14px 18px;font-size:15px;font-weight:900;text-transform:uppercase;text-align:left}
+.meal-matrix-table td{padding:13px 18px;font-size:15px;border-bottom:1.5px solid var(--border);background:#fff;font-weight:800}
+.meal-matrix-table tr:nth-child(even) td{background:#F8FAFC}
+.meal-in{background:#E6FFFA;color:#047481;padding:5px 10px;border-radius:6px;font-weight:900;font-size:14px;border:1.5px solid #99F6E4;display:inline-block}
+.meal-na{background:#EDF2F7;color:#718096;padding:5px 10px;border-radius:6px;font-weight:800;font-size:14px;border:1.5px solid #CBD5E0;display:inline-block}
+
+/* INC EXC */
+.inc-layout{display:grid;grid-template-columns:1.18fr .82fr;gap:24px;flex:1;min-height:0}
+.inc-panel{background:#fff;border:1px solid var(--border);border-radius:20px;padding:20px 24px;box-shadow:0 8px 24px rgba(0,0,0,.05)}
+.inc-panel.green{border-top:6px solid #38A169}
+.inc-panel.red{border-top:6px solid #E53E3E;background:#FFF8F8}
+.inc-head{display:flex;align-items:center;gap:12px;padding-bottom:11px;border-bottom:2px solid #EDF2F7;margin-bottom:12px}
+.inc-head h3{font-size:21px;font-weight:900}
+.inc-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.inc-item{background:#F8FAFC;border:1px solid var(--border);border-radius:10px;padding:10px 12px;font-size:13.5px;font-weight:800;line-height:1.35}
+.exc-item{background:#fff;border:1px solid #FED7D7;border-radius:11px;padding:12px 13px;margin-bottom:9px}
+.exc-item h4{font-size:14.5px;font-weight:900;color:#9B2C2C;margin-bottom:3px}
+.exc-item p{font-size:12.5px;font-weight:700;color:#718096;line-height:1.35}
+
+/* PRICE */
+.price-layout{display:grid;grid-template-columns:1.02fr .98fr;gap:30px;flex:none;min-height:390px}
+.total-box{
+ background:linear-gradient(135deg,#0A192F,#1E3A8A 50%,#0F172A);
+ color:#fff;padding:26px;border-radius:16px;text-align:center;
+ display:flex;flex-direction:column;justify-content:center;
+ box-shadow:0 12px 30px rgba(10,25,47,.35);
+}
+
+/* CONTACT */
+.global-section{display:flex;flex-direction:column;gap:14px;height:100%}
+.map-and-contacts{display:grid;grid-template-columns:2.1fr 1fr;gap:18px;flex:1}
+.locations-box{
+ background:#F8FAFC;border-radius:15px;padding:16px;display:grid;
+ grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);
+ gap:14px;border:1px solid var(--border);
+}
+.loc-card{
+ position:relative;padding:16px;border-radius:12px;overflow:hidden;
+ background-size:cover;background-position:center;background-color:#1A2A3A;
+ display:flex;flex-direction:column;justify-content:center;
+}
+.loc-card:before{content:'';position:absolute;inset:0;background:linear-gradient(rgba(10,25,47,.42),rgba(10,25,47,.78));z-index:1}
+.loc-card-title,.loc-card-info{position:relative;z-index:2}
+.loc-card-title{font-size:15px;font-weight:900;color:#fff;margin-bottom:5px}
+.loc-card-info{font-size:13px;color:#F1F5F9;font-weight:700;line-height:1.5}
+.inquiry-box{background:#0A192F;color:#fff;border-radius:15px;padding:20px;display:flex;flex-direction:column;justify-content:space-around}
+.features-bar{background:#0A192F;color:#fff;border-radius:10px;padding:12px 14px;display:flex;justify-content:space-around;font-size:12px;font-weight:800}
+
+@media print{
+ @page{size:A4 landscape;margin:0}
+ body{background:none;padding:0;margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+ .slide{width:297mm;height:210mm;box-shadow:none;margin:0}
+ .carousel-btn{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 1: COVER -->
+<div class="slide cover-bg">
+ <div class="cover-card">
+
+  <!-- EDIT: Logo -->
+  <img src="images/logo.png" alt="CityLaila" style="height:110px;width:auto;margin-bottom:18px">
+
+  <!-- EDIT: Cover title -->
+  <h1 class="cover-title">🇦🇿 Baku Holiday Package</h1>
+  <div class="cover-subtitle">3 Nights / 4 Days • Azerbaijan</div>
+
+  <div class="cover-highlights">
+   <div class="cover-tag">🏨 Port Rivoli Baku</div>
+   <div class="cover-tag">🚐 Mercedes Minivan with Driver</div>
+   <div class="cover-tag">🌆 Baku • Gabala • Absheron</div>
+  </div>
+
+  <!-- EDIT: Travel details -->
+  <div class="cover-info-strip">10–13 October 2026 • 2 Adults + 2 Children</div>
+
+  <div class="meta-grid">
+   <div><h4>Duration</h4><p>3 Nights / 4 Days</p></div>
+   <div><h4>Guests</h4><p>2 Adults + 2 Children</p></div>
+   <div><h4>Rooms</h4><p>2 Double Rooms</p></div>
+
+   <!-- EDIT: Price -->
+   <div><h4>Total Package</h4><p>AED 8,996</p></div>
+  </div>
+
+ </div>
+
+ <div class="footer">
+  <div>www.citylaila.com</div>
+  <div>Page 01</div>
+ </div>
+</div>
+
+
+<!-- PAGE 2: WHY BOOK -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png" alt="CityLaila">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <!-- EDIT: Why Book image -->
+ <div class="content-body">
+  <img src="images/why_book_with_us_full.png" class="full-banner-image" alt="Why Book With Us">
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 02</div>
+ </div>
+</div>
+
+
+<!-- PAGE 3: OVERVIEW -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body">
+
+  <!-- EDIT: Overview -->
+  <h2 class="slide-title summary-title">Itinerary Overview Summary <span>(All 4 Days)</span></h2>
+
+  <div class="timeline-container">
+
+   <div class="timeline-row">
+    <div class="timeline-day">Day 01<br><small>10 Oct</small></div>
+    <div><span class="timeline-badge highlight">🌆 Arrival & Panoramic Baku City Tour</span></div>
+    <div class="timeline-stay">🏨 Baku</div>
+   </div>
+
+   <div class="timeline-row">
+    <div class="timeline-day">Day 02<br><small>11 Oct</small></div>
+    <div><span class="timeline-badge highlight">🏛️ Full-Day Baku City Tour</span></div>
+    <div class="timeline-stay">🏨 Baku</div>
+   </div>
+
+   <div class="timeline-row">
+    <div class="timeline-day">Day 03<br><small>12 Oct</small></div>
+    <div><span class="timeline-badge highlight">🏔️ Gabala Day Tour</span></div>
+    <div class="timeline-stay">🏨 Baku</div>
+   </div>
+
+   <div class="timeline-row">
+    <div class="timeline-day">Day 04<br><small>13 Oct</small></div>
+    <div><span class="timeline-badge highlight">🔥 Absheron Tour & Departure</span></div>
+    <div class="timeline-stay" style="color:var(--success)">✈️ Sharjah</div>
+   </div>
+
+  </div>
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 03</div>
+ </div>
+</div>
+
+
+<!-- PAGE 4: FLIGHTS -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body">
+
+  <h2 class="slide-title">✈️ Your <span>Flight Details</span></h2>
+
+  <div class="flight-grid">
+
+   <!-- EDIT: Departure flight -->
+   <div class="flight-card">
+    <div class="flight-head">
+     <h3>DEPARTURE • 10 OCTOBER</h3>
+     <p>Air Arabia</p>
+    </div>
+
+    <div class="flight-body">
+     <div class="flight-route">Sharjah (SHJ) ✈ Baku (GYD)</div>
+     <div class="flight-row"><span>Departure</span><span>09:00 AM</span></div>
+     <div class="flight-row"><span>Arrival</span><span>01:30 PM</span></div>
+     <div class="flight-row"><span>Duration</span><span>4h 30m</span></div>
+     <div class="flight-row"><span>Flight</span><span>Non-Stop</span></div>
+    </div>
+   </div>
+
+   <!-- EDIT: Return flight -->
+   <div class="flight-card">
+    <div class="flight-head">
+     <h3>RETURN • 13 OCTOBER</h3>
+     <p>Air Arabia</p>
+    </div>
+
+    <div class="flight-body">
+     <div class="flight-route">Baku (GYD) ✈ Sharjah (SHJ)</div>
+     <div class="flight-row"><span>Departure</span><span>02:30 PM</span></div>
+     <div class="flight-row"><span>Arrival</span><span>07:20 PM</span></div>
+     <div class="flight-row"><span>Duration</span><span>4h 50m</span></div>
+     <div class="flight-row"><span>Flight</span><span>Non-Stop</span></div>
+    </div>
+   </div>
+
+  </div>
+
+  <!-- EDIT: Flight note -->
+  <div style="margin-top:16px;background:#FFFDF5;border:1px solid #F6E05E;border-left:5px solid #D69E2E;border-radius:11px;padding:11px 15px;font-size:13.5px;font-weight:800;color:#975A16">
+   📌 Flight timings are shown for itinerary reference. International flight tickets are not included in the package cost.
+  </div>
+
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 04</div>
+ </div>
+</div>
+
+
+<!-- PAGE 5: HOTEL -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body">
+
+  <h2 class="slide-title">Your <span>Stay Details</span></h2>
+
+  <!-- EDIT: Hotel -->
+  <div class="card">
+
+   <div class="hotel-banner">
+    <div>
+     <div style="font-size:11px;background:rgba(255,102,0,.3);padding:4px 10px;border-radius:20px;font-weight:800;display:inline-block">
+      BAKU FAMILY STAY
+     </div>
+
+     <h3 style="font-size:23px;font-weight:900;margin-top:7px">
+      Port Rivoli Baku
+     </h3>
+
+     <p style="font-size:13.5px;color:#CBD5E1;font-weight:700;margin-top:4px">
+      📍 Baku, Azerbaijan • 10–13 October 2026
+     </p>
+    </div>
+
+    <div style="background:rgba(255,255,255,.1);padding:11px 17px;border-radius:12px;text-align:center">
+     <small>Total Stay</small><br>
+     <b style="color:#FFD700;font-size:17px">3 Nights</b>
+    </div>
+   </div>
+
+   <!-- EDIT: Stay details -->
+   <div class="hotel-details">
+    <div class="hotel-item">👨‍👩‍👧‍👦 2 Adults + 2 Children</div>
+    <div class="hotel-item">🧒 Children: 14 & 11 Years</div>
+    <div class="hotel-item">🛏️ 2 Double Rooms</div>
+    <div class="hotel-item">🍳 Breakfast Included</div>
+   </div>
+
+   <div style="margin-top:14px;background:#FFFDF5;border:1px solid #F6E05E;border-left:5px solid #D69E2E;border-radius:11px;padding:12px 15px;font-size:14px;font-weight:800;color:#975A16">
+    📌 Connecting rooms are subject to hotel availability.
+   </div>
+
+  </div>
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 05</div>
+ </div>
+</div>
+
+
+<script>
+function moveSlide(id,d){
+ const t=document.getElementById(id),s=t.querySelectorAll('.carousel-slide');
+ if(s.length<=1)return;
+ let i=parseInt(t.dataset.index||0)+d;
+ if(i<0)i=s.length-1;
+ if(i>=s.length)i=0;
+ t.dataset.index=i;
+ t.style.transform=`translateX(-${i*(100/s.length)}%)`;
+}
+window.addEventListener('DOMContentLoaded',()=>{
+ document.querySelectorAll('.carousel-track').forEach(t=>{
+  const s=t.querySelectorAll('.carousel-slide'),c=s.length;
+  t.style.width=`${c*100}%`;
+  s.forEach(x=>{x.style.width=`${100/c}%`;x.style.minWidth=`${100/c}%`});
+ });
+});
+</script>
+
+
+<!-- PAGE 6: DAY 1 -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body">
+  <div class="day-layout">
+
+   <div>
+    <!-- EDIT: Day 1 -->
+    <div class="day-badge">DAY 1 – 10TH OCTOBER</div>
+    <h3 class="day-title">Arrival & Panoramic Baku Tour</h3>
+
+    <p class="day-desc">
+     Arrive in Baku at 01:30 PM, transfer to Port Rivoli Baku, relax briefly and continue for a panoramic city tour.
+    </p>
+
+    <!-- EDIT: Day 1 highlights -->
+    <div class="tour-inclusion-box">
+     <h4>Included Highlights & Services:</h4>
+
+     <ul class="day-timeline-list">
+      <li><span class="emoji-icon">🛬</span><span>Airport arrival, transfer & hotel check-in</span></li>
+      <li><span class="emoji-icon">🚠</span><span>Baku Funicular</span></li>
+      <li><span class="emoji-icon">🔥</span><span>Flame Towers & Alley of Martyrs</span></li>
+      <li><span class="emoji-icon">🌆</span><span>Highland Park & panoramic Baku views</span></li>
+     </ul>
+    </div>
+   </div>
+
+   <!-- IMG: Day 1 carousel -->
+   <div class="day-image-container">
+    <div class="carousel-track" id="track-day1" data-index="0">
+
+   <div class="carousel-slide">
+      <img src="https://www.wb-sg.com/wp-content/uploads/2019/12/05_BakuApt.jpg" alt="Flame Towers Baku">
+     </div>
+
+     <div class="carousel-slide">
+      <img src="https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1" alt="Flame Towers">
+     </div>
+
+    </div>
+
+    <button class="carousel-btn prev" onclick="moveSlide('track-day1',-1)">❮</button>
+    <button class="carousel-btn next" onclick="moveSlide('track-day1',1)">❯</button>
+   </div>
+
+  </div>
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 06</div>
+ </div>
+</div>
+
+
+<!-- PAGE 7: DAY 2 -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body">
+  <div class="day-layout">
+
+   <div>
+    <!-- EDIT: Day 2 -->
+    <div class="day-badge">DAY 2 – 11TH OCTOBER</div>
+    <h3 class="day-title">Full-Day Baku City Tour</h3>
+
+    <p class="day-desc">
+     Explore Baku's historical Old City, cultural attractions and modern landmarks on a full-day sightseeing tour.
+    </p>
+
+    <!-- EDIT: Day 2 highlights -->
+    <div class="tour-inclusion-box">
+     <h4>Included Highlights & Services:</h4>
+
+     <ul class="day-timeline-list">
+      <li><span class="emoji-icon">🏰</span><span>Old City, Shirvanshah Palace & Maiden Tower</span></li>
+      <li><span class="emoji-icon">🕌</span><span>Ali Shamsi & Juma Mosque</span></li>
+      <li><span class="emoji-icon">🏛️</span><span>Heydar Aliyev Center & Nizami Street</span></li>
+      <li><span class="emoji-icon">🌊</span><span>Baku Boulevard, Little Venice & Carpet Museum</span></li>
+     </ul>
+    </div>
+   </div>
+
+   <!-- IMG: Day 2 carousel -->
+   <div class="day-image-container">
+    <div class="carousel-track" id="track-day2" data-index="0">
+
+     <div class="carousel-slide">
+      <img src="https://images.adsttc.com/media/images/5285/1f2b/e8e4/4e52/4b00/01ab/large_jpg/HAC_photo_by_Iwan_Baan_(2).jpg?1384455904" alt="Baku Old City">
+     </div>
+
+     <div class="carousel-slide">
+      <img src="https://guidedazerbaijan.com/uploads/0000/1/2024/11/20/shirvanshahlar-sarayi.webp" alt="Shirvanshah Palace">
+     </div>
+
+      <div class="carousel-slide">
+      <img src="https://azerbaijan.travel/resize3000/center/pages/339/e8902be0-0b53-4ba7-8c53-37aa7210c313.jpg" alt="Maiden Tower Baku">
+     </div>
+
+    </div>
+
+    <button class="carousel-btn prev" onclick="moveSlide('track-day2',-1)">❮</button>
+    <button class="carousel-btn next" onclick="moveSlide('track-day2',1)">❯</button>
+   </div>
+
+  </div>
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 07</div>
+ </div>
+</div>
+
+
+<!-- PAGE 8: DAY 3 -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body">
+  <div class="day-layout">
+
+   <div>
+    <!-- EDIT: Day 3 -->
+    <div class="day-badge">DAY 3 – 12TH OCTOBER</div>
+    <h3 class="day-title">Gabala Day Tour</h3>
+
+    <p class="day-desc">
+     Travel to scenic Gabala for a full-day excursion featuring mountain landscapes, riverside views and Yeddi Gozel Waterfall.
+    </p>
+
+    <!-- EDIT: Day 3 highlights -->
+    <div class="tour-inclusion-box">
+     <h4>Included Highlights & Services:</h4>
+
+     <ul class="day-timeline-list">
+      <li><span class="emoji-icon">🕌</span><span>Juma Mosque</span></li>
+      <li><span class="emoji-icon">🏔️</span><span>Tufandag Mountain Resort</span></li>
+      <li><span class="emoji-icon">🌊</span><span>Riverside sightseeing</span></li>
+      <li><span class="emoji-icon">💦</span><span>Yeddi Gozel Waterfall</span></li>
+     </ul>
+    </div>
+   </div>
+
+   <!-- IMG: Day 3 carousel -->
+   <div class="day-image-container">
+    <div class="carousel-track" id="track-day3" data-index="0">
+
+      <div class="carousel-slide">
+      <img src="https://www.tufandag.com/storage/app/media/Hotel/Qafqaz-Tufandag-Hotel-ponaramic-photo-_2_.webp" alt="Tufandag Mountain Resort">
+     </div>
+
+     <div class="carousel-slide">
+      <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/8d/6c/e4/caption.jpg?w=1200&h=1200&s=1" alt="Tufandag Mountain Gabala">
+     </div>
+
+     <div class="carousel-slide">
+      <img src="https://d3fphkxyf5o5bm.cloudfront.net/image-resize/format%3Dwebp%2Cw%3D720/QwRY54Li1HMwD7oNfq1zrZ3NirepUtO3H5JPKeQkRO" alt="Yeddi Gozel Waterfall">
+     </div>
+
+
+    </div>
+
+    <button class="carousel-btn prev" onclick="moveSlide('track-day3',-1)">❮</button>
+    <button class="carousel-btn next" onclick="moveSlide('track-day3',1)">❯</button>
+   </div>
+
+  </div>
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 08</div>
+ </div>
+</div>
+
+
+<!-- PAGE 9: DAY 4 -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body">
+  <div class="day-layout">
+
+   <div>
+    <!-- EDIT: Day 4 -->
+    <div class="day-badge" style="background:var(--success)">DAY 4 – 13TH OCTOBER</div>
+    <h3 class="day-title">Absheron Tour & Departure</h3>
+
+    <p class="day-desc">
+     After breakfast and check-out, visit Ateshgah and Yanar Dag before proceeding to Baku Airport for the 02:30 PM flight.
+    </p>
+
+    <!-- EDIT: Day 4 highlights -->
+    <div class="tour-inclusion-box">
+     <h4>Included Highlights & Services:</h4>
+
+     <ul class="day-timeline-list">
+      <li><span class="emoji-icon">🍳</span><span>Breakfast & hotel check-out</span></li>
+      <li><span class="emoji-icon">🔥</span><span>Ateshgah Fire Temple</span></li>
+      <li><span class="emoji-icon">⛰️</span><span>Yanar Dag – Fire Mountain</span></li>
+      <li><span class="emoji-icon">🚐</span><span>Transfer to Baku Airport • Flight at 02:30 PM</span></li>
+     </ul>
+    </div>
+   </div>
+
+   <!-- IMG: Day 4 carousel -->
+   <div class="day-image-container">
+    <div class="carousel-track" id="track-day4" data-index="0">
+
+     <div class="carousel-slide">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ateshgah%20of%20Baku.jpg" alt="Ateshgah Fire Temple">
+     </div>
+
+     <div class="carousel-slide">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Yanar%20Dag%2C%20Azerbaijan.jpg" alt="Yanar Dag Azerbaijan">
+     </div>
+
+     <div class="carousel-slide">
+      <img src="https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1" alt="Private Airport Transfer">
+     </div>
+
+     <div class="carousel-slide">
+      <img src="https://m.media-amazon.com/images/I/71nXbtmuQlL.jpg" alt="Departure">
+     </div>
+
+    </div>
+
+    <button class="carousel-btn prev" onclick="moveSlide('track-day4',-1)">❮</button>
+    <button class="carousel-btn next" onclick="moveSlide('track-day4',1)">❯</button>
+   </div>
+
+  </div>
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 09</div>
+ </div>
+</div>
+
+
+<!-- PAGE 10: MEALS -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body">
+
+  <!-- EDIT: Meal summary -->
+  <h2 class="slide-title summary-title">Complete <span>Day-Wise Meal Plan Summary</span></h2>
+
+  <table class="meal-matrix-table">
+   <thead>
+    <tr>
+     <th>Day</th>
+     <th>Breakfast</th>
+     <th>Lunch</th>
+     <th>Dinner</th>
+    </tr>
+   </thead>
+
+   <tbody>
+    <tr>
+     <td>Day 1 – 10 Oct</td>
+     <td><span class="meal-na">Arrival Day</span></td>
+     <td><span class="meal-na">Not Included</span></td>
+     <td><span class="meal-na">Not Included</span></td>
+    </tr>
+
+    <tr>
+     <td>Day 2 – 11 Oct</td>
+     <td><span class="meal-in">✓ Hotel Breakfast</span></td>
+     <td><span class="meal-na">Not Included</span></td>
+     <td><span class="meal-na">Not Included</span></td>
+    </tr>
+
+    <tr>
+     <td>Day 3 – 12 Oct</td>
+     <td><span class="meal-in">✓ Hotel Breakfast</span></td>
+     <td><span class="meal-na">Not Included</span></td>
+     <td><span class="meal-na">Not Included</span></td>
+    </tr>
+
+    <tr>
+     <td>Day 4 – 13 Oct</td>
+     <td><span class="meal-in">✓ Hotel Breakfast</span></td>
+     <td><span class="meal-na">Not Included</span></td>
+     <td><span class="meal-na">Departure Day</span></td>
+    </tr>
+   </tbody>
+  </table>
+
+  <div style="background:#EBF8FF;border:1px solid #BEE3F8;border-radius:12px;padding:12px 17px;font-size:14px;color:#2B6CB0;font-weight:700">
+   💡 <b>Meal Note:</b> Breakfast is included with the hotel stay. Lunch and dinner are excluded from the package.
+  </div>
+
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 10</div>
+ </div>
+</div>
+
+
+<!-- PAGE 11: INCLUSIONS & EXCLUSIONS -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body">
+
+  <h2 class="slide-title" style="font-size:32px;margin-bottom:14px">
+   Package <span>Inclusions & Exclusions</span>
+  </h2>
+
+  <div class="inc-layout">
+
+   <!-- EDIT: Inclusions -->
+   <div class="inc-panel green">
+
+    <div class="inc-head">
+     <div style="font-size:26px">✅</div>
+
+     <div>
+      <h3 style="color:#276749">What's Included</h3>
+      <div style="font-size:12px;color:var(--gray);font-weight:700">
+       Accommodation, transfers & sightseeing
+      </div>
+     </div>
+    </div>
+
+    <div class="inc-grid">
+     <div class="inc-item">🏨 3 Nights at Port Rivoli Baku</div>
+     <div class="inc-item">🛏️ 2 Double Rooms</div>
+
+     <div class="inc-item">🍳 Daily Breakfast</div>
+     <div class="inc-item">🚐 Airport Transfers</div>
+
+     <div class="inc-item">🚘 Mercedes Minivan with Professional Driver</div>
+     <div class="inc-item">🌆 Panoramic Baku City Tour</div>
+
+     <div class="inc-item">🏛️ Full-Day Baku City Tour</div>
+     <div class="inc-item">🏔️ Gabala Day Tour</div>
+
+     <div class="inc-item" style="grid-column:1/3">
+      🔥 Absheron Peninsula Tour – Ateshgah Fire Temple & Yanar Dag
+     </div>
+    </div>
+
+   </div>
+
+   <!-- EDIT: Exclusions -->
+   <div class="inc-panel red">
+
+    <div class="inc-head">
+     <div style="font-size:26px">❌</div>
+
+     <div>
+      <h3 style="color:#C53030">What's Excluded</h3>
+      <div style="font-size:12px;color:var(--gray);font-weight:700">
+       Not included in package price
+      </div>
+     </div>
+    </div>
+
+    <div class="exc-item">
+     <h4>✈️ International Flights</h4>
+     <p>Air Arabia flight tickets are not included.</p>
+    </div>
+
+    <div class="exc-item">
+     <h4>🎟️ Attraction Entry Tickets</h4>
+     <p>Entry tickets are excluded from the package.</p>
+    </div>
+
+    <div class="exc-item">
+     <h4>🍽️ Lunch & Dinner</h4>
+     <p>Only hotel breakfast is included.</p>
+    </div>
+
+    <div class="exc-item">
+     <h4>🛂 Azerbaijan Visa</h4>
+     <p>Visa cost and processing are excluded.</p>
+    </div>
+
+    <div class="exc-item">
+     <h4>🛍️ Personal Expenses</h4>
+     <p>Personal expenses and unlisted services are excluded.</p>
+    </div>
+
+   </div>
+
+  </div>
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 11</div>
+ </div>
+</div>
+
+
+<!-- PAGE 12: PRICE -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <!-- CENTER: Balanced -->
+ <div class="content-body" style="justify-content:center">
+
+  <h2 class="slide-title" style="margin-bottom:20px">
+   Package <span>Price Summary</span>
+  </h2>
+
+  <div class="price-layout">
+
+   <div style="display:flex;flex-direction:column;justify-content:center">
+
+    <!-- EDIT: Price -->
+    <div class="total-box" style="min-height:330px">
+
+     <div style="font-size:15px;text-transform:uppercase;letter-spacing:2px;color:#F59E0B;font-weight:800">
+      PACKAGE PRICE
+     </div>
+
+     <div style="font-size:40px;font-weight:900;margin:10px 0 4px">
+      AED 2,249
+     </div>
+
+     <div style="font-size:15px;font-weight:800;color:#FDE047">
+      Per Person
+     </div>
+
+     <div style="width:62%;height:1px;background:rgba(255,255,255,.2);margin:20px auto"></div>
+
+     <div style="font-size:14px;text-transform:uppercase;letter-spacing:1.5px;color:#F59E0B;font-weight:800">
+      TOTAL PACKAGE COST
+     </div>
+
+     <div style="font-size:34px;font-weight:900;margin:8px 0">
+      AED 8,996
+     </div>
+
+     <div style="font-size:13.5px;color:#E2E8F0;font-weight:700">
+      For 2 Adults + 2 Children
+     </div>
+
+    </div>
+   </div>
+
+
+   <!-- EDIT: Notes -->
+   <div style="
+    background:#F8FAFC;border:1px solid var(--border);border-left:5px solid var(--primary);
+    padding:22px 24px;border-radius:16px;display:flex;flex-direction:column;justify-content:center;
+   ">
+
+    <h4 style="font-size:18px;font-weight:900;margin-bottom:14px">
+     📋 IMPORTANT NOTES
+    </h4>
+
+    <div style="font-size:13.5px;font-weight:700;display:flex;flex-direction:column;gap:8px;line-height:1.38">
+     <div>🕘 Standard tour timings: 09:00 AM–06:00 PM or 10:00 AM–07:00 PM.</div>
+     <div>🚪 Connecting rooms are subject to availability.</div>
+     <div>💰 Hotel rates are dynamic until confirmation.</div>
+     <div>🌦️ Itinerary may change due to force majeure or unforeseen circumstances.</div>
+     <div>🎟️ Entry tickets are not included.</div>
+    </div>
+
+    <!-- EDIT: Payment note -->
+    <div style="
+     margin-top:15px;background:#FFFDF5;border:1px solid #F6E05E;
+     border-left:4px solid #D69E2E;border-radius:10px;padding:11px 13px;
+     font-size:12.5px;font-weight:800;color:#975A16;line-height:1.42;
+    ">
+     💳 <b>Bank Transfer:</b> Additional 4% bank commission plus applicable international transfer charges will apply. Final received amount will be confirmed through the payment receipt.
+    </div>
+
+   </div>
+
+  </div>
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 12</div>
+ </div>
+</div>
+
+
+<!-- PAGE 13: CONTACT -->
+<div class="slide">
+ <div class="header">
+  <img class="logo-img" src="images/logo.png">
+  <div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+ </div>
+
+ <div class="content-body">
+
+  <!-- EDIT: Contact -->
+  <h2 class="slide-title" style="font-size:28px">
+   📍 Global Presence <span>& Contact Us</span>
+  </h2>
+
+  <div class="global-section">
+
+   <div class="map-and-contacts">
+
+    <div class="locations-box">
+
+     <div class="loc-card" style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Flame%20towers%20from%20Baku%20boulevard.JPG')">
+      <div class="loc-card-title">🇦🇿 Baku, Azerbaijan</div>
+      <div class="loc-card-info">Baku • Gabala • Absheron</div>
+     </div>
+
+     <div class="loc-card" style="background-image:url('images/countries/dubai.jpg')">
+      <div class="loc-card-title">🇦🇪 Dubai, UAE</div>
+      <div class="loc-card-info">📞 +971 50 680 0227</div>
+     </div>
+
+     <div class="loc-card" style="background-image:url('https://media.assettype.com/outlooktraveller/2024-07/34203ad1-fd27-4b76-b45b-ef066154f574/Ras%20Al%20Khaimah?w=1200&auto=format%2Ccompress&fit=max&format=webp&dpr=1.0')">
+      <div class="loc-card-title">🇦🇪 Ras Al-Khaimah</div>
+      <div class="loc-card-info">📞 +971 52 674 6682</div>
+     </div>
+
+     <div class="loc-card" style="background-image:url('https://ayxhtlzyhpsjykxxnqqh.supabase.co/storage/v1/object/public/area_images/hsr-layout-bangalore/image-5.jpg')">
+      <div class="loc-card-title">🇮🇳 Bangalore</div>
+      <div class="loc-card-info">📞 +91 95910 52942</div>
+     </div>
+
+     <div class="loc-card" style="background-image:url('images/countries/singapore.webp')">
+      <div class="loc-card-title">🇸🇬 Singapore</div>
+      <div class="loc-card-info">📞 +65 9231 0720</div>
+     </div>
+
+     <div class="loc-card" style="background-image:url('images/countries/global.avif')">
+      <div class="loc-card-title">🌐 Global Network</div>
+      <div class="loc-card-info">Tailored Holidays Worldwide</div>
+     </div>
+
+    </div>
+
+    <!-- EDIT: Contact details -->
+    <div class="inquiry-box">
+
+     <div style="font-size:14.5px;font-weight:900;text-align:center;color:#FFD700">
+      🎧 INSTANT TOUR CONCIERGE
+     </div>
+
+     <div>
+      <b style="color:#63B3ED">B2B Partnerships</b><br>
+      <small>b2b@citylaila.com<br>+971 4 4451 625</small>
+     </div>
+
+     <div>
+      <b style="color:#FF9933">Marketing & Media</b><br>
+      <small>marketing@citylaila.com</small>
+     </div>
+
+     <div>
+      <b style="color:#68D391">Direct Traveler Desk</b><br>
+      <small>info@citylaila.com<br>+971 55 536 5508</small>
+     </div>
+
+    </div>
+
+   </div>
+
+   <div class="features-bar">
+    <div>🌍 Global Holidays</div>
+    <div>🏨 Hotel Packages</div>
+    <div>🚐 Private Tours</div>
+    <div>🎧 Travel Support</div>
+    <div>✨ Tailored Trips</div>
+   </div>
+
+  </div>
+ </div>
+
+ <div class="footer">
+  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div>Page 13</div>
+ </div>
+</div>
+
+</body>
+</html>
