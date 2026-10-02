@@ -346,64 +346,131 @@ body{font-family:'Montserrat',sans-serif;color:#2D3748;background:#F7FAFC;paddin
 
   <h2 class="slide-title">✈️ Your <span>Flight Details</span></h2>
 
-  <!-- EDIT: Outbound flight -->
-  <div class="flight-card">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
 
-   <div class="flight-head">
-    <h3>DEPARTURE • 10 OCTOBER 2026</h3>
-    <p>Flydubai • FZ 709H1</p>
-   </div>
+   <!-- EDIT: Departure flight -->
+   <div class="flight-card">
 
-   <div class="flight-body">
-
-    <div class="flight-route">Dubai (DXB) ✈ Baku (GYD)</div>
-
-    <div class="flight-info-grid">
-     <div class="flight-info">
-      <small>Departure</small>
-      <b>07:05</b>
-     </div>
-
-     <div class="flight-info">
-      <small>Arrival</small>
-      <b>11:05</b>
-     </div>
-
-     <div class="flight-info">
-      <small>Duration</small>
-      <b>4 Hours</b>
-     </div>
-
-     <div class="flight-info">
-      <small>Flight Type</small>
-      <b>Non-Stop</b>
-     </div>
+    <div class="flight-head">
+     <h3>DEPARTURE • 10 OCTOBER 2026</h3>
+     <p>Air Arabia</p>
     </div>
 
-    <!-- EDIT: Baggage -->
-    <div class="bag-grid">
-     <div class="bag-card">
-      🧳 <b>Passenger 1</b><br>
-      7 KG Hand Baggage + 20 KG Check-in Baggage
+    <div class="flight-body">
+
+     <div class="flight-route" style="font-size:19px">
+      Sharjah (SHJ) ✈ Baku (GYD)
      </div>
 
-     <div class="bag-card">
-      🎒 <b>Passenger 2</b><br>
-      Hand Baggage Only
+     <div class="flight-info-grid">
+      <div class="flight-info">
+       <small>Departure</small>
+       <b>09:00 AM</b>
+      </div>
+
+      <div class="flight-info">
+       <small>Arrival</small>
+       <b>01:30 PM</b>
+      </div>
+
+      <div class="flight-info">
+       <small>Duration</small>
+       <b>4h 30m</b>
+      </div>
+
+      <div class="flight-info">
+       <small>Flight</small>
+       <b>Non-Stop</b>
+      </div>
      </div>
+
+    </div>
+   </div>
+
+
+   <!-- EDIT: Return flight -->
+   <div class="flight-card">
+
+    <div class="flight-head">
+     <h3>RETURN • 13 OCTOBER 2026</h3>
+     <p>Air Arabia</p>
     </div>
 
+    <div class="flight-body">
+
+     <div class="flight-route" style="font-size:19px">
+      Baku (GYD) ✈ Sharjah (SHJ)
+     </div>
+
+     <div class="flight-info-grid">
+      <div class="flight-info">
+       <small>Departure</small>
+       <b>02:30 PM</b>
+      </div>
+
+      <div class="flight-info">
+       <small>Arrival</small>
+       <b>07:20 PM</b>
+      </div>
+
+      <div class="flight-info">
+       <small>Duration</small>
+       <b>4h 50m</b>
+      </div>
+
+      <div class="flight-info">
+       <small>Flight</small>
+       <b>Non-Stop</b>
+      </div>
+     </div>
+
+    </div>
    </div>
+
   </div>
 
-  <div style="margin-top:15px;background:#FFFDF5;border:1px solid #F6E05E;border-left:5px solid #D69E2E;border-radius:11px;padding:11px 15px;font-size:14px;font-weight:800;color:#975A16">
-   📌 Return-flight details were not provided in the supplied itinerary. Flight and baggage details are subject to the applicable fare conditions.
+
+  <!-- EDIT: Baggage -->
+  <div style="margin-top:16px">
+
+   <div style="
+    font-size:15px;font-weight:900;color:var(--dark);
+    margin-bottom:8px
+   ">
+    🧳 Baggage Allowance
+   </div>
+
+   <div class="bag-grid" style="margin-top:0">
+
+    <div class="bag-card">
+     🧳 <b>Passenger 1</b><br>
+     7 KG Hand Baggage + 20 KG Check-in Baggage
+    </div>
+
+    <div class="bag-card">
+     🎒 <b>Passenger 2</b><br>
+     Hand Baggage Only
+    </div>
+
+   </div>
+
+  </div>
+
+  <div style="
+   margin-top:14px;background:#FFFDF5;border:1px solid #F6E05E;
+   border-left:5px solid #D69E2E;border-radius:11px;
+   padding:10px 14px;font-size:13.5px;font-weight:800;color:#975A16
+  ">
+   📌 Flight timings and baggage allowance are based on the supplied booking details and should be reconfirmed at final ticket issuance.
   </div>
 
  </div>
 
  <div class="footer">
-  <div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div>
+  <div class="contacts">
+   <span>📞 +971 55 536 5508</span>
+   <span>✉️ info@citylaila.com</span>
+  </div>
   <div>Page 04</div>
  </div>
 </div>
@@ -980,7 +1047,7 @@ window.addEventListener('DOMContentLoaded',()=>{
      border-left:4px solid #D69E2E;border-radius:10px;padding:11px 13px;
      font-size:13px;font-weight:800;color:#975A16;line-height:1.42;
     ">
-     📌 Return-flight details are not specified in the supplied package information.
+     📌 Air Arabia flight timings and passenger-wise baggage allowance should be reconfirmed at the time of final ticket issuance.
     </div>
 
    </div>
