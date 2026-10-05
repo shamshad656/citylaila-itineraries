@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CityLaila | Egypt Timeless Nile Odyssey</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#0066cc;--secondary:#ff6600;--dark:#0A192F;--light:#F8FAFC;--gray:#718096;--border:#E2E8F0;--success:#38A169}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Montserrat',sans-serif;color:#2D3748;background:#F7FAFC;padding:20px 0}
+.slide{width:297mm;height:210mm;max-height:210mm;page-break-after:always;break-after:page;break-inside:avoid;position:relative;background:#fff;margin:0 auto 30px;box-shadow:0 4px 15px rgba(0,0,0,.05);display:flex;flex-direction:column;padding:35px 45px 80px;overflow:hidden}
+.header{display:flex;justify-content:space-between;align-items:center;border-bottom:2px solid var(--border);padding-bottom:12px;margin-bottom:16px;flex-shrink:0}
+.logo-img{max-height:48px;width:auto}.tagline{font-size:14px;color:var(--gray);font-weight:700;letter-spacing:1.2px;text-transform:uppercase}
+.footer{position:absolute;bottom:0;left:0;width:100%;padding:16px 45px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border);background:var(--light);font-size:14px;color:var(--gray);font-weight:700}.footer .contacts{display:flex;gap:18px}
+.content-body{flex:1;min-height:0;display:flex;flex-direction:column;justify-content:center}.slide-title{font-size:30px;font-weight:900;color:var(--dark);margin-bottom:18px;display:flex;align-items:center;gap:12px;line-height:1.2}.slide-title span{color:var(--primary)}.summary-title{font-size:34px!important;font-weight:900!important;margin-bottom:20px!important}
+.cover-bg{background:linear-gradient(rgba(0,0,0,.42),rgba(0,0,0,.62)),url('https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1800&q=85');background-size:cover;background-position:center;color:#fff;justify-content:center;align-items:center;text-align:center}
+.cover-card{background:rgba(10,25,47,.69);backdrop-filter:blur(5px);border:1px solid rgba(255,255,255,.25);padding:32px 46px;border-radius:20px;width:88%;display:flex;flex-direction:column;align-items:center;box-shadow:0 8px 32px rgba(0,0,0,.25)}
+.cover-title{font-size:34px;font-weight:900;margin-bottom:8px}.cover-subtitle{font-size:16px;color:#ff9933;font-weight:700;margin-bottom:20px;letter-spacing:1.3px;text-transform:uppercase}
+.cover-highlights{display:flex;gap:10px;margin:8px 0 18px;flex-wrap:wrap;justify-content:center}.cover-tag{background:rgba(255,96,0,.35);border:1px solid var(--secondary);padding:8px 17px;font-size:14px;font-weight:800;border-radius:20px}
+.cover-info-strip{font-size:15px;font-weight:800;background:var(--secondary);padding:9px 24px;border-radius:30px}.meta-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:18px;border-top:1px solid rgba(255,255,255,.25);padding-top:18px;width:100%}.meta-grid h4{font-size:13px;color:#CBD5E1;text-transform:uppercase;margin-bottom:4px}.meta-grid p{font-size:17px;font-weight:800;color:#fff}
+.full-banner-image{width:100%;height:100%;object-fit:contain;border-radius:14px;border:1px solid var(--border)}.card{background:#fff;border:1px solid var(--border);border-radius:20px;padding:25px 30px;box-shadow:0 8px 25px rgba(0,0,0,.05)}
+.timeline-container{display:flex;flex-direction:column;gap:8px}.timeline-row{display:grid;grid-template-columns:110px 1fr 170px;gap:12px;align-items:center;padding:10px 15px;background:#fff;border:1px solid var(--border);border-radius:10px}.timeline-row:nth-child(even){background:var(--light)}.timeline-day{font-weight:900;font-size:15.5px;color:var(--primary)}.timeline-badge{background:#EBF8FF;color:#2B6CB0;font-size:13.5px;font-weight:800;padding:6px 11px;border-radius:7px;border:1px solid #BEE3F8}.timeline-badge.highlight{background:#E6FFFA;color:#234E52;border-color:#99F6E4}.timeline-stay{font-size:14.5px;font-weight:900;color:var(--dark);text-align:right}
+.stay-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.stay-box{background:#fff;border:1px solid var(--border);border-radius:18px;padding:22px;box-shadow:0 8px 22px rgba(0,0,0,.05);border-top:6px solid var(--primary)}.stay-box.cruise{border-top-color:var(--secondary)}.stay-box h3{font-size:22px;font-weight:900;color:var(--dark);margin-bottom:10px}.stay-item{background:#F8FAFC;border:1px solid var(--border);border-radius:10px;padding:11px 13px;font-size:15px;font-weight:800;margin-top:9px}
+.day-layout{display:grid;grid-template-columns:.86fr 1.14fr;gap:34px;flex:1;min-height:0}.day-badge{background:var(--secondary);color:#fff;padding:9px 20px;font-weight:900;border-radius:6px;display:inline-block;margin-bottom:12px;font-size:15.5px;letter-spacing:1px}.day-title{font-size:28px;font-weight:900;color:var(--dark);margin-bottom:10px;line-height:1.25}.day-desc{font-size:17px;color:#334155;line-height:1.5;margin-bottom:14px;font-weight:600}.tour-inclusion-box{background:#F8FAFC;border:1px solid var(--border);padding:16px 20px;border-radius:16px}.tour-inclusion-box h4{font-size:16px;font-weight:900;color:#004499;margin-bottom:10px}.day-timeline-list{list-style:none;display:flex;flex-direction:column;gap:10px}.day-timeline-list li{font-size:16px;font-weight:700;color:#1E293B;display:flex;align-items:center;gap:14px;background:#fff;padding:11px 15px;border-radius:9px;border:1px solid var(--border);line-height:1.28}.emoji-icon{font-size:18px;min-width:26px;text-align:center}
+.day-image-container{width:100%;height:100%;min-height:480px;border-radius:18px;overflow:hidden;box-shadow:0 12px 30px rgba(0,0,0,.12);border:1px solid var(--border);background:#0A192F;position:relative}.carousel-track{display:flex;height:100%;transition:transform .4s ease-in-out}.carousel-slide{height:100%;flex-shrink:0}.carousel-slide img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}.carousel-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(10,25,47,.72);color:#fff;border:1px solid rgba(255,255,255,.3);padding:12px 14px;border-radius:50%;cursor:pointer;font-weight:900;z-index:10}.carousel-btn.prev{left:12px}.carousel-btn.next{right:12px}
+.meal-matrix-table{width:100%;border-collapse:separate;border-spacing:0;border-radius:16px;overflow:hidden;border:2px solid var(--border);margin-bottom:16px}.meal-matrix-table th{background:#0A192F;color:#fff;padding:12px 18px;font-size:15px;font-weight:900;text-transform:uppercase;text-align:left}.meal-matrix-table td{padding:10px 18px;font-size:15px;border-bottom:1.5px solid var(--border);background:#fff;font-weight:800}.meal-matrix-table tr:nth-child(even) td{background:#F8FAFC}.meal-in{background:#E6FFFA;color:#047481;padding:5px 9px;border-radius:6px;font-weight:900;font-size:14px;border:1.5px solid #99F6E4;display:inline-block}.meal-na{background:#EDF2F7;color:#718096;padding:5px 9px;border-radius:6px;font-weight:800;font-size:14px;border:1.5px solid #CBD5E0;display:inline-block}
+.inc-layout{display:grid;grid-template-columns:1.28fr .72fr;gap:24px;flex:1;min-height:0}.inc-panel{background:#fff;border:1px solid var(--border);border-radius:20px;padding:20px 24px;box-shadow:0 8px 24px rgba(0,0,0,.05)}.inc-panel.green{border-top:6px solid #38A169}.inc-panel.red{border-top:6px solid #E53E3E;background:#FFF8F8}.inc-head{display:flex;align-items:center;gap:12px;padding-bottom:11px;border-bottom:2px solid #EDF2F7;margin-bottom:12px}.inc-head h3{font-size:21px;font-weight:900}.inc-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px}.inc-item{background:#F8FAFC;border:1px solid var(--border);border-radius:10px;padding:10px 12px;font-size:15px;font-weight:800;line-height:1.3}.exc-item{background:#fff;border:1px solid #FED7D7;border-radius:10px;padding:10px 12px;margin-bottom:9px;font-size:15px;font-weight:800;color:#9B2C2C}
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}.price-box{background:linear-gradient(135deg,#0A192F,#1E3A8A);color:#fff;border-radius:18px;padding:28px;text-align:center;box-shadow:0 10px 28px rgba(10,25,47,.25)}.price-label{font-size:14px;color:#F59E0B;font-weight:900;letter-spacing:1.5px;text-transform:uppercase}.price-value{font-size:40px;font-weight:900;margin:12px 0 5px}.price-sub{font-size:15px;color:#FDE047;font-weight:800}
+.global-section{display:flex;flex-direction:column;gap:14px;height:100%}.map-and-contacts{display:grid;grid-template-columns:2.1fr 1fr;gap:18px;flex:1}.locations-box{background:#F8FAFC;border-radius:15px;padding:16px;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);gap:14px;border:1px solid var(--border)}.loc-card{position:relative;padding:16px;border-radius:12px;overflow:hidden;background-size:cover;background-position:center;background-color:#1A2A3A;display:flex;flex-direction:column;justify-content:center}.loc-card:before{content:'';position:absolute;inset:0;background:linear-gradient(rgba(10,25,47,.42),rgba(10,25,47,.78));z-index:1}.loc-card-title,.loc-card-info{position:relative;z-index:2}.loc-card-title{font-size:15px;font-weight:900;color:#fff;margin-bottom:5px}.loc-card-info{font-size:13px;color:#F1F5F9;font-weight:700;line-height:1.5}.inquiry-box{background:#0A192F;color:#fff;border-radius:15px;padding:20px;display:flex;flex-direction:column;justify-content:space-around}.features-bar{background:#0A192F;color:#fff;border-radius:10px;padding:12px 14px;display:flex;justify-content:space-around;font-size:12px;font-weight:800}
+@media print{@page{size:A4 landscape;margin:0}body{background:none;padding:0;margin:0;-webkit-print-color-adjust:exact;print-color-adjust:exact}.slide{width:297mm;height:210mm;box-shadow:none;margin:0}.carousel-btn{display:none}}
+</style>
+</head>
+<body>
+
+<div class="slide cover-bg"><div class="cover-card">
+<img src="images/logo.png" alt="CityLaila" style="height:110px;width:auto;margin-bottom:18px">
+<h1 class="cover-title">🇪🇬 Egypt Timeless Nile Odyssey</h1>
+<div class="cover-subtitle">Cairo • Aswan • Nile Cruise • Luxor | 6 Days / 5 Nights</div>
+<div class="cover-highlights"><div class="cover-tag">🏛️ Ancient Egypt Icons</div><div class="cover-tag">🚢 3-Night Nile Cruise</div><div class="cover-tag">🗿 Abu Simbel Experience</div></div>
+<div class="cover-info-strip">2 Nights Cairo + 3 Nights Nile Cruise</div>
+<div class="meta-grid"><div><h4>Duration</h4><p>6 Days / 5 Nights</p></div><div><h4>Cairo</h4><p>2 Nights</p></div><div><h4>Nile Cruise</h4><p>3 Nights</p></div><div><h4>From</h4><p>USD 1,300 / Adult</p></div></div>
+</div><div class="footer"><div>www.citylaila.com</div><div>Page 01</div></div></div>
+
+<div class="slide"><div class="header"><img class="logo-img" src="images/logo.png"><div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div></div>
+<div class="content-body"><img src="images/why_book_with_us_full.png" class="full-banner-image" alt="Why Book With Us"></div>
+<div class="footer"><div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div><div>Page 02</div></div></div>
+
+<div class="slide"><div class="header"><img class="logo-img" src="images/logo.png"><div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div></div>
+<div class="content-body"><h2 class="slide-title summary-title">Itinerary Overview Summary <span>(All 6 Days)</span></h2>
+<div class="timeline-container">
+<div class="timeline-row"><div class="timeline-day">Day 01</div><div><span class="timeline-badge highlight">🏛️ Arrival Cairo & Grand Egyptian Museum</span></div><div class="timeline-stay">🏨 Cairo</div></div>
+<div class="timeline-row"><div class="timeline-day">Day 02</div><div><span class="timeline-badge highlight">🔺 Pyramids • Sphinx • Saqqara • Memphis</span></div><div class="timeline-stay">🏨 Cairo</div></div>
+<div class="timeline-row"><div class="timeline-day">Day 03</div><div><span class="timeline-badge highlight">✈️ Cairo → Aswan • Philae • Cruise Embarkation</span></div><div class="timeline-stay">🚢 Nile Cruise</div></div>
+<div class="timeline-row"><div class="timeline-day">Day 04</div><div><span class="timeline-badge highlight">🗿 Abu Simbel & Kom Ombo</span></div><div class="timeline-stay">🚢 Nile Cruise</div></div>
+<div class="timeline-row"><div class="timeline-day">Day 05</div><div><span class="timeline-badge highlight">🏛️ Edfu • Karnak • Luxor Temple</span></div><div class="timeline-stay">🚢 Nile Cruise</div></div>
+<div class="timeline-row"><div class="timeline-day">Day 06</div><div><span class="timeline-badge">👑 Luxor West Bank & Departure</span></div><div class="timeline-stay" style="color:var(--success)">✈️ Departure</div></div>
+</div></div>
+<div class="footer"><div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div><div>Page 03</div></div></div>
+
+<div class="slide"><div class="header"><img class="logo-img" src="images/logo.png"><div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div></div>
+<div class="content-body"><h2 class="slide-title">Your <span>Stay & Meal Plan</span></h2>
+<div class="stay-grid">
+<div class="stay-box"><h3>🏨 Cairo Stay</h3><div class="stay-item">🌙 2 Nights in Cairo</div><div class="stay-item">🍳 Breakfast at Cairo Hotel</div><div class="stay-item">🍽️ Lunch During Cairo Sightseeing</div><div class="stay-item">🚐 Private AC Transportation</div></div>
+<div class="stay-box cruise"><h3>🚢 Nile Cruise</h3><div class="stay-item">🌙 3 Nights on Nile Cruise</div><div class="stay-item">🍽️ Full Board Meal Plan</div><div class="stay-item">📍 Aswan → Kom Ombo → Edfu → Luxor</div><div class="stay-item">🧑‍🏫 Egyptologist Guided Sightseeing</div></div>
+</div></div>
+<div class="footer"><div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div><div>Page 04</div></div></div>
+
+<div class="slide"><div class="header"><img class="logo-img" src="images/logo.png"><div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div></div>
+<div class="content-body"><div class="day-layout"><div><div class="day-badge">DAY 1</div><h3 class="day-title">Arrival in Cairo & Grand Egyptian Museum</h3><p class="day-desc">Arrive in Cairo, meet the representative and transfer privately to the hotel before visiting the Grand Egyptian Museum.</p>
+<div class="tour-inclusion-box"><h4>Day Highlights:</h4><ul class="day-timeline-list"><li><span class="emoji-icon">🛬</span><span>Cairo Airport arrival, Meet & Greet</span></li><li><span class="emoji-icon">🚐</span><span>Private transfer, hotel check-in</span></li><li><span class="emoji-icon">🏛️</span><span>Grand Egyptian Museum visit</span></li><li><span class="emoji-icon">🍽️</span><span>Lunch during Cairo tour & overnight Cairo</span></li></ul></div></div>
+
+<!-- IMG: Day 1 carousel -->
+<div class="day-image-container">
+  <div class="carousel-track" id="track-day1" data-index="0">
+
+    <div class="carousel-slide">
+      <img
+        src="https://protechegypt.com/wp-content/uploads/2024/03/6557bb53c0523002daacfef8_cairo-airport.jpeg"
+        alt="Grand Egyptian Museum">
+    </div>
+
+    <div class="carousel-slide">
+      <img
+        src="https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1"
+        alt="Grand Egyptian Museum Facade">
+    </div>
+    <div class="carousel-slide">
+      <img
+        src="https://soulofegypttravel.com/wp-content/uploads/2025/08/ChatGPT-Image-Aug-25-2025-05_12_57-PM.png"
+        alt="Grand Egyptian Museum Facade">
+    </div>
+
+  </div>
+  <button class="carousel-btn prev" onclick="moveSlide('track-day1',-1)">❮</button>
+  <button class="carousel-btn next" onclick="moveSlide('track-day1',1)">❯</button>
+</div>
+
+</div></div><div class="footer"><div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div><div>Page 05</div></div></div>
+
+<div class="slide"><div class="header"><img class="logo-img" src="images/logo.png"><div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div></div>
+<div class="content-body"><div class="day-layout"><div><div class="day-badge">DAY 2</div><h3 class="day-title">Pyramids, Saqqara & Memphis</h3><p class="day-desc">Explore Egypt's legendary ancient sites with visits to Giza, Saqqara and Memphis before returning to your Cairo hotel.</p>
+<div class="tour-inclusion-box"><h4>Day Highlights:</h4><ul class="day-timeline-list"><li><span class="emoji-icon">🔺</span><span>Great Pyramids of Giza & Sphinx</span></li><li><span class="emoji-icon">🏺</span><span>Step Pyramid of Djoser, Saqqara</span></li><li><span class="emoji-icon">🏛️</span><span>Ancient Memphis visit</span></li><li><span class="emoji-icon">🍽️</span><span>Breakfast, sightseeing lunch & overnight Cairo</span></li></ul></div></div>
+
+<!-- IMG: Day 2 carousel -->
+<div class="day-image-container">
+  <div class="carousel-track" id="track-day2" data-index="0">
+
+    <div class="carousel-slide">
+      <img
+        src="https://cdn.mos.cms.futurecdn.net/YMa7Wx2FyjQFUjEeqa72Rm.jpg"
+        alt="Great Pyramids of Giza">
+    </div>
+
+    <div class="carousel-slide">
+      <img
+        src="https://cdn.britannica.com/47/189747-050-2A54A672/Step-Pyramid-complex-Djoser-Egypt-Saqqarah.jpg"
+        alt="Great Sphinx of Giza">
+    </div>
+
+    <div class="carousel-slide">
+      <img
+        src="https://egytravellux.com/wp-content/uploads/2026/05/%D8%B9%D8%A7%D9%8A%D8%B2%D9%87_%D8%B5%D9%88%D8%B1%D9%87_%D9%84%D9%87%D8%B1%D9%85_%D8%B2%D9%88%D8%AB%D8%B1_%D8%A7%D9%84%D9%85%D8%AF%D8%B1%D8%AC_202605101422.jpeg"
+        alt="Step Pyramid of Djoser Saqqara">
+    </div>
+
+  </div>
+  <button class="carousel-btn prev" onclick="moveSlide('track-day2',-1)">❮</button>
+  <button class="carousel-btn next" onclick="moveSlide('track-day2',1)">❯</button>
+</div>
+
+</div></div><div class="footer"><div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div><div>Page 06</div></div></div>
+
+<div class="slide"><div class="header"><img class="logo-img" src="images/logo.png"><div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div></div>
+<div class="content-body"><div class="day-layout"><div><div class="day-badge">DAY 3</div><h3 class="day-title">Cairo to Aswan & Nile Cruise</h3><p class="day-desc">Fly from Cairo to Aswan, explore the city's signature landmarks with your Egyptologist and embark on the Nile Cruise.</p>
+<div class="tour-inclusion-box"><h4>Day Highlights:</h4><ul class="day-timeline-list"><li><span class="emoji-icon">✈️</span><span>Cairo Airport transfer & domestic flight to Aswan</span></li><li><span class="emoji-icon">🌊</span><span>Aswan High Dam</span></li><li><span class="emoji-icon">🏛️</span><span>Philae Temple</span></li><li><span class="emoji-icon">🚢</span><span>Cruise embarkation, Full Board & overnight</span></li></ul></div></div>
+
+<!-- IMG: Day 3 carousel -->
+<div class="day-image-container">
+  <div class="carousel-track" id="track-day3" data-index="0">
+
+    <div class="carousel-slide">
+      <img
+        src="https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1"
+        alt="Philae Temple Aswan">
+    </div>
+
+    <div class="carousel-slide">
+      <img
+        src="https://d3rr2gvhjw0wwy.cloudfront.net/uploads/activity_headers/322275/2000x2000-0-70-cd5b80bbc38e95f1082583e6e5692a5d.jpg"
+        alt="Philae Temple Aswan">
+    </div>
+    <div class="carousel-slide">
+      <img
+        src="https://www.tripsavvy.com/thmb/xcoXfqdk2NI1ZtiAOLrU393tb1I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-500053303-5c80e80b46e0fb0001a5f168.jpg"
+        alt="Aswan High Dam">
+    </div>
+
+  </div>
+  <button class="carousel-btn prev" onclick="moveSlide('track-day3',-1)">❮</button>
+  <button class="carousel-btn next" onclick="moveSlide('track-day3',1)">❯</button>
+</div>
+
+</div></div><div class="footer"><div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div><div>Page 07</div></div></div>
+
+<div class="slide"><div class="header"><img class="logo-img" src="images/logo.png"><div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div></div>
+<div class="content-body"><div class="day-layout"><div><div class="day-badge">DAY 4</div><h3 class="day-title">Abu Simbel & Kom Ombo</h3><p class="day-desc">Begin with an early visit to magnificent Abu Simbel, then continue the Nile journey towards Kom Ombo.</p>
+<div class="tour-inclusion-box"><h4>Day Highlights:</h4><ul class="day-timeline-list"><li><span class="emoji-icon">🗿</span><span>Early morning Abu Simbel Temples visit</span></li><li><span class="emoji-icon">🚐</span><span>Return to Aswan & continue cruise</span></li><li><span class="emoji-icon">🏛️</span><span>Kom Ombo Temple visit</span></li><li><span class="emoji-icon">🚢</span><span>Full Board & overnight on Nile Cruise</span></li></ul></div></div>
+
+<!-- IMG: Day 4 carousel -->
+<div class="day-image-container">
+  <div class="carousel-track" id="track-day4" data-index="0">
+
+    <div class="carousel-slide">
+      <img
+        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/da/40/33/caption.jpg?h=1200&s=1&w=1200"
+        alt="Abu Simbel Temples">
+    </div>
+
+    <div class="carousel-slide">
+      <img
+        src="https://www.travelure.in/wp-content/uploads/2020/09/Kom-Ombo-Header-4.jpg"
+        alt="Kom Ombo Temple">
+    </div>
+
+    <div class="carousel-slide">
+      <img
+        src="https://www.egypttoursportal.com/images/2024/04/5-Days-Hidden-Treasures-Nile-Cruise-for-Returning-Visitors-Egypt-Tours-Portal.jpg"
+        alt="Kom Ombo Temple">
+    </div>
+
+  </div>
+  <button class="carousel-btn prev" onclick="moveSlide('track-day4',-1)">❮</button>
+  <button class="carousel-btn next" onclick="moveSlide('track-day4',1)">❯</button>
+</div>
+
+</div></div><div class="footer"><div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div><div>Page 08</div></div></div>
+
+<div class="slide"><div class="header"><img class="logo-img" src="images/logo.png"><div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div></div>
+<div class="content-body"><div class="day-layout"><div><div class="day-badge">DAY 5</div><h3 class="day-title">Edfu & Luxor East Bank</h3><p class="day-desc">Discover Edfu Temple before sailing to Luxor for the monumental temples of Karnak and Luxor on the East Bank.</p>
+<div class="tour-inclusion-box"><h4>Day Highlights:</h4><ul class="day-timeline-list"><li><span class="emoji-icon">🏛️</span><span>Edfu Temple visit</span></li><li><span class="emoji-icon">🚢</span><span>Sail towards Luxor</span></li><li><span class="emoji-icon">🗿</span><span>Karnak Temple & Luxor Temple</span></li><li><span class="emoji-icon">🍽️</span><span>Full Board & overnight on Nile Cruise</span></li></ul></div></div>
+
+<!-- IMG: Day 5 carousel -->
+<div class="day-image-container">
+  <div class="carousel-track" id="track-day5" data-index="0">
+
+    <div class="carousel-slide">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/56c13cc00442627a08632989/1562248812068-709CAPVQ7P066D1EHKIY/edfucourt.jpg"
+        alt="Edfu Temple">
+    </div>
+
+    <div class="carousel-slide">
+      <img
+        src="https://www.egypttoursportal.com/images/2026/05/Karnak-Temple-Egypt-Tours-Portal.jpg"
+        alt="Karnak Temple">
+    </div>
+
+    <div class="carousel-slide">
+      <img
+        src="https://images.squarespace-cdn.com/content/v1/6364bb76e5662e1fb6b69519/96e54c8b-2488-47bb-be18-2f84c7e03542/109_0.jpeg"
+        alt="Luxor Temple">
+    </div>
+
+  </div>
+  <button class="carousel-btn prev" onclick="moveSlide('track-day5',-1)">❮</button>
+  <button class="carousel-btn next" onclick="moveSlide('track-day5',1)">❯</button>
+</div>
+
+</div></div><div class="footer"><div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div><div>Page 09</div></div></div>
+
+<div class="slide"><div class="header"><img class="logo-img" src="images/logo.png"><div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div></div>
+<div class="content-body"><div class="day-layout"><div><div class="day-badge" style="background:var(--success)">DAY 6</div><h3 class="day-title">Luxor West Bank & Departure</h3><p class="day-desc">Disembark after breakfast and explore Luxor's legendary West Bank before transferring to Luxor Airport for departure.</p>
+<div class="tour-inclusion-box"><h4>Departure Day Highlights:</h4><ul class="day-timeline-list"><li><span class="emoji-icon">🍳</span><span>Breakfast & cruise disembarkation</span></li><li><span class="emoji-icon">👑</span><span>Valley of the Kings</span></li><li><span class="emoji-icon">🏛️</span><span>Temple of Hatshepsut & Colossi of Memnon</span></li><li><span class="emoji-icon">🛫</span><span>Transfer to Luxor Airport & final departure</span></li></ul></div></div>
+
+<!-- IMG: Day 6 carousel -->
+<div class="day-image-container">
+  <div class="carousel-track" id="track-day6" data-index="0">
+
+    <div class="carousel-slide">
+      <img
+        src="https://www.deluxetourseg.com/uploads/Deluxe_Tours_oGiPSc.jpg"
+        alt="Valley of the Kings">
+    </div>
+
+    <div class="carousel-slide">
+      <img
+        src="https://cdn.britannica.com/71/178471-050-1001190A/Temple-of-Hatshepsut-Dayr-al-Bahri-Egypt-Thebes.jpg"
+        alt="Temple of Hatshepsut">
+    </div>
+
+    <div class="carousel-slide">
+      <img
+        src="https://m.media-amazon.com/images/I/71nXbtmuQlL.jpg"
+        alt="Colossi of Memnon">
+    </div>
+
+  </div>
+  <button class="carousel-btn prev" onclick="moveSlide('track-day6',-1)">❮</button>
+  <button class="carousel-btn next" onclick="moveSlide('track-day6',1)">❯</button>
+</div>
+
+</div></div><div class="footer"><div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div><div>Page 10</div></div></div>
+
+<div class="slide"><div class="header"><img class="logo-img" src="images/logo.png"><div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div></div>
+<div class="content-body"><h2 class="slide-title summary-title">Complete <span>Day-Wise Meal Plan Summary</span></h2>
+<table class="meal-matrix-table"><thead><tr><th>Day</th><th>Breakfast</th><th>Lunch</th><th>Dinner</th></tr></thead><tbody>
+<tr><td>Day 1 – Cairo</td><td><span class="meal-na">Arrival Day</span></td><td><span class="meal-in">✓ Cairo Tour Lunch</span></td><td><span class="meal-na">Not Mentioned</span></td></tr>
+<tr><td>Day 2 – Cairo</td><td><span class="meal-in">✓ Breakfast</span></td><td><span class="meal-in">✓ Sightseeing Lunch</span></td><td><span class="meal-na">Not Mentioned</span></td></tr>
+<tr><td>Day 3 – Aswan / Cruise</td><td><span class="meal-in">✓ Breakfast</span></td><td><span class="meal-in">✓ Full Board</span></td><td><span class="meal-in">✓ Full Board</span></td></tr>
+<tr><td>Day 4 – Nile Cruise</td><td><span class="meal-in">✓ Full Board</span></td><td><span class="meal-in">✓ Full Board</span></td><td><span class="meal-in">✓ Full Board</span></td></tr>
+<tr><td>Day 5 – Nile Cruise</td><td><span class="meal-in">✓ Full Board</span></td><td><span class="meal-in">✓ Full Board</span></td><td><span class="meal-in">✓ Full Board</span></td></tr>
+<tr><td>Day 6 – Luxor</td><td><span class="meal-in">✓ Breakfast</span></td><td><span class="meal-na">Not Mentioned</span></td><td><span class="meal-na">Departure Day</span></td></tr>
+</tbody></table>
+<div style="background:#EBF8FF;border:1px solid #BEE3F8;border-radius:12px;padding:11px 17px;font-size:14px;color:#2B6CB0;font-weight:700">🍽️ <b>Meal Plan:</b> Cairo hotel breakfast + lunch during Cairo sightseeing, with Full Board during the 3-night Nile Cruise.</div>
+</div><div class="footer"><div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div><div>Page 11</div></div></div>
+
+<div class="slide"><div class="header"><img class="logo-img" src="images/logo.png"><div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div></div>
+<div class="content-body"><h2 class="slide-title" style="font-size:32px;margin-bottom:14px">Package <span>Inclusions & Exclusions</span></h2>
+<div class="inc-layout"><div class="inc-panel green"><div class="inc-head"><div style="font-size:26px">✅</div><div><h3 style="color:#276749">What's Included</h3><div style="font-size:13px;color:var(--gray);font-weight:700">Accommodation, meals, tours & transfers</div></div></div>
+<div class="inc-grid">
+<div class="inc-item">🏨 2 Nights Cairo Accommodation</div><div class="inc-item">🚢 3 Nights Nile Cruise</div>
+<div class="inc-item">🍳 Cairo Hotel Breakfast</div><div class="inc-item">🍽️ Cairo Sightseeing Lunches</div>
+<div class="inc-item">🍴 Full Board on Nile Cruise</div><div class="inc-item">✈️ Cairo → Aswan Domestic Flight</div>
+<div class="inc-item">🚐 Airport, Hotel & Cruise Transfers</div><div class="inc-item">🤝 Cairo Airport Meet & Greet</div>
+<div class="inc-item">🏛️ All Listed Sightseeing</div><div class="inc-item">🚗 Private AC Transportation</div>
+<div class="inc-item">🧑‍🏫 English-speaking Egyptologist Guide</div><div class="inc-item">🎟️ Entrance Fees</div>
+<div class="inc-item">🗿 Abu Simbel Excursion</div><div class="inc-item">🧾 Applicable Taxes & Service Charges</div>
+</div></div>
+<div class="inc-panel red"><div class="inc-head"><div style="font-size:26px">❌</div><div><h3 style="color:#C53030">What's Excluded</h3><div style="font-size:13px;color:var(--gray);font-weight:700">Not included in package</div></div></div>
+<div class="exc-item">✈️ International Airfare</div><div class="exc-item">🛂 Egypt Visa</div><div class="exc-item">🥤 Drinks Unless Mentioned</div><div class="exc-item">💵 Tips & Gratuities</div><div class="exc-item">🛍️ Personal Expenses</div><div class="exc-item">➕ Services Not Mentioned in Inclusions</div>
+</div></div></div>
+<div class="footer"><div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div><div>Page 12</div></div></div>
+
+<div class="slide"><div class="header"><img class="logo-img" src="images/logo.png"><div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div></div>
+<div class="content-body"><h2 class="slide-title">Package <span>Price Summary</span></h2>
+<div class="price-grid">
+<div class="price-box"><div class="price-label">Adult Package Price</div><div class="price-value">USD 1,300</div><div class="price-sub">Per Adult</div></div>
+<div class="price-box"><div class="price-label">Child Package Price</div><div class="price-value">USD 970</div><div class="price-sub">Per Child</div></div>
+</div>
+<div style="margin-top:22px;background:#F8FAFC;border:1px solid var(--border);border-left:5px solid var(--primary);padding:17px 20px;border-radius:14px;font-size:15px;font-weight:700;line-height:1.6">
+<b>Package:</b> Egypt Timeless Nile Odyssey • 6 Days / 5 Nights<br>
+<b>Stay:</b> 2 Nights Cairo + 3 Nights Nile Cruise<br>
+<b>Meal Plan:</b> Cairo Breakfast + Sightseeing Lunches • Nile Cruise Full Board
+</div></div>
+<div class="footer"><div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div><div>Page 13</div></div></div>
+
+<div class="slide"><div class="header"><img class="logo-img" src="images/logo.png"><div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div></div>
+<div class="content-body"><h2 class="slide-title" style="font-size:28px">📍 Global Presence <span>& Contact Us</span></h2>
+<div class="global-section"><div class="map-and-contacts"><div class="locations-box">
+<div class="loc-card" style="background-image:url('images/countries/global.avif')"><div class="loc-card-title">🇪🇬 Alexandria</div><div class="loc-card-info">📞 +20 112 909 0043</div></div>
+<div class="loc-card" style="background-image:url('images/countries/dubai.jpg')"><div class="loc-card-title">🇦🇪 Ras Al Khaimah</div><div class="loc-card-info">📞 +971 52 674 6682</div></div>
+<div class="loc-card" style="background-image:url('images/countries/dubai.jpg')"><div class="loc-card-title">🇦🇪 Dubai</div><div class="loc-card-info">📞 +971 50 680 0227</div></div>
+<div class="loc-card" style="background-image:url('images/countries/global.avif')"><div class="loc-card-title">🇮🇳 Bangalore</div><div class="loc-card-info">📞 +91 95910 52942</div></div>
+<div class="loc-card" style="background-image:url('images/countries/singapore.webp')"><div class="loc-card-title">🇸🇬 Singapore</div><div class="loc-card-info">📞 +65 9231 0720</div></div>
+<div class="loc-card" style="background-image:url('images/countries/global.avif')"><div class="loc-card-title">🌐 Global Network</div><div class="loc-card-info">Tailored Holidays Worldwide</div></div>
+</div>
+<div class="inquiry-box"><div style="font-size:14.5px;font-weight:900;text-align:center;color:#FFD700">🎧 INSTANT TOUR CONCIERGE</div><div><b style="color:#63B3ED">B2B Partnerships</b><br><small>b2b@citylaila.com<br>+971 4 4451 625</small></div><div><b style="color:#FF9933">Marketing & Media</b><br><small>marketing@citylaila.com</small></div><div><b style="color:#68D391">Direct Traveler Desk</b><br><small>info@citylaila.com<br>+971 55 536 5508</small></div></div>
+</div><div class="features-bar"><div>🌍 Global Holidays</div><div>🏨 Hotels & Cruises</div><div>🏛️ Tours & Activities</div><div>🚐 Private Transfers</div><div>🎧 Travel Support</div></div></div></div>
+<div class="footer"><div class="contacts"><span>📞 +971 55 536 5508</span><span>✉️ info@citylaila.com</span></div><div>Page 14</div></div></div>
+
+<script>
+function moveSlide(id,d){const t=document.getElementById(id),s=t.querySelectorAll('.carousel-slide');if(s.length<=1)return;let i=parseInt(t.dataset.index||0)+d;if(i<0)i=s.length-1;if(i>=s.length)i=0;t.dataset.index=i;t.style.transform=`translateX(-${i*(100/s.length)}%)`}
+window.addEventListener('DOMContentLoaded',()=>document.querySelectorAll('.carousel-track').forEach(t=>{const s=t.querySelectorAll('.carousel-slide'),c=s.length;t.style.width=`${c*100}%`;s.forEach(x=>{x.style.width=`${100/c}%`;x.style.minWidth=`${100/c}%`})}));
+</script>
+</body>
+</html>
