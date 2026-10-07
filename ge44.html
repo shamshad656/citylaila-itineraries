@@ -1,0 +1,2416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>CityLaila | Georgia Heritage & Wine Escape – 4N/5D</title>
+<meta property="og:title" content="CityLaila | Georgia Heritage & Wine Escape – 4N/5D">
+<meta property="og:description" content="Georgia • Tbilisi, Kazbegi, Mtskheta & Kakheti • 4 Nights / 5 Days • 2 Adults + 1 Child">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+ --primary:#0066cc;
+ --secondary:#ff6600;
+ --dark:#0A192F;
+ --light:#F8FAFC;
+ --gray:#718096;
+ --border:#E2E8F0;
+ --success:#38A169
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+ font-family:'Montserrat',sans-serif;
+ color:#2D3748;
+ background:#F7FAFC;
+ padding:20px 0
+}
+
+.slide{
+ width:297mm;
+ height:210mm;
+ max-height:210mm;
+ page-break-after:always;
+ break-after:page;
+ break-inside:avoid;
+ position:relative;
+ background:#fff;
+ margin:0 auto 30px;
+ box-shadow:0 4px 15px rgba(0,0,0,.05);
+ display:flex;
+ flex-direction:column;
+ padding:35px 45px 80px;
+ overflow:hidden
+}
+
+.header{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ border-bottom:2px solid var(--border);
+ padding-bottom:12px;
+ margin-bottom:16px;
+ flex-shrink:0
+}
+
+.logo-img{max-height:48px;width:auto}
+
+.tagline{
+ font-size:14px;
+ color:var(--gray);
+ font-weight:700;
+ letter-spacing:1.2px;
+ text-transform:uppercase
+}
+
+.footer{
+ position:absolute;
+ bottom:0;
+ left:0;
+ width:100%;
+ padding:16px 45px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ border-top:1px solid var(--border);
+ background:var(--light);
+ font-size:14px;
+ color:var(--gray);
+ font-weight:700
+}
+
+.footer .contacts{display:flex;gap:18px}
+
+.content-body{
+ flex:1;
+ min-height:0;
+ display:flex;
+ flex-direction:column;
+ justify-content:center
+}
+
+.slide-title{
+ font-size:30px;
+ font-weight:900;
+ color:var(--dark);
+ margin-bottom:18px;
+ display:flex;
+ align-items:center;
+ gap:12px;
+ line-height:1.2
+}
+
+.slide-title span{color:var(--primary)}
+
+.summary-title{
+ font-size:34px!important;
+ font-weight:900!important;
+ margin-bottom:20px!important
+}
+
+/* COVER */
+
+.cover-bg{
+ background:
+ linear-gradient(rgba(0,0,0,.38),rgba(0,0,0,.66)),
+ url('https://cdn.getyourguide.com/image/format=auto,fit=crop,gravity=auto,quality=60,width=400,height=265,dpr=2/tour_img/fc1e5bcdb5164647e2c749fa66cfb1852c36a7cb9099a3b843a6087beb329c17.jpg');
+ background-size:cover;
+ background-position:center;
+ color:#fff;
+ justify-content:center;
+ align-items:center;
+ text-align:center
+}
+
+.cover-card{
+ background:rgba(10,25,47,.70);
+ backdrop-filter:blur(5px);
+ border:1px solid rgba(255,255,255,.25);
+ padding:31px 44px;
+ border-radius:20px;
+ width:90%;
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ box-shadow:0 8px 32px rgba(0,0,0,.25)
+}
+
+.cover-title{
+ font-size:34px;
+ font-weight:900;
+ margin-bottom:8px
+}
+
+.cover-subtitle{
+ font-size:16px;
+ color:#ff9933;
+ font-weight:700;
+ margin-bottom:18px;
+ letter-spacing:1.2px;
+ text-transform:uppercase
+}
+
+.cover-highlights{
+ display:flex;
+ gap:10px;
+ margin:7px 0 17px;
+ flex-wrap:wrap;
+ justify-content:center
+}
+
+.cover-tag{
+ background:rgba(255,96,0,.35);
+ border:1px solid var(--secondary);
+ padding:8px 15px;
+ font-size:14px;
+ font-weight:800;
+ border-radius:20px
+}
+
+.cover-info-strip{
+ font-size:15px;
+ font-weight:800;
+ background:var(--secondary);
+ padding:9px 24px;
+ border-radius:30px
+}
+
+.meta-grid{
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:18px;
+ margin-top:17px;
+ border-top:1px solid rgba(255,255,255,.25);
+ padding-top:17px;
+ width:100%
+}
+
+.meta-grid h4{
+ font-size:13px;
+ color:#CBD5E1;
+ text-transform:uppercase;
+ margin-bottom:4px
+}
+
+.meta-grid p{
+ font-size:17px;
+ font-weight:800;
+ color:#fff
+}
+
+/* COMMON */
+
+.full-banner-image{
+ width:100%;
+ height:100%;
+ object-fit:contain;
+ border-radius:14px;
+ border:1px solid var(--border)
+}
+
+.timeline-container{
+ display:flex;
+ flex-direction:column;
+ gap:9px
+}
+
+.timeline-row{
+ display:grid;
+ grid-template-columns:120px 1fr 160px;
+ gap:12px;
+ align-items:center;
+ padding:12px 15px;
+ background:#fff;
+ border:1px solid var(--border);
+ border-radius:10px
+}
+
+.timeline-row:nth-child(even){background:var(--light)}
+
+.timeline-day{
+ font-weight:900;
+ font-size:15.5px;
+ color:var(--primary)
+}
+
+.timeline-badge{
+ background:#EBF8FF;
+ color:#2B6CB0;
+ font-size:13.5px;
+ font-weight:800;
+ padding:6px 11px;
+ border-radius:7px;
+ border:1px solid #BEE3F8
+}
+
+.timeline-badge.highlight{
+ background:#E6FFFA;
+ color:#234E52;
+ border-color:#99F6E4
+}
+
+.timeline-stay{
+ font-size:14.5px;
+ font-weight:900;
+ color:var(--dark);
+ text-align:right
+}
+
+/* HOTEL */
+
+.hotel-card{
+ background:#fff;
+ border:1px solid var(--border);
+ border-radius:20px;
+ padding:25px 30px;
+ box-shadow:0 8px 25px rgba(0,0,0,.05)
+}
+
+.hotel-banner{
+ background:linear-gradient(135deg,#0A192F,#1E3A8A);
+ color:#fff;
+ padding:18px 22px;
+ border-radius:14px;
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ margin-bottom:16px
+}
+
+.hotel-details{
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
+ gap:12px
+}
+
+.hotel-item{
+ background:#F8FAFC;
+ border:1px solid var(--border);
+ padding:13px 16px;
+ border-radius:11px;
+ font-size:15px;
+ font-weight:800
+}
+
+/* DAY */
+
+.day-layout{
+ display:grid;
+ grid-template-columns:.86fr 1.14fr;
+ gap:34px;
+ flex:1;
+ min-height:0
+}
+
+.day-badge{
+ background:var(--secondary);
+ color:#fff;
+ padding:9px 20px;
+ font-weight:900;
+ border-radius:6px;
+ display:inline-block;
+ margin-bottom:12px;
+ font-size:15.5px;
+ letter-spacing:1px
+}
+
+.day-title{
+ font-size:28px;
+ font-weight:900;
+ color:var(--dark);
+ margin-bottom:10px;
+ line-height:1.25
+}
+
+.day-desc{
+ font-size:17px;
+ color:#334155;
+ line-height:1.5;
+ margin-bottom:14px;
+ font-weight:600
+}
+
+.tour-inclusion-box{
+ background:#F8FAFC;
+ border:1px solid var(--border);
+ padding:16px 20px;
+ border-radius:16px
+}
+
+.tour-inclusion-box h4{
+ font-size:16px;
+ font-weight:900;
+ color:#004499;
+ margin-bottom:10px
+}
+
+.day-timeline-list{
+ list-style:none;
+ display:flex;
+ flex-direction:column;
+ gap:10px
+}
+
+.day-timeline-list li{
+ font-size:16px;
+ font-weight:700;
+ color:#1E293B;
+ display:flex;
+ align-items:center;
+ gap:14px;
+ background:#fff;
+ padding:11px 15px;
+ border-radius:9px;
+ border:1px solid var(--border);
+ line-height:1.28
+}
+
+.emoji-icon{
+ font-size:18px;
+ min-width:26px;
+ text-align:center
+}
+
+/* CAROUSEL */
+
+.day-image-container{
+ width:100%;
+ height:100%;
+ min-height:480px;
+ border-radius:18px;
+ overflow:hidden;
+ box-shadow:0 12px 30px rgba(0,0,0,.12);
+ border:1px solid var(--border);
+ background:#0A192F;
+ position:relative
+}
+
+.carousel-track{
+ display:flex;
+ height:100%;
+ transition:transform .4s ease-in-out
+}
+
+.carousel-slide{
+ height:100%;
+ flex-shrink:0
+}
+
+.carousel-slide img{
+ width:100%;
+ height:100%;
+ object-fit:cover;
+ object-position:center;
+ display:block
+}
+
+.carousel-btn{
+ position:absolute;
+ top:50%;
+ transform:translateY(-50%);
+ background:rgba(10,25,47,.72);
+ color:#fff;
+ border:1px solid rgba(255,255,255,.3);
+ padding:12px 14px;
+ border-radius:50%;
+ cursor:pointer;
+ font-weight:900;
+ z-index:10
+}
+
+.carousel-btn.prev{left:12px}
+.carousel-btn.next{right:12px}
+
+/* MEAL */
+
+.meal-matrix-table{
+ width:100%;
+ border-collapse:separate;
+ border-spacing:0;
+ border-radius:16px;
+ overflow:hidden;
+ border:2px solid var(--border);
+ margin-bottom:16px
+}
+
+.meal-matrix-table th{
+ background:#0A192F;
+ color:#fff;
+ padding:12px 18px;
+ font-size:15px;
+ font-weight:900;
+ text-transform:uppercase;
+ text-align:left
+}
+
+.meal-matrix-table td{
+ padding:10px 18px;
+ font-size:15px;
+ border-bottom:1.5px solid var(--border);
+ background:#fff;
+ font-weight:800
+}
+
+.meal-matrix-table tr:nth-child(even) td{
+ background:#F8FAFC
+}
+
+.meal-in{
+ background:#E6FFFA;
+ color:#047481;
+ padding:5px 9px;
+ border-radius:6px;
+ font-weight:900;
+ font-size:14px;
+ border:1.5px solid #99F6E4;
+ display:inline-block
+}
+
+.meal-na{
+ background:#EDF2F7;
+ color:#718096;
+ padding:5px 9px;
+ border-radius:6px;
+ font-weight:800;
+ font-size:14px;
+ border:1.5px solid #CBD5E0;
+ display:inline-block
+}
+
+/* INCLUSIONS */
+
+.inc-layout{
+ display:grid;
+ grid-template-columns:1.28fr .72fr;
+ gap:24px;
+ flex:1;
+ min-height:0
+}
+
+.inc-panel{
+ background:#fff;
+ border:1px solid var(--border);
+ border-radius:20px;
+ padding:20px 24px;
+ box-shadow:0 8px 24px rgba(0,0,0,.05)
+}
+
+.inc-panel.green{
+ border-top:6px solid #38A169
+}
+
+.inc-panel.amber{
+ border-top:6px solid #D69E2E;
+ background:#FFFDF5
+}
+
+.inc-head{
+ display:flex;
+ align-items:center;
+ gap:12px;
+ padding-bottom:11px;
+ border-bottom:2px solid #EDF2F7;
+ margin-bottom:12px
+}
+
+.inc-head h3{
+ font-size:21px;
+ font-weight:900
+}
+
+.inc-grid{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:9px
+}
+
+.inc-item{
+ background:#F8FAFC;
+ border:1px solid var(--border);
+ border-radius:10px;
+ padding:10px 12px;
+ font-size:15px;
+ font-weight:800;
+ line-height:1.32
+}
+
+.note-item{
+ background:#fff;
+ border:1px solid #F6E05E;
+ border-radius:11px;
+ padding:13px;
+ margin-bottom:10px
+}
+
+.note-item h4{
+ font-size:15px;
+ font-weight:900;
+ color:#975A16;
+ margin-bottom:4px
+}
+
+.note-item p{
+ font-size:15px;
+ font-weight:700;
+ color:#718096;
+ line-height:1.4
+}
+
+/* PRICE */
+
+.price-layout{
+ display:grid;
+ grid-template-columns:1.05fr .95fr;
+ gap:30px;
+ min-height:390px
+}
+
+.total-box{
+ background:linear-gradient(135deg,#0A192F,#1E3A8A 50%,#0F172A);
+ color:#fff;
+ padding:26px;
+ border-radius:16px;
+ text-align:center;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ box-shadow:0 12px 30px rgba(10,25,47,.35)
+}
+
+/* CONTACT */
+
+.global-section{
+ display:flex;
+ flex-direction:column;
+ gap:14px;
+ height:100%
+}
+
+.map-and-contacts{
+ display:grid;
+ grid-template-columns:2.1fr 1fr;
+ gap:18px;
+ flex:1
+}
+
+.locations-box{
+ background:#F8FAFC;
+ border-radius:15px;
+ padding:16px;
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ grid-template-rows:repeat(2,1fr);
+ gap:14px;
+ border:1px solid var(--border)
+}
+
+.loc-card{
+ position:relative;
+ padding:16px;
+ border-radius:12px;
+ overflow:hidden;
+ background-size:cover;
+ background-position:center;
+ background-color:#1A2A3A;
+ display:flex;
+ flex-direction:column;
+ justify-content:center
+}
+
+.loc-card:before{
+ content:'';
+ position:absolute;
+ inset:0;
+ background:linear-gradient(rgba(10,25,47,.42),rgba(10,25,47,.78));
+ z-index:1
+}
+
+.loc-card-title,.loc-card-info{
+ position:relative;
+ z-index:2
+}
+
+.loc-card-title{
+ font-size:15px;
+ font-weight:900;
+ color:#fff;
+ margin-bottom:5px
+}
+
+.loc-card-info{
+ font-size:14px;
+ color:#F1F5F9;
+ font-weight:700;
+ line-height:1.5
+}
+
+.inquiry-box{
+ background:#0A192F;
+ color:#fff;
+ border-radius:15px;
+ padding:20px;
+ display:flex;
+ flex-direction:column;
+ justify-content:space-around
+}
+
+.features-bar{
+ background:#0A192F;
+ color:#fff;
+ border-radius:10px;
+ padding:12px 14px;
+ display:flex;
+ justify-content:space-around;
+ font-size:12px;
+ font-weight:800
+}
+
+@media print{
+
+ @page{
+  size:A4 landscape;
+  margin:0
+ }
+
+ body{
+  background:none;
+  padding:0;
+  margin:0;
+  -webkit-print-color-adjust:exact;
+  print-color-adjust:exact
+ }
+
+ .slide{
+  width:297mm;
+  height:210mm;
+  box-shadow:none;
+  margin:0
+ }
+
+ .carousel-btn{
+  display:none
+ }
+
+}
+</style>
+</head>
+
+<body>
+
+<!-- COVER -->
+<div class="slide cover-bg">
+
+<div class="cover-card">
+
+<img src="images/logo.png"
+     alt="CityLaila"
+     style="height:110px;width:auto;margin-bottom:18px">
+
+<h1 class="cover-title">
+🇬🇪 Georgia Heritage & Wine Escape
+</h1>
+
+<div class="cover-subtitle">
+Tbilisi • Kazbegi • Mtskheta • Kakheti | 4 Nights / 5 Days
+</div>
+
+<div class="cover-highlights">
+
+<div class="cover-tag">
+🏨 Sole Hotel, Tbilisi
+</div>
+
+<div class="cover-tag">
+🏔️ Caucasus Mountains
+</div>
+
+<div class="cover-tag">
+🍷 Kakheti Wine Region
+</div>
+
+</div>
+
+<div class="cover-info-strip">
+4th – 8th December • 2 Adults + 1 Child (8 Years)
+</div>
+
+<div class="meta-grid">
+
+<div>
+<h4>Duration</h4>
+<p>4 Nights / 5 Days</p>
+</div>
+
+<div>
+<h4>Guests</h4>
+<p>2 Adults + 1 Child</p>
+</div>
+
+<div>
+<h4>Sharing</h4>
+<p>Triple Sharing</p>
+</div>
+
+<div>
+<h4>Grand Total</h4>
+<p>AED 3,800</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+<div>www.citylaila.com</div>
+<div>Page 01</div>
+</div>
+
+</div>
+
+<!-- WHY BOOK -->
+<div class="slide">
+
+<div class="header">
+<img class="logo-img" src="images/logo.png">
+<div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+</div>
+
+<div class="content-body">
+
+<img src="images/why_book_with_us_full.png"
+     class="full-banner-image"
+     alt="Why Book With Us">
+
+</div>
+
+<div class="footer">
+
+<div class="contacts">
+<span>📞 +971 55 536 5508</span>
+<span>✉️ info@citylaila.com</span>
+</div>
+
+<div>Page 02</div>
+
+</div>
+
+</div>
+
+<!-- OVERVIEW -->
+<div class="slide">
+
+<div class="header">
+<img class="logo-img" src="images/logo.png">
+<div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+</div>
+
+<div class="content-body">
+
+<h2 class="slide-title summary-title">
+Itinerary Overview Summary <span>(All 5 Days)</span>
+</h2>
+
+<div class="timeline-container">
+
+<div class="timeline-row">
+
+<div class="timeline-day">
+Day 01<br>
+<small>04 Dec</small>
+</div>
+
+<div>
+<span class="timeline-badge highlight">
+🏛️ Arrival & Full Tbilisi City Tour
+</span>
+</div>
+
+<div class="timeline-stay">
+🏨 Tbilisi
+</div>
+
+</div>
+
+
+<div class="timeline-row">
+
+<div class="timeline-day">
+Day 02<br>
+<small>05 Dec</small>
+</div>
+
+<div>
+<span class="timeline-badge highlight">
+🏔️ Ananuri • Gudauri • Kazbegi
+</span>
+</div>
+
+<div class="timeline-stay">
+🏨 Tbilisi
+</div>
+
+</div>
+
+
+<div class="timeline-row">
+
+<div class="timeline-day">
+Day 03<br>
+<small>06 Dec</small>
+</div>
+
+<div>
+<span class="timeline-badge highlight">
+⛪ Mtskheta • Jvari • Uplistsikhe
+</span>
+</div>
+
+<div class="timeline-stay">
+🏨 Tbilisi
+</div>
+
+</div>
+
+
+<div class="timeline-row">
+
+<div class="timeline-day">
+Day 04<br>
+<small>07 Dec</small>
+</div>
+
+<div>
+<span class="timeline-badge highlight">
+🍇 Kakheti Wine Region & Signagi
+</span>
+</div>
+
+<div class="timeline-stay">
+🏨 Tbilisi
+</div>
+
+</div>
+
+
+<div class="timeline-row">
+
+<div class="timeline-day">
+Day 05<br>
+<small>08 Dec</small>
+</div>
+
+<div>
+<span class="timeline-badge">
+🛫 Breakfast, Check-out & Departure
+</span>
+</div>
+
+<div class="timeline-stay"
+     style="color:var(--success)">
+✨ Tour Ends
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<div class="contacts">
+<span>📞 +971 55 536 5508</span>
+<span>✉️ info@citylaila.com</span>
+</div>
+
+<div>Page 03</div>
+
+</div>
+
+</div>
+
+<!-- HOTEL -->
+<div class="slide">
+
+<div class="header">
+<img class="logo-img" src="images/logo.png">
+<div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+</div>
+
+<div class="content-body">
+
+<h2 class="slide-title">
+Your <span>Hotel & Travel Setup</span>
+</h2>
+
+<div class="hotel-card">
+
+<div class="hotel-banner">
+
+<div>
+
+<div style="
+font-size:11px;
+background:rgba(255,102,0,.3);
+padding:4px 10px;
+border-radius:20px;
+font-weight:800;
+display:inline-block">
+
+TBILISI STAY
+
+</div>
+
+<h3 style="
+font-size:23px;
+font-weight:900;
+margin-top:7px">
+
+Sole Hotel, Tbilisi
+
+</h3>
+
+<p style="
+font-size:13.5px;
+color:#CBD5E1;
+font-weight:700;
+margin-top:4px">
+
+📍 Tbilisi, Georgia • 4th – 8th December
+
+</p>
+
+</div>
+
+<div style="
+background:rgba(255,255,255,.1);
+padding:11px 17px;
+border-radius:12px;
+text-align:center">
+
+<small>Total Stay</small>
+<br>
+
+<b style="
+color:#FFD700;
+font-size:17px">
+
+4 Nights
+
+</b>
+
+</div>
+
+</div>
+
+<div class="hotel-details">
+
+<div class="hotel-item">
+👨‍👩‍👦 2 Adults + 1 Child (8 Years)
+</div>
+
+<div class="hotel-item">
+🛏️ Triple Sharing
+</div>
+
+<div class="hotel-item">
+🍳 Breakfast Included
+</div>
+
+<div class="hotel-item">
+🚐 Minivan Transportation
+</div>
+
+<div class="hotel-item">
+🧑 English-Speaking Driver
+</div>
+
+<div class="hotel-item">
+💧 2 Water Bottles / Person / Day
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<div class="contacts">
+<span>📞 +971 55 536 5508</span>
+<span>✉️ info@citylaila.com</span>
+</div>
+
+<div>Page 04</div>
+
+</div>
+
+</div>
+
+<!-- DAY 1 -->
+<div class="slide">
+
+<div class="header">
+<img class="logo-img" src="images/logo.png">
+<div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+</div>
+
+<div class="content-body">
+
+<div class="day-layout">
+
+<div>
+
+<div class="day-badge">
+DAY 1 – 4TH DECEMBER
+</div>
+
+<h3 class="day-title">
+Arrival & Tbilisi City Tour
+</h3>
+
+<p class="day-desc">
+Arrive at Tbilisi International Airport and begin your Georgia holiday with a comprehensive tour of Tbilisi's historic and cultural landmarks.
+</p>
+
+<div class="tour-inclusion-box">
+
+<h4>
+City Tour Highlights:
+</h4>
+
+<ul class="day-timeline-list">
+
+<li>
+<span class="emoji-icon">⛪</span>
+<span>Metekhi Church, Sioni Church & Sameba Cathedral</span>
+</li>
+
+<li>
+<span class="emoji-icon">♨️</span>
+<span>Old Baths, Meidani Square & Shardeni Street</span>
+</li>
+
+<li>
+<span class="emoji-icon">🌉</span>
+<span>Gabriadze Clock Tower, Anchiskhati Church & Peace Bridge</span>
+</li>
+
+<li>
+<span class="emoji-icon">🏰</span>
+<span>Narikala Fortress • 2-way Cable Car listed as extra ticket supplement</span>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- IMG: Day 1 carousel -->
+<div class="day-image-container">
+
+<div class="carousel-track"
+     id="track-day1"
+     data-index="0">
+
+
+     <div class="carousel-slide">
+<img
+src="https://eurasianet.org/sites/default/files/styles/article/public/2023-06/tav%20tbilisi%20airport.jpg?h=3f560db1&itok=A_Aetqrf"
+alt="Tbilisi City Tour">
+</div>
+<div class="carousel-slide">
+<img
+src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/8a/ae/24/tbilisi.jpg?w=1200&h=-1&s=1"
+alt="Tbilisi City Tour">
+</div>
+
+<div class="carousel-slide">
+<img
+src="https://cdn.georgia.to/img/thumbnails/39zZAYpdGbPcagcmuYUnY4_medium.jpg"
+alt="Metekhi Church Tbilisi">
+</div>
+
+<div class="carousel-slide">
+<img
+src="https://www.arkitectureonweb.com/documents/77789/2516367/GalleryImage7.jpg/f0ce25ce-022c-9e8d-1013-0de508b1feec?t=1564140420129"
+alt="Peace Bridge Tbilisi">
+</div>
+
+<div class="carousel-slide">
+<img
+src="https://upload.wikimedia.org/wikipedia/en/0/04/2014_Tbilisi%2C_Sob%C3%B3r_Tr%C3%B3jcy_%C5%9Awi%C4%99tej_%2817%29.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+alt="Sameba Cathedral Tbilisi">
+</div>
+
+</div>
+
+<button class="carousel-btn prev"
+onclick="moveSlide('track-day1',-1)">❮</button>
+
+<button class="carousel-btn next"
+onclick="moveSlide('track-day1',1)">❯</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<div class="contacts">
+<span>📞 +971 55 536 5508</span>
+<span>✉️ info@citylaila.com</span>
+</div>
+
+<div>Page 05</div>
+
+</div>
+
+</div>
+
+<!-- DAY 2 -->
+<div class="slide">
+
+<div class="header">
+<img class="logo-img" src="images/logo.png">
+<div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+</div>
+
+<div class="content-body">
+
+<div class="day-layout">
+
+<div>
+
+<div class="day-badge">
+DAY 2 – 5TH DECEMBER
+</div>
+
+<h3 class="day-title">
+Ananuri, Gudauri & Kazbegi
+</h3>
+
+<p class="day-desc">
+After breakfast, travel through Georgia's spectacular mountain scenery towards Ananuri, Gudauri and Kazbegi.
+</p>
+
+<div class="tour-inclusion-box">
+
+<h4>
+Mountain Tour Highlights:
+</h4>
+
+<ul class="day-timeline-list">
+
+<li>
+<span class="emoji-icon">🌊</span>
+<span>Jinvali Reservoir & Ananuri Castle</span>
+</li>
+
+<li>
+<span class="emoji-icon">🏞️</span>
+<span>Black & White Aragvi River</span>
+</li>
+
+<li>
+<span class="emoji-icon">🏔️</span>
+<span>Gudauri Panorama & Georgian-Russian Friendship Monument</span>
+</li>
+
+<li>
+<span class="emoji-icon">⛪</span>
+<span>Kazbegi Village & Gergeti Trinity Church • 4x4 Jeep supplement applies</span>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- IMG: Day 2 carousel -->
+<div class="day-image-container">
+
+<div class="carousel-track"
+     id="track-day2"
+     data-index="0">
+
+<div class="carousel-slide">
+<img
+src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1140,h_760/w_70,x_13,y_13,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/t9wsuy1rmecxjqdrxmmg/PrivateTourtoAnanuri,GudauriKazbegifromTbilisi.jpg"
+alt="Ananuri Gudauri Kazbegi Tour">
+</div>
+
+<div class="carousel-slide">
+<img
+src="https://img.avianexperiences.com/attractions/d16f1332-775f-43aa-807e-0cb47be7b295"
+alt="Ananuri Castle">
+</div>
+
+<div class="carousel-slide">
+<img
+src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/13/9c/06/31.jpg"
+alt="Gudauri Georgia">
+</div>
+
+<div class="carousel-slide">
+<img
+src="https://tourguide.ge/wp-content/uploads/2019/03/Seeing-from-Gergeti.jpg"
+alt="Gergeti Trinity Church Kazbegi">
+</div>
+
+</div>
+
+<button class="carousel-btn prev"
+onclick="moveSlide('track-day2',-1)">❮</button>
+
+<button class="carousel-btn next"
+onclick="moveSlide('track-day2',1)">❯</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<div class="contacts">
+<span>📞 +971 55 536 5508</span>
+<span>✉️ info@citylaila.com</span>
+</div>
+
+<div>Page 06</div>
+
+</div>
+
+</div>
+
+<!-- DAY 3 -->
+<div class="slide">
+
+<div class="header">
+<img class="logo-img" src="images/logo.png">
+<div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+</div>
+
+<div class="content-body">
+
+<div class="day-layout">
+
+<div>
+
+<div class="day-badge">
+DAY 3 – 6TH DECEMBER
+</div>
+
+<h3 class="day-title">
+Mtskheta & Uplistsikhe
+</h3>
+
+<p class="day-desc">
+Explore Georgia's historic heritage with visits to Mtskheta, its major religious monuments and the ancient Uplistsikhe Cave Town.
+</p>
+
+<div class="tour-inclusion-box">
+
+<h4>
+Heritage Tour Highlights:
+</h4>
+
+<ul class="day-timeline-list">
+
+<li>
+<span class="emoji-icon">🏘️</span>
+<span>Mtskheta – Georgia's historic former capital</span>
+</li>
+
+<li>
+<span class="emoji-icon">⛪</span>
+<span>Svetitskhoveli Cathedral</span>
+</li>
+
+<li>
+<span class="emoji-icon">🕍</span>
+<span>Jvari Monastery</span>
+</li>
+
+<li>
+<span class="emoji-icon">🪨</span>
+<span>Uplistsikhe Cave Town • Entry ticket listed under extra supplement</span>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- IMG: Day 3 carousel -->
+<div class="day-image-container">
+
+<div class="carousel-track"
+     id="track-day3"
+     data-index="0">
+
+     <div class="carousel-slide">
+<img
+src="https://tourguide.ge/wp-content/uploads/2019/03/mtskheta-svetitskhoveli-cathedral.jpg"
+alt="Svetitskhoveli Cathedral">
+</div>
+<div class="carousel-slide">
+<img
+src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_862/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/csgbiegqjmpkt2j0qznq/TbilisiMtskheta,GoriUplistsikheFull-DayHistoricalTour.jpg"
+alt="Mtskheta and Uplistsikhe Tour">
+</div>
+
+<div class="carousel-slide">
+<img
+src="https://tourguide.ge/wp-content/uploads/2019/03/mtskheta-svetitskhoveli-cathedral.jpg"
+alt="Svetitskhoveli Cathedral">
+</div>
+
+<div class="carousel-slide">
+<img
+src="https://hrqqtbdlyshwtxggtfyw.supabase.co/storage/v1/object/public/tour-images/destinations/main/jvari-main_1767463967948_hsrru8.webp"
+alt="Jvari Monastery">
+</div>
+
+</div>
+
+<button class="carousel-btn prev"
+onclick="moveSlide('track-day3',-1)">❮</button>
+
+<button class="carousel-btn next"
+onclick="moveSlide('track-day3',1)">❯</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<div class="contacts">
+<span>📞 +971 55 536 5508</span>
+<span>✉️ info@citylaila.com</span>
+</div>
+
+<div>Page 07</div>
+
+</div>
+
+</div>
+
+<!-- DAY 4 -->
+<div class="slide">
+
+<div class="header">
+<img class="logo-img" src="images/logo.png">
+<div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+</div>
+
+<div class="content-body">
+
+<div class="day-layout">
+
+<div>
+
+<div class="day-badge">
+DAY 4 – 7TH DECEMBER
+</div>
+
+<h3 class="day-title">
+Kakheti Wine Region & Signagi
+</h3>
+
+<p class="day-desc">
+Travel through Georgia's renowned Kakheti wine region for winery experiences, monastery heritage and a visit to picturesque Signagi.
+</p>
+
+<div class="tour-inclusion-box">
+
+<h4>
+Kakheti Highlights:
+</h4>
+
+<ul class="day-timeline-list">
+
+<li>
+<span class="emoji-icon">🍷</span>
+<span>KTW Wine Factory</span>
+</li>
+
+<li>
+<span class="emoji-icon">🍇</span>
+<span>Wine tasting – 5 to 6 varieties</span>
+</li>
+
+<li>
+<span class="emoji-icon">⛪</span>
+<span>Bodbe Monastery</span>
+</li>
+
+<li>
+<span class="emoji-icon">❤️</span>
+<span>Signagi – City of Love</span>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- IMG: Day 4 carousel -->
+<div class="day-image-container">
+
+<div class="carousel-track"
+     id="track-day4"
+     data-index="0">
+
+<div class="carousel-slide">
+<img
+src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_728/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/rk2e7laqqd842btlqu8f/KakhetiWineRegionTourfromTbilisi.jpg"
+alt="Kakheti Wine Region">
+</div>
+
+<div class="carousel-slide">
+<img
+src="https://www.winetourism.com/files/2021/09/ktw-wine-house-patardzeuli-wine-display.jpg"
+alt="KTW Wine Factory">
+</div>
+
+<div class="carousel-slide">
+<img
+src="https://eurasia.travel/wp-content/uploads/2025/04/11.-Bodbe-Monastery.jpg"
+alt="Bodbe Monastery">
+</div>
+
+</div>
+
+<button class="carousel-btn prev"
+onclick="moveSlide('track-day4',-1)">❮</button>
+
+<button class="carousel-btn next"
+onclick="moveSlide('track-day4',1)">❯</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<div class="contacts">
+<span>📞 +971 55 536 5508</span>
+<span>✉️ info@citylaila.com</span>
+</div>
+
+<div>Page 08</div>
+
+</div>
+
+</div>
+
+<!-- DAY 5 -->
+<div class="slide">
+
+<div class="header">
+<img class="logo-img" src="images/logo.png">
+<div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+</div>
+
+<div class="content-body">
+
+<div class="day-layout">
+
+<div>
+
+<div class="day-badge"
+     style="background:var(--success)">
+DAY 5 – 8TH DECEMBER
+</div>
+
+<h3 class="day-title">
+Departure from Tbilisi
+</h3>
+
+<p class="day-desc">
+After breakfast, check out from Sole Hotel and proceed to Tbilisi International Airport for your departure flight.
+</p>
+
+<div class="tour-inclusion-box">
+
+<h4>
+Departure Plan:
+</h4>
+
+<ul class="day-timeline-list">
+
+<li>
+<span class="emoji-icon">🍳</span>
+<span>Breakfast at hotel</span>
+</li>
+
+<li>
+<span class="emoji-icon">🧳</span>
+<span>Hotel check-out</span>
+</li>
+
+<li>
+<span class="emoji-icon">🚐</span>
+<span>Transfer by Minivan as per program</span>
+</li>
+
+<li>
+<span class="emoji-icon">🛫</span>
+<span>Transfer to Tbilisi International Airport & departure</span>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- IMG: Day 5 carousel -->
+<div class="day-image-container">
+
+<div class="carousel-track"
+     id="track-day5"
+     data-index="0">
+
+<div class="carousel-slide">
+<img
+src="https://static.toiimg.com/thumb/106057438/Hotel-checkout.jpg?width=1200&height=900"
+alt="Hotel Checkout">
+</div>
+
+<div class="carousel-slide">
+<img
+src="https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1"
+alt="Private Transfer">
+</div>
+
+<div class="carousel-slide">
+<img
+src="https://m.media-amazon.com/images/I/71nXbtmuQlL.jpg"
+alt="Departure">
+</div>
+
+</div>
+
+<button class="carousel-btn prev"
+onclick="moveSlide('track-day5',-1)">❮</button>
+
+<button class="carousel-btn next"
+onclick="moveSlide('track-day5',1)">❯</button>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<div class="contacts">
+<span>📞 +971 55 536 5508</span>
+<span>✉️ info@citylaila.com</span>
+</div>
+
+<div>Page 09</div>
+
+</div>
+
+</div>
+
+<!-- MEAL PLAN -->
+<div class="slide">
+
+<div class="header">
+<img class="logo-img" src="images/logo.png">
+<div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+</div>
+
+<div class="content-body">
+
+<h2 class="slide-title summary-title">
+Complete <span>Day-Wise Meal Plan Summary</span>
+</h2>
+
+<table class="meal-matrix-table">
+
+<thead>
+
+<tr>
+<th>Day</th>
+<th>Breakfast</th>
+<th>Lunch</th>
+<th>Dinner</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Day 1 – 04 Dec</td>
+<td>
+<span class="meal-na">
+Arrival Day
+</span>
+</td>
+<td>
+<span class="meal-na">
+Not Mentioned
+</span>
+</td>
+<td>
+<span class="meal-na">
+Not Mentioned
+</span>
+</td>
+</tr>
+
+<tr>
+<td>Day 2 – 05 Dec</td>
+<td>
+<span class="meal-in">
+✓ Hotel Breakfast
+</span>
+</td>
+<td>
+<span class="meal-na">
+Not Mentioned
+</span>
+</td>
+<td>
+<span class="meal-na">
+Not Mentioned
+</span>
+</td>
+</tr>
+
+<tr>
+<td>Day 3 – 06 Dec</td>
+<td>
+<span class="meal-in">
+✓ Hotel Breakfast
+</span>
+</td>
+<td>
+<span class="meal-na">
+Not Mentioned
+</span>
+</td>
+<td>
+<span class="meal-na">
+Not Mentioned
+</span>
+</td>
+</tr>
+
+<tr>
+<td>Day 4 – 07 Dec</td>
+<td>
+<span class="meal-in">
+✓ Hotel Breakfast
+</span>
+</td>
+<td>
+<span class="meal-na">
+Not Mentioned
+</span>
+</td>
+<td>
+<span class="meal-na">
+Not Mentioned
+</span>
+</td>
+</tr>
+
+<tr>
+<td>Day 5 – 08 Dec</td>
+<td>
+<span class="meal-in">
+✓ Hotel Breakfast
+</span>
+</td>
+<td>
+<span class="meal-na">
+Departure Day
+</span>
+</td>
+<td>
+<span class="meal-na">
+Departure Day
+</span>
+</td>
+</tr>
+
+</tbody>
+
+</table>
+
+<div style="
+background:#E6FFFA;
+border:1px solid #99F6E4;
+border-radius:12px;
+padding:12px 17px;
+font-size:14px;
+color:#047481;
+font-weight:700">
+
+🍳 <b>Meal Plan:</b>
+Breakfast is explicitly included in the package.
+No lunch or dinner inclusion is stated.
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<div class="contacts">
+<span>📞 +971 55 536 5508</span>
+<span>✉️ info@citylaila.com</span>
+</div>
+
+<div>Page 10</div>
+
+</div>
+
+</div>
+
+<!-- INCLUSIONS -->
+<div class="slide">
+
+<div class="header">
+<img class="logo-img" src="images/logo.png">
+<div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+</div>
+
+<div class="content-body">
+
+<h2 class="slide-title"
+    style="font-size:32px;margin-bottom:14px">
+
+Package <span>Inclusions & Important Notes</span>
+
+</h2>
+
+<div class="inc-layout">
+
+<div class="inc-panel green">
+
+<div class="inc-head">
+
+<div style="font-size:26px">
+✅
+</div>
+
+<div>
+
+<h3 style="color:#276749">
+Package Includes
+</h3>
+
+<div style="
+font-size:13px;
+color:var(--gray);
+font-weight:700">
+
+Hotel, breakfast, transport & touring services
+
+</div>
+
+</div>
+
+</div>
+
+<div class="inc-grid">
+
+<div class="inc-item">
+🏨 4 Nights – Sole Hotel, Tbilisi
+</div>
+
+<div class="inc-item">
+🛏️ Triple Sharing
+</div>
+
+<div class="inc-item">
+🍳 Breakfast Included
+</div>
+
+<div class="inc-item">
+🚐 Transportation by Minivan
+</div>
+
+<div class="inc-item">
+🧑 English-Speaking Driver
+</div>
+
+<div class="inc-item">
+📌 Driver is Not a Guide
+</div>
+
+<div class="inc-item">
+💧 2 Bottles of Water / Person / Day
+</div>
+
+<div class="inc-item">
+🛬 Airport Transfers as per Program
+</div>
+
+<div class="inc-item"
+     style="grid-column:1/3">
+
+🚐 All sightseeing transfers as per supplied itinerary
+
+</div>
+
+</div>
+
+</div>
+
+<div class="inc-panel amber">
+
+<div class="inc-head">
+
+<div style="font-size:26px">
+🎟️
+</div>
+
+<div>
+
+<h3 style="color:#975A16">
+Extra Supplement
+</h3>
+
+<div style="
+font-size:13px;
+color:var(--gray);
+font-weight:700">
+
+Entry tickets are not included
+
+</div>
+
+</div>
+
+</div>
+
+<div class="note-item">
+
+<h4>
+🚡 Narikala Cable Car
+</h4>
+
+<p>
+2-way Cable Car is part of the USD 25 per person supplement.
+</p>
+
+</div>
+
+<div class="note-item">
+
+<h4>
+🚙 Gergeti 4x4 Jeep
+</h4>
+
+<p>
+Gergeti Trinity Church 4x4 Jeep is part of the same supplement.
+</p>
+
+</div>
+
+<div class="note-item">
+
+<h4>
+🪨 Uplistsikhe Cave Town
+</h4>
+
+<p>
+Uplistsikhe Cave Town entry is part of the same supplement.
+</p>
+
+</div>
+
+<div style="
+background:#FFF7ED;
+border:1px solid #FBD38D;
+border-radius:11px;
+padding:14px;
+font-size:16px;
+font-weight:900;
+color:#C05621;
+text-align:center;
+margin-bottom:10px">
+
+USD 25 PER PERSON
+
+</div>
+
+<div class="note-item">
+
+<h4>
+🌦️ Itinerary Note
+</h4>
+
+<p>
+The itinerary may be adjusted depending on weather and local conditions.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<div class="contacts">
+<span>📞 +971 55 536 5508</span>
+<span>✉️ info@citylaila.com</span>
+</div>
+
+<div>Page 11</div>
+
+</div>
+
+</div>
+
+<!-- PRICE -->
+<div class="slide">
+
+<div class="header">
+<img class="logo-img" src="images/logo.png">
+<div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+</div>
+
+<div class="content-body"
+     style="justify-content:center">
+
+<h2 class="slide-title">
+Package <span>Price Summary</span>
+</h2>
+
+<div class="price-layout">
+
+<div style="
+display:flex;
+flex-direction:column;
+justify-content:center">
+
+<div class="total-box"
+     style="min-height:330px">
+
+<div style="
+font-size:15px;
+text-transform:uppercase;
+letter-spacing:2px;
+color:#F59E0B;
+font-weight:800">
+
+TOTAL PACKAGE COST
+
+</div>
+
+<div style="
+font-size:48px;
+font-weight:900;
+margin:14px 0 6px">
+
+AED 3,800
+
+</div>
+
+<div style="
+font-size:17px;
+font-weight:800;
+color:#FDE047">
+
+For Triple Sharing
+
+</div>
+
+<div style="
+font-size:15px;
+color:#E2E8F0;
+font-weight:700;
+margin-top:12px">
+
+2 Adults + 1 Child (8 Years)
+<br>
+Georgia Heritage & Wine Escape • 4 Nights / 5 Days
+
+</div>
+
+</div>
+
+</div>
+
+
+<div style="
+background:#F8FAFC;
+border:1px solid var(--border);
+border-left:5px solid var(--primary);
+padding:24px;
+border-radius:16px;
+display:flex;
+flex-direction:column;
+justify-content:center">
+
+<h4 style="
+font-size:18px;
+font-weight:900;
+margin-bottom:15px">
+
+📋 PACKAGE SUMMARY
+
+</h4>
+
+<div style="
+font-size:15px;
+font-weight:700;
+display:flex;
+flex-direction:column;
+gap:10px">
+
+<div>
+<b>📅 Travel:</b>
+4th – 8th December
+</div>
+
+<div>
+<b>👨‍👩‍👦 Guests:</b>
+2 Adults + 1 Child (8 Years)
+</div>
+
+<div>
+<b>🌙 Duration:</b>
+4 Nights / 5 Days
+</div>
+
+<div>
+<b>🏨 Hotel:</b>
+Sole Hotel, Tbilisi
+</div>
+
+<div>
+<b>🍳 Meal Plan:</b>
+Breakfast Included
+</div>
+
+<div>
+<b>🚐 Transport:</b>
+Minivan
+</div>
+
+<div>
+<b>💧 Water:</b>
+2 Bottles / Person / Day
+</div>
+
+</div>
+
+<div style="
+margin-top:16px;
+background:#FFF7ED;
+border:1px solid #FBD38D;
+border-left:4px solid #DD6B20;
+border-radius:11px;
+padding:11px 14px;
+font-size:13px;
+font-weight:800;
+color:#9C4221;
+line-height:1.45">
+
+🎟️ Entry-ticket supplement:
+<b>USD 25 per person</b> for Cable Car (2-way) + Gergeti 4x4 Jeep + Uplistsikhe Cave Town.
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer">
+
+<div class="contacts">
+<span>📞 +971 55 536 5508</span>
+<span>✉️ info@citylaila.com</span>
+</div>
+
+<div>Page 12</div>
+
+</div>
+
+</div>
+
+<!-- CONTACT -->
+<div class="slide">
+
+<div class="header">
+<img class="logo-img" src="images/logo.png">
+<div class="tagline">WHERE LUXURY MEETS AFFORDABILITY</div>
+</div>
+
+<div class="content-body">
+
+<h2 class="slide-title"
+    style="font-size:28px">
+
+📍 Global Presence <span>& Contact Us</span>
+
+</h2>
+
+<div class="global-section">
+
+<div class="map-and-contacts">
+
+<div class="locations-box">
+
+<div class="loc-card"
+     style="background-image:url('images/countries/global.avif')">
+
+<div class="loc-card-title">
+🇪🇬 Alexandria
+</div>
+
+<div class="loc-card-info">
+📞 +20 112 909 0043
+</div>
+
+</div>
+
+
+<div class="loc-card"
+     style="background-image:url('images/countries/dubai.jpg')">
+
+<div class="loc-card-title">
+🇦🇪 Ras Al Khaimah
+</div>
+
+<div class="loc-card-info">
+📞 +971 52 674 6682
+</div>
+
+</div>
+
+
+<div class="loc-card"
+     style="background-image:url('images/countries/dubai.jpg')">
+
+<div class="loc-card-title">
+🇦🇪 Dubai
+</div>
+
+<div class="loc-card-info">
+📞 +971 50 680 0227
+</div>
+
+</div>
+
+
+<div class="loc-card"
+     style="background-image:url('images/countries/global.avif')">
+
+<div class="loc-card-title">
+🇮🇳 Bangalore
+</div>
+
+<div class="loc-card-info">
+📞 +91 95910 52942
+</div>
+
+</div>
+
+
+<div class="loc-card"
+     style="background-image:url('images/countries/singapore.webp')">
+
+<div class="loc-card-title">
+🇸🇬 Singapore
+</div>
+
+<div class="loc-card-info">
+📞 +65 9231 0720
+</div>
+
+</div>
+
+
+<div class="loc-card"
+     style="background-image:url('images/countries/global.avif')">
+
+<div class="loc-card-title">
+🌐 Global Network
+</div>
+
+<div class="loc-card-info">
+Tailored Holidays Worldwide
+</div>
+
+</div>
+
+</div>
+
+
+<div class="inquiry-box">
+
+<div style="
+font-size:14.5px;
+font-weight:900;
+text-align:center;
+color:#FFD700">
+
+🎧 INSTANT TOUR CONCIERGE
+
+</div>
+
+<div>
+
+<b style="color:#63B3ED">
+B2B Partnerships
+</b>
+
+<br>
+
+<small>
+b2b@citylaila.com
+<br>
++971 4 4451 625
+</small>
+
+</div>
+
+<div>
+
+<b style="color:#FF9933">
+Marketing & Media
+</b>
+
+<br>
+
+<small>
+marketing@citylaila.com
+</small>
+
+</div>
+
+<div>
+
+<b style="color:#68D391">
+Direct Traveler Desk
+</b>
+
+<br>
+
+<small>
+info@citylaila.com
+<br>
++971 55 536 5508
+</small>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="features-bar">
+
+<div>🌍 Global Holidays</div>
+
+<div>🏨 Hotel Packages</div>
+
+<div>🎟️ Tours & Activities</div>
+
+<div>🚐 Transfers</div>
+
+<div>🎧 Travel Support</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="footer">
+
+<div class="contacts">
+<span>📞 +971 55 536 5508</span>
+<span>✉️ info@citylaila.com</span>
+</div>
+
+<div>Page 13</div>
+
+</div>
+
+</div>
+
+<script>
+function moveSlide(id,d){
+
+ const t=document.getElementById(id),
+       s=t.querySelectorAll('.carousel-slide');
+
+ if(s.length<=1)return;
+
+ let i=parseInt(t.dataset.index||0)+d;
+
+ if(i<0)i=s.length-1;
+
+ if(i>=s.length)i=0;
+
+ t.dataset.index=i;
+
+ t.style.transform=`translateX(-${i*(100/s.length)}%)`;
+}
+
+window.addEventListener('DOMContentLoaded',()=>{
+
+ document.querySelectorAll('.carousel-track').forEach(t=>{
+
+  const s=t.querySelectorAll('.carousel-slide'),
+        c=s.length;
+
+  t.style.width=`${c*100}%`;
+
+  s.forEach(x=>{
+
+   x.style.width=`${100/c}%`;
+
+   x.style.minWidth=`${100/c}%`;
+
+  });
+
+ });
+
+});
+</script>
+
+</body>
+</html>
