@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="robots"
+    content="noindex,nofollow,noarchive"
+  >
+
+  <meta
+    name="description"
+    content="CityLaila | Tbilisi Heritage & Mountain Escape – 3N/4D"
+  >
+
+  <meta
+    property="og:title"
+    content="CityLaila | Tbilisi Heritage & Mountain Escape – 3N/4D"
+  >
+
+  <meta
+    property="og:description"
+    content="Georgia holiday itinerary for 2 adults travelling from 27 to 30 November 2026."
+  >
+
+  <!--
+    IMPORTANT:
+    This makes all shared CSS, JS and image paths resolve
+    from the itinerary-engine folder.
+  -->
+  <base href="../itinerary-engine/">
+
+  <title>
+    CityLaila | Tbilisi Heritage & Mountain Escape – 3N/4D
+  </title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/itinerary.css"
+  >
+
+</head>
+
+
+<body>
+
+  <main id="itinerary-app"></main>
+
+
+  <!-- =====================================================
+       SHARED IMAGE LIBRARY
+  ====================================================== -->
+
+  <script src="js/image-library.js"></script>
+
+
+  <!-- =====================================================
+       CLIENT-SPECIFIC ITINERARY DATA
+  ====================================================== -->
+
+  <script>
+
+    window.ITINERARY = {
+
+
+      /* ===================================================
+         BASIC PACKAGE DETAILS
+      =================================================== */
+
+      packageName:
+        "Tbilisi Heritage & Mountain Escape",
+
+      destinationLine:
+        "Tbilisi • Gudauri • Kazbegi, Georgia",
+
+      duration:
+        "3 Nights / 4 Days",
+
+      travelDates:
+        "27th – 30th November 2026",
+
+      guests:
+        "2 Adults",
+
+      packageType:
+        "Georgia Land Package",
+
+
+      /* ===================================================
+         COVER
+      =================================================== */
+
+      coverImageKey:
+        "georgia_winter_cover",
+
+      coverSubtitle:
+        "Tbilisi Heritage • Mountain Landscapes • Kazbegi | 3 Nights / 4 Days",
+
+      coverTags: [
+
+        "👤 Guest: Subin Ajith",
+
+        "🏨 Astoria Hotel or Similar",
+
+        "🚐 Airport & Sightseeing Transfers"
+
+      ],
+
+
+      /* ===================================================
+         HOTEL
+      =================================================== */
+
+      hotel: {
+
+        name:
+          "Astoria Hotel or Similar",
+
+        location:
+          "Tbilisi, Georgia",
+
+        nights:
+          "3 Nights",
+
+        mealPlan:
+          "Daily Breakfast"
+
+      },
+
+
+      /* ===================================================
+         PACKAGE SETUP
+      =================================================== */
+
+      setup: {
+
+        leftTitle:
+          "🏨 Stay Details",
+
+        leftItems: [
+
+          "👤 Guest: Subin Ajith",
+
+          "👫 2 Adults",
+
+          "🌙 3 Nights",
+
+          "🍳 Daily Breakfast"
+
+        ],
+
+        rightTitle:
+          "🗺️ Package Highlights",
+
+        rightItems: [
+
+          "🏙️ Full-Day Tbilisi City Tour",
+
+          "🏰 Ananuri Fortress",
+
+          "🏔️ Gudauri Mountain Region",
+
+          "⛪ Gergeti Trinity Church"
+
+        ]
+
+      },
+
+
+      /* ===================================================
+         DAY-WISE ITINERARY
+      =================================================== */
+
+      days: [
+
+
+        /* =================================================
+           DAY 1
+        ================================================= */
+
+        {
+
+          date:
+            "27 November",
+
+          shortDate:
+            "27 Nov",
+
+          title:
+            "Arrival in Tbilisi",
+
+          description:
+            "Arrive at Tbilisi International Airport, meet our representative after immigration and baggage collection, and continue to the hotel for check-in.",
+
+          highlights: [
+
+            "🛬 Arrival at Tbilisi International Airport",
+
+            "🤝 Meet & greet after immigration and baggage collection",
+
+            "🚐 Transfer to the hotel",
+
+            "🏨 Hotel check-in & overnight stay"
+
+          ],
+
+          imageKeys: [
+
+            "georgia_winter_airport_arrival"
+
+          ],
+
+          overnight:
+            "Tbilisi",
+
+          meals: {
+
+            breakfast:
+              "Arrival Day",
+
+            lunch:
+              "Not Included",
+
+            dinner:
+              "Not Included"
+
+          }
+
+        },
+
+
+        /* =================================================
+           DAY 2
+        ================================================= */
+
+        {
+
+          date:
+            "28 November",
+
+          shortDate:
+            "28 Nov",
+
+          title:
+            "Full-Day Tbilisi City Tour",
+
+          description:
+            "After breakfast, explore Tbilisi's historic districts, landmarks and panoramic viewpoints, with free time for shopping during the day.",
+
+          highlights: [
+
+            "🏰 Narikala Fortress • Panoramic city views",
+
+            "🚡 Optional cable car experience • Ticket not included",
+
+            "♨️ Sulphur Bath District • Shardeni area",
+
+            "⛪ Anchiskhati Basilica • Rezo Gabriadze Clock Tower",
+
+            "🛍️ Free time for shopping"
+
+          ],
+
+          imageKeys: [
+
+            "georgia_winter_tbilisi_city_tour"
+
+          ],
+
+          note:
+            "Lunch and dinner at an Indian or local restaurant are on direct payment basis. Cable car tickets and entrance fees are not included unless specifically confirmed.",
+
+          overnight:
+            "Tbilisi",
+
+          meals: {
+
+            breakfast:
+              "Included",
+
+            lunch:
+              "Direct Payment",
+
+            dinner:
+              "Direct Payment"
+
+          }
+
+        },
+
+
+        /* =================================================
+           DAY 3
+        ================================================= */
+
+        {
+
+          date:
+            "29 November",
+
+          shortDate:
+            "29 Nov",
+
+          title:
+            "Ananuri – Gudauri – Kazbegi Tour",
+
+          description:
+            "Travel through Georgia's mountain landscapes with visits to Ananuri, Gudauri and the Kazbegi region before returning to Tbilisi.",
+
+          highlights: [
+
+            "🏰 Ananuri Fortress overlooking Jinvali Lake",
+
+            "🏔️ Continue to Gudauri mountain resort",
+
+            "⛪ Visit Gergeti Trinity Church",
+
+            "🚐 Return to Tbilisi after sightseeing"
+
+          ],
+
+          imageKeys: [
+
+            "georgia_winter_gudauri_kazbegi"
+
+          ],
+
+          note:
+            "Gergeti Trinity Church visit is subject to weather, road and local operating conditions. Lunch and dinner are on direct payment basis.",
+
+          overnight:
+            "Tbilisi",
+
+          meals: {
+
+            breakfast:
+              "Included",
+
+            lunch:
+              "Direct Payment",
+
+            dinner:
+              "Direct Payment"
+
+          }
+
+        },
+
+
+        /* =================================================
+           DAY 4
+        ================================================= */
+
+        {
+
+          date:
+            "30 November",
+
+          shortDate:
+            "30 Nov",
+
+          title:
+            "Departure from Tbilisi",
+
+          description:
+            "Enjoy breakfast, check out from the hotel and proceed to Tbilisi International Airport for your return flight.",
+
+          highlights: [
+
+            "🍳 Breakfast at the hotel",
+
+            "🧳 Hotel check-out",
+
+            "🛍️ Free time for shopping, subject to flight timing",
+
+            "🚐 Transfer to Tbilisi International Airport",
+
+            "🛫 Departure for your return journey"
+
+          ],
+
+          imageKeys: [
+
+            "departure"
+
+          ],
+
+          note:
+            "The exact hotel departure and airport pickup time will be scheduled according to the confirmed flight departure time and required airport reporting time. Final pickup timing will be communicated with the confirmed travel documents.",
+
+          overnight:
+            "Tour Ends",
+
+          departure:
+            true,
+
+          meals: {
+
+            breakfast:
+              "Included",
+
+            lunch:
+              "Not Included",
+
+            dinner:
+              "Not Included"
+
+          }
+
+        }
+
+      ],
+
+
+      /* ===================================================
+         PACKAGE INCLUSIONS
+      =================================================== */
+
+      inclusions: [
+
+        "🏨 3 Nights – Astoria Hotel or Similar, Tbilisi",
+
+        "🍳 Daily Breakfast at the Hotel",
+
+        "🚐 Airport Arrival & Departure Transfers",
+
+        "🗺️ Transportation for Sightseeing Tours as per the Itinerary"
+
+      ],
+
+
+      /* ===================================================
+         PACKAGE EXCLUSIONS
+      =================================================== */
+
+      exclusions: [
+
+        "✈️ International Airfare",
+
+        "🍽️ Lunches & Dinners",
+
+        "🎟️ Entrance Fees, Cable Car Tickets & Optional Activities unless Specified",
+
+        "🛍️ Personal Expenses",
+
+        "🛡️ Travel Insurance",
+
+        "📌 Any Services not Mentioned under Package Includes"
+
+      ],
+
+
+      /* ===================================================
+         PAYMENT & BOOKING POLICY
+
+         No invented payment percentage or deadline.
+      =================================================== */
+
+      paymentPolicy: {
+
+        booking: [
+
+          {
+
+            title:
+              "Booking Status",
+
+            text:
+              "This itinerary is a proposal based on currently available services. A booking is considered confirmed only after the applicable payment requirement is completed and written confirmation or vouchers are issued."
+
+          },
+
+          {
+
+            title:
+              "Payment Requirement",
+
+            text:
+              "The applicable payment amount, payment method and payment deadline will be communicated before booking. No service should be considered reserved until confirmation is received."
+
+          },
+
+          {
+
+            title:
+              "Rate Validity",
+
+            text:
+              "Hotel rates, transportation costs and other travel services may change until the booking is finally confirmed."
+
+          }
+
+        ],
+
+
+        conditions: [
+
+          {
+
+            title:
+              "Hotel & Service Availability",
+
+            text:
+              "Astoria Hotel or similar and all sightseeing arrangements remain subject to availability at the time of confirmation."
+
+          },
+
+          {
+
+            title:
+              "Amendments & Cancellation",
+
+            text:
+              "After confirmation, any cancellation or amendment will be subject to the applicable hotel, supplier and service-provider conditions. Exact applicable terms will be shared before payment where available."
+
+          },
+
+          {
+
+            title:
+              "Final Travel Documents",
+
+            text:
+              "The final hotel confirmation, transfer details and travel vouchers will govern the confirmed timings, pickup instructions and operating information."
+
+          }
+
+        ],
+
+        note:
+          "Please review the final booking confirmation and vouchers carefully before travel, as operating times and pickup details may be updated after confirmation."
+
+      },
+
+
+      /* ===================================================
+         PRICE
+      =================================================== */
+
+      price: {
+
+        currency:
+          "AED",
+
+        amount:
+          "2,500",
+
+        label:
+          "Grand Total Package Price",
+
+        paxLabel:
+          "For 2 Adults"
+
+      },
+
+
+      /* ===================================================
+         FINAL NOTE
+      =================================================== */
+
+      finalNote:
+        "Hotel availability, sightseeing arrangements and package inclusions are subject to final confirmation. Weather and road conditions may affect the Kazbegi and Gergeti Trinity Church visit."
+
+    };
+
+  </script>
+
+
+  <!-- =====================================================
+       SHARED ITINERARY RENDERER
+  ====================================================== -->
+
+  <script src="js/renderer.js"></script>
+
+
+</body>
+
+</html>
