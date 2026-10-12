@@ -1170,7 +1170,7 @@ table tr:nth-child(even) td,
 
 /* =========================================================
    INCLUSIONS & EXCLUSIONS
-   RESPONSIVE TO NUMBER OF ITEMS
+   ADAPTIVE PREMIUM LAYOUT
 ========================================================= */
 
 .inclusion-slide {
@@ -1230,7 +1230,7 @@ table tr:nth-child(even) td,
 
 
 /* =========================================================
-   TWO-COLUMN STRUCTURE
+   MAIN TWO-COLUMN STRUCTURE
 ========================================================= */
 
 .inc,
@@ -1244,8 +1244,8 @@ table tr:nth-child(even) td,
   display: grid;
 
   grid-template-columns:
-    1.18fr
-    .82fr;
+    1.08fr
+    .92fr;
 
   gap: 20px;
 
@@ -1348,7 +1348,6 @@ table tr:nth-child(even) td,
 
 /* =========================================================
    DEFAULT INCLUDED GRID
-   USED FOR NORMAL / LONGER LISTS
 ========================================================= */
 
 .igrid,
@@ -1372,25 +1371,15 @@ table tr:nth-child(even) td,
 }
 
 
-/* ODD FINAL ITEM SPANS FULL WIDTH */
-
-.inclusion-items
-.iitem:last-child:nth-child(odd) {
-
-  grid-column:
-    1 / -1;
-
-}
-
-
 /* =========================================================
-   INCLUDED CARD
+   DEFAULT INCLUDED CARD
 ========================================================= */
 
 .iitem,
 .inc-item {
 
   min-width: 0;
+  min-height: 0;
 
   background: var(--light);
 
@@ -1419,7 +1408,7 @@ table tr:nth-child(even) td,
 
 
 /* =========================================================
-   EXCLUSIONS
+   EXCLUSION LIST
 ========================================================= */
 
 .exclusion-items {
@@ -1449,7 +1438,6 @@ table tr:nth-child(even) td,
 .exc-item {
 
   min-width: 0;
-
   min-height: 0;
 
   background: #fff;
@@ -1481,91 +1469,36 @@ table tr:nth-child(even) td,
 
 
 /* =========================================================
-   FEW INCLUSIONS: 1–6 ITEMS
+   1–3 INCLUSIONS
 
-   Do NOT stretch cards into huge blocks.
-   Keep panels balanced and premium.
+   Single-column normal cards.
+   No giant stretching.
 ========================================================= */
 
 .inclusion-layout:has(
-  .inclusion-items > .iitem:last-child:nth-child(-n+6)
-) {
-
-  flex:
-    0
-    0
-    auto;
-
-  min-height: 480px;
-
-  align-items: stretch;
-
-}
-
-
-.inclusion-layout:has(
-  .inclusion-items > .iitem:last-child:nth-child(-n+6)
-)
-.inclusion-panel,
-
-.inclusion-layout:has(
-  .inclusion-items > .iitem:last-child:nth-child(-n+6)
-)
-.exclusion-panel {
-
-  height: auto;
-
-  min-height: 480px;
-
-}
-
-
-/* LEFT SIDE */
-
-.inclusion-layout:has(
-  .inclusion-items > .iitem:last-child:nth-child(-n+6)
+  .inclusion-items > .iitem:last-child:nth-child(-n+3)
 )
 .inclusion-items {
 
-  flex: 1;
+  grid-template-columns:
+    1fr;
 
-  grid-auto-rows: auto;
+  grid-auto-rows:
+    auto;
 
-  align-content: center;
+  align-content: start;
 
   gap: 12px;
 
 }
 
 
-/* RIGHT SIDE */
-
 .inclusion-layout:has(
-  .inclusion-items > .iitem:last-child:nth-child(-n+6)
-)
-.exclusion-items {
-
-  align-content: stretch;
-
-  grid-auto-rows:
-    minmax(0, 1fr);
-
-  gap: 9px !important;
-
-}
-
-
-/* =========================================================
-   1–4 INCLUSIONS
-   PREMIUM LARGE BUT NORMAL CARDS
-========================================================= */
-
-.inclusion-layout:has(
-  .inclusion-items > .iitem:last-child:nth-child(-n+4)
+  .inclusion-items > .iitem:last-child:nth-child(-n+3)
 )
 .iitem {
 
-  min-height: 112px;
+  min-height: 92px;
 
   padding:
     16px
@@ -1573,27 +1506,49 @@ table tr:nth-child(even) td,
 
   font-size: 16px;
 
-  line-height: 1.34;
+  line-height: 1.35;
 
 }
 
 
 /* =========================================================
-   5–6 INCLUSIONS
+   EXACTLY 4 INCLUSIONS
+
+   Premium vertical layout matching exclusion rhythm.
 ========================================================= */
 
 .inclusion-layout:has(
-  .inclusion-items > .iitem:last-child:nth-child(n+5):nth-child(-n+6)
+  .inclusion-items > .iitem:nth-child(4)
+):not(
+  :has(.inclusion-items > .iitem:nth-child(5))
+)
+.inclusion-items {
+
+  grid-template-columns:
+    1fr;
+
+  grid-template-rows:
+    repeat(4, minmax(0, 1fr));
+
+  gap: 10px;
+
+}
+
+
+.inclusion-layout:has(
+  .inclusion-items > .iitem:nth-child(4)
+):not(
+  :has(.inclusion-items > .iitem:nth-child(5))
 )
 .iitem {
 
-  min-height: 82px;
+  min-height: 0;
 
   padding:
     13px
-    15px;
+    17px;
 
-  font-size: 15.3px;
+  font-size: 15.5px;
 
   line-height: 1.32;
 
@@ -1601,9 +1556,66 @@ table tr:nth-child(even) td,
 
 
 /* =========================================================
-   NORMAL RANGE: 7–12 INCLUSIONS
+   EXACTLY 5–6 INCLUSIONS
 
-   Use available page area evenly.
+   Balanced 2-column layout.
+========================================================= */
+
+.inclusion-layout:has(
+  .inclusion-items > .iitem:nth-child(5)
+):not(
+  :has(.inclusion-items > .iitem:nth-child(7))
+)
+.inclusion-items {
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  grid-template-rows:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 10px;
+
+}
+
+
+/* EXACTLY 5: FINAL ITEM SPANS FULL WIDTH */
+
+.inclusion-layout:has(
+  .inclusion-items > .iitem:nth-child(5)
+):not(
+  :has(.inclusion-items > .iitem:nth-child(6))
+)
+.iitem:last-child {
+
+  grid-column:
+    1 / -1;
+
+}
+
+
+.inclusion-layout:has(
+  .inclusion-items > .iitem:nth-child(5)
+):not(
+  :has(.inclusion-items > .iitem:nth-child(7))
+)
+.iitem {
+
+  font-size: 15px;
+
+  line-height: 1.3;
+
+  padding:
+    11px
+    14px;
+
+}
+
+
+/* =========================================================
+   7–12 INCLUSIONS
+
+   Standard 2-column adaptive layout.
 ========================================================= */
 
 .inclusion-layout:has(
@@ -1613,8 +1625,29 @@ table tr:nth-child(even) td,
 )
 .inclusion-items {
 
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
   grid-auto-rows:
     minmax(0, 1fr);
+
+  gap: 9px;
+
+}
+
+
+/* ODD FINAL ITEM SPANS FULL WIDTH */
+
+.inclusion-layout:has(
+  .inclusion-items > .iitem:nth-child(7)
+):not(
+  :has(.inclusion-items > .iitem:nth-child(13))
+)
+.inclusion-items
+.iitem:last-child:nth-child(odd) {
+
+  grid-column:
+    1 / -1;
 
 }
 
@@ -1626,21 +1659,29 @@ table tr:nth-child(even) td,
 )
 .iitem {
 
-  font-size: 14.6px;
+  font-size: 14.5px;
 
   line-height: 1.3;
+
+  padding:
+    9px
+    12px;
 
 }
 
 
 /* =========================================================
    13+ INCLUSIONS
+
    AUTO COMPACT
 ========================================================= */
 
 .inclusion-items:has(
   .iitem:nth-child(13)
 ) {
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
 
   gap: 7px;
 
@@ -1663,8 +1704,22 @@ table tr:nth-child(even) td,
 }
 
 
+/* ODD FINAL ITEM */
+
+.inclusion-items:has(
+  .iitem:nth-child(13)
+)
+.iitem:last-child:nth-child(odd) {
+
+  grid-column:
+    1 / -1;
+
+}
+
+
 /* =========================================================
    17+ INCLUSIONS
+
    EXTRA COMPACT
 ========================================================= */
 
@@ -1686,6 +1741,8 @@ table tr:nth-child(even) td,
 
 /* =========================================================
    9+ EXCLUSIONS
+
+   AUTO COMPACT
 ========================================================= */
 
 .exclusion-items:has(
