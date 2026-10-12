@@ -1170,13 +1170,7 @@ table tr:nth-child(even) td,
 
 /* =========================================================
    INCLUSIONS & EXCLUSIONS
-
-   IMPORTANT:
-   This section uses available vertical space automatically.
-   Current 11 inclusions = 6 rows.
-   Current 6 exclusions = 6 rows.
-
-   This allows readable fonts without empty vertical space.
+   RESPONSIVE TO NUMBER OF ITEMS
 ========================================================= */
 
 .inclusion-slide {
@@ -1194,7 +1188,7 @@ table tr:nth-child(even) td,
 
 
 /* =========================================================
-   INCLUSION PAGE CONTENT
+   PAGE CONTENT
 ========================================================= */
 
 .inclusion-content {
@@ -1215,7 +1209,7 @@ table tr:nth-child(even) td,
 
 
 /* =========================================================
-   INCLUSION PAGE TITLE
+   PAGE TITLE
 ========================================================= */
 
 .inclusion-title {
@@ -1236,7 +1230,7 @@ table tr:nth-child(even) td,
 
 
 /* =========================================================
-   MAIN TWO COLUMN STRUCTURE
+   TWO-COLUMN STRUCTURE
 ========================================================= */
 
 .inc,
@@ -1291,8 +1285,6 @@ table tr:nth-child(even) td,
 }
 
 
-/* INCLUDED PANEL */
-
 .panel.green,
 .inclusion-panel {
 
@@ -1303,8 +1295,6 @@ table tr:nth-child(even) td,
 
 }
 
-
-/* EXCLUDED PANEL */
 
 .panel.red,
 .exclusion-panel {
@@ -1357,9 +1347,8 @@ table tr:nth-child(even) td,
 
 
 /* =========================================================
-   INCLUDED ITEMS
-
-   Cards automatically stretch vertically and fill panel.
+   DEFAULT INCLUDED GRID
+   USED FOR NORMAL / LONGER LISTS
 ========================================================= */
 
 .igrid,
@@ -1383,7 +1372,7 @@ table tr:nth-child(even) td,
 }
 
 
-/* LAST ITEM USES FULL WIDTH IF COUNT IS ODD */
+/* ODD FINAL ITEM SPANS FULL WIDTH */
 
 .inclusion-items
 .iitem:last-child:nth-child(odd) {
@@ -1414,7 +1403,7 @@ table tr:nth-child(even) td,
     10px
     13px;
 
-  font-size: 14.2px;
+  font-size: 14.6px;
 
   font-weight: 800;
 
@@ -1431,8 +1420,6 @@ table tr:nth-child(even) td,
 
 /* =========================================================
    EXCLUSIONS
-
-   Equal height rows fill whole right panel.
 ========================================================= */
 
 .exclusion-items {
@@ -1476,7 +1463,7 @@ table tr:nth-child(even) td,
     10px
     13px;
 
-  font-size: 14.2px;
+  font-size: 14.6px;
 
   font-weight: 800;
 
@@ -1494,10 +1481,161 @@ table tr:nth-child(even) td,
 
 
 /* =========================================================
-   AUTO-COMPACT:
-   ONLY WHEN AN ITINERARY HAS MANY INCLUSIONS
+   FEW INCLUSIONS: 1–6 ITEMS
 
-   13+ inclusions -> slightly compact
+   Do NOT stretch cards into huge blocks.
+   Keep panels balanced and premium.
+========================================================= */
+
+.inclusion-layout:has(
+  .inclusion-items > .iitem:last-child:nth-child(-n+6)
+) {
+
+  flex:
+    0
+    0
+    auto;
+
+  min-height: 480px;
+
+  align-items: stretch;
+
+}
+
+
+.inclusion-layout:has(
+  .inclusion-items > .iitem:last-child:nth-child(-n+6)
+)
+.inclusion-panel,
+
+.inclusion-layout:has(
+  .inclusion-items > .iitem:last-child:nth-child(-n+6)
+)
+.exclusion-panel {
+
+  height: auto;
+
+  min-height: 480px;
+
+}
+
+
+/* LEFT SIDE */
+
+.inclusion-layout:has(
+  .inclusion-items > .iitem:last-child:nth-child(-n+6)
+)
+.inclusion-items {
+
+  flex: 1;
+
+  grid-auto-rows: auto;
+
+  align-content: center;
+
+  gap: 12px;
+
+}
+
+
+/* RIGHT SIDE */
+
+.inclusion-layout:has(
+  .inclusion-items > .iitem:last-child:nth-child(-n+6)
+)
+.exclusion-items {
+
+  align-content: stretch;
+
+  grid-auto-rows:
+    minmax(0, 1fr);
+
+  gap: 9px !important;
+
+}
+
+
+/* =========================================================
+   1–4 INCLUSIONS
+   PREMIUM LARGE BUT NORMAL CARDS
+========================================================= */
+
+.inclusion-layout:has(
+  .inclusion-items > .iitem:last-child:nth-child(-n+4)
+)
+.iitem {
+
+  min-height: 112px;
+
+  padding:
+    16px
+    18px;
+
+  font-size: 16px;
+
+  line-height: 1.34;
+
+}
+
+
+/* =========================================================
+   5–6 INCLUSIONS
+========================================================= */
+
+.inclusion-layout:has(
+  .inclusion-items > .iitem:last-child:nth-child(n+5):nth-child(-n+6)
+)
+.iitem {
+
+  min-height: 82px;
+
+  padding:
+    13px
+    15px;
+
+  font-size: 15.3px;
+
+  line-height: 1.32;
+
+}
+
+
+/* =========================================================
+   NORMAL RANGE: 7–12 INCLUSIONS
+
+   Use available page area evenly.
+========================================================= */
+
+.inclusion-layout:has(
+  .inclusion-items > .iitem:nth-child(7)
+):not(
+  :has(.inclusion-items > .iitem:nth-child(13))
+)
+.inclusion-items {
+
+  grid-auto-rows:
+    minmax(0, 1fr);
+
+}
+
+
+.inclusion-layout:has(
+  .inclusion-items > .iitem:nth-child(7)
+):not(
+  :has(.inclusion-items > .iitem:nth-child(13))
+)
+.iitem {
+
+  font-size: 14.6px;
+
+  line-height: 1.3;
+
+}
+
+
+/* =========================================================
+   13+ INCLUSIONS
+   AUTO COMPACT
 ========================================================= */
 
 .inclusion-items:has(
@@ -1526,8 +1664,8 @@ table tr:nth-child(even) td,
 
 
 /* =========================================================
-   AUTO-COMPACT:
-   17+ inclusions
+   17+ INCLUSIONS
+   EXTRA COMPACT
 ========================================================= */
 
 .inclusion-items:has(
@@ -1547,8 +1685,7 @@ table tr:nth-child(even) td,
 
 
 /* =========================================================
-   AUTO-COMPACT:
-   9+ exclusions
+   9+ EXCLUSIONS
 ========================================================= */
 
 .exclusion-items:has(
