@@ -1286,144 +1286,7 @@
   }
 
 
-  /* =====================================================
-     OPTIONAL PAYMENT / BOOKING POLICY
-  ===================================================== */
-
-  function renderPaymentPolicy() {
-
-    const policy =
-      DATA.paymentPolicy;
-
-
-    if (!policy) {
-      return "";
-    }
-
-
-    const page =
-      nextPage();
-
-
-    const left =
-      safeArray(policy.booking)
-        .map(item => `
-
-          <div class="policy-item">
-
-            ${
-              item.title
-                ? `<b>${item.title}</b><br>`
-                : ""
-            }
-
-            ${item.text || ""}
-
-          </div>
-
-        `)
-        .join("");
-
-
-    const right =
-      safeArray(policy.conditions)
-        .map(item => `
-
-          <div class="policy-item">
-
-            ${
-              item.title
-                ? `<b>${item.title}</b><br>`
-                : ""
-            }
-
-            ${item.text || ""}
-
-          </div>
-
-        `)
-        .join("");
-
-
-    return `
-      <div class="slide">
-
-        ${header()}
-
-
-        <div class="content">
-
-
-          <h2 class="title">
-
-            Payment &
-
-            <span>
-              Booking Policy
-            </span>
-
-          </h2>
-
-
-          <div class="policy-grid">
-
-
-            <div class="policy-card blue">
-
-
-              <h3>
-                💳 Booking & Payment
-              </h3>
-
-
-              ${left}
-
-
-            </div>
-
-
-            <div class="policy-card orange">
-
-
-              <h3>
-                📋 Confirmation Conditions
-              </h3>
-
-
-              ${right}
-
-
-            </div>
-
-
-          </div>
-
-
-          ${
-            policy.note
-              ? `
-
-                <div class="note">
-                  ${policy.note}
-                </div>
-
-              `
-              : ""
-          }
-
-
-        </div>
-
-
-        ${footer(page)}
-
-      </div>
-    `;
-
-  }
-
-
-  /* =====================================================
+   /* =====================================================
      PRICE SUMMARY
   ===================================================== */
 
@@ -1636,6 +1499,143 @@
     `;
 
   }
+
+ /* =====================================================
+     OPTIONAL PAYMENT / BOOKING POLICY
+  ===================================================== */
+
+  function renderPaymentPolicy() {
+
+    const policy =
+      DATA.paymentPolicy;
+
+
+    if (!policy) {
+      return "";
+    }
+
+
+    const page =
+      nextPage();
+
+
+    const left =
+      safeArray(policy.booking)
+        .map(item => `
+
+          <div class="policy-item">
+
+            ${
+              item.title
+                ? `<b>${item.title}</b><br>`
+                : ""
+            }
+
+            ${item.text || ""}
+
+          </div>
+
+        `)
+        .join("");
+
+
+    const right =
+      safeArray(policy.conditions)
+        .map(item => `
+
+          <div class="policy-item">
+
+            ${
+              item.title
+                ? `<b>${item.title}</b><br>`
+                : ""
+            }
+
+            ${item.text || ""}
+
+          </div>
+
+        `)
+        .join("");
+
+
+    return `
+      <div class="slide">
+
+        ${header()}
+
+
+        <div class="content">
+
+
+          <h2 class="title">
+
+            Payment &
+
+            <span>
+              Booking Policy
+            </span>
+
+          </h2>
+
+
+          <div class="policy-grid">
+
+
+            <div class="policy-card blue">
+
+
+              <h3>
+                💳 Booking & Payment
+              </h3>
+
+
+              ${left}
+
+
+            </div>
+
+
+            <div class="policy-card orange">
+
+
+              <h3>
+                📋 Confirmation Conditions
+              </h3>
+
+
+              ${right}
+
+
+            </div>
+
+
+          </div>
+
+
+          ${
+            policy.note
+              ? `
+
+                <div class="note">
+                  ${policy.note}
+                </div>
+
+              `
+              : ""
+          }
+
+
+        </div>
+
+
+        ${footer(page)}
+
+      </div>
+    `;
+
+  }
+
 
 
   /* =====================================================
