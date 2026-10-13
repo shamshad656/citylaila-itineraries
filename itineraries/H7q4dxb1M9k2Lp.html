@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="robots"
+    content="noindex,nofollow,noarchive"
+  >
+
+  <meta
+    name="description"
+    content="CityLaila | Dubai & Musandam Signature Land Escape – 7N/8D"
+  >
+
+  <meta
+    property="og:title"
+    content="CityLaila | Dubai & Musandam Signature Land Escape – 7N/8D"
+  >
+
+  <meta
+    property="og:description"
+    content="Dubai and Musandam land package from 19 to 26 December 2026."
+  >
+
+  <base href="../itinerary-engine/">
+
+  <title>
+    CityLaila | Dubai & Musandam Signature Land Escape – 7N/8D
+  </title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/itinerary.css"
+  >
+
+</head>
+
+
+<body>
+
+  <main id="itinerary-app"></main>
+
+
+  <!-- =====================================================
+       SHARED IMAGE LIBRARY
+  ====================================================== -->
+
+  <script src="js/image-library.js"></script>
+
+
+  <!-- =====================================================
+       CLIENT-SPECIFIC IMAGE EXTENSIONS
+  ====================================================== -->
+
+  <script>
+
+    Object.assign(window.IMAGE_LIBRARY, {
+
+
+      /* AQUAVENTURE — APPROVED DUBAI REFERENCE */
+
+      aquaventure_waterpark: [
+
+        "https://cdn.media.amplience.net/i/kerzner/AQV-World-SplashersCove-Father-Daughter-jpg",
+
+        "https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_728/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/ttodkfhd2vtxpqy9oqll/AquaventureWorldTicketinAtlantisDubai.jpg",
+
+        "https://cdn.media.amplience.net/i/kerzner/AquaventureWaterpark-Lifestyle-TridentTower-Shockwave-jpg"
+
+      ],
+
+
+      /* MUSANDAM DIBBA */
+
+      musandam_dibba: [
+
+        "https://namayratourism.com/public/data/product/11052024114706-MusandamDibbaTour_%281%29.png",
+
+        "https://dhowcruisetickets.com/wp-content/uploads/2023/12/md2.jpg"
+
+      ],
+
+
+      /* DUBAI FRAME */
+
+      dubai_frame: [
+
+        "https://media1.thrillophilia.com/filestore/zdmi67f9916jeeg2b9t989offmlo_shutterstock_1345434239.jpg"
+
+      ],
+
+
+      /* DUBAI CREEK DHOW CRUISE */
+
+      dubai_creek_dhow_cruise: [
+
+        "https://cdn.getyourguide.com/image/format%3Dauto%2Cfit%3Dcrop%2Cgravity%3Dauto%2Cquality%3D60%2Cwidth%3D450%2Cheight%3D450%2Cdpr%3D2/tour_img/bdd897154079920f60947948d2f2f41a1a23c1ffff8067db6612a44e1b01f7.jpeg",
+
+        "https://www.dubaitraveltourism.com/assets/images/tours/gallery/gallery-01699956680-dhow-cruise-dubai-creek.jpg"
+
+      ]
+
+    });
+
+  </script>
+
+
+  <!-- =====================================================
+       CLIENT ITINERARY DATA
+  ====================================================== -->
+
+  <script>
+
+    window.ITINERARY = {
+
+
+      /* ===================================================
+         BASIC PACKAGE DETAILS
+      =================================================== */
+
+      packageName:
+        "Dubai & Musandam Signature Land Escape",
+
+      destinationLine:
+        "Dubai • Musandam Dibba",
+
+      duration:
+        "7 Nights / 8 Days",
+
+      travelDates:
+        "19th – 26th December 2026",
+
+      guests:
+        "Variable Group Size • 9–10 Adults",
+
+      packageType:
+        "Land Package Only",
+
+
+      /* ===================================================
+         COVER
+      =================================================== */
+
+      coverImageKey:
+        "dubai_cover",
+
+      coverSubtitle:
+        "Aquaventure • Musandam • Global Village • Desert Safari • Creek Cruise",
+
+      coverTags: [
+
+        "🌆 Dubai & Musandam Dibba",
+
+        "👥 Group Size Varies by Service Date",
+
+        "🏨 Hotel Guest Arranged",
+
+        "🚐 Private Transfers Where Specified"
+
+      ],
+
+
+      /* ===================================================
+         GUEST-ARRANGED ACCOMMODATION
+      =================================================== */
+
+      hotel: {
+
+        name:
+          "Guest-Arranged Accommodation – Not Included",
+
+        location:
+          "Dubai, UAE",
+
+        nights:
+          "7 Nights",
+
+        mealPlan:
+          "Only Specifically Listed Meals Included"
+
+      },
+
+
+      /* ===================================================
+         PACKAGE SETUP
+      =================================================== */
+
+      setup: {
+
+        leftTitle:
+          "👥 Group & Stay Details",
+
+        leftItems: [
+
+          "🏨 Hotel Accommodation: Arranged by Guests",
+
+          "🌙 Package Duration: 7 Nights / 8 Days",
+
+          "👥 9 Adults: 20th – 22nd December",
+
+          "👥 10 Adults: 23rd – 25th December",
+
+          "🎟️ Aquaventure: 7 Adult Entry Tickets",
+
+          "📌 Arrival & Departure Transfer Pax: Final Confirmation Required"
+
+        ],
+
+        rightTitle:
+          "🚐 Transport & Experience Setup",
+
+        rightItems: [
+
+          "🛬 Private Airport Arrival Transfer",
+
+          "🌊 Aquaventure Private Two-Way Transfers",
+
+          "🇴🇲 Musandam Private 12-Seater Van for 9 Adults",
+
+          "🏜️ Desert Safari: 2 Private SUVs for 10 Adults",
+
+          "🚢 Creek Dhow Cruise Private Transfers for 10 Adults",
+
+          "🛫 Private Airport Departure Transfer"
+
+        ]
+
+      },
+
+
+      /* ===================================================
+         DAY-WISE ITINERARY
+      =================================================== */
+
+      days: [
+
+
+        /* =================================================
+           DAY 1
+        ================================================= */
+
+        {
+
+          date:
+            "19 December",
+
+          shortDate:
+            "19 Dec",
+
+          title:
+            "Arrival in Dubai",
+
+          description:
+            "Arrive at Dubai International Airport and begin the land package with a private transfer to the guest-arranged accommodation.",
+
+          highlights: [
+
+            "🛬 Arrival at Dubai International Airport",
+
+            "🚐 Private airport transfer",
+
+            "🏨 Transfer to guest-arranged accommodation",
+
+            "🧳 Check-in & time to relax",
+
+            "🌙 Evening at leisure"
+
+          ],
+
+          imageKeys: [
+
+            "dubai_airport_arrival",
+
+            "private_transfer"
+
+          ],
+
+          note:
+            "Hotel accommodation is not included in this package. The passenger count for the arrival transfer should be reconfirmed before final booking.",
+
+          overnight:
+            "Dubai",
+
+          meals: {
+
+            breakfast:
+              "Not Included",
+
+            lunch:
+              "Not Included",
+
+            dinner:
+              "Not Included"
+
+          }
+
+        },
+
+
+        /* =================================================
+           DAY 2
+        ================================================= */
+
+        {
+
+          date:
+            "20 December",
+
+          shortDate:
+            "20 Dec",
+
+          title:
+            "Leisure Day",
+
+          description:
+            "Enjoy a free day in Dubai for shopping, personal activities or independent plans.",
+
+          highlights: [
+
+            "☀️ Day at leisure",
+
+            "🛍️ Shopping or personal activities",
+
+            "📍 Explore Dubai independently",
+
+            "🚕 Transfers arranged independently"
+
+          ],
+
+          imageKeys: [
+
+            "dubai_mall"
+
+          ],
+
+          note:
+            "No sightseeing or transfer service is included for this leisure day unless separately confirmed.",
+
+          overnight:
+            "Dubai",
+
+          meals: {
+
+            breakfast:
+              "Not Included",
+
+            lunch:
+              "Not Included",
+
+            dinner:
+              "Not Included"
+
+          }
+
+        },
+
+
+        /* =================================================
+           DAY 3
+        ================================================= */
+
+        {
+
+          date:
+            "21 December",
+
+          shortDate:
+            "21 Dec",
+
+          title:
+            "Atlantis Aquaventure Waterpark",
+
+          description:
+            "Enjoy a full-day visit to Atlantis Aquaventure Waterpark with seven adult entry tickets and private two-way transfers.",
+
+          highlights: [
+
+            "🌊 Atlantis Aquaventure Waterpark",
+
+            "🎟️ 7 Adult One-Day Entry Tickets",
+
+            "🎢 Water slides, rides, pools & attractions",
+
+            "🚐 Private Transfer to Aquaventure",
+
+            "🚐 Private Return Transfer"
+
+          ],
+
+          imageKeys: [
+
+            "aquaventure_waterpark",
+
+            "private_transfer"
+
+          ],
+
+          note:
+            "The package specifically includes 7 adult Aquaventure tickets. Any additional entry ticket is not included unless separately confirmed.",
+
+          overnight:
+            "Dubai",
+
+          meals: {
+
+            breakfast:
+              "Not Included",
+
+            lunch:
+              "Not Included",
+
+            dinner:
+              "Not Included"
+
+          }
+
+        },
+
+
+        /* =================================================
+           DAY 4
+        ================================================= */
+
+        {
+
+          date:
+            "22 December",
+
+          shortDate:
+            "22 Dec",
+
+          title:
+            "Musandam Dibba Tour",
+
+          description:
+            "Travel from Dubai for the Musandam Dibba excursion with private round-trip transportation arranged for nine adults.",
+
+          highlights: [
+
+            "🇴🇲 Musandam Dibba Excursion",
+
+            "👥 Service for 9 Adults",
+
+            "🚐 Private Round-Trip Transfers",
+
+            "🚐 12-Seater Van",
+
+            "🏔️ Scenic Musandam Dibba experience as per selected package",
+
+            "🏙️ Return transfer to Dubai"
+
+          ],
+
+          imageKeys: [
+
+            "musandam_dibba",
+
+            "private_transfer"
+
+          ],
+
+          note:
+            "",
+
+          overnight:
+            "Dubai",
+
+          meals: {
+
+            breakfast:
+              "Not Included",
+
+            lunch:
+              "Not Included",
+
+            dinner:
+              "Not Included"
+
+          }
+
+        },
+
+
+        /* =================================================
+           DAY 5
+        ================================================= */
+
+        {
+
+          date:
+            "23 December",
+
+          shortDate:
+            "23 Dec",
+
+          title:
+            "Global Village",
+
+          description:
+            "Enjoy the day at leisure followed by an evening visit to Global Village for international pavilions, shopping, culture and entertainment.",
+
+          highlights: [
+
+            "☀️ Day at leisure",
+
+            "🌍 Evening Global Village visit",
+
+            "👥 Arrangements for 10 Adults",
+
+            "🛍️ International pavilions & shopping",
+
+            "🎭 Cultural displays & entertainment",
+
+            "🚐 Return transfer to accommodation"
+
+          ],
+
+          imageKeys: [
+
+            "global_village"
+
+          ],
+
+          note:
+            "Global Village arrangements are included for 10 adults as stated. Exact ticket and transfer operating details remain subject to final confirmation.",
+
+          overnight:
+            "Dubai",
+
+          meals: {
+
+            breakfast:
+              "Not Included",
+
+            lunch:
+              "Not Included",
+
+            dinner:
+              "Not Included"
+
+          }
+
+        },
+
+
+        /* =================================================
+           DAY 6
+        ================================================= */
+
+        {
+
+          date:
+            "24 December",
+
+          shortDate:
+            "24 Dec",
+
+          title:
+            "Dubai Frame & Private Desert Safari",
+
+          description:
+            "Combine a visit to Dubai Frame with a premium private desert safari experience for ten adults.",
+
+          highlights: [
+
+            "🖼️ Dubai Frame Admission",
+
+            "🏙️ Views of Old & New Dubai",
+
+            "🏜️ Premium Desert Safari for 10 Adults",
+
+            "🚙 2 Private SUVs Exclusively for the Group",
+
+            "🏜️ Dune Bashing & Sunset Photography",
+
+            "🎯 Desert Activities Subject to Availability",
+
+            "🍖 BBQ Dinner & Live Entertainment",
+
+            "🚐 Return Transfer to Accommodation"
+
+          ],
+
+          imageKeys: [
+
+            "dubai_frame",
+
+            "premium_desert_safari"
+
+          ],
+
+          note:
+            "Dubai Frame admission is included as listed. Desert activities remain subject to operating conditions and availability.",
+
+          overnight:
+            "Dubai",
+
+          meals: {
+
+            breakfast:
+              "Not Included",
+
+            lunch:
+              "Not Included",
+
+            dinner:
+              "BBQ Dinner Included"
+
+          }
+
+        },
+
+
+        /* =================================================
+           DAY 7
+        ================================================= */
+
+        {
+
+          date:
+            "25 December",
+
+          shortDate:
+            "25 Dec",
+
+          title:
+            "Dubai Creek Dinner Dhow Cruise",
+
+          description:
+            "Spend the evening on a Dubai Creek dinner dhow cruise with upper-deck seating and private round-trip transfers for ten adults.",
+
+          highlights: [
+
+            "🚐 Evening Transfer to Dubai Creek",
+
+            "🚢 Dubai Creek Dinner Dhow Cruise",
+
+            "👥 Service for 10 Adults",
+
+            "🌃 Upper-Deck Seating",
+
+            "🍽️ Dinner Included",
+
+            "🚐 Private Round-Trip Transfers",
+
+            "🏨 Return to Accommodation"
+
+          ],
+
+          imageKeys: [
+
+            "dubai_creek_dhow_cruise",
+
+            "private_transfer"
+
+          ],
+
+          overnight:
+            "Dubai",
+
+          meals: {
+
+            breakfast:
+              "Not Included",
+
+            lunch:
+              "Not Included",
+
+            dinner:
+              "Cruise Dinner Included"
+
+          }
+
+        },
+
+
+        /* =================================================
+           DAY 8
+        ================================================= */
+
+        {
+
+          date:
+            "26 December",
+
+          shortDate:
+            "26 Dec",
+
+          title:
+            "Departure from Dubai",
+
+          description:
+            "Check out from the guest-arranged accommodation and proceed privately to Dubai International Airport for departure.",
+
+          highlights: [
+
+            "🧳 Check-out from accommodation",
+
+            "🚐 Private airport departure transfer",
+
+            "🛫 Dubai International Airport",
+
+            "✨ End of Services"
+
+          ],
+
+          imageKeys: [
+
+            "departure"
+
+          ],
+
+          note:
+            "Final pickup time and passenger count for the departure transfer will be confirmed according to the final flight schedule and airport reporting requirement.",
+
+          overnight:
+            "Tour Ends",
+
+          departure:
+            true,
+
+          meals: {
+
+            breakfast:
+              "Not Included",
+
+            lunch:
+              "Not Included",
+
+            dinner:
+              "Not Included"
+
+          }
+
+        }
+
+      ],
+
+
+      /* ===================================================
+         PACKAGE INCLUSIONS
+      =================================================== */
+
+      inclusions: [
+
+        "🚐 Private Airport Arrival & Departure Transfers",
+
+        "🌊 7 Aquaventure Adult Tickets + Private Two-Way Transfers",
+
+        "🇴🇲 Musandam Dibba Tour for 9 Adults + Private 12-Seater Van Transfers",
+
+        "🌍 Global Village Arrangements for 10 Adults",
+
+        "🖼️ Dubai Frame Admission",
+
+        "🏜️ Premium Desert Safari for 10 Adults + 2 Private SUVs",
+
+        "🍖 Desert Safari BBQ Dinner & Live Entertainment",
+
+        "🚢 Dubai Creek Dinner Dhow Cruise – Upper Deck for 10 Adults",
+
+        "🚐 Private Dhow Cruise Round-Trip Transfers"
+
+      ],
+
+
+      /* ===================================================
+         PACKAGE EXCLUSIONS
+      =================================================== */
+
+      exclusions: [
+
+        "🏨 Hotel Accommodation & Unspecified Meals",
+
+        "✈️ International Airfare",
+
+        "🛂 UAE Visa Charges",
+
+        "🇴🇲 Musandam Border Fee – AED 31 per Guest, Payable Directly",
+
+        "🛍️ Personal Expenses & Shopping",
+
+        "🎯 Optional Activities not Specifically Included",
+
+        "🛡️ Travel Insurance",
+
+        "📌 Any Services not Specifically Mentioned under Inclusions"
+
+      ],
+
+
+      /* ===================================================
+         PACKAGE PRICE SUMMARY
+      =================================================== */
+
+      price: {
+
+        currency:
+          "AED",
+
+        amount:
+          "8,410",
+
+        label:
+          "Grand Total Land Package Price",
+
+        paxLabel:
+          "Variable Group Services • 7 to 10 Adults as Specified"
+
+      },
+
+
+      /* ===================================================
+         PAYMENT & BOOKING POLICY
+
+         RENDERER LOCK:
+         Package Price Summary
+         ↓
+         Payment & Booking Policy
+      =================================================== */
+
+      paymentPolicy: {
+
+        booking: [
+
+          {
+
+            title:
+              "Package Price",
+
+            text:
+              "Grand Total: AED 8,410 for the land services specifically listed in this itinerary. Hotel accommodation is not included."
+
+          },
+
+          {
+
+            title:
+              "Guest Count by Service",
+
+            text:
+              "Guest quantities vary by activity. Aquaventure includes 7 adult tickets, Musandam Dibba is arranged for 9 adults, while Global Village, Desert Safari and Dubai Creek Dhow Cruise arrangements are stated for 10 adults where specified."
+
+          },
+
+          {
+
+            title:
+              "Booking & Payment",
+
+            text:
+              "The applicable payment amount, payment method and payment deadline will be communicated before booking confirmation. Services remain subject to availability until payment requirements are completed and written confirmation is issued."
+
+          },
+
+          {
+
+            title:
+              "Rate & Availability",
+
+            text:
+              "Attraction tickets, vehicles, cruise seating and other services remain subject to availability and final confirmation for the requested travel dates."
+
+          }
+
+        ],
+
+
+        conditions: [
+
+          {
+
+            title:
+              "Airport Transfers",
+
+            text:
+              "Private airport arrival and departure transfers are included. Final passenger count, pickup timing, flight details and vehicle arrangement should be reconfirmed before service."
+
+          },
+
+          {
+
+            title:
+              "Musandam Border Fee",
+
+            text:
+              "The Musandam border fee of AED 31 per guest is payable directly and is not included in the AED 8,410 package total. Border permits and crossing requirements remain subject to confirmation."
+
+          },
+
+          {
+
+            title:
+              "Aquaventure Ticket Quantity",
+
+            text:
+              "Only 7 adult Aquaventure one-day entry tickets are specifically included in this quotation. Additional tickets, if required, must be separately confirmed."
+
+          },
+
+          {
+
+            title:
+              "Hotel & Meals",
+
+            text:
+              "Hotel accommodation is arranged independently by the guests. Meals are excluded unless specifically listed, including the Desert Safari BBQ dinner and Dubai Creek dhow cruise dinner."
+
+          },
+
+          {
+
+            title:
+              "Amendment & Cancellation",
+
+            text:
+              "After confirmation, amendments or cancellations will be subject to the applicable attraction, transport, cruise and supplier conditions."
+
+          }
+
+        ],
+
+        note:
+          "Please review the final vouchers carefully. Confirmed vouchers and service documents will govern final ticket quantities, operating times, pickup details, vehicle arrangements, seating and border instructions."
+
+      },
+
+
+      /* ===================================================
+         FINAL NOTE
+      =================================================== */
+
+      finalNote:
+        "Hotel accommodation is not included. All services remain subject to availability and final confirmation. The Musandam border fee of AED 31 per guest is payable separately and is not included in the grand total."
+
+    };
+
+  </script>
+
+
+  <!-- =====================================================
+       SHARED RENDERER
+  ====================================================== -->
+
+  <script src="js/renderer.js"></script>
+
+
+</body>
+
+</html>
