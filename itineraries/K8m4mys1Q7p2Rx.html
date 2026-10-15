@@ -1,881 +1,1527 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
+
 
 <head>
 
-  <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
 
-  <meta
-    name="robots"
-    content="noindex,nofollow,noarchive"
-  >
+  <meta charset="UTF-8">
 
-  <meta
-    name="description"
-    content="Lead ID-0147 • Coorg & Mysuru family package for 2 Adults + 1 Child (4 Years), travelling from 23–27 December 2026."
-  >
 
-  <meta
-    property="og:title"
-    content="CityLaila | Coorg & Mysuru Family Heritage Escape – 4N/5D | Lead ID-0147"
-  >
 
-  <meta
-    property="og:description"
-    content="Lead ID-0147 • Coorg & Mysuru family package for 2 Adults + 1 Child (4 Years), travelling from 23–27 December 2026."
-  >
+  <meta
 
-  <meta
-    property="og:type"
-    content="website"
-  >
+    name="viewport"
 
-  <base href="../itinerary-engine/">
+    content="width=device-width, initial-scale=1.0"
 
-  <title>
-    CityLaila | Coorg & Mysuru Family Heritage Escape – 4N/5D | Lead ID-0147
-  </title>
+  >
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet"
-  >
 
-  <link
-    rel="stylesheet"
-    href="css/itinerary.css"
-  >
+
+  <meta
+
+    name="robots"
+
+    content="noindex,nofollow,noarchive"
+
+  >
+
+
+
+  <meta
+
+    name="description"
+
+    content="Coorg & Mysuru family package for 2 Adults + 1 Child (4 Years), travelling from 23–27 December 2026."
+
+  >
+
+
+
+  <meta
+
+    property="og:title"
+
+    content="CityLaila | Coorg & Mysuru Family Heritage Escape – 4N/5D"
+
+  >
+
+
+
+  <meta
+
+    property="og:description"
+
+    content="Coorg & Mysuru family package for 2 Adults + 1 Child (4 Years), travelling from 23–27 December 2026."
+
+  >
+
+
+
+  <meta
+
+    property="og:type"
+
+    content="website"
+
+  >
+
+
+
+  <base href="../itinerary-engine/">
+
+
+
+  <title>
+
+    CityLaila | Coorg & Mysuru Family Heritage Escape – 4N/5D
+
+  </title>
+
+
+
+  <link
+
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+
+    rel="stylesheet"
+
+  >
+
+
+
+  <link
+
+    rel="stylesheet"
+
+    href="css/itinerary.css"
+
+  >
+
+
 
 </head>
 
 
+
+
+
 <body>
 
-  <main id="itinerary-app"></main>
 
 
-  <!-- =====================================================
-       SHARED IMAGE LIBRARY
-  ====================================================== -->
+  <main id="itinerary-app"></main>
 
-  <script src="js/image-library.js"></script>
 
 
-  <!-- =====================================================
-       COORG & MYSURU IMAGE REFERENCES
-       MATCHED FROM EXISTING MYSURU MASTER
-  ====================================================== -->
 
-  <script>
 
-    Object.assign(window.IMAGE_LIBRARY, {
+  <!-- =====================================================
 
+       SHARED IMAGE LIBRARY
 
-      /* COVER */
+  ====================================================== -->
 
-      coorg_mysuru_cover: [
 
-        "https://media1.thrillophilia.com/filestore/z5qcc7kox6ryu06otlqw2a6p1522_1556181169_shutterstock_1239319498.jpg?dpr=2.0&h=450&w=753"
 
-      ],
+  <script src="js/image-library.js"></script>
 
 
-      /* DAY 1 — COORG */
 
-      coorg_day1_sightseeing: [
 
-        "https://static.toiimg.com/thumb/msid-31793908,width=1200,height=900/31793908.jpg",
 
-        "https://dq1q7qkthxkc0.cloudfront.net/StaticMedia/b3eefdb0-203e-49f0-a913-55a4bf87fbd4.jpg",
+  <!-- =====================================================
 
-        "https://i.pinimg.com/736x/41/0e/90/410e90b74081983dbd7d9a2636f93d47.jpg",
+       COORG & MYSURU IMAGE REFERENCES
 
-        "https://vl-prod-static.b-cdn.net/system/images/000/778/665/ae9be3a3ffb085379d136f2494c366b7/original/BMC_BPT_GOLDEN.jpg"
+       MATCHED FROM EXISTING MYSURU MASTER
 
-      ],
+  ====================================================== -->
 
 
-      /* DAY 2 — COORG */
 
-      coorg_day2_sightseeing: [
+  <script>
 
-        "https://i.pinimg.com/736x/69/e3/35/69e33503d2e375c928b93d387291de48.jpg",
 
-         "https://i.pinimg.com/1200x/07/b8/db/07b8db7f1b4974d93c7d12754b508ce8.jpg",
 
-        "https://temple.yatradham.org/public/Product/temple/temple_x5kUXqoF_202507151427240.webp",
+    Object.assign(window.IMAGE_LIBRARY, {
 
-        "https://i.pinimg.com/1200x/ca/b2/fd/cab2fde66a0daf3864dbfa3f9e9deba4.jpg",
 
-       
 
-      ],
 
 
-      /* DAY 3 — MYSURU */
+      /* COVER */
 
-      mysuru_day3_sightseeing: [
 
-      "https://i.pinimg.com/736x/9c/d1/8e/9cd18e18806b17ca1ea32da1558711a5.jpg",
 
-        "https://venkatarangan.com/wp-content/uploads/2004/06/Mysore_Palace_2004_1.jpg",
+      coorg_mysuru_cover: [
 
-        "https://i.pinimg.com/736x/3b/dd/96/3bdd968d47d5c3424efc164f832dde5c.jpg"
 
-      ],
 
+        "https://media1.thrillophilia.com/filestore/z5qcc7kox6ryu06otlqw2a6p1522_1556181169_shutterstock_1239319498.jpg?dpr=2.0&h=450&w=753"
 
-      /* DAY 4 — MYSURU */
 
-      mysuru_day4_sightseeing: [
 
-      "https://i.pinimg.com/1200x/5e/77/13/5e77139a53cac2c463700cca5c74c6fe.jpg",
+      ],
 
-        "https://temple.yatradham.org/public/Product/temple/temple_pqSq9ECA_202506051126230.jpg",
- "https://i.pinimg.com/1200x/a5/07/e1/a507e1fa66629920452c8baf2b228926.jpg",
-        "https://bangaloremirror.indiatimes.com/thumb/msid-52164034,width-1200,height-900,resizemode-4/.jpg"
 
-      ],
 
 
-      /* DAY 5 — RETURN TO BENGALURU
-         No airport image because final drop is guest residence.
-      */
 
-      mysuru_bengaluru_return: [
+      /* DAY 1 — COORG */
 
-        "https://static.toiimg.com/thumb/106057438/Hotel-checkout.jpg?width=1200&height=900",
 
-        "https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1"
 
-      ]
+      coorg_day1_sightseeing: [
 
-    });
 
-  </script>
 
+        "https://static.toiimg.com/thumb/msid-31793908,width=1200,height=900/31793908.jpg",
 
-  <!-- =====================================================
-       CLIENT ITINERARY DATA
-  ====================================================== -->
 
-  <script>
 
-    window.ITINERARY = {
+        "https://dq1q7qkthxkc0.cloudfront.net/StaticMedia/b3eefdb0-203e-49f0-a913-55a4bf87fbd4.jpg",
 
 
-      /* ===================================================
-         LEAD / GUEST DETAILS
-      =================================================== */
 
-      leadNo:
-        "0147",
+        "https://i.pinimg.com/736x/41/0e/90/410e90b74081983dbd7d9a2636f93d47.jpg",
 
-      guestName:
-        "Mr. Shawn & Family",
 
-      guestPhone:
-        "+91 7041511760",
 
+        "https://vl-prod-static.b-cdn.net/system/images/000/778/665/ae9be3a3ffb085379d136f2494c366b7/original/BMC_BPT_GOLDEN.jpg"
 
-      /* ===================================================
-         BASIC PACKAGE DETAILS
-      =================================================== */
 
-      packageName:
-        "Coorg & Mysuru Family Heritage Escape",
 
-      destinationLine:
-        "Coorg • Madikeri • Mysuru, Karnataka",
+      ],
 
-      duration:
-        "4 Nights / 5 Days",
 
-      travelDates:
-        "23rd – 27th December 2026",
 
-      guests:
-        "2 Adults + 1 Child (4 Years)",
 
-      packageType:
-        "Karnataka Family Land Package",
 
+      /* DAY 2 — COORG */
 
-      /* ===================================================
-         COVER
-      =================================================== */
 
-      coverImageKey:
-        "coorg_mysuru_cover",
 
-      coverSubtitle:
-        "Coorg Nature • Coffee Country • Mysuru Heritage | 4 Nights / 5 Days",
+      coorg_day2_sightseeing: [
 
-      coverTags: [
 
-        "🆔 Lead ID-0147",
 
-        "👨‍👩‍👧 2 Adults + 1 Child (4 Years)",
+        "https://i.pinimg.com/736x/69/e3/35/69e33503d2e375c928b93d387291de48.jpg",
 
-        "🌿 2 Nights Coorg + 2 Nights Mysuru",
 
-        "🚘 Private AC Sedan – 5 Days"
 
-      ],
+         "https://i.pinimg.com/1200x/07/b8/db/07b8db7f1b4974d93c7d12754b508ce8.jpg",
 
 
-      /* ===================================================
-         HOTEL SUMMARY
-      =================================================== */
 
-      hotel: {
+        "https://temple.yatradham.org/public/Product/temple/temple_x5kUXqoF_202507151427240.webp",
 
-        name:
-          "Avadale Coorg + Yuvaraj Le Royale",
 
-        location:
-          "Coorg & Mysuru, Karnataka",
 
-        nights:
-          "4 Nights",
+        "https://i.pinimg.com/1200x/ca/b2/fd/cab2fde66a0daf3864dbfa3f9e9deba4.jpg",
 
-        mealPlan:
-          "Coorg B&D • Mysuru Breakfast",
 
-        roomType:
-          "1 Room at Each Hotel"
 
-      },
 
 
-      /* ===================================================
-         PACKAGE SETUP
-      =================================================== */
 
-      setup: {
+
+      ],
+
+
+
+
+
+      /* DAY 3 — MYSURU */
+
+
+
+      mysuru_day3_sightseeing: [
+
+
+
+      "https://i.pinimg.com/736x/9c/d1/8e/9cd18e18806b17ca1ea32da1558711a5.jpg",
+
+
+
+        "https://venkatarangan.com/wp-content/uploads/2004/06/Mysore_Palace_2004_1.jpg",
+
+
+
+        "https://i.pinimg.com/736x/3b/dd/96/3bdd968d47d5c3424efc164f832dde5c.jpg"
+
+
+
+      ],
+
+
+
+
+
+      /* DAY 4 — MYSURU */
+
+
+
+      mysuru_day4_sightseeing: [
+
+
+
+      "https://i.pinimg.com/1200x/5e/77/13/5e77139a53cac2c463700cca5c74c6fe.jpg",
+
+
+
+        "https://temple.yatradham.org/public/Product/temple/temple_pqSq9ECA_202506051126230.jpg",
+
+ "https://i.pinimg.com/1200x/a5/07/e1/a507e1fa66629920452c8baf2b228926.jpg",
+
+        "https://bangaloremirror.indiatimes.com/thumb/msid-52164034,width-1200,height-900,resizemode-4/.jpg"
+
+
+
+      ],
+
+
+
+
+
+      /* DAY 5 — RETURN TO BENGALURU
+
+         No airport image because final drop is guest residence.
+
+      */
+
+
+
+      mysuru_bengaluru_return: [
+
+
+
+        "https://static.toiimg.com/thumb/106057438/Hotel-checkout.jpg?width=1200&height=900",
+
+
+
+        "https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1"
+
+
+
+      ]
+
+
+
+    });
+
+
+
+  </script>
+
+
+
+
+
+  <!-- =====================================================
+
+       CLIENT ITINERARY DATA
+
+  ====================================================== -->
+
+
+
+  <script>
+
+
+
+    window.ITINERARY = {
+
+
+
+
+
+      /* ===================================================
+
+         GUEST DETAILS
+
+      =================================================== */
+      guestName:
+
+        "Mr. Shawn & Family",
+
+
+
+      guestPhone:
+
+        "+91 7041511760",
+
+
+
+
+
+      /* ===================================================
+
+         BASIC PACKAGE DETAILS
+
+      =================================================== */
+
+
+
+      packageName:
+
+        "Coorg & Mysuru Family Heritage Escape",
+
+
+
+      destinationLine:
+
+        "Coorg • Madikeri • Mysuru, Karnataka",
+
+
+
+      duration:
+
+        "4 Nights / 5 Days",
+
+
+
+      travelDates:
+
+        "23rd – 27th December 2026",
+
+
+
+      guests:
+
+        "2 Adults + 1 Child (4 Years)",
+
+
+
+      packageType:
+
+        "Karnataka Family Land Package",
+
+
+
+
+
+      /* ===================================================
+
+         COVER
+
+      =================================================== */
+
+
+
+      coverImageKey:
+
+        "coorg_mysuru_cover",
+
+
+
+      coverSubtitle:
+
+        "Coorg Nature • Coffee Country • Mysuru Heritage | 4 Nights / 5 Days",
+
+
+
+      coverTags: [
+        "👨‍👩‍👧 2 Adults + 1 Child (4 Years)",
+
+
+
+        "🌿 2 Nights Coorg + 2 Nights Mysuru",
+
+
+
+        "🚘 Private AC Sedan – 5 Days"
+
+
+
+      ],
+
+
+
+
+
+      /* ===================================================
+
+         HOTEL SUMMARY
+
+      =================================================== */
+
+
+
+      hotel: {
+
+
+
+        name:
+
+          "Coorg & Mysuru Hotel Stay",
+
+
+
+        location:
+
+          "Coorg & Mysuru, Karnataka",
+
+
+
+        nights:
+
+          "4 Nights",
+
+
+
+        mealPlan:
+
+          "Coorg B&D • Mysuru Breakfast",
+
+
+
+        roomType:
+
+          "1 Room at Each Hotel"
+
+
+
+      },
+
+
+
+
+
+      /* ===================================================
+
+         PACKAGE SETUP
+
+      =================================================== */
+
+
+
+      setup: {
 
         leftTitle:
-          "🏨 Guest & Hotel Details",
+
+          "🏨 Accommodation Details",
+
+
 
         leftItems: [
 
-          "🆔 Lead ID-0147",
+          "🌿 Coorg: Avadale Coorg • 2 Nights • 1 Deluxe Room • Breakfast & Dinner",
 
-          "👤 Guest: Mr. Shawn & Family",
+          "🏰 Mysuru: Yuvaraj Le Royale • 2 Nights • 1 AC Deluxe Room • Breakfast",
 
-          "📞 Contact: +91 7041511760",
-
-          "👨‍👩‍👧 2 Adults + 1 Child (4 Years)",
-
-          "🌿 Coorg: Avadale Coorg • 2 Nights • 1 Deluxe Room",
-
-          "🍽️ Coorg Meal Plan: Breakfast & Dinner",
-
-          "🏰 Mysuru: Yuvaraj Le Royale • 2 Nights • 1 AC Deluxe Room",
-
-          "🍳 Mysuru Meal Plan: Breakfast",
+          "🕑 Standard Check-in: 2:00 PM • Check-out: 11:00 AM",
 
           "📌 Mysuru Hotel Subject to Final Verification"
 
         ],
 
+
+
         rightTitle:
-          "🚘 Transportation & Travel Setup",
 
-        rightItems: [
+          "🚘 Transportation & Travel Setup",
 
-          "🏠 Pickup: Guest Residence, Bengaluru",
 
-          "🏠 Drop-off: Guest Residence, Bengaluru",
 
-          "🚘 Private AC Sedan for 5 Days",
+        rightItems: [
 
-          "🗺️ Sightseeing & Transfers as per Itinerary",
 
-          "🗣️ English / Hindi / Tamil-Speaking Driver – Subject to Availability",
 
-          "⛽ Fuel • Toll • Parking • Driver Allowance Included"
+          "🏠 Pickup: Guest Residence, Bengaluru",
 
-        ]
 
-      },
 
+          "🏠 Drop-off: Guest Residence, Bengaluru",
 
-      /* ===================================================
-         DAY-WISE ITINERARY
-      =================================================== */
 
-      days: [
 
+          "🚘 Private AC Sedan for 5 Days",
 
-        /* =================================================
-           DAY 1
-        ================================================= */
 
-        {
 
-          date:
-            "Wednesday, 23 December 2026",
+          "🗺️ Sightseeing & Transfers as per Itinerary",
 
-          shortDate:
-            "23 Dec",
 
-          title:
-            "Bengaluru to Coorg – Sightseeing & Check-in",
 
-          description:
-            "Begin the journey at 06:00 AM with pickup from the guest's Bengaluru residence and travel towards Coorg by private AC Sedan, combining sightseeing with the scenic drive to Madikeri.",
+          "🗣️ English / Hindi / Tamil-Speaking Driver – Subject to Availability",
 
-          highlights: [
 
-            "🚘 06:00 AM pickup from Bengaluru residence",
 
-            "🐘 Dubare Elephant Camp",
+          "⛽ Fuel • Toll • Parking • Driver Allowance Included"
 
-            "🌿 Nisargadhama",
 
-            "🛕 Golden Temple at Bylakuppe",
 
-            "☕ Coffee Plantation / Estate Visit",
+        ]
 
-            "🏨 Continue to Madikeri & hotel check-in",
 
-            "🍽️ Dinner at the hotel"
 
-          ],
+      },
 
-          imageKeys: [
 
-            "private_transfer",
 
-            "coorg_day1_sightseeing"
 
-          ],
 
-          note:
-            "Sightseeing is subject to arrival time, local operating hours and road conditions.",
+      /* ===================================================
 
-          overnight:
-            "Avadale Coorg",
+         DAY-WISE ITINERARY
 
-          meals: {
+      =================================================== */
 
-            breakfast:
-              "Not Included",
 
-            lunch:
-              "Not Included",
 
-            dinner:
-              "Included"
+      days: [
 
-          }
 
-        },
 
 
-        /* =================================================
-           DAY 2
-        ================================================= */
 
-        {
+        /* =================================================
 
-          date:
-            "Thursday, 24 December 2026",
+           DAY 1
 
-          shortDate:
-            "24 Dec",
+        ================================================= */
 
-          title:
-            "Full-Day Coorg Sightseeing",
 
-          description:
-            "After breakfast, explore Coorg's waterfalls, heritage landmarks, temple, coffee landscapes and local market during a full sightseeing day.",
 
-          highlights: [
+        {
 
-            "💧 Abbey Falls",
 
-            "🏰 Madikeri Fort",
 
-            "🛕 Omkareshwara Temple",
+          date:
 
-            "🌄 Raja's Seat",
+            "Wednesday, 23 December 2026",
 
-            "☕ Coffee Plantation / Spice Garden",
 
-            "🛍️ Madikeri Local Market",
 
-            "🍽️ Dinner & overnight at the hotel"
+          shortDate:
 
-          ],
+            "23 Dec",
 
-          imageKeys: [
 
-            "coorg_day2_sightseeing"
 
-          ],
+          title:
 
-          overnight:
-            "Avadale Coorg",
+            "Bengaluru to Coorg – Sightseeing & Check-in",
 
-          meals: {
 
-            breakfast:
-              "Included",
 
-            lunch:
-              "Not Included",
+          description:
 
-            dinner:
-              "Included"
+            "Begin the journey at 06:00 AM with pickup from the guest's Bengaluru residence and travel towards Coorg by private AC Sedan, combining sightseeing with the scenic drive to Madikeri.",
 
-          }
 
-        },
 
+          highlights: [
 
-        /* =================================================
-           DAY 3
-        ================================================= */
 
-        {
 
-          date:
-            "Friday, 25 December 2026",
+            "🚘 06:00 AM pickup from Bengaluru residence",
 
-          shortDate:
-            "25 Dec",
 
-          title:
-            "Coorg to Mysuru – Heritage & City Sightseeing",
 
-          description:
-            "After breakfast and check-out, travel privately from Coorg to Mysuru and explore some of the city's key heritage attractions before hotel check-in.",
+            "🐘 Dubare Elephant Camp",
 
-          highlights: [
 
-            "🍳 Breakfast & Coorg hotel check-out",
 
-            "🚘 Private AC Sedan to Mysuru",
+            "🌿 Nisargadhama",
 
-            "🏰 Mysore Palace",
 
-            "⛪ St. Philomena's Church",
 
-            "🛍️ Local shopping in Mysuru",
+            "🛕 Golden Temple at Bylakuppe",
 
-            "🏨 Mysuru hotel check-in",
 
-            "🌙 Evening at leisure"
 
-          ],
+            "☕ Coffee Plantation / Estate Visit",
 
-          imageKeys: [
 
-            "private_transfer",
 
-            "mysuru_day3_sightseeing"
+            "🏨 Continue to Madikeri & hotel check-in",
 
-          ],
 
-          note:
-            "Sightseeing visits are subject to local operating hours and holiday schedules.",
 
-          overnight:
-            "Mysuru",
+            "🍽️ Dinner at the hotel"
 
-          meals: {
 
-            breakfast:
-              "Included",
 
-            lunch:
-              "Not Included",
+          ],
 
-            dinner:
-              "Not Included"
 
-          }
 
-        },
+          imageKeys: [
 
 
-        /* =================================================
-           DAY 4
-        ================================================= */
 
-        {
+            "private_transfer",
 
-          date:
-            "Saturday, 26 December 2026",
 
-          shortDate:
-            "26 Dec",
 
-          title:
-            "Mysuru Full-Day Sightseeing",
+            "coorg_day1_sightseeing"
 
-          description:
-            "After breakfast, discover Mysuru's spiritual landmarks, family attractions, shopping experiences and the evening atmosphere of Brindavan Gardens.",
 
-          highlights: [
 
-            "🛕 Chamundi Hill",
+          ],
 
-            "🙏 Chamundeshwari Temple",
 
-            "🦁 Mysuru Zoo – Optional",
 
-            "🛍️ Mysuru Silk & Souvenir Shopping",
+          note:
 
-            "⛲ Brindavan Gardens",
+            "Sightseeing is subject to arrival time, local operating hours and road conditions.",
 
-            "🎵 Musical Fountain – Subject to Operating Schedule",
 
-            "🏨 Return to the hotel"
 
-          ],
+          overnight:
 
-          imageKeys: [
+            "Avadale Coorg",
 
-            "mysuru_day4_sightseeing"
 
-          ],
 
-          note:
-            "Mysuru Zoo is optional and admission charges are not included. Brindavan Gardens illumination and musical fountain are subject to the applicable operating schedule.",
+          meals: {
 
-          overnight:
-            "Mysuru",
 
-          meals: {
 
-            breakfast:
-              "Included",
+            breakfast:
 
-            lunch:
-              "Not Included",
+              "Not Included",
 
-            dinner:
-              "Not Included"
 
-          }
 
-        },
+            lunch:
 
+              "Not Included",
 
-        /* =================================================
-           DAY 5
-        ================================================= */
 
-        {
 
-          date:
-            "Sunday, 27 December 2026",
+            dinner:
 
-          shortDate:
-            "27 Dec",
+              "Included"
 
-          title:
-            "Mysuru to Bengaluru – Departure",
 
-          description:
-            "Enjoy breakfast, complete hotel check-out and travel back to Bengaluru by private AC Sedan for drop-off at the guest's residence.",
 
-          highlights: [
+          }
 
-            "🍳 Breakfast at the hotel",
 
-            "🧳 Hotel check-out",
 
-            "🚘 Mysuru to Bengaluru by Private AC Sedan",
+        },
 
-            "🏠 Drop-off at Guest Residence, Bengaluru",
 
-            "✨ End of Tour"
 
-          ],
 
-          imageKeys: [
 
-            "mysuru_bengaluru_return"
+        /* =================================================
 
-          ],
+           DAY 2
 
-          overnight:
-            "Tour Ends",
+        ================================================= */
 
-          departure:
-            true,
 
-          meals: {
 
-            breakfast:
-              "Included",
+        {
 
-            lunch:
-              "Not Included",
 
-            dinner:
-              "Not Included"
 
-          }
+          date:
+
+            "Thursday, 24 December 2026",
+
+
+
+          shortDate:
+
+            "24 Dec",
+
+
+
+          title:
+
+            "Full-Day Coorg Sightseeing",
+
+
+
+          description:
+
+            "After breakfast, explore Coorg's waterfalls, heritage landmarks, temple, coffee landscapes and local market during a full sightseeing day.",
+
+
+
+          highlights: [
+
+
+
+            "💧 Abbey Falls",
+
+
+
+            "🏰 Madikeri Fort",
+
+
+
+            "🛕 Omkareshwara Temple",
+
+
+
+            "🌄 Raja's Seat",
+
+
+
+            "☕ Coffee Plantation / Spice Garden",
+
+
+
+            "🛍️ Madikeri Local Market",
+
+
+
+            "🍽️ Dinner & overnight at the hotel"
+
+
+
+          ],
+
+
+
+          imageKeys: [
+
+
+
+            "coorg_day2_sightseeing"
+
+
+
+          ],
+
+
+
+          overnight:
+
+            "Avadale Coorg",
+
+
+
+          meals: {
+
+
+
+            breakfast:
+
+              "Included",
+
+
+
+            lunch:
+
+              "Not Included",
+
+
+
+            dinner:
+
+              "Included"
+
+
+
+          }
+
+
+
+        },
+
+
+
+
+
+        /* =================================================
+
+           DAY 3
+
+        ================================================= */
+
+
+
+        {
+
+
+
+          date:
+
+            "Friday, 25 December 2026",
+
+
+
+          shortDate:
+
+            "25 Dec",
+
+
+
+          title:
+
+            "Coorg to Mysuru – Heritage & City Sightseeing",
+
+
+
+          description:
+
+            "After breakfast and check-out, travel privately from Coorg to Mysuru and explore some of the city's key heritage attractions before hotel check-in.",
+
+
+
+          highlights: [
+
+
+
+            "🍳 Breakfast & Coorg hotel check-out",
+
+
+
+            "🚘 Private AC Sedan to Mysuru",
+
+
+
+            "🏰 Mysore Palace",
+
+
+
+            "⛪ St. Philomena's Church",
+
+
+
+            "🛍️ Local shopping in Mysuru",
+
+
+
+            "🏨 Mysuru hotel check-in",
+
+
+
+            "🌙 Evening at leisure"
+
+
+
+          ],
+
+
+
+          imageKeys: [
+
+
+
+            "private_transfer",
+
+
+
+            "mysuru_day3_sightseeing"
+
+
+
+          ],
+
+
+
+          note:
+
+            "Sightseeing visits are subject to local operating hours and holiday schedules.",
+
+
+
+          overnight:
+
+            "Mysuru",
+
+
+
+          meals: {
+
+
+
+            breakfast:
+
+              "Included",
+
+
+
+            lunch:
+
+              "Not Included",
+
+
+
+            dinner:
+
+              "Not Included"
+
+
+
+          }
+
+
+
+        },
+
+
+
+
+
+        /* =================================================
+
+           DAY 4
+
+        ================================================= */
+
+
+
+        {
+
+
+
+          date:
+
+            "Saturday, 26 December 2026",
+
+
+
+          shortDate:
+
+            "26 Dec",
+
+
+
+          title:
+
+            "Mysuru Full-Day Sightseeing",
+
+
+
+          description:
+
+            "After breakfast, discover Mysuru's spiritual landmarks, family attractions, shopping experiences and the evening atmosphere of Brindavan Gardens.",
+
+
+
+          highlights: [
+
+
+
+            "🛕 Chamundi Hill",
+
+
+
+            "🙏 Chamundeshwari Temple",
+
+
+
+            "🦁 Mysuru Zoo – Optional",
+
+
+
+            "🛍️ Mysuru Silk & Souvenir Shopping",
+
+
+
+            "⛲ Brindavan Gardens",
+
+
+
+            "🎵 Musical Fountain – Subject to Operating Schedule",
+
+
+
+            "🏨 Return to the hotel"
+
+
+
+          ],
+
+
+
+          imageKeys: [
+
+
+
+            "mysuru_day4_sightseeing"
+
+
+
+          ],
+
+
+
+          note:
+
+            "Mysuru Zoo is optional and admission charges are not included. Brindavan Gardens illumination and musical fountain are subject to the applicable operating schedule.",
+
+
+
+          overnight:
+
+            "Mysuru",
+
+
+
+          meals: {
+
+
+
+            breakfast:
+
+              "Included",
+
+
+
+            lunch:
+
+              "Not Included",
+
+
+
+            dinner:
+
+              "Not Included"
+
+
+
+          }
+
+
+
+        },
+
+
+
+
+
+        /* =================================================
+
+           DAY 5
+
+        ================================================= */
+
+
+
+        {
+
+
+
+          date:
+
+            "Sunday, 27 December 2026",
+
+
+
+          shortDate:
+
+            "27 Dec",
+
+
+
+          title:
+
+            "Mysuru to Bengaluru – Departure",
+
+
+
+          description:
+
+            "Enjoy breakfast, complete hotel check-out and travel back to Bengaluru by private AC Sedan for drop-off at the guest's residence.",
+
+
+
+          highlights: [
+
+
+
+            "🍳 Breakfast at the hotel",
+
+
+
+            "🧳 Hotel check-out",
+
+
+
+            "🚘 Mysuru to Bengaluru by Private AC Sedan",
+
+
+
+            "🏠 Drop-off at Guest Residence, Bengaluru",
+
+
+
+            "✨ End of Tour"
+
+
+
+          ],
+
+
+
+          imageKeys: [
+
+
+
+            "mysuru_bengaluru_return"
+
+
+
+          ],
+
+
+
+          overnight:
+
+            "Tour Ends",
+
+
+
+          departure:
+
+            true,
+
+
+
+          meals: {
+
+
+
+            breakfast:
+
+              "Included",
+
+
+
+            lunch:
+
+              "Not Included",
+
+
+
+            dinner:
+
+              "Not Included"
+
+
+
+          }
+
+
+
+        }
+
+
+
+      ],
+
+
+
+
+
+      /* ===================================================
+
+         PACKAGE INCLUSIONS
+
+      =================================================== */
+
+
+
+      inclusions: [
+
+
+
+        "🏨 2 Nights – Avadale Coorg • 1 Deluxe Room",
+
+
+
+        "🍽️ Breakfast & Dinner during Coorg Stay",
+
+
+
+        "🏨 2 Nights – Yuvaraj Le Royale • 1 AC Deluxe Room",
+
+
+
+        "🍳 Daily Breakfast during Mysuru Stay",
+
+
+
+        "👨‍👩‍👧 1 Room at Each Hotel for 2 Adults + 1 Child (4 Years)",
+
+
+
+        "🚘 Private AC Sedan for 5 Days – Ex Bengaluru",
+
+
+
+        "🏠 Bengaluru Residence Pickup & Drop-off",
+
+
+
+        "🗺️ Sightseeing & Transfers as per the Itinerary",
+
+
+
+        "⛽ Fuel • Toll Taxes • Parking • Driver Allowance",
+
+
+
+        "🛣️ Interstate Permit Charges, if Applicable",
+
+
+
+        "🗣️ English / Hindi / Tamil-Speaking Driver – Subject to Availability",
+
+
+
+        "🤝 Arrival / Departure Assistance • Tour Coordination • Applicable Taxes"
+
+
+
+      ],
+
+
+
+
+
+      /* ===================================================
+
+         PACKAGE EXCLUSIONS
+
+      =================================================== */
+
+
+
+      exclusions: [
+
+
+
+        "🍽️ Meals not Specifically Mentioned",
+
+
+
+        "🎟️ Monument, Attraction & Sightseeing Entry Tickets",
+
+
+
+        "🚣 Boating Charges & Optional Activities",
+
+
+
+        "🦁 Mysuru Zoo Admission Charges",
+
+
+
+        "🛍️ Personal Expenses & Shopping",
+
+
+
+        "💁 Tips, Porterage & Gratuities",
+
+
+
+        "🛡️ Travel Insurance",
+
+
+
+        "🧺 Laundry & Alcoholic Beverages",
+
+
+
+        "💆 Ayurveda & Spa Treatments",
+
+
+
+        "📌 Any Services not Specifically Mentioned under Inclusions"
+
+
+
+      ],
+
+
+
+
+
+      /* ===================================================
+
+         PACKAGE PRICE SUMMARY
+
+      =================================================== */
+
+
+
+      price: {
+
+
+
+        currency:
+
+          "INR",
+
+
+
+        amount:
+
+          "56,000",
+
+
+
+        label:
+
+          "Grand Total Package Cost",
+
+
+
+        paxLabel:
+
+          "For 2 Adults + 1 Child (4 Years)"
+
+
+
+      },
+
+
+
+
+
+      /* ===================================================
+
+         FINAL NOTE
+
+      =================================================== */
+
+
+
+      finalNote:
+
+        "Mysuru hotel remains subject to final verification. Attraction entry tickets and optional activities are payable separately unless specifically included."
+
+
+
+    };
+
+
+
+  </script>
+
+
+
+
+
+  <!-- =====================================================
+
+       SHARED RENDERER
+
+  ====================================================== -->
+
+
+
+  <script src="js/renderer.js"></script>
+
+
+
+
+
+  <!-- =====================================================
+     CLIENT LABEL OVERRIDE
+     Show "Guest Name" instead of "Prepared For"
+====================================================== -->
+
+<script>
+
+  (function () {
+
+    document
+      .querySelectorAll("span")
+      .forEach(function (element) {
+
+        if (
+          element.textContent.trim() ===
+          "👤 Prepared For:"
+        ) {
+
+          element.textContent =
+            "👤 Guest Name:";
 
         }
 
-      ],
+      });
 
+  })();
 
-      /* ===================================================
-         PACKAGE INCLUSIONS
-      =================================================== */
+</script>
 
-      inclusions: [
 
-        "🏨 2 Nights – Avadale Coorg • 1 Deluxe Room",
+<!-- =====================================================
+     CLIENT-SPECIFIC DISPLAY CLEANUP
+     Keep each important detail in the most useful place.
+====================================================== -->
+<script>
 
-        "🍽️ Breakfast & Dinner during Coorg Stay",
+  (function () {
 
-        "🏨 2 Nights – Yuvaraj Le Royale • 1 AC Deluxe Room",
+    /* Cover: dates only in the orange strip.
+       Guest count already appears in the summary grid. */
+    const coverStrip = document.querySelector(".cover .strip");
 
-        "🍳 Daily Breakfast during Mysuru Stay",
+    if (coverStrip && window.ITINERARY?.travelDates) {
+      coverStrip.textContent = window.ITINERARY.travelDates;
+    }
 
-        "👨‍👩‍👧 1 Room at Each Hotel for 2 Adults + 1 Child (4 Years)",
 
-        "🚘 Private AC Sedan for 5 Days – Ex Bengaluru",
+    /* Hotel page: remove the generic 4-card row because the
+       same information is already presented more clearly below. */
+    const hotelGrid = document.querySelector(".hotel-card .hotel-grid");
 
-        "🏠 Bengaluru Residence Pickup & Drop-off",
+    if (hotelGrid) {
+      hotelGrid.remove();
+    }
 
-        "🗺️ Sightseeing & Transfers as per the Itinerary",
 
-        "⛽ Fuel • Toll Taxes • Parking • Driver Allowance",
+    /* Price page: keep only decision-useful summary details.
+       Pax, duration and package name are already on the price card. */
+    const priceSummary = document.querySelector(".price-summary-card");
 
-        "🛣️ Interstate Permit Charges, if Applicable",
+    if (priceSummary) {
 
-        "🗣️ English / Hindi / Tamil-Speaking Driver – Subject to Availability",
+      priceSummary.innerHTML = `
 
-        "🤝 Arrival / Departure Assistance • Tour Coordination • Applicable Taxes"
+        <div>
+          <b>👤 Guest Name:</b>
+          Mr. Shawn & Family
+        </div>
 
-      ],
+        <div>
+          <b>📅 Travel:</b>
+          23rd – 27th December 2026
+        </div>
 
+        <div>
+          <b>🌿 Coorg Stay:</b>
+          Avadale Coorg • 2 Nights • Deluxe Room • Breakfast & Dinner
+        </div>
 
-      /* ===================================================
-         PACKAGE EXCLUSIONS
-      =================================================== */
+        <div>
+          <b>🏰 Mysuru Stay:</b>
+          Yuvaraj Le Royale • 2 Nights • AC Deluxe Room • Breakfast
+        </div>
 
-      exclusions: [
+        <div>
+          <b>🚘 Transport:</b>
+          Private AC Sedan • 5 Days • Bengaluru Residence Pickup & Drop
+        </div>
 
-        "🍽️ Meals not Specifically Mentioned",
+      `;
 
-        "🎟️ Monument, Attraction & Sightseeing Entry Tickets",
+    }
 
-        "🚣 Boating Charges & Optional Activities",
+  })();
 
-        "🦁 Mysuru Zoo Admission Charges",
-
-        "🛍️ Personal Expenses & Shopping",
-
-        "💁 Tips, Porterage & Gratuities",
-
-        "🛡️ Travel Insurance",
-
-        "🧺 Laundry & Alcoholic Beverages",
-
-        "💆 Ayurveda & Spa Treatments",
-
-        "📌 Any Services not Specifically Mentioned under Inclusions"
-
-      ],
-
-
-      /* ===================================================
-         PACKAGE PRICE SUMMARY
-      =================================================== */
-
-      price: {
-
-        currency:
-          "INR",
-
-        amount:
-          "50,500",
-
-        label:
-          "Grand Total Package Cost",
-
-        paxLabel:
-          "For 2 Adults + 1 Child (4 Years)"
-
-      },
-
-
-      /* ===================================================
-         PAYMENT & BOOKING POLICY
-
-         LOCKED:
-         PRICE SUMMARY FIRST
-         PAYMENT / BOOKING PAGE AFTER PRICE
-      =================================================== */
-
-      paymentPolicy: {
-
-        booking: [
-
-          {
-
-            title:
-              "Package Confirmation",
-
-            text:
-              "The package is based on 2 Adults and 1 Child aged 4 years, sharing one room at each hotel as quoted."
-
-          },
-
-          {
-
-            title:
-              "Package Cost",
-
-            text:
-              "Grand Total: INR 50,500 for the accommodation, meal plan, private transportation and other services specifically listed under Package Inclusions."
-
-          },
-
-          {
-
-            title:
-              "Payment Terms",
-
-            text:
-              "A payment schedule or payment deadline is not specified in the supplied booking details. Applicable payment instructions will be communicated separately."
-
-          },
-
-          {
-
-            title:
-              "Final Documents",
-
-            text:
-              "Hotel vouchers and confirmed accommodation details will be shared once the final supplier confirmation is completed."
-
-          }
-
-        ],
-
-
-        conditions: [
-
-          {
-
-            title:
-              "Hotel & Room Conditions",
-
-            text:
-              "Standard hotel check-in is 2:00 PM and standard check-out is 11:00 AM, subject to the respective hotel's policies. Yuvaraj Le Royale remains subject to final hotel verification."
-
-          },
-
-          {
-
-            title:
-              "Sightseeing & Entry Fees",
-
-            text:
-              "Sightseeing is subject to traffic, weather, attraction opening hours and operational conditions. Attraction entry fees and optional activities are payable separately unless specifically included."
-
-          },
-
-          {
-
-            title:
-              "Vehicle Operation",
-
-            text:
-              "The private AC Sedan will operate according to the agreed itinerary and applicable driver duty-hour regulations. Additional or unplanned vehicle usage is not treated as included unless confirmed."
-
-          },
-
-          {
-
-            title:
-              "Driver & Pickup Coordination",
-
-            text:
-              "English, Hindi or Tamil-speaking driver service is subject to availability. Driver contact details and final pickup coordination will be shared before departure."
-
-          }
-
-        ],
-
-        note:
-          "The confirmed hotel vouchers and final service documents will govern hotel details, pickup coordination, vehicle arrangements and other operational instructions."
-
-      },
-
-
-      /* ===================================================
-         FINAL NOTE
-      =================================================== */
-
-      finalNote:
-        "Lead ID-0147 • Grand Total: INR 50,500 for 2 Adults + 1 Child (4 Years). Includes 4 nights' accommodation, the stated hotel meal plans, private AC Sedan for 5 days and the services specifically listed under Package Inclusions."
-
-    };
-
-  </script>
-
-
-  <!-- =====================================================
-       SHARED RENDERER
-  ====================================================== -->
-
-  <script src="js/renderer.js"></script>
-
-
-  <!-- =====================================================
-       KEEP LEAD ID IN BROWSER / LINK PREVIEW TITLE
-       EVEN IF SHARED RENDERER UPDATES DOCUMENT TITLE
-  ====================================================== -->
-
-  <script>
-
-    (function () {
-
-      const title =
-        "CityLaila | Coorg & Mysuru Family Heritage Escape – 4N/5D | Lead ID-0147";
-
-
-      document.title =
-        title;
-
-
-      const ogTitle =
-        document.querySelector(
-          'meta[property="og:title"]'
-        );
-
-
-      if (ogTitle) {
-
-        ogTitle.setAttribute(
-          "content",
-          title
-        );
-
-      }
-
-    })();
-
-  </script>
+</script>
 
 
 </body>
+
+
 
 </html>
