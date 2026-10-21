@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="robots"
+    content="noindex,nofollow,noarchive"
+  >
+
+  <meta
+    name="description"
+    content="Lead ID-0158 • Georgia holiday for Dr. Santhosh, 3 Adults, travelling from 4–7 November 2026."
+  >
+
+  <meta
+    property="og:title"
+    content="CityLaila | Georgia Alpine Heritage Escape – 3N/4D | Lead ID-0158"
+  >
+
+  <meta
+    property="og:description"
+    content="Lead ID-0158 • Tbilisi, Ananuri, Gudauri & Kazbegi • 4–7 November 2026 • 3 Adults."
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <base href="../itinerary-engine/">
+
+  <title>
+    CityLaila | Georgia Alpine Heritage Escape – 3N/4D | Lead ID-0158
+  </title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/itinerary.css"
+  >
+
+  <style>
+    /* =====================================================
+       CLIENT ITINERARY — SAFE DAY FIT
+       IMPORTANT:
+       Carousel WIDTH is controlled by renderer.js.
+       Never override track / slide width here.
+    ====================================================== */
+
+    .day,
+    .day-layout{
+      grid-template-columns:.86fr 1.14fr !important;
+      gap:34px !important;
+      min-height:0 !important;
+      align-items:stretch !important;
+    }
+
+    .day > div:first-child,
+    .day-info{
+      min-width:0 !important;
+      min-height:0 !important;
+    }
+
+    .day-badge{
+      margin-bottom:12px !important;
+    }
+
+    .day h3,
+    .day-title{
+      font-size:28px !important;
+      line-height:1.18 !important;
+      margin-bottom:10px !important;
+    }
+
+    .desc,
+    .day-desc{
+      font-size:16px !important;
+      line-height:1.40 !important;
+      margin-bottom:13px !important;
+    }
+
+    .box,
+    .tour-inclusion-box{
+      padding:15px 18px !important;
+    }
+
+    .box h4,
+    .tour-inclusion-box h4{
+      margin-bottom:9px !important;
+    }
+
+    .list,
+    .day-timeline-list{
+      gap:8px !important;
+    }
+
+    .list li,
+    .day-timeline-list li{
+      font-size:15px !important;
+      line-height:1.25 !important;
+      padding:9px 12px !important;
+    }
+
+    /* =====================================================
+       APPROVED LARGE / TALL IMAGE STYLE
+       Width remains completely controlled by renderer.js
+    ====================================================== */
+
+    .imgbox,
+    .day-image-container{
+      height:100% !important;
+      min-height:470px !important;
+      border-radius:18px !important;
+      overflow:hidden !important;
+      position:relative !important;
+      background:#0A192F !important;
+      box-shadow:0 12px 30px rgba(0,0,0,.12) !important;
+    }
+
+    .track,
+    .carousel-track{
+      height:100% !important;
+    }
+
+    .slideimg,
+    .carousel-slide{
+      height:100% !important;
+    }
+
+    .slideimg img,
+    .carousel-slide img{
+      width:100% !important;
+      height:100% !important;
+      object-fit:cover !important;
+      object-position:center !important;
+      display:block !important;
+    }
+
+    /* Airport image positioning */
+    img[src*="eurasianet.org"]{
+      object-position:center center !important;
+    }
+
+    /* Compact notes so page never overflows */
+    .notice,
+    .note,
+    .small-note,
+    .timing-note{
+      font-size:13px !important;
+      line-height:1.35 !important;
+      padding:8px 11px !important;
+      margin-top:9px !important;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <main id="itinerary-app"></main>
+
+
+  <!-- =====================================================
+       SHARED IMAGE LIBRARY
+  ====================================================== -->
+
+  <script src="js/image-library.js"></script>
+
+
+  <!-- =====================================================
+       GEORGIA IMAGE REFERENCES
+  ====================================================== -->
+
+  <script>
+
+    Object.assign(window.IMAGE_LIBRARY, {
+
+
+      /* COVER */
+
+      georgia_cover: [
+
+        "https://static-dm.barcelo.com/is/image/barcelo/holidays-to-georgia_holidays-in-georgia?&&fmt=webp-alpha&qlt=75&wid=1300&fit=crop,1"
+
+      ],
+
+
+      /* =================================================
+         DAY 1 — ARRIVAL IN TBILISI
+      ================================================= */
+
+      tbilisi_arrival: [
+
+        "https://eurasianet.org/sites/default/files/styles/article/public/2023-06/tav%20tbilisi%20airport.jpg?h=3f560db1&itok=A_Aetqrf",
+
+        "https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1"
+
+      ],
+
+
+      /* =================================================
+         DAY 2 — TBILISI CITY TOUR
+      ================================================= */
+
+      tbilisi_city_tour: [
+
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Narikala%20fortress%20in%20Tbilisi.jpg",
+
+        "https://i.pinimg.com/1200x/82/f5/48/82f548bd38fd4a7b8f48614d85c23f87.jpg",
+
+        "https://georgianjournal.ge/media/images/georgianews/2018/April/society/img_8918.jpg",
+
+        "https://images.trvl-media.com/place/6108462/67b224c1-3d2a-47c8-9f38-bfdbae2492fd.jpg"
+
+      ],
+
+
+      /* =================================================
+         DAY 3 — ANANURI / GUDAURI / KAZBEGI
+      ================================================= */
+
+      gudauri_kazbegi: [
+
+        "https://cdn.georgiantravelguide.com/storage/files/ananuris-kompleksi-ananuri-fortress.jpg",
+
+        "https://www.advantour.com/img/georgia/tours/georgia-winter-tour/ananuri_winter.jpg",
+
+        "https://tourguide.ge/wp-content/uploads/2019/03/Seeing-from-Gergeti.jpg",
+
+        "https://i.pinimg.com/736x/d5/0d/d0/d50dd00fc01abf86c4bfa862edfc8bca.jpg",
+
+        "https://commons.wikimedia.org/wiki/Special:FilePath/Gergeti%20Trinity%20Church%2001.jpg"
+
+      ],
+
+
+      /* =================================================
+         DAY 4 — DEPARTURE
+      ================================================= */
+
+      tbilisi_departure: [
+
+        "https://static.toiimg.com/thumb/106057438/Hotel-checkout.jpg?width=1200&height=900",
+
+        "https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1",
+
+        "https://m.media-amazon.com/images/I/71nXbtmuQlL.jpg"
+
+      ]
+
+    });
+
+  </script>
+
+
+  <!-- =====================================================
+       CLIENT ITINERARY DATA
+  ====================================================== -->
+
+  <script>
+
+    window.ITINERARY = {
+
+
+      /* ===================================================
+         LEAD / GUEST DETAILS
+      =================================================== */
+
+      leadNo:
+        "0158",
+
+      guestName:
+        "Dr. Santhosh",
+
+      guestPhone:
+        "+971561923524",
+
+
+      /* ===================================================
+         BASIC PACKAGE DETAILS
+      =================================================== */
+
+      packageName:
+        "Georgia Alpine Heritage Escape",
+
+      destinationLine:
+        "Tbilisi • Ananuri • Gudauri • Kazbegi, Georgia",
+
+      duration:
+        "3 Nights / 4 Days",
+
+      travelDates:
+        "4th – 7th November 2026",
+
+      guests:
+        "3 Adults",
+
+      packageType:
+        "Georgia Holiday Package",
+
+
+      /* ===================================================
+         COVER
+      =================================================== */
+
+      coverImageKey:
+        "georgia_cover",
+
+      coverSubtitle:
+        "Tbilisi Heritage • Caucasus Mountains • Kazbegi | 3 Nights / 4 Days",
+
+      coverTags: [
+
+        "🆔 Lead ID-0158",
+
+        "👥 3 Adults",
+
+        "🏨 Astoria Hotel or Similar",
+
+        "🍳 Breakfast Included"
+
+      ],
+
+
+      /* ===================================================
+         HOTEL SUMMARY
+      =================================================== */
+
+      hotel: {
+
+        name:
+          "Astoria Hotel or Similar",
+
+        location:
+          "Tbilisi, Georgia",
+
+        nights:
+          "3 Nights",
+
+        mealPlan:
+          "Breakfast Included",
+
+        roomType:
+          "Room Configuration To Be Confirmed"
+
+      },
+
+
+      /* ===================================================
+         PACKAGE SETUP
+      =================================================== */
+
+      setup: {
+
+        leftTitle:
+          "🏨 Guest & Hotel Details",
+
+        leftItems: [
+
+          "🆔 Lead ID-0158",
+
+          "👤 Guest: Dr. Santhosh",
+
+          "📞 Contact: +971561923524",
+
+          "👥 3 Adults",
+
+          "🏨 Astoria Hotel or Similar • 3 Nights",
+
+          "🍳 Breakfast Included"
+
+        ],
+
+        rightTitle:
+          "🚐 Transfers & Sightseeing",
+
+        rightItems: [
+
+          "🛬 Tbilisi Airport → Hotel Transfer",
+
+          "🏙️ Full-Day Tbilisi City Tour",
+
+          "🏔️ Ananuri • Gudauri • Kazbegi Tour",
+
+          "🛫 Hotel → Tbilisi Airport Transfer",
+
+          "📌 Services as per Confirmed Package"
+
+        ]
+
+      },
+
+
+      /* ===================================================
+         DAY-WISE ITINERARY
+      =================================================== */
+
+      days: [
+
+
+        /* =================================================
+           DAY 1
+        ================================================= */
+
+        {
+
+          date:
+            "Wednesday, 4 November 2026",
+
+          shortDate:
+            "04 Nov",
+
+          title:
+            "Arrival in Tbilisi",
+
+          description:
+            "Arrive at Tbilisi International Airport, meet the local representative and transfer to the hotel for check-in and relaxation.",
+
+          highlights: [
+
+            "🛬 Arrival at Tbilisi International Airport",
+
+            "🤝 Meet & greet by local representative",
+
+            "🚐 Transfer to the hotel",
+
+            "🏨 Check-in & overnight in Tbilisi"
+
+          ],
+
+          imageKeys: [
+            "tbilisi_arrival"
+          ],
+
+          overnight:
+            "Tbilisi",
+
+          meals: {
+
+            breakfast:
+              "Arrival Day",
+
+            lunch:
+              "Not Included",
+
+            dinner:
+              "Not Included"
+
+          }
+
+        },
+
+
+        /* =================================================
+           DAY 2
+        ================================================= */
+
+        {
+
+          date:
+            "Thursday, 5 November 2026",
+
+          shortDate:
+            "05 Nov",
+
+          title:
+            "Full-Day Tbilisi City Tour",
+
+          description:
+            "After breakfast, explore Old Tbilisi's historic districts, cultural landmarks and traditional shopping areas.",
+
+          highlights: [
+
+            "🕙 10:00 AM pickup • Narikala Fortress & city views",
+
+            "♨️ Sulphur Baths • Mosque Area • Shardeni District",
+
+            "⛪ Anchiskhati Basilica • Gabriadze Clock Tower",
+
+            "🛍️ Shopping • Lunch & dinner on direct payment"
+
+          ],
+
+          imageKeys: [
+            "tbilisi_city_tour"
+          ],
+
+          note:
+            "Narikala cable car, if taken, may be at an additional cost.",
+
+          overnight:
+            "Tbilisi",
+
+          meals: {
+
+            breakfast:
+              "Included",
+
+            lunch:
+              "Direct Payment",
+
+            dinner:
+              "Direct Payment"
+
+          }
+
+        },
+
+
+        /* =================================================
+           DAY 3
+        ================================================= */
+
+        {
+
+          date:
+            "Friday, 6 November 2026",
+
+          shortDate:
+            "06 Nov",
+
+          title:
+            "Ananuri, Gudauri & Kazbegi Tour",
+
+          description:
+            "Travel through Georgia's spectacular mountain landscapes, visiting Ananuri, Gudauri and the Kazbegi region before returning to Tbilisi.",
+
+          highlights: [
+
+            "🕙 10:00 AM pickup • Ananuri Fortress & Jinvali Lake",
+
+            "❄️ Gudauri Mountain Resort",
+
+            "⛪ Gergeti Trinity Church, subject to conditions",
+
+            "🍽️ Lunch & dinner on direct payment"
+
+          ],
+
+          imageKeys: [
+            "gudauri_kazbegi"
+          ],
+
+          note:
+            "Gudauri, Kazbegi and Gergeti access is subject to weather and road conditions.",
+
+          overnight:
+            "Tbilisi",
+
+          meals: {
+
+            breakfast:
+              "Included",
+
+            lunch:
+              "Direct Payment",
+
+            dinner:
+              "Direct Payment"
+
+          }
+
+        },
+
+
+        /* =================================================
+           DAY 4
+        ================================================= */
+
+        {
+
+          date:
+            "Saturday, 7 November 2026",
+
+          shortDate:
+            "07 Nov",
+
+          title:
+            "Departure from Tbilisi",
+
+          description:
+            "After breakfast and check-out, enjoy free time subject to the flight schedule before transferring to Tbilisi International Airport.",
+
+          highlights: [
+
+            "🍳 Breakfast at the hotel",
+
+            "🧳 Hotel check-out",
+
+            "🛍️ Shopping time, subject to flight schedule",
+
+            "🛫 Transfer to Tbilisi International Airport"
+
+          ],
+
+          imageKeys: [
+            "tbilisi_departure"
+          ],
+
+          overnight:
+            "Tour Ends",
+
+          departure:
+            true,
+
+          meals: {
+
+            breakfast:
+              "Included",
+
+            lunch:
+              "Departure Day",
+
+            dinner:
+              "Departure Day"
+
+          }
+
+        }
+
+      ],
+
+
+      /* ===================================================
+         PACKAGE INCLUSIONS
+      =================================================== */
+
+      inclusions: [
+
+        "🏨 3 Nights' Accommodation at Astoria Hotel or Similar",
+
+        "🍳 Daily Breakfast at the Hotel",
+
+        "🛬 Tbilisi International Airport → Hotel Transfer",
+
+        "🏙️ Full-Day Tbilisi City Tour",
+
+        "🏔️ Ananuri • Gudauri • Kazbegi Tour",
+
+        "🛫 Hotel → Tbilisi International Airport Transfer",
+
+        "🚐 Sightseeing & Transfers as per Confirmed Package"
+
+      ],
+
+
+      /* ===================================================
+         PACKAGE EXCLUSIONS
+      =================================================== */
+
+      exclusions: [
+
+        "🍽️ Lunch & Dinner – Direct Payment by Guests",
+
+        "🚠 Narikala Cable Car, if Taken – Additional Cost May Apply",
+
+        "🎟️ Optional Activities Unless Specifically Confirmed",
+
+        "🛍️ Personal Expenses & Shopping",
+
+        "📌 Any Service Not Specifically Confirmed under Package Inclusions"
+
+      ],
+
+
+      /* ===================================================
+         PACKAGE PRICE
+      =================================================== */
+
+      price: {
+
+        currency:
+          "AED",
+
+        amount:
+          "3,350",
+
+        label:
+          "Grand Total Package Cost",
+
+        paxLabel:
+          "For 3 Adults • 3 Nights / 4 Days"
+
+      },
+
+
+      /* ===================================================
+         PAYMENT & BOOKING POLICY
+      =================================================== */
+
+      paymentPolicy: {
+
+        booking: [
+
+          {
+
+            title:
+              "Grand Total",
+
+            text:
+              "The total package price is AED 3,350 for 3 Adults for the complete 3 Nights / 4 Days package."
+
+          },
+
+          {
+
+            title:
+              "What AED 3,350 Includes",
+
+            text:
+              "AED 3,350 includes 3 nights' accommodation at Astoria Hotel or similar, daily breakfast, arrival and departure airport transfers and sightseeing as stated in the confirmed package."
+
+          },
+
+          {
+
+            title:
+              "Hotel Confirmation",
+
+            text:
+              "Astoria Hotel or a similar property will be provided subject to availability and final confirmation."
+
+          },
+
+          {
+
+            title:
+              "Sightseeing Services",
+
+            text:
+              "The package covers the Tbilisi City Tour and Ananuri–Gudauri–Kazbegi sightseeing as stated in the itinerary, subject to final operational confirmation."
+
+          }
+
+        ],
+
+
+        conditions: [
+
+          {
+
+            title:
+              "Meals",
+
+            text:
+              "Lunch and dinner are at the guests' own expense unless otherwise confirmed."
+
+          },
+
+          {
+
+            title:
+              "Optional Activities",
+
+            text:
+              "Optional activities are not included unless specifically confirmed. Narikala cable car, if taken, may carry an additional charge."
+
+          },
+
+          {
+
+            title:
+              "Mountain Route",
+
+            text:
+              "The Gudauri and Kazbegi route, including Gergeti Trinity Church access, is subject to weather and road conditions."
+
+          },
+
+          {
+
+            title:
+              "Availability",
+
+            text:
+              "All hotel accommodation, transfers, sightseeing and other services remain subject to availability and final confirmation."
+
+          }
+
+        ],
+
+        note:
+          "Final confirmed vouchers and service details will govern the hotel, transfers, sightseeing and operational arrangements."
+
+      },
+
+
+      /* ===================================================
+         FINAL NOTE
+      =================================================== */
+
+      finalNote:
+        "Lead ID-0158 • Grand Total AED 3,350 for 3 Adults • Includes Astoria Hotel or similar, breakfast, airport transfers and sightseeing as per the confirmed package."
+
+    };
+
+  </script>
+
+
+  <!-- =====================================================
+       SHARED RENDERER
+       Carousel sizing is handled automatically here.
+  ====================================================== -->
+
+  <script src="js/renderer.js"></script>
+
+
+  <!-- =====================================================
+       KEEP LEAD ID IN BROWSER / PREVIEW TITLE
+  ====================================================== -->
+
+  <script>
+
+    (function () {
+
+      const title =
+        "CityLaila | Georgia Alpine Heritage Escape – 3N/4D | Lead ID-0158";
+
+      document.title =
+        title;
+
+      const ogTitle =
+        document.querySelector(
+          'meta[property="og:title"]'
+        );
+
+      if (ogTitle) {
+
+        ogTitle.setAttribute(
+          "content",
+          title
+        );
+
+      }
+
+    })();
+
+  </script>
+
+</body>
+
+</html>
