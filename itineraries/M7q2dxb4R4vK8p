@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="robots"
+    content="noindex,nofollow,noarchive"
+  >
+
+  <meta
+    name="description"
+    content="Lead ID-0160 • Dubai family holiday for Mr Nikhiul, 2 Adults + 1 Child (6 Years), travelling from 9–15 November 2026."
+  >
+
+  <meta
+    property="og:title"
+    content="CityLaila | Dubai Family Signature Escape – 6N/7D | Lead ID-0160"
+  >
+
+  <meta
+    property="og:description"
+    content="Lead ID-0160 • Dubai & Abu Dhabi family land package • 9–15 November 2026 • 2 Adults + 1 Child."
+  >
+
+  <meta
+    property="og:type"
+    content="website"
+  >
+
+  <base href="../itinerary-engine/">
+
+  <title>
+    CityLaila | Dubai Family Signature Escape – 6N/7D | Lead ID-0160
+  </title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="css/itinerary.css"
+  >
+
+  <style>
+    /* =====================================================
+       CLIENT ITINERARY — LOCKED SAFE DAY FIT
+       Carousel WIDTH is controlled only by renderer.js
+    ====================================================== */
+
+    .day,
+    .day-layout{
+      grid-template-columns:.86fr 1.14fr !important;
+      gap:34px !important;
+      min-height:0 !important;
+      align-items:stretch !important;
+    }
+
+    .day > div:first-child,
+    .day-info{
+      min-width:0 !important;
+      min-height:0 !important;
+    }
+
+    .day-badge{
+      margin-bottom:12px !important;
+    }
+
+    .day h3,
+    .day-title{
+      font-size:28px !important;
+      line-height:1.18 !important;
+      margin-bottom:10px !important;
+    }
+
+    .desc,
+    .day-desc{
+      font-size:16px !important;
+      line-height:1.40 !important;
+      margin-bottom:13px !important;
+    }
+
+    .box,
+    .tour-inclusion-box{
+      padding:15px 18px !important;
+    }
+
+    .box h4,
+    .tour-inclusion-box h4{
+      margin-bottom:9px !important;
+    }
+
+    .list,
+    .day-timeline-list{
+      gap:8px !important;
+    }
+
+    .list li,
+    .day-timeline-list li{
+      font-size:15px !important;
+      line-height:1.25 !important;
+      padding:9px 12px !important;
+    }
+
+    /* APPROVED LARGE / TALL IMAGE STYLE */
+
+    .imgbox,
+    .day-image-container{
+      height:100% !important;
+      min-height:470px !important;
+      border-radius:18px !important;
+      overflow:hidden !important;
+      position:relative !important;
+      background:#0A192F !important;
+      box-shadow:0 12px 30px rgba(0,0,0,.12) !important;
+    }
+
+    /*
+      IMPORTANT:
+      Do not set track or slide WIDTH here.
+      renderer.js automatically calculates carousel width.
+    */
+
+    .track,
+    .carousel-track{
+      height:100% !important;
+    }
+
+    .slideimg,
+    .carousel-slide{
+      height:100% !important;
+    }
+
+    .slideimg img,
+    .carousel-slide img{
+      width:100% !important;
+      height:100% !important;
+      object-fit:cover !important;
+      object-position:center !important;
+      display:block !important;
+    }
+
+    .notice,
+    .note,
+    .small-note,
+    .timing-note{
+      font-size:13px !important;
+      line-height:1.35 !important;
+      padding:8px 11px !important;
+      margin-top:9px !important;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <main id="itinerary-app"></main>
+
+
+  <!-- =====================================================
+       SHARED IMAGE LIBRARY
+  ====================================================== -->
+
+  <script src="js/image-library.js"></script>
+
+
+  <!-- =====================================================
+       DUBAI / ABU DHABI IMAGE REFERENCES
+  ====================================================== -->
+
+  <script>
+
+    Object.assign(window.IMAGE_LIBRARY, {
+
+
+      /* COVER */
+
+      dubai_family_cover: [
+
+        "https://res.klook.com/image/upload/fl_lossy.progressive,q_60/v1760437946/destination/vovea0rrgjojr9pgdp7b.jpg"
+
+      ],
+
+
+      /* =================================================
+         DAY 1 — AUH ARRIVAL + PRIVATE TRANSFER
+      ================================================= */
+
+      auh_dubai_arrival: [
+
+        "https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1"
+
+      ],
+
+
+      /* =================================================
+         DAY 2 — DUBAI CITY TOUR
+      ================================================= */
+
+      dubai_city_private: [
+
+        "https://cdn.britannica.com/68/250068-050-B0AD857A/Burj-Al-Arab-luxury-hotel-Dubai.jpg",
+
+        "https://media.assettype.com/gulfnews%2F2026-09-01%2F6xosofko%2FDubai?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100",
+
+        "https://image-tc.galaxy.tf/wijpeg-2lm45ex25ruhe9mqmjcrtglmt/file.jpg",
+
+        "https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/fquhn8j9b2tikxmarntv/DubaiCityTourwithMultipleOptionsDeparturePoints.jpg"
+
+      ],
+
+
+      /* =================================================
+         DAY 3 — PREMIUM DESERT SAFARI
+      ================================================= */
+
+      premium_desert_safari: [
+
+        "https://cdn-imgix.headout.com/media/images/a711e68d151d5a1bd4d07876c3748dca-4953-dubai-combo-15-min-helicopter-tour-of-dubai---red-dunes-desert-safari-with-bedouin-camp-experience-14.jpg?auto=compress%2Cformat&q=90&crop=faces&fit=crop",
+
+        "https://www.desertsafariuae.ae/wp-content/uploads/2024/10/13.png",
+
+        "https://arabiandesertsafari.net/wp-content/uploads/SandBoarding-Dubai.jpg"
+
+      ],
+
+
+      /* =================================================
+         DAY 4 — DUBAI MALL + BURJ KHALIFA
+      ================================================= */
+
+      dubai_mall_burj: [
+
+        "https://res.klook.com/image/upload/fl_lossy.progressive,q_60/v1760437946/destination/vovea0rrgjojr9pgdp7b.jpg",
+
+        "https://www.visitdubai.com/-/media/gathercontent/poi/t/the-dubai-mall/fallback-image/the-dubai-mall-poi-shutterstock.jpg"
+
+      ],
+
+
+      /* =================================================
+         DAY 5 — MIRACLE GARDEN + GLOBAL VILLAGE
+      ================================================= */
+
+      miracle_global: [
+
+        "https://www.dubaimiraclegarden.com/_next/image?url=%2Fdmg%2Fpackage-miracle.jpg&w=3840&q=75",
+
+        "https://tripatours.com/blog/wp-content/uploads/2026/03/Global-Village-Dubai.webp"
+
+      ],
+
+
+      /* =================================================
+         DAY 6 — MARINA DHOW CRUISE
+      ================================================= */
+
+      marina_dhow_cruise: [
+
+        "https://cdn-imgix.headout.com/media/images/4b688c7a-0c3a-4f7d-b179-271902d4fabf-1760036819640-318537%20-%20Hero.jpg?auto=compress%2Cformat&q=90&crop=faces&fit=crop"
+
+      ],
+
+
+      /* =================================================
+         DAY 7 — ABU DHABI + DEPARTURE
+         Locked departure image sequence
+      ================================================= */
+
+      abu_dhabi_departure: [
+
+        "https://static.toiimg.com/thumb/106057438/Hotel-checkout.jpg?width=1200&height=900",
+
+        "https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1",
+
+        "https://m.media-amazon.com/images/I/71nXbtmuQlL.jpg"
+
+      ]
+
+    });
+
+  </script>
+
+
+  <!-- =====================================================
+       CLIENT ITINERARY DATA
+  ====================================================== -->
+
+  <script>
+
+    window.ITINERARY = {
+
+
+      /* ===================================================
+         LEAD / GUEST DETAILS
+      =================================================== */
+
+      leadNo:
+        "0160",
+
+      guestName:
+        "Mr Nikhiul",
+
+      guestPhone:
+        "+91 81491 81081",
+
+
+      /* ===================================================
+         BASIC PACKAGE DETAILS
+      =================================================== */
+
+      packageName:
+        "Dubai Family Signature Escape",
+
+      destinationLine:
+        "Dubai • Abu Dhabi, UAE",
+
+      duration:
+        "6 Nights / 7 Days",
+
+      travelDates:
+        "9th – 15th November 2026",
+
+      guests:
+        "2 Adults + 1 Child (6 Years)",
+
+      packageType:
+        "UAE Family Land Package – Hotel Excluded",
+
+
+      /* ===================================================
+         COVER
+      =================================================== */
+
+      coverImageKey:
+        "dubai_family_cover",
+
+      coverSubtitle:
+        "Dubai Icons • Desert Safari • Global Village • Marina • Abu Dhabi | 6 Nights / 7 Days",
+
+      coverTags: [
+
+        "🆔 Lead ID-0160",
+
+        "👨‍👩‍👦 2 Adults + 1 Child (6 Years)",
+
+        "🚘 Private Transfers as Specified",
+
+        "🏨 Hotel Booked Directly by Guest"
+
+      ],
+
+
+      /* ===================================================
+         HOTEL SUMMARY
+      =================================================== */
+
+      hotel: {
+
+        name:
+          "Grand Astoria Hotel – Guest Direct Booking",
+
+        location:
+          "Dubai, UAE",
+
+        nights:
+          "6 Nights – Guest Arranged",
+
+        mealPlan:
+          "Hotel Meals Not Included in Package Price",
+
+        roomType:
+          "Booked Directly by Guest"
+
+      },
+
+
+      /* ===================================================
+         PACKAGE SETUP
+      =================================================== */
+
+      setup: {
+
+        leftTitle:
+          "🏨 Guest & Hotel Details",
+
+        leftItems: [
+
+          "🆔 Lead ID-0160",
+
+          "👤 Guest: Mr Nikhiul",
+
+          "📞 Contact: +91 81491 81081",
+
+          "👨‍👩‍👦 2 Adults + 1 Child (6 Years)",
+
+          "🏨 Grand Astoria Hotel, Dubai",
+
+          "💳 Hotel to be Booked & Paid Directly by Guest",
+
+          "📌 Hotel Cost is Not Included in INR 1,26,250"
+
+        ],
+
+        rightTitle:
+          "🚐 Package Travel Setup",
+
+        rightItems: [
+
+          "🛬 Private Abu Dhabi Airport → Dubai Hotel Transfer",
+
+          "🚘 Private Transfers for Scheduled Tours, Except Safari",
+
+          "🚙 Premium Desert Safari – Shared SUV",
+
+          "🛫 Abu Dhabi Airport Departure Transfer",
+
+          "🛂 UAE Visa Included",
+
+          "🛡️ Travel Insurance Included"
+
+        ]
+
+      },
+
+
+      /* ===================================================
+         DAY-WISE ITINERARY
+      =================================================== */
+
+      days: [
+
+
+        /* =================================================
+           DAY 1
+        ================================================= */
+
+        {
+
+          date:
+            "Monday, 9 November 2026",
+
+          shortDate:
+            "09 Nov",
+
+          title:
+            "Arrival & Transfer to Dubai",
+
+          description:
+            "Arrive at Abu Dhabi Airport and travel privately to Dubai for hotel check-in, relaxation and overnight stay.",
+
+          highlights: [
+
+            "🕚 11:00 PM pickup from Abu Dhabi Airport",
+
+            "🚘 Private transfer from Abu Dhabi to Dubai",
+
+            "🏨 Grand Astoria Hotel check-in",
+
+            "🌙 Relax & overnight stay in Dubai"
+
+          ],
+
+          imageKeys: [
+            "auh_dubai_arrival"
+          ],
+
+          note:
+            "Hotel accommodation is booked and paid directly by the guest.",
+
+          overnight:
+            "Dubai",
+
+          meals: {
+
+            breakfast:
+              "Arrival Day",
+
+            lunch:
+              "Not Included",
+
+            dinner:
+              "Not Included"
+
+          }
+
+        },
+
+
+        /* =================================================
+           DAY 2
+        ================================================= */
+
+        {
+
+          date:
+            "Tuesday, 10 November 2026",
+
+          shortDate:
+            "10 Nov",
+
+          title:
+            "Half-Day Dubai City Tour – Private Car",
+
+          description:
+            "Explore Dubai's modern landmarks and traditional souks on a private half-day city tour.",
+
+          highlights: [
+
+            "🕙 10:00 AM pickup • Jumeirah & Burj Al Arab",
+
+            "🌴 Palm Jumeirah • Dubai Marina",
+
+            "🛍️ Gold Souk • Spice Souk",
+
+            "🏨 3:00 PM hotel drop-off"
+
+          ],
+
+          imageKeys: [
+            "dubai_city_private"
+          ],
+
+          overnight:
+            "Dubai",
+
+          meals: {
+
+            breakfast:
+              "Guest Hotel Arrangement",
+
+            lunch:
+              "Not Included",
+
+            dinner:
+              "Not Included"
+
+          }
+
+        },
+
+
+        /* =================================================
+           DAY 3
+        ================================================= */
+
+        {
+
+          date:
+            "Wednesday, 11 November 2026",
+
+          shortDate:
+            "11 Nov",
+
+          title:
+            "Premium Desert Safari – Shared SUV",
+
+          description:
+            "Enjoy a relaxed morning before an afternoon premium desert safari with dune activities, dinner and entertainment.",
+
+          highlights: [
+
+            "🕝 2:30 PM pickup by Shared SUV",
+
+            "🏜️ Dune bashing • Desert activities • Sunset photos",
+
+            "🍖 BBQ dinner with live entertainment",
+
+            "🏨 Approx. 9:30 PM hotel drop-off"
+
+          ],
+
+          imageKeys: [
+            "premium_desert_safari"
+          ],
+
+          overnight:
+            "Dubai",
+
+          meals: {
+
+            breakfast:
+              "Guest Hotel Arrangement",
+
+            lunch:
+              "Not Included",
+
+            dinner:
+              "Included – Safari BBQ Dinner"
+
+          }
+
+        },
+
+
+        /* =================================================
+           DAY 4
+        ================================================= */
+
+        {
+
+          date:
+            "Thursday, 12 November 2026",
+
+          shortDate:
+            "12 Nov",
+
+          title:
+            "Dubai Mall & Burj Khalifa",
+
+          description:
+            "Spend the afternoon in Downtown Dubai exploring Dubai Mall and visiting the Burj Khalifa observation deck.",
+
+          highlights: [
+
+            "🕐 1:00 PM private hotel pickup",
+
+            "🛍️ Dubai Mall shopping & dining time",
+
+            "🏙️ Burj Khalifa – 124th Floor observation deck",
+
+            "⛲ Dubai Fountain show • 8:30 PM hotel drop"
+
+          ],
+
+          imageKeys: [
+            "dubai_mall_burj"
+          ],
+
+          note:
+            "Dubai Fountain show is subject to the applicable operating schedule.",
+
+          overnight:
+            "Dubai",
+
+          meals: {
+
+            breakfast:
+              "Not Mentioned",
+
+            lunch:
+              "Not Included",
+
+            dinner:
+              "Not Included"
+
+          }
+
+        },
+
+
+        /* =================================================
+           DAY 5
+        ================================================= */
+
+        {
+
+          date:
+            "Friday, 13 November 2026",
+
+          shortDate:
+            "13 Nov",
+
+          title:
+            "Miracle Garden & Global Village",
+
+          description:
+            "Discover Dubai Miracle Garden in the afternoon before continuing to Global Village for an evening of pavilions, shopping and entertainment.",
+
+          highlights: [
+
+            "🕝 2:30 PM hotel pickup",
+
+            "🌸 Dubai Miracle Garden admission",
+
+            "🌍 Global Village visit & international pavilions",
+
+            "🏨 9:00 PM hotel drop-off"
+
+          ],
+
+          imageKeys: [
+            "miracle_global"
+          ],
+
+          overnight:
+            "Dubai",
+
+          meals: {
+
+            breakfast:
+              "Guest Hotel Arrangement",
+
+            lunch:
+              "Not Included",
+
+            dinner:
+              "Not Included"
+
+          }
+
+        },
+
+
+        /* =================================================
+           DAY 6
+        ================================================= */
+
+        {
+
+          date:
+            "Saturday, 14 November 2026",
+
+          shortDate:
+            "14 Nov",
+
+          title:
+            "Dubai Marina Dhow Cruise",
+
+          description:
+            "Enjoy an evening Dubai Marina Dhow Cruise with dinner and waterfront views, including private two-way hotel transfers.",
+
+          highlights: [
+
+            "🕡 6:30 PM hotel pickup",
+
+            "🚢 Dubai Marina Dhow Cruise",
+
+            "🍽️ Dinner included during cruise",
+
+            "🚘 Private two-way transfers • 10:00 PM hotel drop"
+
+          ],
+
+          imageKeys: [
+            "marina_dhow_cruise"
+          ],
+
+          overnight:
+            "Dubai",
+
+          meals: {
+
+            breakfast:
+              "Guest Hotel Arrangement",
+
+            lunch:
+              "Not Included",
+
+            dinner:
+              "Included – Dhow Cruise Dinner"
+
+          }
+
+        },
+
+
+        /* =================================================
+           DAY 7
+        ================================================= */
+
+        {
+
+          date:
+            "Sunday, 15 November 2026",
+
+          shortDate:
+            "15 Nov",
+
+          title:
+            "Abu Dhabi City Tour & Departure",
+
+          description:
+            "After hotel check-out, travel to Abu Dhabi for sightseeing subject to the available time before continuing to the airport for departure.",
+
+          highlights: [
+
+            "🧳 Breakfast & hotel check-out",
+
+            "🕚 11:00 AM pickup from Dubai hotel",
+
+            "🏙️ Abu Dhabi city tour subject to available time",
+
+            "🛫 Transfer to Abu Dhabi Airport for departure"
+
+          ],
+
+          imageKeys: [
+            "abu_dhabi_departure"
+          ],
+
+          note:
+            "Final Abu Dhabi sightseeing duration and routing depend on the confirmed flight timing and available time.",
+
+          overnight:
+            "Tour Ends",
+
+          departure:
+            true,
+
+          meals: {
+
+            breakfast:
+              "Guest Hotel Arrangement",
+
+            lunch:
+              "Not Included",
+
+            dinner:
+              "Departure Day"
+
+          }
+
+        }
+
+      ],
+
+
+      /* ===================================================
+         PACKAGE INCLUSIONS
+      =================================================== */
+
+      inclusions: [
+
+        "🚘 Private Abu Dhabi Airport → Dubai Arrival Transfer",
+
+        "🏙️ Dubai Sightseeing as per the Itinerary",
+
+        "🚘 Private Transfers for Scheduled Tours & Activities where Specified",
+
+        "🚙 Premium Desert Safari by Shared SUV",
+
+        "🍖 Safari BBQ Dinner & Entertainment",
+
+        "🏙️ Burj Khalifa 124th Floor Admission",
+
+        "🌸 Dubai Miracle Garden Admission",
+
+        "🌍 Global Village Visit",
+
+        "🚢 Dubai Marina Dhow Cruise with Dinner",
+
+        "🚘 Private Two-Way Transfers for Marina Dhow Cruise",
+
+        "🛂 UAE Visa",
+
+        "🛡️ Travel Insurance",
+
+        "🛫 Airport Transfers as per the Itinerary"
+
+      ],
+
+
+      /* ===================================================
+         PACKAGE EXCLUSIONS
+      =================================================== */
+
+      exclusions: [
+
+        "🏨 Grand Astoria Hotel Accommodation – Booked Directly by Guest",
+
+        "🍳 Hotel Breakfast / Hotel Meal Plan – Guest's Direct Hotel Arrangement",
+
+        "✈️ Airfare – Not Stated as Included",
+
+        "🍽️ Meals Except Safari BBQ Dinner & Dhow Cruise Dinner",
+
+        "🎟️ Optional Activities & Any Admission Not Specifically Included",
+
+        "🛍️ Personal Expenses, Shopping, Tips & Gratuities",
+
+        "📌 Any Service Not Specifically Listed under Package Inclusions"
+
+      ],
+
+
+      /* ===================================================
+         PACKAGE PRICE
+      =================================================== */
+
+      price: {
+
+        currency:
+          "INR",
+
+        amount:
+          "1,26,250",
+
+        label:
+          "Grand Total Land Package Cost",
+
+        paxLabel:
+          "For 2 Adults + 1 Child (6 Years) • Hotel Excluded"
+
+      },
+
+
+      /* ===================================================
+         PAYMENT & BOOKING POLICY
+      =================================================== */
+
+      paymentPolicy: {
+
+        booking: [
+
+          {
+
+            title:
+              "Grand Total",
+
+            text:
+              "The total package price is INR 1,26,250 for 2 Adults + 1 Child aged 6 years."
+
+          },
+
+          {
+
+            title:
+              "What INR 1,26,250 Includes",
+
+            text:
+              "The package price covers the confirmed sightseeing, specified transfers, premium shared desert safari with BBQ dinner, Burj Khalifa 124th Floor admission, Miracle Garden admission, Global Village visit, Marina Dhow Cruise with dinner, UAE visa, travel insurance and airport transfers as stated in the itinerary."
+
+          },
+
+          {
+
+            title:
+              "Hotel is Not Included",
+
+            text:
+              "Grand Astoria Hotel accommodation is not included in INR 1,26,250. The guest will book and pay the hotel directly."
+
+          },
+
+          {
+
+            title:
+              "Final Service Confirmation",
+
+            text:
+              "Pickup timings, attraction slots, vehicle schedules and final operating arrangements will be reconfirmed before travel."
+
+          }
+
+        ],
+
+
+        conditions: [
+
+          {
+
+            title:
+              "Hotel & Breakfast",
+
+            text:
+              "The hotel is independently booked by the guest. Any breakfast or hotel meal arrangement mentioned in the daily plan is therefore subject to the guest's direct hotel booking and is not part of the quoted package price."
+
+          },
+
+          {
+
+            title:
+              "Abu Dhabi Departure Day",
+
+            text:
+              "The Abu Dhabi city tour on 15 November depends on the confirmed flight schedule and the amount of sightseeing time available before airport reporting."
+
+          },
+
+          {
+
+            title:
+              "Attractions",
+
+            text:
+              "Attraction operating hours, admission conditions and the Dubai Fountain schedule are subject to the applicable operating schedule and final confirmation."
+
+          },
+
+          {
+
+            title:
+              "Flight Coordination",
+
+            text:
+              "Final flight details must be shared in advance so the airport transfers and departure-day sightseeing can be coordinated correctly."
+
+          }
+
+        ],
+
+        note:
+          "All pickup and drop-off timings are approximate and remain subject to final confirmation. All services are subject to availability."
+
+      },
+
+
+      /* ===================================================
+         FINAL NOTE
+      =================================================== */
+
+      finalNote:
+        "Lead ID-0160 • Grand Total INR 1,26,250 for 2 Adults + 1 Child (6 Years) • Hotel accommodation is excluded and will be booked directly by the guest • Package includes the specified sightseeing, attraction admissions, transfers, UAE visa and travel insurance."
+
+    };
+
+  </script>
+
+
+  <!-- =====================================================
+       SHARED RENDERER
+       Carousel width is automatically calculated here.
+  ====================================================== -->
+
+  <script src="js/renderer.js"></script>
+
+
+  <!-- =====================================================
+       KEEP LEAD ID IN BROWSER / LINK PREVIEW TITLE
+  ====================================================== -->
+
+  <script>
+
+    (function () {
+
+      const title =
+        "CityLaila | Dubai Family Signature Escape – 6N/7D | Lead ID-0160";
+
+      document.title =
+        title;
+
+      const ogTitle =
+        document.querySelector(
+          'meta[property="og:title"]'
+        );
+
+      if (ogTitle) {
+
+        ogTitle.setAttribute(
+          "content",
+          title
+        );
+
+      }
+
+    })();
+
+  </script>
+
+</body>
+
+</html>
