@@ -1,0 +1,1028 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+
+<!-- CITYLAILA SAMPLE ITINERARY -->
+<!-- NO LEAD ID / NO TRAVEL DATES -->
+<!-- File: sample-hong-kong-macau-3pages.html -->
+
+<title>CityLaila | Hong Kong &amp; Macau – 5N/6D | Sample Package</title>
+
+<meta name="description" content="Hong Kong & Macau 5N/6D sample: Disneyland, Ocean Park, Lantau Island and Macau Night Tour. Starting from INR 61,999.">
+
+<meta property="og:title" content="CityLaila | Hong Kong &amp; Macau – 5 Nights / 6 Days | Sample">
+
+<meta property="og:description" content="4N Hong Kong + 1N Macau • Disneyland • Ocean Park • Lantau Island • Macau Night Tour • Starting from INR 61,999">
+
+<meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/59c00637f09ca4d50a0bcd9e/1521322555600-YFUC586IEGDTKIPEKM8J/hong_kong_escape_2019-246.jpg">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --navy:#0a192f;
+  --blue:#0066cc;
+  --orange:#ff6600;
+  --line:#e2e8f0;
+  --light:#f8fafc;
+  --muted:#64748b;
+}
+
+*{box-sizing:border-box}
+
+html,body{margin:0}
+
+body{
+  font-family:Montserrat,'Segoe UI Emoji','Apple Color Emoji',Arial,sans-serif;
+  background:#edf2f7;
+  color:#23334b;
+  padding:14px 0;
+}
+
+/* A4 LANDSCAPE */
+
+.page{
+  width:297mm;
+  height:210mm;
+  background:#fff;
+  margin:0 auto 18px;
+  padding:19px 33px 48px;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  overflow:hidden;
+  break-after:page;
+  page-break-after:always;
+  box-shadow:0 5px 19px #0a192f16;
+}
+
+/* HEADER & FOOTER */
+
+.hdr{
+  flex:0 0 45px;
+  height:45px;
+  margin-bottom:12px;
+  border-bottom:1.5px solid var(--line);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  height:39px;
+  max-width:175px;
+  object-fit:contain;
+}
+
+.tagline{
+  color:#708096;
+  letter-spacing:1.2px;
+  font-size:11px;
+  font-weight:800;
+}
+
+.main{
+  flex:1;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+
+.foot{
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  height:37px;
+  z-index:3;
+  background:var(--light);
+  border-top:1px solid var(--line);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 33px;
+  font-size:11px;
+  font-weight:800;
+  color:#64748b;
+}
+
+.h{
+  font-size:23px;
+  font-weight:900;
+  color:var(--navy);
+  line-height:1.2;
+  margin:0 0 11px;
+}
+
+.h em{
+  font-style:normal;
+  color:var(--blue);
+}
+
+/* PREMIUM COVER */
+
+.hero{
+  height:121px;
+  flex:0 0 121px;
+  display:grid;
+  grid-template-columns:1.24fr .76fr;
+  align-items:center;
+  gap:15px;
+  border-radius:15px;
+  margin-bottom:12px;
+  padding:16px 22px;
+  color:#fff;
+  background:
+    linear-gradient(105deg,#071b34e8,#0a2748b9),
+    url('https://images.squarespace-cdn.com/content/v1/59c00637f09ca4d50a0bcd9e/1521322555600-YFUC586IEGDTKIPEKM8J/hong_kong_escape_2019-246.jpg')
+    center/cover;
+}
+
+.hero small{
+  display:block;
+  color:#ffb66a;
+  font-size:10px;
+  letter-spacing:1.4px;
+  font-weight:900;
+  margin-bottom:5px;
+}
+
+.hero h1{
+  font-size:29px;
+  font-weight:900;
+  line-height:1.1;
+  margin:0 0 6px;
+}
+
+.hero p{
+  font-size:12px;
+  line-height:1.35;
+  font-weight:700;
+  margin:0;
+}
+
+.hero-facts{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7px;
+}
+
+.hero-facts span{
+  padding:9px 10px;
+  font-size:10.5px;
+  line-height:1.3;
+  font-weight:800;
+  border:1px solid #ffffff50;
+  background:#0a192fba;
+  border-radius:8px;
+}
+
+.hero-facts span.wide{
+  grid-column:1/-1;
+}
+
+/* DAY CARDS — ALWAYS TOP LEFT */
+
+.daycards{
+  min-height:0;
+  flex:1;
+  display:grid;
+  grid-template-rows:repeat(2,minmax(0,1fr));
+  gap:11px;
+}
+
+.daycard{
+  min-height:0;
+  display:grid;
+  grid-template-columns:1.26fr .74fr;
+  gap:14px;
+  background:white;
+  border:1px solid var(--line);
+  border-radius:13px;
+  padding:12px;
+  box-shadow:0 3px 12px #0a192f09;
+}
+
+.copy{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:flex-start;
+  min-width:0;
+  min-height:0;
+}
+
+.daytag{
+  display:inline-block;
+  background:var(--orange);
+  color:#fff;
+  border-radius:6px;
+  padding:7px 12px;
+  font-size:12px;
+  font-weight:900;
+}
+
+.daycard h3{
+  font-size:20px;
+  font-weight:900;
+  color:var(--navy);
+  line-height:1.17;
+  margin:9px 0 7px;
+}
+
+.daycard p{
+  font-size:12.8px;
+  line-height:1.37;
+  font-weight:650;
+  color:#506179;
+  margin:0 0 10px;
+}
+
+.points{
+  width:100%;
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7px;
+}
+
+.points li{
+  font-size:12px;
+  font-weight:760;
+  line-height:1.3;
+  padding:9px;
+  border-radius:8px;
+  border:1px solid var(--line);
+  background:var(--light);
+  overflow-wrap:anywhere;
+}
+
+/* FULL SIZE CAROUSEL IMAGES */
+
+.gallery{
+  min-width:0;
+  min-height:0;
+  height:100%;
+  position:relative;
+  overflow:hidden;
+  border-radius:11px;
+  background:#102039;
+}
+
+.track{
+  width:100%;
+  height:100%;
+  display:flex;
+  transition:transform .32s ease;
+}
+
+.frame{
+  flex:0 0 100%;
+  width:100%;
+  min-width:0;
+  height:100%;
+}
+
+.frame img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+
+.arrow{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  border:1px solid #ffffff55;
+  border-radius:50%;
+  width:31px;
+  height:31px;
+  background:#0a192fdb;
+  color:#fff;
+  font-size:16px;
+  font-weight:900;
+  cursor:pointer;
+  z-index:2;
+}
+
+.prev{left:8px}
+.next{right:8px}
+
+.counter{
+  position:absolute;
+  bottom:10px;
+  right:9px;
+  background:#0a192feb;
+  color:white;
+  border-radius:16px;
+  font-size:11px;
+  font-weight:900;
+  padding:5px 9px;
+  z-index:2;
+  line-height:1.1;
+}
+
+/* PAGE 3 COMPACT DAY CARDS */
+
+.lastdays{
+  height:294px;
+  flex:0 0 294px;
+  display:grid;
+  grid-template-rows:1fr 1fr;
+  gap:8px;
+  margin-bottom:11px;
+  min-height:0;
+}
+
+.lastdays .daycard{
+  padding:9px 11px;
+  gap:12px;
+  grid-template-columns:1.32fr .68fr;
+}
+
+.lastdays .daytag{
+  font-size:10px;
+  padding:5px 9px;
+}
+
+.lastdays .daycard h3{
+  font-size:16px;
+  margin:5px 0 4px;
+}
+
+.lastdays .daycard p{
+  font-size:10.5px;
+  margin:0 0 6px;
+}
+
+.lastdays .points{gap:5px}
+
+.lastdays .points li{
+  font-size:10px;
+  padding:6px 7px;
+  line-height:1.25;
+}
+
+.lastdays .arrow{
+  width:27px;
+  height:27px;
+  font-size:14px;
+}
+
+.lastdays .counter{font-size:10px}
+
+/* APPROVED PRICE SUMMARY */
+
+.price{
+  height:105px;
+  flex:0 0 105px;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:12px;
+  margin-bottom:10px;
+}
+
+.total{
+  background:linear-gradient(135deg,#0a192f,#203f84);
+  color:white;
+  border-radius:12px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:10px;
+}
+
+.total small{
+  color:#fbbf24;
+  font-size:11px;
+  letter-spacing:1px;
+  font-weight:900;
+}
+
+.total strong{
+  font-size:33px;
+  font-weight:900;
+  margin:5px 0 2px;
+}
+
+.total span{
+  color:#fde047;
+  font-size:11px;
+  font-weight:800;
+}
+
+.snapshot{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7px;
+  align-content:center;
+  background:var(--light);
+  border:1px solid var(--line);
+  border-left:4px solid var(--blue);
+  border-radius:12px;
+  padding:10px;
+}
+
+.snapshot div{
+  background:white;
+  border:1px solid var(--line);
+  padding:8px;
+  border-radius:7px;
+  font-size:10.5px;
+  line-height:1.2;
+  font-weight:800;
+}
+
+/* INCLUSIONS AND EXCLUSIONS */
+
+.coverage{
+  flex:1;
+  min-height:0;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:11px;
+}
+
+.panel{
+  min-height:0;
+  border:1px solid var(--line);
+  border-radius:11px;
+  padding:10px 12px;
+}
+
+.panel.good{
+  border-top:4px solid #38a169;
+}
+
+.panel.warn{
+  border-top:4px solid #d69e2e;
+  background:#fffdf6;
+}
+
+.panel h4{
+  font-size:13px;
+  color:var(--navy);
+  margin:0 0 7px;
+  font-weight:900;
+}
+
+.listgrid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:5px;
+}
+
+.listgrid div{
+  background:var(--light);
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:6px 7px;
+  font-size:10px;
+  line-height:1.22;
+  font-weight:750;
+}
+
+.warn .listgrid div{
+  background:white;
+  border-color:#f6e1a3;
+}
+
+.conditions{
+  font-size:10px;
+  line-height:1.3;
+  font-weight:750;
+  color:#96521b;
+  background:#fff7ed;
+  border:1px solid #fbd38d;
+  border-radius:8px;
+  padding:7px 10px;
+  margin-top:7px;
+}
+
+/* PRINT SETTINGS */
+
+@media print{
+  @page{
+    size:A4 landscape;
+    margin:0;
+  }
+
+  body{
+    padding:0;
+    background:white;
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+  }
+
+  .page{
+    margin:0;
+    box-shadow:none;
+  }
+
+  .arrow{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<!-- PAGE 01: COVER + DAY 1 & DAY 2 -->
+
+<section class="page">
+
+<header class="hdr">
+  <img class="logo"
+    src="https://shamshad656.github.io/citylaila-itineraries/images/logo.png"
+    alt="CityLaila">
+
+  <span class="tagline">
+    WHERE LUXURY MEETS AFFORDABILITY
+  </span>
+</header>
+
+<div class="main">
+
+  <div class="hero">
+
+    <div>
+      <small>
+        SAMPLE HOLIDAY PACKAGE • 5 NIGHTS / 6 DAYS
+      </small>
+
+      <h1>🇭🇰 Hong Kong &amp; Macau</h1>
+
+      <p>
+        City Lights • Theme Parks • Lantau Island • Macau
+      </p>
+    </div>
+
+    <div class="hero-facts">
+      <span>🏨 3★ Hotels</span>
+      <span>🍳 Daily Breakfast</span>
+
+      <span class="wide">
+        🌙 Hong Kong 4 Nights + Macau 1 Night
+      </span>
+    </div>
+
+  </div>
+
+  <div class="daycards" id="daysA"></div>
+
+</div>
+
+<footer class="foot">
+  <span>www.citylaila.com</span>
+  <span>Page 01</span>
+</footer>
+
+</section>
+
+
+<!-- PAGE 02: DAY 3 & DAY 4 -->
+
+<section class="page">
+
+<header class="hdr">
+  <img class="logo"
+    src="https://shamshad656.github.io/citylaila-itineraries/images/logo.png"
+    alt="CityLaila">
+
+  <span class="tagline">
+    WHERE LUXURY MEETS AFFORDABILITY
+  </span>
+</header>
+
+<div class="main">
+
+  <h2 class="h">
+    Your Holiday Journey <em>• Days 3–4</em>
+  </h2>
+
+  <div class="daycards" id="daysB"></div>
+
+</div>
+
+<footer class="foot">
+  <span>www.citylaila.com</span>
+  <span>Page 02</span>
+</footer>
+
+</section>
+
+
+<!-- PAGE 03: DAY 5 & DAY 6 + PRICE -->
+
+<section class="page">
+
+<header class="hdr">
+  <img class="logo"
+    src="https://shamshad656.github.io/citylaila-itineraries/images/logo.png"
+    alt="CityLaila">
+
+  <span class="tagline">
+    WHERE LUXURY MEETS AFFORDABILITY
+  </span>
+</header>
+
+<div class="main">
+
+  <h2 class="h">
+    Macau &amp; Departure <em>• Package Summary</em>
+  </h2>
+
+  <div class="lastdays" id="daysC"></div>
+
+  <!-- PACKAGE COST -->
+
+  <div class="price">
+
+    <div class="total">
+      <small>STARTING PACKAGE PRICE</small>
+      <strong>₹61,999</strong>
+      <span>Price basis: To be confirmed</span>
+    </div>
+
+    <div class="snapshot">
+      <div>🌙 5 Nights / 6 Days</div>
+      <div>🏨 3★ Hotels</div>
+      <div>🇭🇰 Hong Kong 4N</div>
+      <div>🇲🇴 Macau 1N</div>
+    </div>
+
+  </div>
+
+  <!-- PACKAGE INCLUSIONS & EXCLUSIONS -->
+
+  <div class="coverage">
+
+    <div class="panel good">
+
+      <h4>✅ Package Inclusions</h4>
+
+      <div class="listgrid">
+        <div>🏨 5 nights in 3★ hotels</div>
+        <div>🍳 Daily breakfast</div>
+        <div>🎡 Listed sightseeing tours</div>
+        <div>🚌 SIC transfers as quoted</div>
+        <div>🎟️ Included attraction tickets</div>
+        <div>🧾 Applicable taxes</div>
+      </div>
+
+    </div>
+
+    <div class="panel warn">
+
+      <h4>❌ Exclusions &amp; Clarifications</h4>
+
+      <div class="listgrid">
+        <div>✈️ Flights</div>
+        <div>🛂 Visa fees, if applicable</div>
+        <div>🧳 Travel insurance</div>
+        <div>💳 Personal expenses</div>
+        <div>🍽️ Unspecified meals</div>
+        <div>⛴️ Ferry ticket &amp; onward transfer basis: confirm</div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="conditions">
+    ℹ️ Sample quotation. ₹61,999 is a starting price; per-person/total basis, hotel names, ferry and departure arrangements, ticket coverage, travel dates and availability require final confirmation.
+  </div>
+
+</div>
+
+<footer class="foot">
+  <span>www.citylaila.com • info@citylaila.com</span>
+  <span>Page 03</span>
+</footer>
+
+</section>
+
+
+<!-- DAY-WISE CONTENT AND IMAGE MAPPING -->
+
+<script>
+
+/*
+EDIT IMAGE:
+Replace only the URL in photos.
+
+REMOVE IMAGE:
+Delete the complete [URL, Description] item.
+
+ADD IMAGE:
+Add another [URL, Description] item.
+
+Carousel numbering updates automatically.
+*/
+
+const days = [
+
+  // DAY 1
+
+  {
+    name:'Arrival &amp; Hong Kong Night Tour',
+
+    desc:'Arrive at Hong Kong International Airport and enjoy a private hotel transfer. In the evening, explore Victoria Harbour and Tsim Sha Tsui, enjoying stunning skyline views before returning to your hotel.',
+
+    items:[
+      '🛬 Arrival in Hong Kong',
+      '🚐 Hotel transfer &amp; check-in',
+      '🌃 Hong Kong Night Tour',
+      '🏨 Return to hotel'
+    ],
+
+    photos:[
+      [
+        'https://d1pllr5sjb7ywk.cloudfront.net/uploads/f5d275d2-445f-2d77-8f5c-3a2286a1799d/PackageMedia/a5c00842-2b3d-423f-bb8a-4b7ded7a3a66_HONGKONG_R.webp',
+        'Hong Kong night skyline'
+      ],
+      [
+        'https://upload.wikimedia.org/wikipedia/commons/c/cf/HKIA.JPG',
+        'Hong Kong Airport'
+      ]
+    ]
+  },
+
+  // DAY 2
+
+  {
+    name:'Full-Day Hong Kong Disneyland',
+
+    desc:'After breakfast, enjoy a magical day at Hong Kong Disneyland, exploring exciting rides, themed attractions and live shows before returning to your hotel for an overnight stay.',
+
+    items:[
+      '🍳 Breakfast at hotel',
+      '🏰 Hong Kong Disneyland',
+      '🎢 Attractions &amp; shows',
+      '🏨 Return to hotel'
+    ],
+
+    photos:[
+      [
+        'https://disneyparksblog.com/app/uploads/2025/08/Castle-of-Magical-Dreams-at-Hong-Kong-Disneyland-Daytime-1024x683.jpg',
+        'Hong Kong Disneyland Castle'
+      ],
+      [
+        'https://res.klook.com/image/upload/activities/dg047uixhetquf4h55gh.jpg',
+        'Iron Man Experience'
+      ]
+    ]
+  },
+
+  // DAY 3
+
+  {
+    name:'Full-Day Ocean Park',
+
+    desc:'After breakfast, enjoy a fun-filled day at Ocean Park, exploring thrilling rides, marine life, animal exhibits and family attractions before returning to your hotel for an overnight stay.',
+
+    items:[
+      '🍳 Breakfast at hotel',
+      '🐬 Ocean Park Hong Kong',
+      '🎡 Rides &amp; marine attractions',
+      '🏨 Return to hotel'
+    ],
+
+    photos:[
+      [
+        'https://d1pllr5sjb7ywk.cloudfront.net/uploads/f5d275d2-445f-2d77-8f5c-3a2286a1799d/PackageMedia/09477b05-bc96-44ac-8dd3-78cbe4edaefd_OCEAN6_R.webp',
+        'Ocean Park Hong Kong'
+      ],
+      [
+        'https://etimg.etb2bimg.com/photo/78103676.cms',
+        'Ocean Park Cable Cars'
+      ]
+    ]
+  },
+
+  // DAY 4
+
+  {
+    name:'Full-Day Lantau Island Tour',
+
+    desc:'After breakfast, explore Lantau Island, visiting Ngong Ping Village, the iconic Tian Tan Buddha (Big Buddha) and Po Lin Monastery before returning to your hotel in Hong Kong.',
+
+    items:[
+      '🍳 Breakfast at hotel',
+      '🏞️ Lantau Island excursion',
+      '🗿 Cultural attractions',
+      '🏨 Return to Hong Kong hotel'
+    ],
+
+    photos:[
+      [
+        'https://d1pllr5sjb7ywk.cloudfront.net/uploads/f5d275d2-445f-2d77-8f5c-3a2286a1799d/PackageMedia/052764c3-fdc7-4701-a4ac-4a8e99140f00_LANTAU%20ISLAND_R.webp',
+        'Lantau Island Big Buddha'
+      ],
+      [
+        'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/15/a7/45/d1.jpg',
+        'Lantau Cable Car'
+      ]
+    ]
+  },
+
+  // DAY 5
+
+  {
+    name:'Hong Kong to Macau &amp; Night Tour',
+
+    desc:'After breakfast, travel to Macau by ferry and check in at your hotel. In the evening, explore Senado Square, Ruins of St. Paul’s and Macau’s vibrant illuminated streets before returning to your hotel.',
+
+    items:[
+      '🍳 Breakfast in Hong Kong',
+      '⛴️ Ferry to Macau &amp; hotel check-in',
+      '🌆 Macau Night Tour',
+      '🏨 Overnight in Macau'
+    ],
+
+    photos:[
+      [
+        'https://d1ef7ke0x2i9g8.cloudfront.net/hong-kong/TurboJet-Increases-Night-Sailings-Between-Hong-Kong-Macau.jpg',
+        'Hong Kong Macau Ferry'
+      ],
+      [
+        'https://static.wixstatic.com/media/nsplsh_8d57150e642b426bac5ce82f4964cad9~mv2.jpg/v1/fill/w_4103%2Ch_3110%2Cal_c%2Cq_90/Image%20by%20Yuxin%20Chen.jpg',
+        'Macau Night Skyline'
+      ],
+      [
+        'https://img.bigmouthblog.tw/2024/11/20241112161235_0_c7410b.jpg',
+        'Macau Senado Square'
+      ]
+    ]
+  },
+
+  // DAY 6
+
+  {
+    name:'Departure',
+
+    desc:'After breakfast, check out from your hotel and enjoy a private transfer to the airport or ferry terminal for your onward journey, taking home wonderful memories of Hong Kong and Macau.',
+
+    items:[
+      '🍳 Breakfast in Macau',
+      '🧳 Hotel check-out',
+      '🚐 Onward arrangements to confirm',
+      '✨ End of holiday'
+    ],
+
+    // LOCKED DEPARTURE IMAGE ORDER
+
+    photos:[
+      [
+        'https://d1pllr5sjb7ywk.cloudfront.net/uploads/f5d275d2-445f-2d77-8f5c-3a2286a1799d/PackageMedia/40c5da64-ed80-4940-9153-456feee0f07c_AIPORT_R.webp',
+        'Hotel Check-out'
+      ],
+      [
+        'https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1',
+        'Onward Transfer'
+      ],
+      [
+        'https://m.media-amazon.com/images/I/71nXbtmuQlL.jpg',
+        'Departure'
+      ]
+    ]
+  }
+
+];
+
+
+/* GENERATE DAY CARDS */
+
+function escapeURL(s){
+  return s.replaceAll('&','&amp;');
+}
+
+function renderDay(d,i){
+
+  return `
+    <article class="daycard">
+
+      <div class="copy">
+
+        <span class="daytag">
+          DAY ${i+1}
+        </span>
+
+        <h3>${d.name}</h3>
+
+        <p>${d.desc}</p>
+
+        <ul class="points">
+          ${d.items.map(x=>`
+            <li>${x}</li>
+          `).join('')}
+        </ul>
+
+      </div>
+
+      <div class="gallery">
+
+        <div class="track"
+          id="gallery${i}"
+          data-index="0">
+
+          ${d.photos.map(([src,alt])=>`
+            <div class="frame">
+              <img
+                src="${escapeURL(src)}"
+                alt="${alt}"
+                loading="lazy">
+            </div>
+          `).join('')}
+
+        </div>
+
+        <button
+          type="button"
+          class="arrow prev"
+          aria-label="Previous photo"
+          onclick="move(${i},-1)">❮</button>
+
+        <button
+          type="button"
+          class="arrow next"
+          aria-label="Next photo"
+          onclick="move(${i},1)">❯</button>
+
+        <span class="counter" id="count${i}">
+          1 / ${d.photos.length}
+        </span>
+
+      </div>
+
+    </article>
+  `;
+
+}
+
+
+/* PAGE-WISE DAY PLACEMENT */
+
+// Page 1: Days 1–2
+
+document.getElementById('daysA').innerHTML =
+  days.slice(0,2)
+    .map((d,i)=>renderDay(d,i))
+    .join('');
+
+
+// Page 2: Days 3–4
+
+document.getElementById('daysB').innerHTML =
+  days.slice(2,4)
+    .map((d,i)=>renderDay(d,i+2))
+    .join('');
+
+
+// Page 3: Days 5–6
+
+document.getElementById('daysC').innerHTML =
+  days.slice(4,6)
+    .map((d,i)=>renderDay(d,i+4))
+    .join('');
+
+
+/* CAROUSEL CONTROLS */
+
+function move(i,delta){
+
+  const el = document.getElementById('gallery'+i);
+
+  if(!el)return;
+
+  const n = el.querySelectorAll('.frame').length;
+
+  if(n<2)return;
+
+  const idx =
+    (Number(el.dataset.index||0)+delta+n)%n;
+
+  el.dataset.index = String(idx);
+
+  el.style.transform =
+    `translateX(-${idx*100}%)`;
+
+  document.getElementById('count'+i).textContent =
+    `${idx+1} / ${n}`;
+
+}
+
+</script>
+
+</body>
+</html>
