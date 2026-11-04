@@ -1,0 +1,1115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+
+<title>CityLaila | Kashmir Valley Escape – 5N/6D</title>
+
+<meta name="description" content="Kashmir 5 nights 6 days for Zeeshan Ali Ansari: Srinagar, Pahalgam and Gulmarg. Hotels, Tempo Traveller and Dal Lake Shikara ride.">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --navy:#0b1d36;
+  --blue:#0868be;
+  --orange:#f46a19;
+  --line:#dfe7f0;
+  --light:#f7f9fc;
+  --ink:#283b52;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0}
+
+body{
+  background:#eef2f8;
+  padding:12px 0;
+  color:var(--ink);
+  font-family:Montserrat,Arial,'Segoe UI Emoji',
+  'Apple Color Emoji',sans-serif;
+}
+
+/* A4 LANDSCAPE - FOUR PAGES */
+
+.page{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  width:297mm;
+  height:210mm;
+  margin:0 auto 16px;
+  padding:17px 30px 43px;
+  background:white;
+  overflow:hidden;
+  break-after:page;
+  page-break-after:always;
+  box-shadow:0 5px 16px #0b1d3617;
+}
+
+/* HEADER & FOOTER */
+
+.head{
+  height:43px;
+  flex:0 0 43px;
+  margin-bottom:10px;
+  border-bottom:1px solid var(--line);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.head img{
+  max-width:155px;
+  height:37px;
+  object-fit:contain;
+}
+
+.head span{
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:1.1px;
+  color:#718096;
+}
+
+.main{
+  flex:1;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+
+.foot{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:34px;
+  padding:0 30px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:var(--light);
+  border-top:1px solid var(--line);
+  color:#718096;
+  font-size:10px;
+  font-weight:800;
+}
+
+.heading{
+  font-size:23px;
+  line-height:1.18;
+  color:var(--navy);
+  font-weight:900;
+  margin:0 0 11px;
+}
+
+.heading em{
+  color:var(--blue);
+  font-style:normal;
+}
+
+/* PREMIUM COVER */
+
+.hero{
+  height:121px;
+  flex:0 0 121px;
+  border-radius:13px;
+  margin-bottom:10px;
+  padding:15px 20px;
+  color:white;
+  display:grid;
+  grid-template-columns:1.23fr .77fr;
+  gap:13px;
+  align-items:center;
+  background:
+    linear-gradient(106deg,#071b35f0,#12516bae),
+    url('https://cdn.getyourguide.com/image/format%3Dauto%2Cfit%3Dcrop%2Cgravity%3Dauto%2Cquality%3D60%2Cwidth%3D450%2Cheight%3D450%2Cdpr%3D2/tour_img/8f684f86c25ed6cffa0b131aca9f4ac42d2c7229a88ce40be9927f248abbc1d5.jpg')
+    center/cover;
+}
+
+.hero small{
+  font-size:9.7px;
+  font-weight:900;
+  letter-spacing:1.2px;
+  color:#ffcc8f;
+}
+
+.hero h1{
+  font-size:27px;
+  line-height:1.12;
+  font-weight:900;
+  margin:5px 0 5px;
+}
+
+.hero p{
+  font-size:10.8px;
+  font-weight:700;
+  margin:0;
+  line-height:1.4;
+}
+
+.facts{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;
+}
+
+.facts div{
+  background:#081c36c9;
+  border:1px solid #ffffff4d;
+  border-radius:7px;
+  padding:7px 8px;
+  font-size:9.3px;
+  font-weight:800;
+  line-height:1.25;
+}
+
+.facts .wide{
+  grid-column:1/-1;
+}
+
+/* DAY CARDS */
+
+.days{
+  display:grid;
+  grid-template-rows:repeat(2,minmax(0,1fr));
+  gap:11px;
+  flex:1;
+  min-height:0;
+}
+
+.daycard{
+  min-height:0;
+  display:grid;
+  grid-template-columns:1.075fr .925fr;
+  gap:12px;
+  padding:10px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  box-shadow:0 2px 12px #0b1d3609;
+  background:white;
+}
+
+.copy{
+  min-width:0;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:flex-start;
+}
+
+.tag{
+  font-size:10px;
+  font-weight:900;
+  color:white;
+  background:var(--orange);
+  padding:6px 10px;
+  border-radius:5px;
+}
+
+.copy h3{
+  font-size:17.7px;
+  line-height:1.15;
+  color:var(--navy);
+  font-weight:900;
+  margin:7px 0 6px;
+}
+
+/* EXACTLY TWO FULL DESCRIPTION LINES */
+
+.desc{
+  font-size:11.5px;
+  font-weight:650;
+  line-height:1.25;
+  color:#56657c;
+  display:flex;
+  flex-direction:column;
+  gap:3px;
+  margin:0 0 9px;
+  width:100%;
+}
+
+.desc span{
+  display:block;
+  white-space:nowrap;
+}
+
+/* SHORT DAY HIGHLIGHTS */
+
+.points{
+  list-style:none;
+  margin:0;
+  padding:0;
+  width:100%;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;
+}
+
+.points li{
+  font-size:10.35px;
+  font-weight:750;
+  line-height:1.25;
+  background:var(--light);
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:7px 8px;
+  overflow-wrap:anywhere;
+}
+
+/* LARGE FULL-FRAME IMAGE CAROUSELS */
+
+.gallery{
+  position:relative;
+  min-height:0;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  border-radius:10px;
+  background:#0e273c;
+}
+
+.track{
+  display:flex;
+  width:100%;
+  height:100%;
+  transition:transform .32s ease;
+}
+
+.frame{
+  height:100%;
+  width:100%;
+  min-width:0;
+  flex:0 0 100%;
+}
+
+.frame img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+
+.arrow{
+  position:absolute;
+  z-index:2;
+  top:50%;
+  transform:translateY(-50%);
+  border:1px solid #ffffff65;
+  border-radius:50%;
+  width:31px;
+  height:31px;
+  background:#071e39d7;
+  color:white;
+  font-size:17px;
+  cursor:pointer;
+}
+
+.prev{left:9px}
+.next{right:9px}
+
+.count{
+  position:absolute;
+  z-index:2;
+  right:10px;
+  bottom:9px;
+  background:#071e39e9;
+  color:white;
+  border-radius:18px;
+  padding:5px 9px;
+  font-size:10px;
+  font-weight:900;
+}
+
+/* PAGE FOUR: PACKAGE COST */
+
+.price{
+  display:grid;
+  grid-template-columns:1.06fr .94fr;
+  gap:12px;
+  flex:0 0 110px;
+  margin-bottom:10px;
+}
+
+.total{
+  color:#fff;
+  background:linear-gradient(135deg,#091a33,#24468d);
+  border-radius:12px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+
+.total small{
+  font-size:10.4px;
+  font-weight:900;
+  letter-spacing:1px;
+  color:#ffce4c;
+}
+
+.total strong{
+  font-size:34px;
+  margin:4px 0;
+  font-weight:900;
+}
+
+.total span{
+  font-size:10.8px;
+  font-weight:800;
+  color:#ffea7a;
+}
+
+.snapshot{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;
+  align-content:center;
+  padding:9px;
+  background:var(--light);
+  border:1px solid var(--line);
+  border-left:5px solid var(--blue);
+  border-radius:11px;
+}
+
+.snapshot div{
+  padding:8px;
+  background:white;
+  border:1px solid var(--line);
+  border-radius:6px;
+  font-size:10px;
+  font-weight:800;
+}
+
+/* ACCOMMODATION SUMMARY */
+
+.hotelplan{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+  margin-bottom:10px;
+}
+
+.hotel{
+  border:1px solid var(--line);
+  background:#f9fbfe;
+  border-radius:8px;
+  padding:9px 10px;
+}
+
+.hotel b{
+  display:block;
+  color:var(--navy);
+  font-size:11px;
+  line-height:1.2;
+}
+
+.hotel span{
+  display:block;
+  margin-top:4px;
+  color:#54687d;
+  font-size:9.5px;
+  line-height:1.25;
+  font-weight:750;
+}
+
+/* COMPACT INCLUSIONS & EXCLUSIONS */
+
+.coverage{
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  gap:10px;
+  align-items:start;
+  flex:0 0 auto;
+}
+
+.panel{
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:9px 10px;
+}
+
+.panel.good{
+  border-top:4px solid #36a474;
+}
+
+.panel.bad{
+  border-top:4px solid #daa02b;
+  background:#fffdf8;
+}
+
+.panel h4{
+  font-size:12px;
+  margin:0 0 6px;
+  color:var(--navy);
+  font-weight:900;
+}
+
+.cells{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:5px;
+}
+
+.cells div{
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:6px 7px;
+  background:var(--light);
+  font-size:9.1px;
+  line-height:1.19;
+  font-weight:750;
+}
+
+.bad .cells div{
+  background:white;
+  border-color:#eedfb9;
+}
+
+/* TRAVEL INFORMATION */
+
+.traveler-info{
+  margin-top:9px;
+  padding:8px 10px;
+  border:1px solid #f0d2a2;
+  border-radius:8px;
+  background:#fff8ed;
+  color:#8d5823;
+  line-height:1.32;
+  font-size:9.7px;
+  font-weight:700;
+}
+
+/* PAGE FOUR SCENIC PHOTOS */
+
+.scenic{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+  margin-top:9px;
+  flex:1;
+  min-height:55px;
+}
+
+.scenic figure{
+  position:relative;
+  overflow:hidden;
+  border-radius:9px;
+  margin:0;
+  min-height:0;
+  background:#142637;
+}
+
+.scenic img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.scenic figcaption{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  background:linear-gradient(transparent,#0a192fe8);
+  color:white;
+  font-size:10px;
+  font-weight:900;
+  padding:12px 10px 7px;
+}
+
+/* PRINT SETTINGS */
+
+@media print{
+  @page{
+    size:A4 landscape;
+    margin:0;
+  }
+
+  body{
+    padding:0;
+    background:white;
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+  }
+
+  .page{
+    box-shadow:none;
+    margin:0;
+  }
+
+  .arrow{
+    display:none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<main id="pages"></main>
+
+<script>
+
+const LOGO=
+'https://shamshad656.github.io/citylaila-itineraries/images/logo.png';
+
+/* IMAGE EDITING: CHANGE URLs INSIDE DAYS[].photos */
+
+const DAYS=[
+
+  /* DAY 1 */
+
+  {
+    title:'Arrival in Srinagar',
+
+    lines:[
+      'Arrive at Srinagar Airport, meet your representative and transfer comfortably to the hotel.',
+      'Check in at Hotel Central Park and enjoy a peaceful evening amid the beauty of Srinagar.'
+    ],
+
+    points:[
+      '🛬 Srinagar Airport arrival & welcome',
+      '🚐 Tempo Traveller transfer to hotel',
+      '🏨 Hotel Central Park • Srinagar',
+      '🌙 Evening at leisure; overnight stay'
+    ],
+
+    photos:[
+      [
+        'https://www.traveltrendstoday.in/storage/9e64442e-9ecd-4813-976f-1ce833d1eec7.jpg',
+        'Srinagar International Airport'
+      ],
+      [
+        'https://cdn.getyourguide.com/image/format%3Dauto%2Cfit%3Dcrop%2Cgravity%3Dauto%2Cquality%3D60%2Cwidth%3D450%2Cheight%3D450%2Cdpr%3D2/tour_img/8f684f86c25ed6cffa0b131aca9f4ac42d2c7229a88ce40be9927f248abbc1d5.jpg',
+        'Dal Lake Srinagar'
+      ]
+    ]
+  },
+
+  /* DAY 2 */
+
+  {
+    title:'Srinagar Sightseeing & Dal Lake Shikara',
+
+    lines:[
+      'Discover Srinagar’s beautiful Mughal Gardens, historic viewpoints and mountain scenery.',
+      'Enjoy a one-hour Shikara ride on Dal Lake using two boats before returning to your hotel.'
+    ],
+
+    points:[
+      '🌷 Nishat Bagh & Shalimar Bagh',
+      '🌿 Chashme Shahi & Pari Mahal',
+      '🛕 Shankaracharya Temple, if accessible',
+      '🛶 1-hour Shikara ride • 2 boats'
+    ],
+
+    photos:[
+      [
+        'https://lp-cms-production.imgix.net/image_browser/Nishat_Bagh_garden_Srinagar_S.jpg?auto=format&dpr=4&q=40&w=870',
+        'Nishat Bagh Srinagar'
+      ],
+      [
+        'https://image.kesari.in/upload/K7/shalimar-bagh-srinagar1.jpg',
+        'Shalimar Bagh Gardens'
+      ],
+      [
+        'https://cdn.getyourguide.com/image/format%3Dauto%2Cfit%3Dcrop%2Cgravity%3Dauto%2Cquality%3D60%2Cwidth%3D450%2Cheight%3D450%2Cdpr%3D2/tour_img/8f684f86c25ed6cffa0b131aca9f4ac42d2c7229a88ce40be9927f248abbc1d5.jpg',
+        'Dal Lake Shikara Ride'
+      ]
+    ]
+  },
+
+  /* DAY 3 */
+
+  {
+    title:'Srinagar to Pahalgam via Awantipora',
+
+    lines:[
+      'Travel through the scenic Kashmir countryside towards the picturesque Valley of Shepherds.',
+      'Explore the Awantipora Ruins on the way, then check in and unwind at your Pahalgam hotel.'
+    ],
+
+    points:[
+      '🍃 Scenic countryside & saffron fields (seasonal)',
+      '🏛️ Awantipora Ruins en route',
+      '🌊 Lidder River & Pahalgam scenery',
+      '🏨 Hotel Mountview • overnight stay'
+    ],
+
+    photos:[
+      [
+        'https://images.squarespace-cdn.com/content/v1/5ab61c67ec4eb7ab7a2f40f2/1533433978316-TGA7CT02G8H3QSJECK5T/lidder-pahalgam',
+        'Lidder River Pahalgam'
+      ],
+      [
+        'https://cdn1.tripoto.com/media/filter/nl/img/2380291/Image/1699885470_bvp1.jpg.webp',
+        'Pahalgam Valley'
+      ]
+    ]
+  },
+
+  /* DAY 4 */
+
+  {
+    title:'Pahalgam Valleys & Nature Tour',
+
+    lines:[
+      'Explore beautiful Betaab Valley, Aru Valley and Chandanwari in the Pahalgam region.',
+      'Take in scenic Lidder Valley views before returning to your hotel for a relaxed evening.'
+    ],
+
+    points:[
+      '🏞️ Betaab Valley scenic visit',
+      '🌲 Aru Valley mountain landscapes',
+      '🏔️ Chandanwari & Lidder Valley',
+      '🚕 Local union vehicle/pony charges extra'
+    ],
+
+    photos:[
+      [
+        'https://cdn1.tripoto.com/media/filter/nl/img/2380291/Image/1699885470_bvp1.jpg.webp',
+        'Betaab Valley Pahalgam'
+      ],
+      [
+        'https://wanderon-images.gumlet.io/blogs/new/2024/09/aru-valley-1.jpg',
+        'Aru Valley Kashmir'
+      ],
+      [
+        'https://commons.wikimedia.org/wiki/Special:FilePath/Chandanwari%20-%20Pahalgam.jpg',
+        'Chandanwari Pahalgam'
+      ]
+    ]
+  },
+
+  /* DAY 5 */
+
+  {
+    title:'Pahalgam to Gulmarg',
+
+    lines:[
+      'Travel through Kashmir’s mountain landscapes to the beautiful meadows of Gulmarg.',
+      'Enjoy time to explore and opt for a Gondola ride before your overnight stay in Gulmarg.'
+    ],
+
+    points:[
+      '🚐 Pahalgam hotel checkout & scenic drive',
+      '🏔️ Gulmarg meadows & mountain views',
+      '🚡 Gondola Phase 1 & 2 tickets extra',
+      '🏨 Hotel Zahgeer Continental • Gulmarg'
+    ],
+
+    photos:[
+      [
+        'https://wanderon-images.gumlet.io/blogs/new/2024/07/gulmarg-autumn.jpg',
+        'Gulmarg Meadow'
+      ],
+      [
+        'https://akm-img-a-in.tosshub.com/aajtak/images/photo_gallery/202605/gulmarg.jpg',
+        'Gulmarg Gondola & Mountains'
+      ]
+    ]
+  },
+
+  /* DAY 6 — DEPARTURE */
+
+  {
+    title:'Gulmarg to Srinagar • Departure',
+
+    lines:[
+      'After breakfast, check out from your Gulmarg hotel and begin your journey to Srinagar.',
+      'Transfer to Srinagar Airport for your onward flight with wonderful Kashmir memories.'
+    ],
+
+    points:[
+      '🧳 Hotel checkout & luggage collection',
+      '🚐 Tempo Traveller airport drop-off',
+      '✈️ Srinagar Airport departure',
+      '✨ End of the Kashmir holiday'
+    ],
+
+    /* CHECKOUT → TRANSFER → AIRPORT */
+
+    photos:[
+      [
+        'https://static.toiimg.com/thumb/106057438/Hotel-checkout.jpg?width=1200&height=900',
+        'Hotel Checkout'
+      ],
+      [
+        'https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1',
+        'Airport Transfer'
+      ],
+      [
+        'https://www.traveltrendstoday.in/storage/9e64442e-9ecd-4813-976f-1ce833d1eec7.jpg',
+        'Srinagar Airport Departure'
+      ]
+    ]
+  }
+
+];
+
+
+/* REUSABLE HEADER AND FOOTER */
+
+function head(){
+  return `
+    <header class="head">
+      <img src="${LOGO}" alt="CityLaila logo">
+      <span>WHERE LUXURY MEETS AFFORDABILITY</span>
+    </header>
+  `;
+}
+
+function foot(i){
+  return `
+    <footer class="foot">
+      <span>www.citylaila.com</span>
+      <span>Page ${String(i).padStart(2,'0')}</span>
+    </footer>
+  `;
+}
+
+function page(i,html){
+  return `
+    <section class="page">
+      ${head()}
+      <div class="main">${html}</div>
+      ${foot(i)}
+    </section>
+  `;
+}
+
+
+/* DAY CARD AND IMAGE CAROUSEL */
+
+function card(d,i){
+
+  return `
+    <article class="daycard">
+
+      <div class="copy">
+
+        <span class="tag">
+          DAY ${String(i+1).padStart(2,'0')}
+          • ${['06','07','08','09','10','11'][i]} NOV
+        </span>
+
+        <h3>${d.title}</h3>
+
+        <div class="desc">
+          <span>${d.lines[0]}</span>
+          <span>${d.lines[1]}</span>
+        </div>
+
+        <ul class="points">
+          ${d.points.map(p=>`<li>${p}</li>`).join('')}
+        </ul>
+
+      </div>
+
+      <div class="gallery">
+
+        <div class="track"
+             id="g${i}"
+             data-index="0">
+
+          ${d.photos.map(([url,alt])=>`
+
+            <div class="frame">
+              <img
+                src="${url.replaceAll('&','&amp;')}"
+                alt="${alt}"
+                loading="lazy">
+            </div>
+
+          `).join('')}
+
+        </div>
+
+        <button
+          class="arrow prev"
+          type="button"
+          aria-label="Previous image"
+          onclick="move(${i},-1)">❮</button>
+
+        <button
+          class="arrow next"
+          type="button"
+          aria-label="Next image"
+          onclick="move(${i},1)">❯</button>
+
+        <span class="count" id="c${i}">
+          1 / ${d.photos.length}
+        </span>
+
+      </div>
+
+    </article>
+  `;
+}
+
+
+/* PAGE 1 — COVER + DAYS 1–2 */
+
+const hero=`
+  <div class="hero">
+
+    <div>
+      <small>
+        KASHMIR FAMILY HOLIDAY • 5 NIGHTS / 6 DAYS
+      </small>
+
+      <h1>🏔️ Kashmir Valley Escape</h1>
+
+      <p>
+        Srinagar • Pahalgam • Gulmarg
+        <br>06–11 November 2026
+      </p>
+    </div>
+
+    <div class="facts">
+
+      <div>🏨 3 Double Rooms</div>
+
+      <div>👧 2 Children Under 6</div>
+
+      <div class="wide">
+        👤 Zeeshan Ali Ansari • +91 98871 79891
+      </div>
+
+      <div class="wide">
+        🚐 Dedicated Tempo Traveller
+      </div>
+
+    </div>
+
+  </div>
+`;
+
+const p1=hero+`
+  <div class="days">
+
+    ${DAYS.slice(0,2)
+      .map((d,i)=>card(d,i))
+      .join('')}
+
+  </div>
+`;
+
+
+/* PAGE 2 — DAYS 3–4 */
+
+const p2=`
+  <h2 class="heading">
+    Valley of Shepherds <em>• Days 3–4</em>
+  </h2>
+
+  <div class="days">
+
+    ${DAYS.slice(2,4)
+      .map((d,i)=>card(d,i+2))
+      .join('')}
+
+  </div>
+`;
+
+
+/* PAGE 3 — DAYS 5–6 */
+
+const p3=`
+  <h2 class="heading">
+    Gulmarg & Departure <em>• Days 5–6</em>
+  </h2>
+
+  <div class="days">
+
+    ${DAYS.slice(4,6)
+      .map((d,i)=>card(d,i+4))
+      .join('')}
+
+  </div>
+`;
+
+
+/* PAGE 4 — COST, HOTELS AND COVERAGE */
+
+const inc=[
+  '🏨 5 nights in the listed hotels',
+  '🛏️ 3 double rooms',
+  '👧 2 children below 6 sharing parents’ beds',
+  '🚐 Dedicated Tempo Traveller',
+  '🛬 Srinagar airport pickup & drop',
+  '🏞️ Sightseeing as per itinerary',
+  '🛶 1-hour Dal Lake Shikara ride • 2 boats',
+  '🚗 Vehicle tolls, parking, road taxes',
+  '👨‍✈️ Driver allowances'
+];
+
+const exc=[
+  '✈️ Flight / train tickets',
+  '🧾 GST & applicable taxes',
+  '🍽️ Lunch & personal meals',
+  '🚡 Gulmarg Gondola Phase 1 & 2',
+  '🐴 Pony rides & local union cabs',
+  '🎟️ Garden / monument entry fees',
+  '🛍️ Personal expenses & shopping',
+  '🧺 Laundry, tips & extras',
+  '🗺️ Additional sightseeing / services'
+];
+
+const p4=`
+
+  <h2 class="heading">
+    Your Kashmir Holiday <em>• Package Details</em>
+  </h2>
+
+  <div class="price">
+
+    <div class="total">
+      <small>QUOTED TOTAL PACKAGE COST</small>
+      <strong>₹1,36,950</strong>
+      
+    </div>
+
+    <div class="snapshot">
+      <div>🌙 5 Nights / 6 Days</div>
+      <div>📆 06–11 November 2026</div>
+      <div>🛏️ 3 Double Rooms</div>
+      <div>🚐 Tempo Traveller + Shikara</div>
+    </div>
+
+  </div>
+
+  <div class="hotelplan">
+
+    <div class="hotel">
+      <b>🏨 Srinagar • 2 Nights</b>
+      <span>Hotel Central Park • 4★</span>
+    </div>
+
+    <div class="hotel">
+      <b>🏔️ Pahalgam • 2 Nights</b>
+      <span>Hotel Mountview • 3★ Premier</span>
+    </div>
+
+    <div class="hotel">
+      <b>🌲 Gulmarg • 1 Night</b>
+      <span>Hotel Zahgeer Continental • 3★ Deluxe</span>
+    </div>
+
+  </div>
+
+  <div class="coverage">
+
+    <div class="panel good">
+
+      <h4>✅ Package Inclusions</h4>
+
+      <div class="cells">
+        ${inc.map(x=>`<div>${x}</div>`).join('')}
+      </div>
+
+    </div>
+
+    <div class="panel bad">
+
+      <h4>❌ Package Exclusions</h4>
+
+      <div class="cells">
+        ${exc.map(x=>`<div>${x}</div>`).join('')}
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="traveler-info">
+
+    <b>Travel Information:</b>
+    Children under 6 stay complimentary without extra
+    beds when sharing with parents. Early check-in
+    and late check-out depend on hotel availability.
+    Sightseeing follows weather, road and local
+    regulations; optional activities incur extra charges.
+
+  </div>
+
+  <div class="scenic">
+
+    <figure>
+
+      <img
+        src="https://cdn.getyourguide.com/image/format%3Dauto%2Cfit%3Dcrop%2Cgravity%3Dauto%2Cquality%3D60%2Cwidth%3D450%2Cheight%3D450%2Cdpr%3D2/tour_img/8f684f86c25ed6cffa0b131aca9f4ac42d2c7229a88ce40be9927f248abbc1d5.jpg"
+        alt="Dal Lake Shikara">
+
+      <figcaption>🛶 Dal Lake</figcaption>
+
+    </figure>
+
+    <figure>
+
+      <img
+        src="https://cdn1.tripoto.com/media/filter/nl/img/2380291/Image/1699885470_bvp1.jpg.webp"
+        alt="Pahalgam valley">
+
+      <figcaption>🏞️ Pahalgam</figcaption>
+
+    </figure>
+
+    <figure>
+
+      <img
+        src="https://wanderon-images.gumlet.io/blogs/new/2024/07/gulmarg-autumn.jpg"
+        alt="Gulmarg meadows">
+
+      <figcaption>🏔️ Gulmarg</figcaption>
+
+    </figure>
+
+  </div>
+`;
+
+
+/* GENERATE ALL FOUR PAGES */
+
+document.getElementById('pages').innerHTML=
+  page(1,p1)+
+  page(2,p2)+
+  page(3,p3)+
+  page(4,p4);
+
+
+/* WORKING CAROUSEL CONTROLS */
+
+function move(i,delta){
+
+  const t=document.getElementById('g'+i);
+
+  if(!t)return;
+
+  const n=t.children.length;
+
+  const next=
+    (Number(t.dataset.index||0)+delta+n)%n;
+
+  t.dataset.index=String(next);
+
+  t.style.transform=
+    `translateX(-${next*100}%)`;
+
+  document.getElementById('c'+i).textContent=
+    `${next+1} / ${n}`;
+
+}
+
+</script>
+</body>
+</html>
