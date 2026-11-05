@@ -1,0 +1,933 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+
+<!-- CITYLAILA SAMPLE | 3 PAGES -->
+<!-- NO LEAD ID / NO TRAVEL DATES -->
+
+<title>CityLaila | Georgia Holiday – 4 Nights / 5 Days</title>
+
+<meta name="description" content="Georgia holiday in Tbilisi with a city tour, Kazbegi, Dashbashi Canyon and Diamond Bridge. Four nights, five days.">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --navy:#0b1d36;
+  --blue:#0068c9;
+  --orange:#f36c19;
+  --line:#dfe7f0;
+  --light:#f7f9fc;
+  --text:#304158;
+}
+
+*{box-sizing:border-box}
+
+html,body{margin:0}
+
+body{
+  padding:12px 0;
+  background:#edf2f8;
+  color:var(--text);
+  font-family:Montserrat,"Segoe UI Emoji",
+  "Apple Color Emoji",Arial,sans-serif;
+}
+
+/* A4 LANDSCAPE */
+
+.page{
+  width:297mm;
+  height:210mm;
+  margin:0 auto 16px;
+  padding:18px 31px 44px;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  background:white;
+  break-after:page;
+  page-break-after:always;
+  box-shadow:0 4px 17px #0a192f14;
+}
+
+/* HEADER */
+
+.hd{
+  height:43px;
+  flex:0 0 43px;
+  border-bottom:1px solid var(--line);
+  margin-bottom:11px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.hd img{
+  height:38px;
+  max-width:145px;
+  object-fit:contain;
+}
+
+.hd span{
+  font-size:10.2px;
+  font-weight:800;
+  letter-spacing:1.05px;
+  color:#75849b;
+}
+
+.main{
+  flex:1;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+
+/* FOOTER */
+
+.foot{
+  height:35px;
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  background:var(--light);
+  border-top:1px solid var(--line);
+  padding:0 31px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  color:#708099;
+  font-size:10px;
+  font-weight:800;
+}
+
+/* COMPACT PREMIUM COVER */
+
+.hero{
+  height:113px;
+  flex:0 0 113px;
+  margin-bottom:11px;
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  gap:15px;
+  align-items:center;
+  padding:16px 22px;
+  color:white;
+  border-radius:14px;
+  background:
+    linear-gradient(95deg,#091a34ee,#123a65bd),
+    url('https://images.trvl-media.com/place/6108462/67b224c1-3d2a-47c8-9f38-bfdbae2492fd.jpg')
+    center/cover;
+}
+
+.hero small{
+  font-size:10px;
+  letter-spacing:1.35px;
+  font-weight:900;
+  color:#ffbb79;
+}
+
+.hero h1{
+  font-size:27px;
+  line-height:1.1;
+  margin:5px 0 6px;
+  font-weight:900;
+}
+
+.hero p{
+  font-size:11.3px;
+  font-weight:700;
+  line-height:1.35;
+  margin:0;
+}
+
+.herofacts{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7px;
+}
+
+.herofacts div{
+  background:#071b37c5;
+  border:1px solid #ffffff45;
+  border-radius:8px;
+  padding:9px;
+  font-size:10.1px;
+  font-weight:800;
+  line-height:1.3;
+}
+
+.herofacts .full{
+  grid-column:1/-1;
+}
+
+/* SECTION HEADINGS */
+
+.h{
+  font-size:23px;
+  font-weight:900;
+  line-height:1.2;
+  color:var(--navy);
+  margin:0 0 11px;
+}
+
+.h em{
+  font-style:normal;
+  color:var(--blue);
+}
+
+/* DAY-WISE CARDS */
+
+.days{
+  flex:1;
+  min-height:0;
+  display:grid;
+  grid-template-rows:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+
+.daycard{
+  min-height:0;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+  border:1px solid var(--line);
+  border-radius:13px;
+  padding:12px;
+  background:white;
+  box-shadow:0 2px 10px #0a192f08;
+}
+
+.copy{
+  min-height:0;
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:flex-start;
+}
+
+.tag{
+  background:var(--orange);
+  padding:6px 11px;
+  border-radius:6px;
+  color:white;
+  font-size:10.8px;
+  font-weight:900;
+}
+
+.copy h3{
+  font-size:18px;
+  line-height:1.18;
+  font-weight:900;
+  color:var(--navy);
+  margin:8px 0 7px;
+}
+
+/* EXACTLY TWO WRITTEN DESCRIPTION LINES */
+
+.desc{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+  margin:0 0 9px;
+  font-size:11.4px;
+  line-height:1.22;
+  font-weight:650;
+  color:#53647d;
+  max-width:100%;
+}
+
+.desc span{
+  white-space:nowrap;
+  display:block;
+}
+
+/* HIGHLIGHTS */
+
+.points{
+  width:100%;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7px;
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.points li{
+  border:1px solid var(--line);
+  background:var(--light);
+  border-radius:7px;
+  padding:9px 10px;
+  font-size:10.9px;
+  font-weight:750;
+  line-height:1.3;
+  overflow-wrap:anywhere;
+}
+
+/* FULL-SIZE IMAGE CAROUSELS */
+
+.gallery{
+  width:100%;
+  height:100%;
+  min-height:0;
+  position:relative;
+  overflow:hidden;
+  border-radius:11px;
+  background:#0b2340;
+}
+
+.track{
+  height:100%;
+  width:100%;
+  display:flex;
+  transition:transform .32s ease;
+}
+
+.frame{
+  flex:0 0 100%;
+  min-width:0;
+  height:100%;
+  width:100%;
+}
+
+.frame img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+
+.arrow{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:32px;
+  height:32px;
+  z-index:2;
+  border-radius:50%;
+  border:1px solid #ffffff66;
+  background:#091a34d9;
+  color:white;
+  font-size:17px;
+  font-weight:900;
+  cursor:pointer;
+}
+
+.prev{left:9px}
+.next{right:9px}
+
+.count{
+  position:absolute;
+  bottom:10px;
+  right:10px;
+  padding:5px 10px;
+  z-index:2;
+  border-radius:15px;
+  background:#091a34e8;
+  color:white;
+  font-weight:900;
+  font-size:10px;
+}
+
+/* PAGE 3: LARGE DEPARTURE IMAGE */
+
+.last{
+  flex:1 1 auto;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  margin-bottom:11px;
+}
+
+.last .daycard{
+  flex:1;
+  min-height:0;
+}
+
+/* COMPACT INCLUSIONS & EXCLUSIONS */
+
+.coverage{
+  flex:0 0 auto;
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  gap:12px;
+  align-items:start;
+}
+
+.panel{
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:11px 12px;
+}
+
+.panel.good{
+  border-top:4px solid #38a169;
+}
+
+.panel.no{
+  border-top:4px solid #dca429;
+  background:#fffdf7;
+}
+
+.panel h4{
+  font-size:13px;
+  font-weight:900;
+  color:var(--navy);
+  margin:0 0 8px;
+}
+
+.cells{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:5px;
+}
+
+.cells div{
+  background:var(--light);
+  border:1px solid var(--line);
+  border-radius:7px;
+  padding:7px 8px;
+  font-size:10px;
+  font-weight:750;
+  line-height:1.25;
+}
+
+.panel.no .cells div{
+  background:#fff;
+  border-color:#f2e2bc;
+}
+
+/* IMPORTANT NOTES */
+
+.notes{
+  flex:0 0 auto;
+  margin-top:8px;
+  padding:8px 11px;
+  border-radius:9px;
+  border:1px solid #f2d096;
+  background:#fff8ed;
+  color:#956017;
+  font-size:10px;
+  font-weight:750;
+  line-height:1.35;
+}
+
+/* PRINT */
+
+@media print{
+  @page{
+    size:A4 landscape;
+    margin:0;
+  }
+
+  body{
+    padding:0;
+    background:white;
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+  }
+
+  .page{
+    margin:0;
+    box-shadow:none;
+  }
+
+  .arrow{
+    display:none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div id="pages"></div>
+
+<script>
+
+/* CITYLAILA MASTER ASSETS */
+
+const BASE=
+'https://shamshad656.github.io/citylaila-itineraries/images/';
+
+/*
+IMAGE EDITING:
+Replace URL to change an image.
+Delete complete [URL, Description] to remove it.
+Add another item to add a photo.
+
+Carousel counters adjust automatically.
+*/
+
+const DAYS=[
+
+  /* DAY 1 */
+
+  {
+    title:'Arrival in Tbilisi',
+
+    lines:[
+      'Arrive in Tbilisi and settle into your hotel.',
+      'Relax and enjoy your first evening in Georgia.'
+    ],
+
+    items:[
+      '🛬 Airport arrival & baggage collection',
+      '🤝 Meet the local representative',
+      '🚘 Transfer to your Tbilisi hotel',
+      '🏨 Check-in & overnight stay'
+    ],
+
+    photos:[
+      [
+        'https://eurasianet.org/sites/default/files/styles/article/public/2023-06/tav%20tbilisi%20airport.jpg?h=3f560db1&itok=A_Aetqrf',
+        'Tbilisi International Airport'
+      ],
+      [
+        'https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1',
+        'Hotel transfer'
+      ],
+      [
+        'https://images.trvl-media.com/place/6108462/67b224c1-3d2a-47c8-9f38-bfdbae2492fd.jpg',
+        'Tbilisi skyline'
+      ]
+    ]
+  },
+
+  /* DAY 2 */
+
+  {
+    title:'Tbilisi City Tour',
+
+    lines:[
+      'Discover the old town and panoramic city views.',
+      'Explore historic streets and local markets.'
+    ],
+
+    items:[
+      '🍳 Breakfast & full-day city sightseeing',
+      '🏰 Narikala Fortress & Metekhi area',
+      '♨️ Sulphur Baths, Shardeni & mosque area',
+      '⛪ Anchiskhati, Clock Tower & shopping'
+    ],
+
+    photos:[
+      [
+        'https://commons.wikimedia.org/wiki/Special:FilePath/Narikala%20fortress%20in%20Tbilisi.jpg',
+        'Narikala Fortress'
+      ],
+      [
+        'https://i.pinimg.com/1200x/82/f5/48/82f548bd38fd4a7b8f48614d85c23f87.jpg',
+        'Old Tbilisi'
+      ],
+      [
+        'https://georgianjournal.ge/media/images/georgianews/2018/April/society/img_8918.jpg',
+        'Tbilisi historic landmarks'
+      ]
+    ]
+  },
+
+  /* DAY 3 */
+
+  {
+    title:'Ananuri – Gudauri – Kazbegi Tour',
+
+    lines:[
+      'Journey through the scenic Caucasus Mountains.',
+      'Visit Ananuri, Gudauri and Gergeti viewpoints.'
+    ],
+
+    items:[
+      '🍳 Breakfast; scenic Military Highway',
+      '🏰 Ananuri Fortress & Jinvali Reservoir',
+      '🏔️ Gudauri and mountain photo stops',
+      '⛪ Gergeti Church area, weather permitting'
+    ],
+
+    photos:[
+      [
+        'https://cdn.georgiantravelguide.com/storage/files/ananuris-kompleksi-ananuri-fortress.jpg',
+        'Ananuri Fortress'
+      ],
+      [
+        'https://www.advantour.com/img/georgia/tours/georgia-winter-tour/ananuri_winter.jpg',
+        'Ananuri and mountain landscape'
+      ],
+      [
+        'https://tourguide.ge/wp-content/uploads/2019/03/Seeing-from-Gergeti.jpg',
+        'Gergeti Trinity Church'
+      ],
+      [
+        'https://i.pinimg.com/736x/d5/0d/d0/d50dd00fc01abf86c4bfa862edfc8bca.jpg',
+        'Gudauri mountains'
+      ]
+    ]
+  },
+
+  /* DAY 4 */
+
+  {
+    title:'Dashbashi Canyon & Diamond Bridge',
+
+    lines:[
+      'Admire the dramatic landscapes of Dashbashi.',
+      'Visit Diamond Bridge and scenic canyon trails.'
+    ],
+
+    items:[
+      '🍳 Breakfast; depart from Tbilisi',
+      '🏞️ Dashbashi cliffs and waterfalls',
+      '🌉 Diamond Bridge visit and viewpoints',
+      '🚘 Return to Tbilisi; overnight stay'
+    ],
+
+    photos:[
+      [
+        'https://traveltogeorgia.org/uploads/posts/2025-11/tsalka-canyon.webp',
+        'Dashbashi Canyon and Diamond Bridge'
+      ],
+      [
+        'https://cdn.getyourguide.com/img/tour/a1ae41d458cc9cb9c9103c16e56ad729dc1882ebb06c4ebc036746b0403d94d5.jpg/148.jpg',
+        'Diamond Bridge over Dashbashi Canyon'
+      ],
+      [
+        'https://media.assettype.com/deccanherald/import/sites/dh/files/gallery_images/2022/06/21/Georgia%27s%20new%20diamond-shaped%20hanging%20bridge%20offers%20stunning%20views%20%288%29.jpg?w=undefined',
+        'Diamond-shaped bridge platform'
+      ]
+    ]
+  },
+
+  /* DAY 5 — DEPARTURE */
+
+  {
+    title:'Departure from Tbilisi',
+
+    lines:[
+      'Enjoy breakfast and check out of the hotel.',
+      'Shop if time permits, then transfer to the airport.'
+    ],
+
+    items:[
+      '🍳 Breakfast at the hotel',
+      '🧳 Check-out & optional shopping time',
+      '🚘 Airport transfer as per flight time',
+      '🛫 Departure from Tbilisi'
+    ],
+
+    /* LOCKED ORDER: CHECKOUT → TRANSFER → DEPARTURE */
+
+    photos:[
+      [
+        'https://static.toiimg.com/thumb/106057438/Hotel-checkout.jpg?width=1200&height=900',
+        'Hotel checkout'
+      ],
+      [
+        'https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1',
+        'Airport transfer'
+      ],
+      [
+        'https://m.media-amazon.com/images/I/71nXbtmuQlL.jpg',
+        'Flight departure'
+      ]
+    ]
+  }
+
+];
+
+/* REUSABLE HEADER & FOOTER */
+
+function header(){
+  return `
+    <header class="hd">
+
+      <img src="${BASE}logo.png"
+           alt="CityLaila logo">
+
+      <span>
+        WHERE LUXURY MEETS AFFORDABILITY
+      </span>
+
+    </header>
+  `;
+}
+
+function footer(n){
+  return `
+    <footer class="foot">
+
+      <span>www.citylaila.com</span>
+
+      <span>
+        Page ${String(n).padStart(2,'0')}
+      </span>
+
+    </footer>
+  `;
+}
+
+function page(n,body){
+  return `
+    <section class="page">
+
+      ${header()}
+
+      <div class="main">
+        ${body}
+      </div>
+
+      ${footer(n)}
+
+    </section>
+  `;
+}
+
+/* DAY CARD + CAROUSEL */
+
+function dayCard(d,i){
+
+  return `
+    <article class="daycard">
+
+      <div class="copy">
+
+        <span class="tag">
+          DAY ${i+1}
+        </span>
+
+        <h3>${d.title}</h3>
+
+        <div class="desc">
+
+          <span>${d.lines[0]}</span>
+
+          <span>${d.lines[1]}</span>
+
+        </div>
+
+        <ul class="points">
+
+          ${d.items.map(x=>`
+            <li>${x}</li>
+          `).join('')}
+
+        </ul>
+
+      </div>
+
+      <div class="gallery">
+
+        <div class="track"
+             id="gallery${i}"
+             data-index="0">
+
+          ${d.photos.map(([url,alt])=>`
+
+            <div class="frame">
+
+              <img
+                src="${url.replaceAll('&','&amp;')}"
+                alt="${alt}"
+                loading="lazy">
+
+            </div>
+
+          `).join('')}
+
+        </div>
+
+        <button
+          class="arrow prev"
+          type="button"
+          onclick="move(${i},-1)"
+          aria-label="Previous image">❮</button>
+
+        <button
+          class="arrow next"
+          type="button"
+          onclick="move(${i},1)"
+          aria-label="Next image">❯</button>
+
+        <span class="count" id="count${i}">
+          1 / ${d.photos.length}
+        </span>
+
+      </div>
+
+    </article>
+  `;
+}
+
+/* PAGE 1 — COVER + DAYS 1–2 */
+
+const hero=`
+  <div class="hero">
+
+    <div>
+
+      <small>
+        GEORGIA HOLIDAY PACKAGE • 4 NIGHTS / 5 DAYS
+      </small>
+
+      <h1>
+        🇬🇪 Georgia Holiday Escape
+      </h1>
+
+      <p>
+        Tbilisi • Kazbegi • Dashbashi Canyon
+      </p>
+
+    </div>
+
+    <div class="herofacts">
+
+      <div>🏨 4 Nights Tbilisi</div>
+
+      <div>🍳 Daily Breakfast</div>
+
+      <div class="full">
+        👤 Prepared for: Mailene Dimaculangan
+      </div>
+
+    </div>
+
+  </div>
+`;
+
+const first=hero+`
+
+  <div class="days">
+
+    ${DAYS.slice(0,2)
+      .map((x,i)=>dayCard(x,i))
+      .join('')}
+
+  </div>
+`;
+
+/* PAGE 2 — DAYS 3–4 */
+
+const second=`
+
+  <h2 class="h">
+    Explore Georgia <em>• Days 3–4</em>
+  </h2>
+
+  <div class="days">
+
+    ${DAYS.slice(2,4)
+      .map((x,i)=>dayCard(x,i+2))
+      .join('')}
+
+  </div>
+`;
+
+/* PAGE 3 — DAY 5 + INCLUSIONS & EXCLUSIONS */
+
+const last=`
+
+  <h2 class="h">
+    Departure &amp; <em>Package Details</em>
+  </h2>
+
+  <div class="last">
+    ${dayCard(DAYS[4],4)}
+  </div>
+
+  <div class="coverage">
+
+    <div class="panel good">
+
+      <h4>✅ Package Inclusions</h4>
+
+      <div class="cells">
+
+        <div>🏨 4 nights in Tbilisi</div>
+
+        <div>🍳 Daily hotel breakfast</div>
+
+        <div>🚘 Airport arrival &amp; departure transfers</div>
+
+        <div>🏙️ Tbilisi City Tour</div>
+
+        <div>🏔️ Ananuri, Gudauri &amp; Kazbegi</div>
+
+        <div>🌉 Dashbashi Canyon &amp; Bridge excursion</div>
+
+        <div>🚐 Transport as per itinerary</div>
+
+        <div>🗺️ Sightseeing services listed above</div>
+
+      </div>
+
+    </div>
+
+    <div class="panel no">
+
+      <h4>❌ Package Exclusions</h4>
+
+      <div class="cells">
+
+        <div>✈️ International flights</div>
+
+        <div>🛂 Visa charges, if applicable</div>
+
+        <div>🍽️ Lunches &amp; dinners</div>
+
+        <div>🧳 Travel insurance</div>
+
+        <div>🎟️ Unspecified entrance fees &amp; extras</div>
+
+        <div>💳 Personal expenses</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  
+`;
+
+/* RENDER ALL THREE PAGES */
+
+document.getElementById('pages').innerHTML=
+  page(1,first)+
+  page(2,second)+
+  page(3,last);
+
+/* WORKING CAROUSEL CONTROLS */
+
+function move(i,delta){
+
+  const t=document.getElementById('gallery'+i);
+
+  if(!t)return;
+
+  const n=t.children.length;
+
+  if(n<2)return;
+
+  const k=
+    (Number(t.dataset.index||0)+delta+n)%n;
+
+  t.dataset.index=String(k);
+
+  t.style.transform=
+    `translateX(-${k*100}%)`;
+
+  document.getElementById('count'+i).textContent=
+    `${k+1} / ${n}`;
+
+}
+
+</script>
+</body>
+</html>
