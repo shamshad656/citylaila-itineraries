@@ -1,0 +1,1052 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+
+<!-- CITYLAILA 3-PAGE SAMPLE: NO LEAD ID, NO TRAVEL DATES -->
+
+<title>CityLaila | Discover Dubai – Dunes &amp; Dhows | 4N/5D Sample</title>
+
+<meta name="description" content="Discover Dubai: 4 Nights / 5 Days, Marina Dhow Dinner Cruise, City Tour, Desert Safari and Atlantis Aquaventure. From INR 47,000.">
+
+<meta property="og:title" content="CityLaila | Discover Dubai – Dunes &amp; Dhows">
+
+<meta property="og:image" content="https://ggfx-handh3.s3.eu-west-2.amazonaws.com/i/dubai_marina_and_jumeirah_beach_residence_skyline_23bb0e7550.jpg">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --navy:#0a192f;
+  --blue:#0869c4;
+  --orange:#f46b18;
+  --line:#dfe7ef;
+  --light:#f7f9fc;
+  --ink:#283c52;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0}
+
+body{
+  background:#edf2f8;
+  color:var(--ink);
+  font-family:Montserrat,Arial,'Segoe UI Emoji',
+    'Apple Color Emoji',sans-serif;
+  padding:12px 0;
+}
+
+/* A4 LANDSCAPE - EXACTLY THREE PAGES */
+
+.page{
+  width:297mm;
+  height:210mm;
+  margin:0 auto 16px;
+  padding:17px 31px 43px;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  overflow:hidden;
+  background:white;
+  break-after:page;
+  page-break-after:always;
+  box-shadow:0 4px 18px #071c3214;
+}
+
+/* HEADER AND FOOTER */
+
+.head{
+  height:42px;
+  flex:0 0 42px;
+  border-bottom:1px solid var(--line);
+  margin-bottom:10px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.head img{
+  height:37px;
+  max-width:145px;
+  object-fit:contain;
+}
+
+.head span{
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:1.1px;
+  color:#6e8198;
+}
+
+.main{
+  flex:1;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+
+.foot{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:34px;
+  background:var(--light);
+  border-top:1px solid var(--line);
+  padding:0 31px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  color:#6d7d94;
+  font-size:10px;
+  font-weight:800;
+}
+
+.heading{
+  font-size:23px;
+  font-weight:900;
+  line-height:1.18;
+  color:var(--navy);
+  margin:0 0 10px;
+}
+
+.heading em{
+  font-style:normal;
+  color:var(--blue);
+}
+
+/* PREMIUM COVER */
+
+.hero{
+  height:109px;
+  flex:0 0 109px;
+  display:grid;
+  grid-template-columns:1.22fr .78fr;
+  gap:15px;
+  align-items:center;
+  padding:15px 21px;
+  margin-bottom:10px;
+  color:white;
+  border-radius:13px;
+
+  background:
+    linear-gradient(100deg,#071a34ef,#133e67af),
+    url('https://ggfx-handh3.s3.eu-west-2.amazonaws.com/i/dubai_marina_and_jumeirah_beach_residence_skyline_23bb0e7550.jpg')
+    center/cover;
+}
+
+.hero small{
+  color:#ffbf7d;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:1.1px;
+}
+
+.hero h1{
+  font-size:27px;
+  font-weight:900;
+  line-height:1.11;
+  margin:5px 0 6px;
+}
+
+.hero p{
+  font-size:11.2px;
+  font-weight:750;
+  margin:0;
+  line-height:1.3;
+}
+
+.facts{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7px;
+}
+
+.facts div{
+  background:#071b35c4;
+  border:1px solid #ffffff4d;
+  border-radius:7px;
+  padding:9px;
+  font-size:10.3px;
+  font-weight:850;
+}
+
+.facts .wide{
+  grid-column:1/-1;
+}
+
+/* DAY CARDS */
+
+.days{
+  flex:1;
+  min-height:0;
+  display:grid;
+  grid-template-rows:repeat(2,minmax(0,1fr));
+  gap:11px;
+}
+
+.day{
+  min-height:0;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:12px;
+  padding:10px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:white;
+  box-shadow:0 2px 10px #0a192f08;
+}
+
+.copy{
+  min-width:0;
+  min-height:0;
+  display:flex;
+  align-items:flex-start;
+  justify-content:flex-start;
+  flex-direction:column;
+}
+
+.tag{
+  background:var(--orange);
+  padding:5px 10px;
+  border-radius:5px;
+  color:white;
+  font-size:10px;
+  font-weight:900;
+}
+
+.copy h3{
+  color:var(--navy);
+  font-size:18px;
+  line-height:1.15;
+  font-weight:900;
+  margin:7px 0 6px;
+}
+
+/* EXACTLY TWO FULL DESCRIPTION LINES */
+
+.desc{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  gap:3px;
+  margin:0 0 9px;
+  font-size:11.25px;
+  line-height:1.25;
+  font-weight:650;
+  color:#52647d;
+}
+
+.desc span{
+  display:block;
+  white-space:nowrap;
+  max-width:100%;
+}
+
+/* DAY HIGHLIGHTS */
+
+.points{
+  list-style:none;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;
+  width:100%;
+  margin:0;
+  padding:0;
+}
+
+.points li{
+  border:1px solid var(--line);
+  background:var(--light);
+  border-radius:7px;
+  padding:8px 9px;
+  font-size:10.7px;
+  line-height:1.25;
+  font-weight:750;
+  overflow-wrap:anywhere;
+}
+
+/* LARGE FULL-FRAME IMAGE CAROUSELS */
+
+.gallery{
+  position:relative;
+  width:100%;
+  height:100%;
+  min-height:0;
+  overflow:hidden;
+  background:#0b2037;
+  border-radius:10px;
+}
+
+.track{
+  height:100%;
+  width:100%;
+  display:flex;
+  transition:transform .32s ease;
+}
+
+.frame{
+  min-width:0;
+  flex:0 0 100%;
+  height:100%;
+  width:100%;
+}
+
+.frame img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+
+.arrow{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:2;
+  width:31px;
+  height:31px;
+  border-radius:50%;
+  border:1px solid #ffffff6c;
+  background:#0a192fdb;
+  color:white;
+  font-size:17px;
+  font-weight:900;
+  cursor:pointer;
+}
+
+.prev{left:8px}
+.next{right:8px}
+
+.counter{
+  position:absolute;
+  bottom:10px;
+  right:10px;
+  z-index:2;
+  background:#0a192fed;
+  color:white;
+  border-radius:17px;
+  padding:5px 10px;
+  font-size:10px;
+  font-weight:900;
+}
+
+/* LAST PAGE SPACE OPTIMIZATION */
+
+.lastday{
+  flex:1 1 auto;
+  min-height:0;
+  display:flex;
+  margin-bottom:9px;
+}
+
+.lastday .day{
+  flex:1;
+  min-height:0;
+}
+
+/* APPROVED PACKAGE COST */
+
+.price{
+  flex:0 0 98px;
+  height:98px;
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  gap:11px;
+  margin-bottom:9px;
+}
+
+.total{
+  border-radius:11px;
+  background:linear-gradient(130deg,#0a192f,#21478b);
+  color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.total small{
+  font-size:10.2px;
+  letter-spacing:1.1px;
+  color:#ffca4f;
+  font-weight:900;
+}
+
+.total strong{
+  font-size:34px;
+  font-weight:900;
+  margin:4px 0;
+}
+
+.total span{
+  font-size:11px;
+  font-weight:850;
+  color:#ffec89;
+}
+
+.snapshot{
+  border:1px solid var(--line);
+  border-left:5px solid var(--blue);
+  border-radius:10px;
+  background:var(--light);
+  padding:9px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;
+  align-content:center;
+}
+
+.snapshot div{
+  border:1px solid var(--line);
+  background:white;
+  border-radius:6px;
+  padding:8px;
+  font-size:10.2px;
+  font-weight:800;
+}
+
+/* COMPACT INCLUSIONS & EXCLUSIONS */
+
+.coverage{
+  display:grid;
+  grid-template-columns:1.07fr .93fr;
+  gap:10px;
+  align-items:start;
+  flex:0 0 auto;
+}
+
+.panel{
+  padding:9px 10px;
+  border:1px solid var(--line);
+  border-radius:10px;
+}
+
+.panel.y{
+  border-top:4px solid #34a174;
+}
+
+.panel.n{
+  border-top:4px solid #dbaa37;
+  background:#fffdf7;
+}
+
+.panel h4{
+  font-size:12px;
+  color:var(--navy);
+  font-weight:900;
+  margin:0 0 6px;
+}
+
+.cells{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:5px;
+}
+
+.cells div{
+  border:1px solid var(--line);
+  background:var(--light);
+  border-radius:6px;
+  padding:6px 7px;
+  font-size:9.65px;
+  line-height:1.22;
+  font-weight:750;
+}
+
+.n .cells div{
+  background:white;
+  border-color:#eedfb9;
+}
+
+/* IMPORTANT NOTES */
+
+.note{
+  flex:0 0 auto;
+  background:#fff8ed;
+  border:1px solid #f1d09c;
+  color:#92591e;
+  border-radius:8px;
+  margin-top:8px;
+  padding:7px 10px;
+  font-size:9.5px;
+  line-height:1.3;
+  font-weight:730;
+}
+
+/* PRINT SETTINGS */
+
+@media print{
+  @page{
+    size:A4 landscape;
+    margin:0;
+  }
+
+  body{
+    padding:0;
+    background:white;
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+  }
+
+  .page{
+    box-shadow:none;
+    margin:0;
+  }
+
+  .arrow{
+    display:none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<main id="pages"></main>
+
+<script>
+
+/* CITYLAILA MASTER ASSETS */
+
+const ROOT =
+'https://shamshad656.github.io/citylaila-itineraries/images/';
+
+/*
+  IMAGE EDITING:
+  Replace a URL inside the matching day's photos.
+  Remove an image by deleting its [URL, Caption] entry.
+  Carousel numbering adjusts automatically.
+*/
+
+const DAYS = [
+
+  /* DAY 1 */
+
+  {
+    title:'Arrival in Dubai & Marina Dhow Dinner',
+
+    lines:[
+      'Arrive in Dubai and take a shared transfer to your hotel before settling in for the evening.',
+      'Enjoy a traditional Marina dhow cruise with dinner and sparkling waterfront skyline views.'
+    ],
+
+    points:[
+      '🛬 DXB arrival; shared hotel transfer',
+      '🏨 Check-in and refresh',
+      '🛥️ Dubai Marina Dhow Cruise',
+      '🍽️ Dinner onboard; return to hotel'
+    ],
+
+    photos:[
+      [
+        'https://platinum-aviation.com/wp-content/uploads/2026/07/Dubai-Airport.webp',
+        'Dubai International Airport'
+      ],
+      [
+        'https://cdn-imgix.headout.com/media/images/4b688c7a-0c3a-4f7d-b179-271902d4fabf-1760036819640-318537%20-%20Hero.jpg?auto=compress%2Cformat&q=90&crop=faces&fit=crop',
+        'Dubai Marina Dhow Cruise'
+      ],
+      [
+        'https://ggfx-handh3.s3.eu-west-2.amazonaws.com/i/dubai_marina_and_jumeirah_beach_residence_skyline_23bb0e7550.jpg',
+        'Dubai Marina skyline'
+      ]
+    ]
+  },
+
+  /* DAY 2 */
+
+  {
+    title:'Dubai City Tour',
+
+    lines:[
+      'Discover Dubai’s famous coast, skyline and landmarks from Jumeirah to Palm Jumeirah.',
+      'Explore historic Dubai Creek, Al Fahidi and the colourful Gold and Spice Souks.'
+    ],
+
+    points:[
+      '🍳 Breakfast and city sightseeing',
+      '📸 Burj Al Arab & Jumeirah Mosque area',
+      '🌴 Palm Jumeirah, Atlantis & Marina',
+      '🏙️ Downtown, Creek & traditional souks'
+    ],
+
+    photos:[
+      [
+        'https://cdn.britannica.com/68/250068-050-B0AD857A/Burj-Al-Arab-luxury-hotel-Dubai.jpg',
+        'Burj Al Arab'
+      ],
+      [
+        'https://media.assettype.com/gulfnews%2F2026-09-01%2F6xosofko%2FDubai?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100',
+        'Palm Jumeirah'
+      ],
+      [
+        'https://image-tc.galaxy.tf/wijpeg-2lm45ex25ruhe9mqmjcrtglmt/file.jpg',
+        'Gold Souk Dubai'
+      ]
+    ]
+  },
+
+  /* DAY 3 */
+
+  {
+    title:'Desert Safari with Camp & Dinner',
+
+    lines:[
+      'Enjoy an afternoon safari across Dubai’s golden dunes with scenic photo stops.',
+      'Relax at the desert camp with selected activities, entertainment and a BBQ buffet dinner.'
+    ],
+
+    points:[
+      '☀️ Morning free; afternoon safari pickup',
+      '🚙 Desert drive & sunset photography',
+      '🏜️ Camp activities as per operator',
+      '🍖 BBQ dinner & evening entertainment'
+    ],
+
+    photos:[
+      [
+        'https://cdn-imgix.headout.com/media/images/a711e68d151d5a1bd4d07876c3748dca-4953-dubai-combo-15-min-helicopter-tour-of-dubai---red-dunes-desert-safari-with-bedouin-camp-experience-14.jpg?auto=compress%2Cformat&q=90&crop=faces&fit=crop',
+        'Dubai Desert Safari'
+      ],
+      [
+        'https://www.desertsafariuae.ae/wp-content/uploads/2024/10/13.png',
+        'Desert camp scenery'
+      ],
+      [
+        'https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_857/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/dddjl6lvnqed3iyh7e0s/DesertSafariToursinDubai-Morning,EveningandOvernight.jpg',
+        'Evening desert experience'
+      ]
+    ]
+  },
+
+  /* DAY 4 */
+
+  {
+    title:'Atlantis Aquaventure Combo',
+
+    lines:[
+      'Spend an exciting day at Atlantis Aquaventure with its impressive water slides and pools.',
+      'Enjoy the attractions covered by your confirmed combo ticket before returning to the hotel.'
+    ],
+
+    points:[
+      '🍳 Breakfast; travel to Atlantis, The Palm',
+      '🌊 Aquaventure Waterpark access',
+      '🎟️ Combo attractions as ticketed',
+      '🏨 Return to hotel after your visit'
+    ],
+
+    photos:[
+      [
+        'https://cdn.media.amplience.net/i/kerzner/AQV-World-SplashersCove-Father-Daughter-jpg',
+        'Atlantis Aquaventure Waterpark'
+      ],
+      [
+        'https://cdn.media.amplience.net/i/kerzner/AquaventureWaterpark-Lifestyle-TridentTower-Shockwave-jpg',
+        'Aquaventure slides'
+      ],
+      [
+        'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/42/da/d8/photo6jpg.jpg?w=1200&h=-1&s=1',
+        'Atlantis The Palm'
+      ]
+    ]
+  },
+
+  /* DAY 5 */
+
+  {
+    title:'Departure from Dubai',
+
+    lines:[
+      'Enjoy your final breakfast in Dubai, check out of the hotel and prepare for departure.',
+      'Travel to Dubai International Airport with wonderful memories of your city escape.'
+    ],
+
+    points:[
+      '🍳 Breakfast at your Dubai hotel',
+      '🧳 Check-out and luggage collection',
+      '🚘 Private transfer described; confirm*',
+      '✈️ Departure from Dubai International Airport'
+    ],
+
+    /* LOCKED DEPARTURE IMAGE ORDER */
+
+    photos:[
+      [
+        'https://static.toiimg.com/thumb/106057438/Hotel-checkout.jpg?width=1200&height=900',
+        'Hotel checkout'
+      ],
+      [
+        'https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1',
+        'Airport transfer'
+      ],
+      [
+        'https://platinum-aviation.com/wp-content/uploads/2026/07/Dubai-Airport.webp',
+        'Dubai airport departure'
+      ]
+    ]
+  }
+
+];
+
+
+/* REUSABLE HEADER AND FOOTER */
+
+function header(){
+
+  return `
+    <header class="head">
+
+      <img src="${ROOT}logo.png" alt="CityLaila">
+
+      <span>WHERE LUXURY MEETS AFFORDABILITY</span>
+
+    </header>
+  `;
+
+}
+
+function footer(n){
+
+  return `
+    <footer class="foot">
+
+      <span>www.citylaila.com</span>
+
+      <span>
+        Page ${String(n).padStart(2,'0')}
+      </span>
+
+    </footer>
+  `;
+
+}
+
+function page(n,body){
+
+  return `
+    <section class="page">
+
+      ${header()}
+
+      <div class="main">
+        ${body}
+      </div>
+
+      ${footer(n)}
+
+    </section>
+  `;
+
+}
+
+
+/* DAY CARD AND WORKING IMAGE CAROUSEL */
+
+function card(d,i){
+
+  return `
+    <article class="day">
+
+      <div class="copy">
+
+        <span class="tag">
+          DAY ${i+1}
+        </span>
+
+        <h3>${d.title}</h3>
+
+        <div class="desc">
+          <span>${d.lines[0]}</span>
+          <span>${d.lines[1]}</span>
+        </div>
+
+        <ul class="points">
+
+          ${d.points.map(p=>`
+            <li>${p}</li>
+          `).join('')}
+
+        </ul>
+
+      </div>
+
+      <div class="gallery">
+
+        <div class="track"
+             id="g${i}"
+             data-index="0">
+
+          ${d.photos.map(([url,alt])=>`
+
+            <div class="frame">
+
+              <img
+                src="${url.replaceAll('&','&amp;')}"
+                alt="${alt}"
+                loading="lazy">
+
+            </div>
+
+          `).join('')}
+
+        </div>
+
+        <button
+          class="arrow prev"
+          type="button"
+          aria-label="Previous image"
+          onclick="move(${i},-1)">❮</button>
+
+        <button
+          class="arrow next"
+          type="button"
+          aria-label="Next image"
+          onclick="move(${i},1)">❯</button>
+
+        <span class="counter" id="c${i}">
+          1 / ${d.photos.length}
+        </span>
+
+      </div>
+
+    </article>
+  `;
+
+}
+
+
+/* PAGE 1: COVER AND DAYS 1–2 */
+
+const hero=`
+
+  <div class="hero">
+
+    <div>
+
+      <small>
+        SAMPLE HOLIDAY PACKAGE • 4 NIGHTS / 5 DAYS
+      </small>
+
+      <h1>
+        🇦🇪 Discover Dubai – Dunes &amp; Dhows
+      </h1>
+
+      <p>
+        Marina Dhow Cruise • Desert Safari • Atlantis Aquaventure
+      </p>
+
+    </div>
+
+    <div class="facts">
+
+      <div>🏨 3★ Dubai Hotel</div>
+
+      <div>🍳 Daily Breakfast</div>
+
+      <div class="wide">
+        🌙 4 Nights in Dubai
+      </div>
+
+    </div>
+
+  </div>
+
+`;
+
+const p1=hero+`
+
+  <div class="days">
+
+    ${DAYS.slice(0,2)
+      .map((d,i)=>card(d,i)).join('')}
+
+  </div>
+
+`;
+
+
+/* PAGE 2: DAYS 3–4 */
+
+const p2=`
+
+  <h2 class="heading">
+    Dubai Adventures <em>• Days 3–4</em>
+  </h2>
+
+  <div class="days">
+
+    ${DAYS.slice(2,4)
+      .map((d,i)=>card(d,i+2)).join('')}
+
+  </div>
+
+`;
+
+
+/* PAGE 3: DEPARTURE, COST & COVERAGE */
+
+const p3=`
+
+  <h2 class="heading">
+    Departure &amp; <em>Package Summary</em>
+  </h2>
+
+  <div class="lastday">
+
+    ${card(DAYS[4],4)}
+
+  </div>
+
+  <!-- APPROVED PACKAGE COST -->
+
+  <div class="price">
+
+    <div class="total">
+
+      <small>STARTING PACKAGE PRICE</small>
+
+      <strong>₹47,000</strong>
+
+      <span>Price basis to be confirmed</span>
+
+    </div>
+
+    <div class="snapshot">
+
+      <div>🌙 4 Nights / 5 Days</div>
+
+      <div>🏨 3★ Dubai Hotel</div>
+
+      <div>🍳 Daily Breakfast</div>
+
+      <div>🎟️ Tours &amp; Attraction Tickets</div>
+
+    </div>
+
+  </div>
+
+  <!-- PACKAGE INCLUSIONS -->
+
+  <div class="coverage">
+
+    <div class="panel y">
+
+      <h4>✅ Package Inclusions</h4>
+
+      <div class="cells">
+
+        <div>🏨 4 nights in 3★ Dubai hotel</div>
+
+        <div>🍳 Daily breakfast</div>
+
+        <div>🚐 Arrival airport shared transfer</div>
+
+        <div>🛥️ Marina Dhow Cruise + dinner</div>
+
+        <div>🏙️ Dubai City Tour</div>
+
+        <div>🏜️ Desert Safari + camp &amp; BBQ dinner</div>
+
+        <div>🌊 Aquaventure Combo ticket*</div>
+
+        <div>🛫 Airport departure transfer*</div>
+
+        <div>🎟️ Listed attraction tickets*</div>
+
+        <div>🧾 Applicable tourism/service taxes</div>
+
+      </div>
+
+    </div>
+
+    <!-- PACKAGE EXCLUSIONS -->
+
+    <div class="panel n">
+
+      <h4>❌ Package Exclusions</h4>
+
+      <div class="cells">
+
+        <div>✈️ International flights</div>
+
+        <div>🛂 UAE visa &amp; insurance</div>
+
+        <div>🍽️ Other lunches &amp; dinners</div>
+
+        <div>💳 Shopping, beverages &amp; tips</div>
+
+        <div>🎟️ Burj Khalifa entry &amp; upgrades</div>
+
+        <div>🧳 Personal expenses, minibar</div>
+
+        <div>🛎️ Early/late hotel use &amp; upgrades</div>
+
+        <div>🚘 Private transfers unless confirmed</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- IMPORTANT BOOKING NOTES -->
+
+  <div class="note">
+
+    <strong>Important:</strong>
+    Day 5 mentions a private airport transfer, while the
+    package excludes private transfers. Final departure
+    vehicle basis must be confirmed. *Verify included
+    Aquaventure Combo variant, transfer coverage and
+    ticket services. All rates, tours and hotel stays
+    are subject to final availability.
+
+  </div>
+
+`;
+
+
+/* RENDER EXACTLY THREE PAGES */
+
+document.getElementById('pages').innerHTML=
+  page(1,p1)+
+  page(2,p2)+
+  page(3,p3);
+
+
+/* WORKING IMAGE CAROUSEL */
+
+function move(i,delta){
+
+  const t=document.getElementById('g'+i);
+
+  if(!t)return;
+
+  const n=t.querySelectorAll('.frame').length;
+
+  if(!n)return;
+
+  const k=
+    (Number(t.dataset.index||0)+delta+n)%n;
+
+  t.dataset.index=String(k);
+
+  t.style.transform=
+    `translateX(-${k*100}%)`;
+
+  document.getElementById('c'+i).textContent=
+    `${k+1} / ${n}`;
+
+}
+
+</script>
+
+</body>
+</html>
