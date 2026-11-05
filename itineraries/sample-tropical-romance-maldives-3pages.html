@@ -1,0 +1,1090 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+
+<!-- CITYLAILA 3-PAGE SAMPLE ITINERARY -->
+<!-- NO LEAD ID / NO TRAVEL DATES -->
+<!-- Filename: sample-tropical-romance-maldives-3pages.html -->
+
+<title>CityLaila | Tropical Romance in Maldives – 3N/4D | Sample</title>
+
+<meta name="description"
+content="Maldives 3N/4D sample: 2 nights Beach Villa, 1 night Water Villa, 4-star resort, all meals. Starting from INR 52,999 per person, subject to confirmation.">
+
+<meta property="og:title"
+content="CityLaila | Tropical Romance in Maldives – 3N/4D">
+
+<meta property="og:description"
+content="2 Nights Beach Villa + 1 Night Water Villa • 4-star resort • All Meals • From INR 52,999 per person">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --navy:#0A192F;
+  --blue:#0066cc;
+  --orange:#ff6600;
+  --line:#e2e8f0;
+  --light:#f8fafc;
+  --muted:#63738a;
+}
+
+* {box-sizing:border-box}
+
+html,body {margin:0}
+
+body {
+  padding:12px 0;
+  background:#edf2f7;
+  color:#23344d;
+  font-family:Montserrat,"Segoe UI Emoji",
+  "Apple Color Emoji",Arial,sans-serif;
+}
+
+/* =====================================
+   A4 LANDSCAPE - EXACTLY 3 PAGES
+===================================== */
+
+.page {
+  width:297mm;
+  height:210mm;
+  margin:0 auto 16px;
+  padding:19px 33px 47px;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  overflow:hidden;
+  background:white;
+  break-after:page;
+  page-break-after:always;
+  box-shadow:0 5px 19px #0a192f15;
+}
+
+.header {
+  height:45px;
+  flex:0 0 45px;
+  margin-bottom:12px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1.5px solid var(--line);
+}
+
+.header img {
+  height:39px;
+  max-width:170px;
+  object-fit:contain;
+}
+
+.tagline {
+  font-size:10.5px;
+  letter-spacing:1.15px;
+  font-weight:800;
+  color:#718096;
+}
+
+.main {
+  min-height:0;
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+
+.footer {
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  height:36px;
+  padding:0 33px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-top:1px solid var(--line);
+  background:var(--light);
+  color:var(--muted);
+  font-size:10.5px;
+  font-weight:800;
+}
+
+.heading {
+  font-size:24px;
+  line-height:1.2;
+  font-weight:900;
+  color:var(--navy);
+  margin:0 0 11px;
+}
+
+.heading em {
+  font-style:normal;
+  color:var(--blue);
+}
+
+/* =====================================
+   COMPACT PREMIUM COVER
+===================================== */
+
+.hero {
+  height:128px;
+  flex:0 0 128px;
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  align-items:center;
+  gap:18px;
+  margin-bottom:12px;
+  padding:16px 21px;
+  border-radius:15px;
+  background:linear-gradient(
+    110deg,#09182f,#133b56
+  );
+  color:white;
+  overflow:hidden;
+  position:relative;
+}
+
+.hero:after {
+  content:"";
+  position:absolute;
+  right:-45px;
+  top:-60px;
+  width:240px;
+  height:240px;
+  border:2px solid #ffffff1b;
+  border-radius:50%;
+  box-shadow:0 0 0 50px #ffffff08;
+}
+
+.hero .eyebrow {
+  font-size:10px;
+  font-weight:900;
+  color:#ffc082;
+  letter-spacing:1.6px;
+  text-transform:uppercase;
+}
+
+.hero h1 {
+  font-size:30px;
+  line-height:1.1;
+  font-weight:900;
+  margin:6px 0 5px;
+}
+
+.hero p {
+  font-size:12px;
+  font-weight:650;
+  line-height:1.35;
+  margin:0;
+}
+
+.facts {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7px;
+  z-index:1;
+}
+
+.facts div {
+  background:#071728aa;
+  border:1px solid #ffffff3b;
+  border-radius:8px;
+  padding:10px 9px;
+  font-size:10.8px;
+  font-weight:800;
+}
+
+.facts .wide {
+  grid-column:1/-1;
+}
+
+/* =====================================
+   DAY CARDS - TOP LEFT CONTENT
+===================================== */
+
+.daylist {
+  display:grid;
+  grid-template-rows:repeat(2,minmax(0,1fr));
+  gap:12px;
+  min-height:0;
+  flex:1;
+}
+
+.daycard {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  min-height:0;
+  padding:12px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:white;
+  box-shadow:0 2px 10px #0a192f08;
+}
+
+.daycopy {
+  min-width:0;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:flex-start;
+}
+
+.daytag {
+  display:inline-block;
+  padding:7px 12px;
+  background:var(--orange);
+  border-radius:6px;
+  color:#fff;
+  font-weight:900;
+  font-size:11px;
+}
+
+.daycard h3 {
+  font-size:20px;
+  line-height:1.16;
+  color:var(--navy);
+  font-weight:900;
+  margin:9px 0 7px;
+}
+
+.daycard p {
+  font-size:12.4px;
+  line-height:1.36;
+  color:#52637b;
+  font-weight:650;
+  margin:0 0 9px;
+}
+
+.points {
+  width:100%;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7px;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.points li {
+  background:var(--light);
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:9px;
+  font-size:11.8px;
+  line-height:1.27;
+  font-weight:750;
+}
+
+/* =====================================
+   LARGE FULL-FRAME IMAGE CAROUSELS
+===================================== */
+
+.gallery {
+  position:relative;
+  width:100%;
+  height:100%;
+  min-height:0;
+  overflow:hidden;
+  border-radius:11px;
+  background:linear-gradient(
+    135deg,#0a2638,#0d5c77
+  );
+}
+
+.track {
+  display:flex;
+  height:100%;
+  width:100%;
+  transition:transform .3s ease;
+}
+
+.frame {
+  height:100%;
+  flex:0 0 100%;
+  min-width:0;
+}
+
+.frame img {
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+}
+
+/* Fallback until exact original photos are added */
+
+.photo-pending {
+  height:100%;
+  padding:22px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#e4f6fa;
+  background:radial-gradient(
+    circle at 90% 10%,
+    #3bb8c450,
+    transparent 40%
+  );
+}
+
+.photo-pending .sym {
+  font-size:38px;
+}
+
+.photo-pending b {
+  font-size:16px;
+  font-weight:900;
+}
+
+.photo-pending small {
+  font-size:11px;
+  font-weight:650;
+  line-height:1.4;
+  max-width:290px;
+}
+
+.arrow {
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:2;
+  width:32px;
+  height:32px;
+  border:1px solid #ffffff66;
+  border-radius:50%;
+  background:#0a192fd9;
+  color:white;
+  cursor:pointer;
+  font-weight:900;
+  font-size:17px;
+}
+
+.prev {left:8px}
+.next {right:8px}
+
+.count {
+  position:absolute;
+  right:10px;
+  bottom:10px;
+  z-index:2;
+  background:#0a192fea;
+  color:white;
+  padding:5px 10px;
+  border-radius:20px;
+  font-size:11px;
+  font-weight:900;
+}
+
+/* =====================================
+   APPROVED PACKAGE COST DESIGN
+===================================== */
+
+.price {
+  flex:0 0 150px;
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  gap:16px;
+  margin-bottom:13px;
+}
+
+.total {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  border-radius:15px;
+  background:linear-gradient(
+    135deg,#0a192f,#234589
+  );
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+.total small {
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:1.2px;
+  color:#fbbf24;
+}
+
+.total strong {
+  font-size:42px;
+  font-weight:900;
+  margin:9px 0 4px;
+}
+
+.total span {
+  color:#fde047;
+  font-weight:800;
+  font-size:14px;
+}
+
+.snapshot {
+  border:1px solid var(--line);
+  border-left:5px solid var(--blue);
+  background:var(--light);
+  border-radius:14px;
+  padding:14px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:9px;
+  align-content:center;
+}
+
+.snapshot div {
+  background:white;
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:12px;
+  font-size:12px;
+  font-weight:800;
+  line-height:1.3;
+}
+
+/* =====================================
+   COMPACT INCLUSIONS / EXCLUSIONS
+===================================== */
+
+.coverage {
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:14px;
+  align-items:start;
+  flex:0 0 auto;
+}
+
+.panel {
+  border:1px solid var(--line);
+  border-radius:13px;
+  padding:12px 13px;
+}
+
+.panel.good {
+  border-top:4px solid #38a169;
+}
+
+.panel.warn {
+  border-top:4px solid #d69e2e;
+  background:#fffdf5;
+}
+
+.panel h3 {
+  font-size:15px;
+  color:var(--navy);
+  margin:0 0 9px;
+}
+
+.cells {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7px;
+}
+
+.cells div {
+  padding:9px;
+  border:1px solid var(--line);
+  border-radius:7px;
+  background:var(--light);
+  font-size:11.3px;
+  line-height:1.32;
+  font-weight:750;
+}
+
+.warn .cells div {
+  background:white;
+  border-color:#f6e1a3;
+}
+
+/* =====================================
+   BOOKING AND IMPORTANT CONDITIONS
+===================================== */
+
+.conditions {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:13px;
+}
+
+.conditions div {
+  background:#fff7ed;
+  color:#975a16;
+  border:1px solid #fbd38d;
+  padding:11px 13px;
+  border-radius:10px;
+  font-size:11.7px;
+  font-weight:750;
+  line-height:1.43;
+}
+
+/* =====================================
+   A4 LANDSCAPE PRINT
+===================================== */
+
+@media print {
+  @page {
+    size:A4 landscape;
+    margin:0;
+  }
+
+  body {
+    padding:0;
+    background:white;
+    print-color-adjust:exact;
+    -webkit-print-color-adjust:exact;
+  }
+
+  .page {
+    box-shadow:none;
+    margin:0;
+  }
+
+  .arrow {
+    display:none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =====================================
+   PAGE 01 - COVER + DAYS 1–2
+===================================== -->
+
+<section class="page">
+
+  <header class="header">
+
+    <img
+      src="https://shamshad656.github.io/citylaila-itineraries/images/logo.png"
+      alt="CityLaila">
+
+    <span class="tagline">
+      WHERE LUXURY MEETS AFFORDABILITY
+    </span>
+
+  </header>
+
+  <div class="main">
+
+    <div class="hero">
+
+      <div>
+
+        <div class="eyebrow">
+          SAMPLE HOLIDAY PACKAGE • 3 NIGHTS / 4 DAYS
+        </div>
+
+        <h1>
+          🏝️ Tropical Romance in Maldives
+        </h1>
+
+        <p>
+          Beach Villa • Overwater Experience • Island Leisure
+        </p>
+
+      </div>
+
+      <div class="facts">
+
+        <div>🏨 4★ Resort</div>
+
+        <div>🍽️ All Meals</div>
+
+        <div class="wide">
+          🌙 2N Beach Villa + 1N Water Villa
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="dayA" class="daylist"></div>
+
+  </div>
+
+  <footer class="footer">
+
+    <span>www.citylaila.com</span>
+
+    <span>Page 01</span>
+
+  </footer>
+
+</section>
+
+
+<!-- =====================================
+   PAGE 02 - DAYS 3–4
+===================================== -->
+
+<section class="page">
+
+  <header class="header">
+
+    <img
+      src="https://shamshad656.github.io/citylaila-itineraries/images/logo.png"
+      alt="CityLaila">
+
+    <span class="tagline">
+      WHERE LUXURY MEETS AFFORDABILITY
+    </span>
+
+  </header>
+
+  <div class="main">
+
+    <h2 class="heading">
+      Maldives Escape
+      <em>• Villa Experience &amp; Departure</em>
+    </h2>
+
+    <div id="dayB" class="daylist"></div>
+
+  </div>
+
+  <footer class="footer">
+
+    <span>www.citylaila.com</span>
+
+    <span>Page 02</span>
+
+  </footer>
+
+</section>
+
+
+<!-- =====================================
+   PAGE 03 - PRICE, COVERAGE & TERMS
+===================================== -->
+
+<section class="page">
+
+  <header class="header">
+
+    <img
+      src="https://shamshad656.github.io/citylaila-itineraries/images/logo.png"
+      alt="CityLaila">
+
+    <span class="tagline">
+      WHERE LUXURY MEETS AFFORDABILITY
+    </span>
+
+  </header>
+
+  <div class="main">
+
+    <h2 class="heading">
+      Land Package
+      <em>Price &amp; Coverage</em>
+    </h2>
+
+    <!-- APPROVED PACKAGE COST -->
+
+    <div class="price">
+
+      <div class="total">
+
+        <small>
+          STARTING PACKAGE PRICE
+        </small>
+
+        <strong>
+          ₹52,999
+        </strong>
+
+        <span>
+          Per Person • Subject to Confirmation
+        </span>
+
+      </div>
+
+      <div class="snapshot">
+
+        <div>🌙 3 Nights / 4 Days</div>
+
+        <div>🏨 4★ Maldives Resort</div>
+
+        <div>🏖️ 2 Nights Beach Villa</div>
+
+        <div>🌊 1 Night Water Villa</div>
+
+      </div>
+
+    </div>
+
+    <!-- PACKAGE COVERAGE -->
+
+    <div class="coverage">
+
+      <div class="panel good">
+
+        <h3>✅ Package Inclusions</h3>
+
+        <div class="cells">
+
+          <div>
+            🏨 3 nights in a 4★ resort
+          </div>
+
+          <div>
+            🏖️ Beach Villa 2N + Water Villa 1N
+          </div>
+
+          <div>
+            🍳 Breakfast, lunch &amp; dinner
+          </div>
+
+          <div>
+            🧾 Resort, service &amp; government taxes
+          </div>
+
+          <div>
+            🚤 Resort return transfer — reconfirm inclusion
+          </div>
+
+          <div>
+            🏝️ Standard resort facilities, as available
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="panel warn">
+
+        <h3>❌ Exclusions &amp; Extras</h3>
+
+        <div class="cells">
+
+          <div>
+            ✈️ International flights
+          </div>
+
+          <div>
+            🛂 Visa, where applicable
+          </div>
+
+          <div>
+            🧳 Travel insurance &amp; personal expenses
+          </div>
+
+          <div>
+            🤿 Diving, water sports, excursions &amp; spa
+          </div>
+
+          <div>
+            🥂 Alcohol, premium drinks &amp; room service
+          </div>
+
+          <div>
+            ⏰ Room upgrades, early check-in &amp; late check-out
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- IMPORTANT CONDITIONS -->
+
+    
+
+  </div>
+
+  <footer class="footer">
+
+    <span>
+      www.citylaila.com • info@citylaila.com
+    </span>
+
+    <span>Page 03</span>
+
+  </footer>
+
+</section>
+
+
+<!-- =====================================
+   ORIGINAL CITYLAILA IMAGE MAPPING
+   EDIT IMAGES IN THIS SECTION ONLY
+===================================== -->
+
+<script>
+
+/*
+Paste the DIRECT image URLs from the original
+CityLaila package in the correct day arrays.
+
+Example:
+
+1:[
+  "https://original-image-1.jpg",
+  "https://original-image-2.jpg"
+]
+
+The carousel activates automatically once
+original image URLs are provided.
+
+No substitute or random images are used.
+*/
+
+const ORIGINAL_IMAGES = {
+
+  // DAY 1: Beach Villa Arrival
+  1:['https://d1pllr5sjb7ywk.cloudfront.net/uploads/f5d275d2-445f-2d77-8f5c-3a2286a1799d/PackageMedia/3362c131-56a2-4b82-bd5a-fec6c3f157bf_maldives3_R.webp'],
+
+  // DAY 2: Beach Villa Leisure
+  2:['https://d1pllr5sjb7ywk.cloudfront.net/uploads/f5d275d2-445f-2d77-8f5c-3a2286a1799d/PackageMedia/5d20eacc-1a69-4133-b952-d29024f113b8_beach%20villa_R.webp'],
+
+  // DAY 3: Water Villa Experience
+  3:['https://d1pllr5sjb7ywk.cloudfront.net/uploads/f5d275d2-445f-2d77-8f5c-3a2286a1799d/PackageMedia/873d5281-5547-46d6-96d6-049cf26d5b9c_waterr_R.webp '],
+
+  // DAY 4: Departure
+  4:['https://d1pllr5sjb7ywk.cloudfront.net/uploads/f5d275d2-445f-2d77-8f5c-3a2286a1799d/PackageMedia/92f31213-5b74-46ab-9151-788c3d76e4cd_male-velana-airport-new-terminal2_R.webp']
+
+};
+
+/* =====================================
+   EXACT DAY-WISE ITINERARY CONTENT
+===================================== */
+
+const days = [
+
+  // DAY 1
+
+  {
+    title:'Arrival & Beach Villa Stay',
+
+    desc:'Arrive, check in and unwind by the turquoise sea.',
+
+    bullets:[
+      '🛬 Arrival and resort transfer',
+      '🏖️ Beach Villa check-in',
+      '🌴 Beach and island leisure',
+      '🍽️ Included meals; overnight in Beach Villa'
+    ],
+
+    icon:'🏖️'
+  },
+
+  // DAY 2
+
+  {
+    title:'Maldives at Leisure – Beach Villa',
+
+    desc:'Enjoy a relaxed day surrounded by tropical beauty.',
+
+    bullets:[
+      '🍳 Breakfast at the resort',
+      '🌊 Beach, ocean and resort leisure',
+      '🤿 Optional activities at extra cost',
+      '🍽️ Included meals; overnight in Beach Villa'
+    ],
+
+    icon:'🌴'
+  },
+
+  // DAY 3
+
+  {
+    title:'Beach Villa to Water Villa',
+
+    desc:'Move to your overwater stay and enjoy lagoon views.',
+
+    bullets:[
+      '🍳 Breakfast; Beach Villa check-out',
+      '🌊 Water Villa move, subject to timing',
+      '☀️ Relax on your deck and enjoy the sea',
+      '🍽️ Included meals; overnight in Water Villa'
+    ],
+
+    icon:'🌊'
+  },
+
+  // DAY 4
+
+  {
+    title:'Departure from Maldives',
+
+    desc:'Enjoy breakfast and depart with island memories.',
+
+    bullets:[
+      '🍳 Breakfast at the resort',
+      '🧳 Check-out from Water Villa',
+      '🚤 Resort-to-airport transfer, to confirm',
+      '✈️ Continue your onward journey'
+    ],
+
+    icon:'🛫'
+  }
+
+];
+
+/* =====================================
+   GENERATE DAY CARDS AND CAROUSELS
+===================================== */
+
+function renderDay(day,i) {
+
+  const imgs = ORIGINAL_IMAGES[i+1] || [];
+
+  const visual = imgs.length ?
+
+    `
+    <div class="track"
+      id="g${i}"
+      data-index="0">
+
+      ${imgs.map(src=>`
+
+        <div class="frame">
+
+          <img
+            src="${src.replaceAll('&','&amp;')}"
+            alt="Original CityLaila Day ${i+1} image">
+
+        </div>
+
+      `).join('')}
+
+    </div>
+
+    ${imgs.length>1 ? `
+
+      <button
+        class="arrow prev"
+        onclick="slide(${i},-1)"
+        aria-label="Previous photo">❮</button>
+
+      <button
+        class="arrow next"
+        onclick="slide(${i},1)"
+        aria-label="Next photo">❯</button>
+
+      <span class="count" id="c${i}">
+        1 / ${imgs.length}
+      </span>
+
+    ` : ''}
+    `
+
+    :
+
+    `
+    <div class="photo-pending">
+
+      <span class="sym">
+        ${day.icon}
+      </span>
+
+      <b>
+        Original Day ${i+1} Image
+      </b>
+
+      <small>
+        Paste the exact photo URL from the
+        CityLaila source in ORIGINAL_IMAGES.
+      </small>
+
+    </div>
+    `;
+
+  return `
+
+    <article class="daycard">
+
+      <div class="daycopy">
+
+        <span class="daytag">
+          DAY ${i+1}
+        </span>
+
+        <h3>${day.title}</h3>
+
+        <p>${day.desc}</p>
+
+        <ul class="points">
+
+          ${day.bullets.map(x=>`
+            <li>${x}</li>
+          `).join('')}
+
+        </ul>
+
+      </div>
+
+      <div class="gallery">
+
+        ${visual}
+
+      </div>
+
+    </article>
+
+  `;
+}
+
+/* =====================================
+   PAGE-WISE DAY PLACEMENT
+===================================== */
+
+// PAGE 1 - DAYS 1 AND 2
+
+document.getElementById('dayA').innerHTML =
+  days.slice(0,2)
+    .map((d,i)=>renderDay(d,i))
+    .join('');
+
+
+// PAGE 2 - DAYS 3 AND 4
+
+document.getElementById('dayB').innerHTML =
+  days.slice(2,4)
+    .map((d,i)=>renderDay(d,i+2))
+    .join('');
+
+
+/* =====================================
+   CAROUSEL PREVIOUS / NEXT CONTROL
+===================================== */
+
+function slide(i,delta) {
+
+  const el = document.getElementById('g'+i);
+
+  if(!el)return;
+
+  const n = el.children.length;
+
+  const next =
+    (Number(el.dataset.index||0)+delta+n)%n;
+
+  el.dataset.index = next;
+
+  el.style.transform =
+    `translateX(-${next*100}%)`;
+
+  document.getElementById('c'+i).textContent =
+    `${next+1} / ${n}`;
+
+}
+
+</script>
+
+</body>
+</html>
