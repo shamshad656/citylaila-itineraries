@@ -1,0 +1,1088 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+
+<!-- CITYLAILA SAMPLE ITINERARY -->
+<!-- File: sample-amazing-japan-3pages.html -->
+<!-- No Lead ID, Guest Contact or Travel Dates -->
+
+<title>CityLaila | Amazing Japan – 7 Nights / 8 Days </title>
+
+<meta name="description" content="Amazing Japan 7N/8D sample: Tokyo, Mount Fuji, Osaka, Kyoto and Nara. 4-star hotels, sightseeing and SIC transfers. Starting from INR 1,43,999; price basis to be confirmed.">
+
+<meta property="og:title" content="CityLaila | Amazing Japan – 7N/8D | Sample Package">
+<meta property="og:description" content="Tokyo 4N + Osaka 3N • Mount Fuji • teamLab • Shinkansen • Kyoto & Nara • Starting from INR 1,43,999 (basis to be confirmed)">
+<meta property="og:image" content="https://www.eduvel.jp/images/japan-hero-fuji-sakura.jpg">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --navy:#0A192F;
+  --blue:#0066cc;
+  --orange:#ff6600;
+  --line:#E2E8F0;
+  --gray:#65758b;
+  --paper:#F8FAFC;
+}
+
+* {box-sizing:border-box}
+
+html,body {margin:0}
+
+body {
+  font-family:Montserrat,"Segoe UI Emoji","Apple Color Emoji",Arial,sans-serif;
+  background:#e9eef4;
+  color:#23344b;
+  padding:12px 0;
+}
+
+/* ===== A4 LANDSCAPE ===== */
+
+.page {
+  width:297mm;
+  height:210mm;
+  margin:0 auto 16px;
+  padding:18px 32px 46px;
+  background:#fff;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  page-break-after:always;
+  break-after:page;
+  box-shadow:0 6px 18px #0a192f16;
+}
+
+.hdr {
+  height:44px;
+  flex:0 0 44px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1.5px solid var(--line);
+  margin-bottom:11px;
+}
+
+.logo {
+  height:37px;
+  max-width:155px;
+  object-fit:contain;
+}
+
+.slogan {
+  font-size:10px;
+  letter-spacing:1.1px;
+  font-weight:800;
+  color:var(--gray);
+}
+
+.main {
+  min-height:0;
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+
+.foot {
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:35px;
+  padding:0 32px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-top:1px solid var(--line);
+  background:var(--paper);
+  font-size:10.5px;
+  font-weight:800;
+  color:#64748b;
+  z-index:4;
+}
+
+.h {
+  font-size:23px;
+  line-height:1.2;
+  font-weight:900;
+  color:var(--navy);
+  margin:0 0 10px;
+}
+
+.h em {
+  font-style:normal;
+  color:var(--blue);
+}
+
+/* ===== PAGE 1 COVER ===== */
+
+.hero {
+  min-height:108px;
+  flex:0 0 108px;
+  border-radius:14px;
+  margin-bottom:11px;
+  display:grid;
+  grid-template-columns:1.3fr .7fr;
+  gap:12px;
+  padding:15px 19px;
+  align-items:center;
+  color:#fff;
+  background:
+    linear-gradient(105deg,#0a192fe8,#152f52bf),
+    url('https://www.eduvel.jp/images/japan-hero-fuji-sakura.jpg')
+    center/cover;
+}
+
+.hero small {
+  display:block;
+  color:#ffb46b;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:1.7px;
+}
+
+.hero h1 {
+  font-size:28px;
+  margin:4px 0;
+  line-height:1.12;
+}
+
+.hero p {
+  font-size:11px;
+  margin:0;
+  font-weight:700;
+  line-height:1.3;
+}
+
+.facts {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;
+}
+
+.facts div {
+  background:#10223bbd;
+  border:1px solid #ffffff48;
+  border-radius:7px;
+  padding:8px;
+  font-size:10px;
+  font-weight:850;
+  line-height:1.25;
+}
+
+.facts .wide {
+  grid-column:1/-1;
+}
+
+/* ===== THREE DAY CARDS PER PAGE ===== */
+
+.days {
+  display:grid;
+  grid-template-rows:repeat(3,minmax(0,1fr));
+  gap:9px;
+  min-height:0;
+  flex:1;
+}
+
+.daycard {
+  display:grid;
+  grid-template-columns:1.34fr .66fr;
+  gap:11px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:10px;
+  background:white;
+  min-height:0;
+}
+
+.daycopy {
+  min-width:0;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:flex-start;
+}
+
+.daytag {
+  background:var(--orange);
+  border-radius:5px;
+  color:white;
+  padding:5px 10px;
+  font-size:10px;
+  font-weight:900;
+}
+
+.daycard h3 {
+  font-size:16px;
+  line-height:1.16;
+  color:var(--navy);
+  margin:5px 0;
+  font-weight:900;
+}
+
+.daycard p {
+  font-size:11px;
+  color:#53647c;
+  font-weight:650;
+  line-height:1.3;
+  margin:0 0 6px;
+}
+
+.bullets {
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;
+  width:100%;
+}
+
+.bullets li {
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:6px 8px;
+  font-size:10.5px;
+  line-height:1.25;
+  font-weight:750;
+}
+
+/* ===== IMAGE CAROUSEL ===== */
+
+.gallery {
+  position:relative;
+  min-height:0;
+  height:100%;
+  overflow:hidden;
+  background:var(--navy);
+  border-radius:9px;
+}
+
+.track {
+  display:flex;
+  height:100%;
+  transition:transform .3s ease;
+}
+
+.frame {
+  height:100%;
+  min-width:100%;
+  flex:0 0 100%;
+}
+
+.frame img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.arrow {
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  border:1px solid #ffffff69;
+  background:#0a192fda;
+  color:white;
+  border-radius:50%;
+  height:26px;
+  width:26px;
+  font-size:14px;
+  font-weight:900;
+  cursor:pointer;
+  z-index:2;
+}
+
+.prev {left:7px}
+.next {right:7px}
+
+.count {
+  position:absolute;
+  right:7px;
+  bottom:8px;
+  color:#fff;
+  background:#0a192fea;
+  border-radius:15px;
+  padding:4px 8px;
+  font-size:10px;
+  font-weight:900;
+  z-index:2;
+}
+
+/* ===== PAGE 2 TITLE ===== */
+
+.p2title {
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  margin-bottom:9px;
+}
+
+.p2title .h {margin:0}
+
+.minor {
+  font-size:11px;
+  font-weight:800;
+  color:#64748b;
+}
+
+/* ===== PAGE 3 COMPACT DAY CARDS ===== */
+
+.lastdays {
+  flex:0 0 310px;
+  min-height:0;
+  display:grid;
+  grid-template-rows:1fr 1fr;
+  gap:8px;
+  margin-bottom:10px;
+}
+
+.lastdays .daycard {
+  grid-template-columns:1.35fr .65fr;
+}
+
+.lastdays .daycard h3 {font-size:15px}
+
+.lastdays .bullets {
+  grid-template-columns:1fr 1fr;
+}
+
+.lastdays .bullets li {
+  padding:6px 8px;
+  font-size:10px;
+}
+
+.lastdays .daycard p {font-size:10.5px}
+
+/* ===== APPROVED STYLE PRICE SUMMARY ===== */
+
+.price {
+  height:100px;
+  flex:0 0 100px;
+  display:grid;
+  grid-template-columns:1.04fr .96fr;
+  gap:11px;
+  margin-bottom:10px;
+}
+
+.total {
+  background:linear-gradient(135deg,#0a192f,#1e3a8a);
+  border-radius:11px;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.total small {
+  font-size:10px;
+  letter-spacing:1.2px;
+  font-weight:900;
+  color:#fbbf24;
+}
+
+.total strong {
+  font-size:30px;
+  margin:5px 0 0;
+}
+
+.total span {
+  font-size:11px;
+  color:#fde047;
+  font-weight:850;
+  margin-top:3px;
+}
+
+.snapshot {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;
+  border:1px solid var(--line);
+  border-left:4px solid var(--blue);
+  border-radius:10px;
+  padding:9px;
+  background:var(--paper);
+}
+
+.snapshot div {
+  background:white;
+  border:1px solid var(--line);
+  border-radius:7px;
+  font-size:10px;
+  font-weight:850;
+  padding:7px;
+  display:flex;
+  align-items:center;
+}
+
+/* ===== INCLUSIONS & EXCLUSIONS ===== */
+
+.coverage {
+  flex:1;
+  min-height:0;
+  display:grid;
+  grid-template-columns:1.09fr .91fr;
+  gap:10px;
+}
+
+.panel {
+  padding:10px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  min-height:0;
+}
+
+.panel.good {border-top:4px solid #38a169}
+
+.panel.warn {
+  border-top:4px solid #d69e2e;
+  background:#fffdf6;
+}
+
+.panel h4 {
+  font-size:13px;
+  color:var(--navy);
+  font-weight:900;
+  margin:0 0 6px;
+}
+
+.panelgrid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:5px;
+}
+
+.point {
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:6px;
+  padding:6px 7px;
+  font-size:10px;
+  font-weight:750;
+  line-height:1.24;
+}
+
+.warn .point {
+  background:white;
+  border-color:#f6e1a3;
+}
+
+.conditions {
+  margin-top:7px;
+  padding:7px 10px;
+  font-size:10px;
+  font-weight:800;
+  line-height:1.25;
+  color:#975a16;
+  background:#fff7ed;
+  border:1px solid #fbd38d;
+  border-radius:7px;
+}
+
+/* ===== PRINT ===== */
+
+@media print {
+  @page {
+    size:A4 landscape;
+    margin:0;
+  }
+
+  body {
+    background:white;
+    padding:0;
+    print-color-adjust:exact;
+    -webkit-print-color-adjust:exact;
+  }
+
+  .page {
+    margin:0;
+    box-shadow:none;
+  }
+
+  .arrow {display:none}
+}
+</style>
+</head>
+
+<body>
+
+<!-- ========================================
+ PAGE 01 – COVER + DAYS 1 TO 3
+======================================== -->
+
+<section class="page">
+
+<header class="hdr">
+
+  <img class="logo"
+    src="https://shamshad656.github.io/citylaila-itineraries/images/logo.png"
+    alt="CityLaila">
+
+  <span class="slogan">
+    WHERE LUXURY MEETS AFFORDABILITY
+  </span>
+
+</header>
+
+<div class="main">
+
+  <div class="hero">
+
+    <div>
+      <small>
+        SAMPLE HOLIDAY PACKAGE • 7 NIGHTS / 8 DAYS
+      </small>
+
+      <h1>🇯🇵 Amazing Japan</h1>
+
+      <p>
+        Tokyo • Mount Fuji • Osaka • Kyoto • Nara
+      </p>
+    </div>
+
+    <div class="facts">
+
+      <div>🏨 4★ Hotel Category</div>
+
+      <div>🍳 Daily Breakfast</div>
+
+      <div class="wide">
+        🌙 Tokyo 4 Nights + Osaka 3 Nights
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- DAY CARDS INSERTED HERE -->
+
+  <div class="days" id="daysA"></div>
+
+</div>
+
+<footer class="foot">
+  <span>www.citylaila.com</span>
+  <span>Page 01</span>
+</footer>
+
+</section>
+
+
+<!-- ========================================
+ PAGE 02 – DAYS 4 TO 6
+======================================== -->
+
+<section class="page">
+
+<header class="hdr">
+
+  <img class="logo"
+    src="https://shamshad656.github.io/citylaila-itineraries/images/logo.png"
+    alt="CityLaila">
+
+  <span class="slogan">
+    WHERE LUXURY MEETS AFFORDABILITY
+  </span>
+
+</header>
+
+<div class="main">
+
+  <div class="p2title">
+
+    <h2 class="h">
+      Your Japan Journey <em>• Days 4–6</em>
+    </h2>
+
+    <span class="minor">Tokyo → Osaka</span>
+
+  </div>
+
+  <div class="days" id="daysB"></div>
+
+</div>
+
+<footer class="foot">
+  <span>www.citylaila.com</span>
+  <span>Page 02</span>
+</footer>
+
+</section>
+
+
+<!-- ========================================
+ PAGE 03 – DAYS 7 & 8 + PACKAGE COST
+======================================== -->
+
+<section class="page">
+
+<header class="hdr">
+
+  <img class="logo"
+    src="https://shamshad656.github.io/citylaila-itineraries/images/logo.png"
+    alt="CityLaila">
+
+  <span class="slogan">
+    WHERE LUXURY MEETS AFFORDABILITY
+  </span>
+
+</header>
+
+<div class="main">
+
+  <h2 class="h">
+    Japan Holiday <em>• Final Days &amp; Package</em>
+  </h2>
+
+  <div class="lastdays" id="daysC"></div>
+
+  <!-- PRICE SUMMARY -->
+
+  <div class="price">
+
+    <div class="total">
+
+      <small>STARTING PACKAGE PRICE</small>
+
+      <strong>₹1,43,999</strong>
+
+      <span>Price basis to be confirmed</span>
+
+    </div>
+
+    <div class="snapshot">
+
+      <div>🌙 7 Nights / 8 Days</div>
+
+      <div>🏨 4★ Hotels</div>
+
+      <div>🗼 Tokyo 4N • Osaka 3N</div>
+
+      <div>🚌 SIC Transfers &amp; Tours</div>
+
+    </div>
+
+  </div>
+
+  <!-- INCLUSIONS / EXCLUSIONS -->
+
+  <div class="coverage">
+
+    <div class="panel good">
+
+      <h4>✅ Package Inclusions</h4>
+
+      <div class="panelgrid">
+
+        <div class="point">🏨 7 nights in 4★ hotels</div>
+
+        <div class="point">🍳 Daily breakfast</div>
+
+        <div class="point">🏙️ Sightseeing tours as listed</div>
+
+        <div class="point">🚌 SIC transfers as specified</div>
+
+        <div class="point">
+          🎟️ Included sightseeing/attraction tickets
+        </div>
+
+        <div class="point">🧾 Applicable taxes</div>
+
+      </div>
+
+    </div>
+
+    <div class="panel warn">
+
+      <h4>❌ Exclusions &amp; Notes</h4>
+
+      <div class="panelgrid">
+
+        <div class="point">✈️ International flights</div>
+
+        <div class="point">🛂 Japan visa charges</div>
+
+        <div class="point">🧳 Travel insurance</div>
+
+        <div class="point">💳 Personal/unlisted costs</div>
+
+        <div class="point">
+          🚄 Shinkansen ticket coverage to confirm
+        </div>
+
+        <div class="point">
+          🏷️ Per-person or total price basis unconfirmed
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  
+
+</div>
+
+<footer class="foot">
+
+  <span>www.citylaila.com • info@citylaila.com</span>
+
+  <span>Page 03</span>
+
+</footer>
+
+</section>
+
+
+<!-- ========================================
+ DAY-WISE CONTENT + IMAGE LINKS
+ EDIT: Change images or day details here
+======================================== -->
+
+<script>
+
+const days = [
+
+  /* DAY 1 */
+
+  {
+    title:'Arrival in Tokyo',
+
+    desc:'Welcome to Japan. Arrive, transfer to your hotel and settle in.',
+
+    items:[
+      '🛬 Arrive at Tokyo Airport',
+      '🚐 Transfer to hotel &amp; check-in',
+      '🌙 Overnight stay in Tokyo'
+    ],
+
+    photos:[
+      [
+        'https://d1pllr5sjb7ywk.cloudfront.net/uploads/f5d275d2-445f-2d77-8f5c-3a2286a1799d/PackageMedia/4db3f88a-8a66-4e25-b227-d853b749fdf2_tokya%20airport_R.webp',
+        'Tokyo city skyline'
+      ],
+      [
+        'https://cdn.travelersuniverse.com/media/tokyo-private-night-tour-by-car-van-english-speaking-chauffeur-d334-442126P5-1.jpg',
+        'Tokyo at night'
+      ]
+    ]
+  },
+
+  /* DAY 2 */
+
+  {
+    title:'Full-Day Tokyo City Tour',
+
+    desc:'Explore the highlights of Japan’s vibrant capital.',
+
+    items:[
+      '🍳 Breakfast at hotel',
+      '🗼 Full-day Tokyo sightseeing tour',
+      '🌙 Return for overnight in Tokyo'
+    ],
+
+    photos:[
+      [
+        'https://d1pllr5sjb7ywk.cloudfront.net/uploads/f5d275d2-445f-2d77-8f5c-3a2286a1799d/PackageMedia/7137da33-65f9-43a3-a7ff-bf9740d3b949_meiji%20shrine_R.webp',
+        'Tokyo skyline'
+      ],
+      [
+        'https://imgwcs3.soufunimg.com/news/2021_08/22/2a34a835-61c7-4e89-9fa2-fcdf29ad06ee.jpg',
+        'Tokyo Tower'
+      ]
+    ]
+  },
+
+  /* DAY 3 */
+
+  {
+    title:'Mount Fuji Excursion',
+
+    desc:'Discover Japan’s iconic mountain and picturesque surroundings.',
+
+    items:[
+      '🍳 Hotel breakfast',
+      '🗻 Full-day Mount Fuji excursion',
+      '🌄 Scenic views; overnight in Tokyo'
+    ],
+
+    photos:[
+      [
+        'https://d1pllr5sjb7ywk.cloudfront.net/uploads/f5d275d2-445f-2d77-8f5c-3a2286a1799d/PackageMedia/51deb84b-82e0-46fc-a242-3367023c9bb4_mtfuji_R.webp',
+        'Mount Fuji scenery'
+      ],
+      [
+        'https://static.trainbook.online/images/articles/cover-1774260807523.png',
+        'Mount Fuji and train'
+      ]
+    ]
+  },
+
+  /* DAY 4 */
+
+  {
+    title:'teamLab &amp; Akihabara',
+
+    desc:'Immersive digital art followed by shopping in Akihabara.',
+
+    items:[
+      '🍳 Breakfast at hotel',
+      '✨ teamLab digital-art experience',
+      '🛍️ Akihabara; overnight in Tokyo'
+    ],
+
+    photos:[
+      [
+        'https://d1pllr5sjb7ywk.cloudfront.net/uploads/f5d275d2-445f-2d77-8f5c-3a2286a1799d/PackageMedia/4109a798-b856-4a01-af4f-348ad3cf1000_teamlabjapan_R.webp',
+        'teamLab immersive art'
+      ],
+      [
+        'https://bt.imgix.net/magazine/24250/main/1624957196604_719279305d7ce946c1e2f04211e46bf1.jpg?rect=0',
+        'teamLab installation'
+      ]
+    ]
+  },
+
+  /* DAY 5 */
+
+  {
+    title:'Tokyo to Osaka by Shinkansen',
+
+    desc:'Travel between Japan’s iconic cities aboard the bullet train.',
+
+    items:[
+      '🍳 Breakfast and Tokyo hotel check-out',
+      '🚄 Bullet train (Shinkansen) to Osaka',
+      '🏨 Osaka check-in; leisure and overnight'
+    ],
+
+    photos:[
+      [
+        'https://d1pllr5sjb7ywk.cloudfront.net/uploads/f5d275d2-445f-2d77-8f5c-3a2286a1799d/PackageMedia/96d0ff69-36f8-4c76-8715-cafe8df81b6e_shin_R.webp',
+        'Shinkansen'
+      ],
+      [
+        'https://static.trainbook.online/images/articles/cover-1774260807523.png',
+        'Bullet train and Fuji'
+      ]
+    ]
+  },
+
+  /* DAY 6 */
+
+  {
+    title:'Full-Day Osaka City Tour',
+
+    desc:'Discover Osaka’s energetic city life and sightseeing highlights.',
+
+    items:[
+      '🍳 Breakfast at Osaka hotel',
+      '🏙️ Osaka sightseeing tour',
+      '🌙 Overnight stay in Osaka'
+    ],
+
+    photos:[
+      [
+        'https://d1pllr5sjb7ywk.cloudfront.net/uploads/f5d275d2-445f-2d77-8f5c-3a2286a1799d/PackageMedia/d9e14a41-e486-465a-937f-8a44c0645fdc_OSAKA%20CASTLE_R.webp',
+        'Osaka Dotonbori'
+      ],
+      [
+        'https://japankuru.com/gld-kanri/data/uploads/2025/06/Kansai10days01-Osaka-1536x1024-1-800x533.jpg',
+        'Osaka city attractions'
+      ]
+    ]
+  },
+
+  /* DAY 7 */
+
+  {
+    title:'Kyoto &amp; Nara Full-Day Tour',
+
+    desc:'A memorable cultural journey through Kyoto and Nara.',
+
+    items:[
+      '🍳 Breakfast in Osaka',
+      '⛩️ Full-day Kyoto and Nara excursion',
+      '🏯 Historic sights; return to Osaka'
+    ],
+
+    photos:[
+      [
+        'https://d1pllr5sjb7ywk.cloudfront.net/uploads/f5d275d2-445f-2d77-8f5c-3a2286a1799d/PackageMedia/cd6a44e4-c053-463b-b886-89efa79d1a25_fushimi_R.webp',
+        'Kyoto and Nara highlights'
+      ],
+      [
+        'https://i.happytovisit.com/tour/from-osaka-nara-deer-kyoto-kiyomizudera-sightseeing-tour-t768548-5.jpg',
+        'Nara Deer Park'
+      ]
+    ]
+  },
+
+  /* DAY 8 */
+
+  {
+    title:'Departure from Osaka',
+
+    desc:'End your Japan holiday with comfortable airport travel.',
+
+    items:[
+      '🍳 Breakfast at the hotel',
+      '🧳 Hotel check-out',
+      '🚐 Airport transfer for departure'
+    ],
+
+    photos:[
+      [
+        'https://d1pllr5sjb7ywk.cloudfront.net/uploads/f5d275d2-445f-2d77-8f5c-3a2286a1799d/PackageMedia/50c5ab16-66d8-435b-9f4a-aee4c5bcb51f_osaka%20airport_R.webp',
+        'Hotel checkout'
+      ],
+      [
+        'https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&amp;h=800&amp;s=1',
+        'Airport transfer'
+      ],
+      [
+        'https://m.media-amazon.com/images/I/71nXbtmuQlL.jpg',
+        'Departure'
+      ]
+    ]
+  }
+
+];
+
+
+/* ========================================
+ GENERATE DAY CARDS
+======================================== */
+
+function card(d,i) {
+
+  return `
+    <article class="daycard">
+
+      <div class="daycopy">
+
+        <span class="daytag">
+          DAY ${i+1}
+        </span>
+
+        <h3>${d.title}</h3>
+
+        <p>${d.desc}</p>
+
+        <ul class="bullets">
+
+          ${d.items.map(t => `
+            <li>${t}</li>
+          `).join('')}
+
+        </ul>
+
+      </div>
+
+      <div class="gallery">
+
+        <div class="track"
+          id="gallery${i}"
+          data-index="0">
+
+          ${d.photos.map(x => `
+            <div class="frame">
+              <img src="${x[0]}" alt="${x[1]}">
+            </div>
+          `).join('')}
+
+        </div>
+
+        <button
+          class="arrow prev"
+          type="button"
+          aria-label="Previous image"
+          onclick="move(${i},-1)">❮</button>
+
+        <button
+          class="arrow next"
+          type="button"
+          aria-label="Next image"
+          onclick="move(${i},1)">❯</button>
+
+        <span class="count" id="count${i}">
+          1 / ${d.photos.length}
+        </span>
+
+      </div>
+
+    </article>
+  `;
+}
+
+
+/* ========================================
+ PAGE-WISE DAY PLACEMENT
+======================================== */
+
+// Page 1: Days 1–3
+
+document.getElementById('daysA').innerHTML =
+  days.slice(0,3)
+    .map((d,i) => card(d,i))
+    .join('');
+
+
+// Page 2: Days 4–6
+
+document.getElementById('daysB').innerHTML =
+  days.slice(3,6)
+    .map((d,i) => card(d,i+3))
+    .join('');
+
+
+// Page 3: Days 7–8
+
+document.getElementById('daysC').innerHTML =
+  days.slice(6,8)
+    .map((d,i) => card(d,i+6))
+    .join('');
+
+
+/* ========================================
+ WORKING CAROUSEL CONTROLS
+======================================== */
+
+function move(i,delta) {
+
+  const el = document.getElementById('gallery'+i);
+
+  if (!el) return;
+
+  const n = el.querySelectorAll('.frame').length;
+
+  if (!n) return;
+
+  const idx =
+    (Number(el.dataset.index||0)+delta+n)%n;
+
+  el.dataset.index = String(idx);
+
+  el.style.transform =
+    `translateX(-${idx*100}%)`;
+
+  document.getElementById('count'+i).textContent =
+    `${idx+1} / ${n}`;
+
+}
+
+</script>
+
+</body>
+</html>
