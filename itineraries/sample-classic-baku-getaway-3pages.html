@@ -1,0 +1,1055 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+
+<!-- CITYLAILA SAMPLE | NO LEAD ID OR TRAVEL DATES -->
+<!-- sample-classic-baku-getaway-3pages.html -->
+
+<title>CityLaila | Classic Baku Getaway – 5N/6D</title>
+<meta name="description" content="Azerbaijan sample holiday: Baku, Gabala, Gobustan, 5 nights and 6 days. Starting from INR 36,999.">
+
+<style>
+:root{
+  --navy:#0A192F;
+  --blue:#0068c9;
+  --orange:#f46a16;
+  --line:#dbe5ef;
+  --light:#f6f9fc;
+  --ink:#263950;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+
+body{
+  background:#edf2f8;
+  padding:12px 0;
+  font-family:Arial,'Segoe UI Emoji','Apple Color Emoji',sans-serif;
+  color:var(--ink);
+}
+
+/* A4 LANDSCAPE */
+
+.page{
+  width:297mm;
+  height:210mm;
+  display:flex;
+  flex-direction:column;
+  position:relative;
+  margin:0 auto 16px;
+  padding:18px 31px 43px;
+  background:white;
+  overflow:hidden;
+  break-after:page;
+  page-break-after:always;
+  box-shadow:0 4px 17px #0a192f16;
+}
+
+.hd{
+  height:42px;
+  flex:0 0 42px;
+  border-bottom:1px solid var(--line);
+  margin-bottom:10px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.hd img{
+  max-width:125px;
+  height:38px;
+  object-fit:contain;
+}
+
+.hd span{
+  font-size:10.5px;
+  letter-spacing:1px;
+  font-weight:800;
+  color:#6e8099;
+}
+
+.main{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  min-height:0;
+  justify-content:flex-start;
+}
+
+.foot{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  height:34px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0 31px;
+  background:var(--light);
+  border-top:1px solid var(--line);
+  font-size:10px;
+  font-weight:800;
+  color:#68798e;
+}
+
+/* COVER */
+
+.hero{
+  height:106px;
+  flex:none;
+  margin-bottom:10px;
+  border-radius:13px;
+  padding:13px 18px;
+  color:white;
+  display:grid;
+  grid-template-columns:1.3fr .7fr;
+  align-items:center;
+  gap:12px;
+  background:
+    linear-gradient(105deg,#08192fe6,#163b62ad),
+    url('https://cdn.enjoytravel.com/img/Big7Enjoy/fr/actualites-de-voyage/faits-interessants/les-7-faits-les-plus-interessants-sur-lazerbaidjan/shutterstock_2502474195_medium_768.webp')
+    center/cover;
+}
+
+.hero small{
+  font-size:10px;
+  letter-spacing:1.3px;
+  color:#ffbf80;
+  font-weight:900;
+}
+
+.hero h1{
+  font-size:29px;
+  margin:5px 0 4px;
+  line-height:1.1;
+}
+
+.hero p{
+  font-size:11.5px;
+  line-height:1.3;
+  font-weight:700;
+  margin:0;
+}
+
+.facts{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:7px;
+}
+
+.facts span{
+  padding:9px;
+  background:#071f3ec4;
+  border:1px solid #ffffff4d;
+  border-radius:7px;
+  font-size:10.5px;
+  font-weight:800;
+}
+
+.facts .full{
+  grid-column:1/-1;
+}
+
+.heading{
+  font-size:22px;
+  margin:0 0 10px;
+  line-height:1.2;
+  color:var(--navy);
+  font-weight:900;
+}
+
+.heading b{color:var(--blue)}
+
+/* DAY CARDS */
+
+.days{
+  display:grid;
+  grid-template-rows:repeat(2,minmax(0,1fr));
+  gap:10px;
+  flex:1;
+  min-height:0;
+}
+
+.days.three{
+  grid-template-rows:repeat(3,minmax(0,1fr));
+}
+
+.day-card{
+  min-height:0;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:13px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:10px;
+  background:white;
+  box-shadow:0 2px 10px #071b2b0b;
+}
+
+.day-copy{
+  min-width:0;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:flex-start;
+}
+
+.badge{
+  background:var(--orange);
+  color:white;
+  border-radius:5px;
+  padding:5px 10px;
+  font-size:10.5px;
+  font-weight:900;
+}
+
+.day-copy h3{
+  font-size:18px;
+  line-height:1.12;
+  font-weight:900;
+  margin:7px 0 6px;
+  color:var(--navy);
+}
+
+/* EXACTLY TWO WRITTEN DESCRIPTION LINES */
+
+.desc{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+  font-size:11.9px;
+  line-height:1.18;
+  color:#4c6078;
+  font-weight:650;
+  margin:0 0 7px;
+  max-width:100%;
+}
+
+.desc span{
+  display:block;
+  white-space:nowrap;
+}
+
+.points{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;
+  list-style:none;
+  padding:0;
+  margin:0;
+  width:100%;
+}
+
+.points li{
+  padding:7px 9px;
+  background:var(--light);
+  border:1px solid var(--line);
+  border-radius:6px;
+  font-size:11.2px;
+  line-height:1.22;
+  font-weight:750;
+}
+
+/* LARGE FULL-SIZE IMAGE CAROUSELS */
+
+.gallery{
+  position:relative;
+  width:100%;
+  height:100%;
+  min-height:0;
+  overflow:hidden;
+  border-radius:9px;
+  background:#0a253d;
+}
+
+.track{
+  display:flex;
+  width:100%;
+  height:100%;
+  transition:transform .3s ease;
+}
+
+.frame{
+  min-width:0;
+  width:100%;
+  height:100%;
+  flex:0 0 100%;
+}
+
+.frame img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+}
+
+.arrow{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:2;
+  width:31px;
+  height:31px;
+  cursor:pointer;
+  border:1px solid #ffffff66;
+  border-radius:50%;
+  background:#081b36c8;
+  color:white;
+  font-size:16px;
+  font-weight:900;
+}
+
+.prev{left:8px}
+.next{right:8px}
+
+.counter{
+  position:absolute;
+  bottom:9px;
+  right:9px;
+  z-index:2;
+  background:#0b213bdd;
+  color:white;
+  border-radius:18px;
+  font-size:10px;
+  padding:5px 9px;
+  font-weight:900;
+}
+
+/* PAGE 2 — THREE DAY CARDS */
+
+.three .day-card{
+  grid-template-columns:1.09fr .91fr;
+  padding:9px;
+  gap:10px;
+}
+
+.three .day-copy h3{
+  font-size:15px;
+  margin:5px 0 4px;
+}
+
+.three .badge{
+  font-size:9px;
+  padding:4px 8px;
+}
+
+.three .desc{
+  font-size:10.5px;
+  gap:1px;
+  margin-bottom:6px;
+}
+
+.three .points{gap:4px}
+
+.three .points li{
+  padding:5px 7px;
+  font-size:10px;
+}
+
+/* PAGE 3 — DAY 6 USES AVAILABLE SPACE */
+
+.lastday{
+  flex:1;
+  min-height:210px;
+  margin-bottom:10px;
+}
+
+.lastday .day-card{
+  height:100%;
+}
+
+/* PACKAGE COST */
+
+.price{
+  flex:none;
+  height:100px;
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  gap:12px;
+  margin-bottom:9px;
+}
+
+.total{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(130deg,#091b36,#25448e);
+  color:white;
+  border-radius:11px;
+}
+
+.total small{
+  font-size:11px;
+  font-weight:900;
+  color:#ffcf40;
+  letter-spacing:1px;
+}
+
+.total strong{
+  font-size:33px;
+  margin:3px 0;
+}
+
+.total span{
+  color:#ffed7c;
+  font-size:11.5px;
+  font-weight:800;
+}
+
+.summary{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;
+  align-content:center;
+  padding:9px;
+  background:var(--light);
+  border-left:5px solid var(--blue);
+  border-radius:10px;
+  border-top:1px solid var(--line);
+  border-right:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.summary div{
+  padding:7px;
+  background:white;
+  border:1px solid var(--line);
+  font-size:10px;
+  font-weight:800;
+  border-radius:6px;
+}
+
+/* COMPACT INCLUSIONS / EXCLUSIONS */
+
+.coverage{
+  flex:0 0 auto;
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  gap:10px;
+  align-items:start;
+}
+
+.panel{
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:8px 10px;
+}
+
+.panel.yes{
+  border-top:4px solid #31a374;
+}
+
+.panel.no{
+  border-top:4px solid #dda127;
+  background:#fffdf8;
+}
+
+.panel h4{
+  font-size:12px;
+  margin:0 0 6px;
+  color:var(--navy);
+}
+
+.cells{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:4px;
+}
+
+.cells div{
+  padding:5px 7px;
+  border:1px solid var(--line);
+  border-radius:5px;
+  background:var(--light);
+  font-size:9.5px;
+  line-height:1.2;
+  font-weight:750;
+}
+
+.no .cells div{
+  background:white;
+  border-color:#f1dfbb;
+}
+
+.conditions{
+  flex:none;
+  margin-top:7px;
+  border:1px solid #f0c487;
+  background:#fff9f0;
+  color:#955918;
+  border-radius:7px;
+  padding:6px 9px;
+  font-size:9.3px;
+  line-height:1.28;
+  font-weight:700;
+}
+
+@media print{
+  @page{
+    size:A4 landscape;
+    margin:0;
+  }
+
+  body{
+    background:white;
+    padding:0;
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+  }
+
+  .page{
+    margin:0;
+    box-shadow:none;
+  }
+
+  .arrow{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<div id="pages"></div>
+
+<script>
+
+/* =======================================
+   CITYLAILA MASTER ASSETS
+======================================= */
+
+const BASE =
+  'https://shamshad656.github.io/citylaila-itineraries/images/';
+
+/* =======================================
+   DAY CONTENT & IMAGE MAPPING
+   Change photos here when required.
+======================================= */
+
+const DAYS = [
+
+  /* DAY 1 */
+  {
+    title:'Arrival in Baku',
+
+    lines:[
+      'Arrive in Baku and settle into your hotel. Enjoy a relaxing evening at your leisure.'
+    ],
+
+    points:[
+      '🛬 Airport meet & greet',
+      '🚘 Hotel transfer (basis to confirm)',
+      '🏨 Hotel check-in',
+      '🌃 Evening at leisure'
+    ],
+
+    photos:[
+      [
+        'https://d1pllr5sjb7ywk.cloudfront.net/uploads/f5d275d2-445f-2d77-8f5c-3a2286a1799d/PackageMedia/f62dbe6e-c66a-47e5-b175-ba671f85c1ab_AZER%20BANNER_R.webp',
+        'Heydar Aliyev International Airport'
+      ],
+      [
+        'https://cdn.enjoytravel.com/img/Big7Enjoy/fr/actualites-de-voyage/faits-interessants/les-7-faits-les-plus-interessants-sur-lazerbaidjan/shutterstock_2502474195_medium_768.webp',
+        'Baku Skyline'
+      ]
+    ]
+  },
+
+  /* DAY 2 */
+  {
+    title:'Fire Temple, Burning Mountain & Car Museum',
+
+    lines:[
+      'Discover the region’s famous fire heritage. Visit Ateshgah, Yanar Dag and a museum.'
+    ],
+
+    points:[
+      '🔥 Ateshgah Fire Temple',
+      '⛰️ Yanar Dag natural flames',
+      '🚗 Car Museum / Centre (confirm)',
+      '🏨 Return to Baku hotel'
+    ],
+
+    photos:[
+      [
+        'https://cdn.getyourguide.com/image/format%3Dauto%2Cfit%3Dcontain%2Cgravity%3Dcenter%2Cquality%3D60%2Cwidth%3D1440%2Cheight%3D650%2Cdpr%3D1/tour_img/6692a0ca5829d8884841275f2032b1a40941a02bbcaa53b8deeb551b272cf41d.jpeg',
+        'Ateshgah Fire Temple'
+      ],
+      [
+        'https://azerbaijan.travel/resize3000/center/pages/321/6bfee357-56cd-4b8b-90f4-fae77b317f29.jpg',
+        'Yanar Dag'
+      ],
+      [
+        'https://leyla-aliyeva.az/files/activity/551/a5b766b1ab8d9840af7dcd14cee73756.jpg',
+        'Classic Car Exhibition'
+      ]
+    ]
+  },
+
+  /* DAY 3 */
+  {
+    title:'Baku City Tour & Old City Walk',
+
+    lines:[
+      'See Baku’s modern skyline and landmarks. Explore historic streets of the Old City.'
+    ],
+
+    points:[
+      '🌇 Highland Park & Flame Towers',
+      '🏛️ Martyrs’ Lane & Boulevard',
+      '🏰 Icherisheher, Maiden Tower',
+      '🛍️ Old City shops & free time'
+    ],
+
+    photos:[
+      [
+        'https://d1pllr5sjb7ywk.cloudfront.net/uploads/f5d275d2-445f-2d77-8f5c-3a2286a1799d/PackageMedia/ac42a62d-5ce3-424e-ad16-99f2ce8979af_Highland%20Park_R.webp',
+        'Baku Old City'
+      ],
+      [
+        'https://cdn.frisaga.com/cache/catalog/gallery/tour/39ea1b03-3f94-4cef-9408-4618633488b3-1000x600.jpg',
+        'Heydar Aliyev Centre'
+      ],
+      [
+        'https://cdn.enjoytravel.com/img/Big7Enjoy/fr/actualites-de-voyage/faits-interessants/les-7-faits-les-plus-interessants-sur-lazerbaidjan/shutterstock_2502474195_medium_768.webp',
+        'Baku Flame Towers'
+      ]
+    ]
+  },
+
+  /* DAY 4 */
+  {
+    title:'Baku to Gabala – Nohur Lake & Tufandag',
+
+    lines:[
+      'Travel through the countryside to Gabala. Enjoy Nohur Lake and mountain viewpoints.'
+    ],
+
+    points:[
+      '🚘 Baku hotel check-out & drive',
+      '🏞️ Nohur Lake',
+      '🚡 Tufandag cable car (confirm)',
+      '🏨 Overnight in Gabala'
+    ],
+
+    photos:[
+      [
+        'https://d1pllr5sjb7ywk.cloudfront.net/uploads/f5d275d2-445f-2d77-8f5c-3a2286a1799d/PackageMedia/23daa221-edff-4449-b2c0-aedfc9cf9df4_Gabala_R.webp',
+        'Nohur Lake'
+      ],
+      [
+        'https://www.civitatis.com/f/azerbaiyan/baku/galeria/teleferico-montanas-caucaso.jpg',
+        'Tufandag Mountain Cable Car'
+      ]
+    ]
+  },
+
+  /* DAY 5 */
+  {
+    title:'Gabala to Baku – Gobustan & Mud Volcanoes',
+
+    lines:[
+      'Return to Baku via the Gobustan region. Explore ancient rock art and mud volcanoes.'
+    ],
+
+    points:[
+      '🚘 Gabala check-out & transfer',
+      '🪨 Gobustan rock carvings',
+      '🌋 Mud Volcanoes viewpoint',
+      '🏨 Check-in and overnight in Baku'
+    ],
+
+    photos:[
+      [
+        'https://d1pllr5sjb7ywk.cloudfront.net/uploads/f5d275d2-445f-2d77-8f5c-3a2286a1799d/PackageMedia/8dc918e2-9e52-4221-8e60-3fea63dceb42_Gobustan%20National%20Park_R.webp',
+        'Gobustan Rock Art'
+      ],
+      [
+        'https://mariusztravel.com/zdjecia/azerbejdzan/23_azerbejdzan_Qobustan_mud_volcano_wulkany_blotne.JPG',
+        'Gobustan Mud Volcanoes'
+      ]
+    ]
+  },
+
+  /* DAY 6 — DEPARTURE */
+  {
+    title:'Departure from Baku',
+
+    lines:[
+      'Enjoy breakfast and check out of the hotel. Travel to the airport for your onward flight.'
+    ],
+
+    points:[
+      '🍳 Breakfast at hotel',
+      '🧳 Hotel checkout',
+      '🚘 Airport transfer (basis to confirm)',
+      '🛫 Departure from Baku'
+    ],
+
+    /* Departure photo order:
+       Checkout → Transfer → Airport */
+
+    photos:[
+      [
+        'https://d1pllr5sjb7ywk.cloudfront.net/uploads/f5d275d2-445f-2d77-8f5c-3a2286a1799d/PackageMedia/ea27eadb-8921-4f42-b805-dec3d2d461a7_AIRPORT%20AZER_R.webp',
+        'Hotel Checkout'
+      ],
+      [
+        'https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1',
+        'Airport Transfer'
+      ],
+      [
+        'https://eco-fly.com/storage/airports/gyd_3.webp',
+        'Heydar Aliyev Airport Departure'
+      ]
+    ]
+  }
+
+];
+
+/* =======================================
+   REUSABLE PAGE COMPONENTS
+======================================= */
+
+function header(){
+  return `
+    <header class="hd">
+
+      <img src="${BASE}logo.png" alt="CityLaila">
+
+      <span>WHERE LUXURY MEETS AFFORDABILITY</span>
+
+    </header>
+  `;
+}
+
+function footer(n){
+  return `
+    <footer class="foot">
+
+      <span>www.citylaila.com</span>
+
+      <span>
+        Page ${String(n).padStart(2,'0')}
+      </span>
+
+    </footer>
+  `;
+}
+
+function page(n,contents){
+  return `
+    <section class="page">
+
+      ${header()}
+
+      <div class="main">
+        ${contents}
+      </div>
+
+      ${footer(n)}
+
+    </section>
+  `;
+}
+
+/* =======================================
+   DAY CARDS & FULL-SIZE CAROUSEL
+======================================= */
+
+function dayCard(d,i){
+
+  return `
+    <article class="day-card">
+
+      <div class="day-copy">
+
+        <div class="badge">
+          DAY ${i+1}
+        </div>
+
+        <h3>${d.title}</h3>
+
+        <!-- EXACTLY TWO DESCRIPTION LINES -->
+
+        <div class="desc">
+
+          <span>${d.lines[0]}</span>
+
+          <span>${d.lines[1]}</span>
+
+        </div>
+
+        <ul class="points">
+
+          ${d.points.map(x=>`
+            <li>${x}</li>
+          `).join('')}
+
+        </ul>
+
+      </div>
+
+      <div class="gallery">
+
+        <div class="track"
+             id="gallery${i}"
+             data-index="0">
+
+          ${d.photos.map(([url,alt])=>`
+
+            <div class="frame">
+
+              <img
+                src="${url.replaceAll('&','&amp;')}"
+                alt="${alt}"
+                loading="lazy">
+
+            </div>
+
+          `).join('')}
+
+        </div>
+
+        <button
+          type="button"
+          class="arrow prev"
+          aria-label="Previous photo"
+          onclick="move(${i},-1)">❮</button>
+
+        <button
+          type="button"
+          class="arrow next"
+          aria-label="Next photo"
+          onclick="move(${i},1)">❯</button>
+
+        <span class="counter" id="counter${i}">
+          1 / ${d.photos.length}
+        </span>
+
+      </div>
+
+    </article>
+  `;
+}
+
+/* =======================================
+   PAGE 1 — COVER & DAYS 1–2
+======================================= */
+
+const hero = `
+  <div class="hero">
+
+    <div>
+
+      <small>
+        SAMPLE HOLIDAY PACKAGE • 5 NIGHTS / 6 DAYS
+      </small>
+
+      <h1>🇦🇿 Classic Baku Getaway</h1>
+
+      <p>
+        Baku • Absheron • Gabala • Gobustan
+      </p>
+
+    </div>
+
+    <div class="facts">
+
+      <span>🏨 3★ Hotels</span>
+
+      <span>🍳 Daily Breakfast</span>
+
+      <span class="full">
+        🌙 Baku 3N + Gabala 1N + Baku 1N
+      </span>
+
+    </div>
+
+  </div>
+`;
+
+const p1 = hero + `
+  <div class="days">
+
+    ${DAYS.slice(0,2)
+      .map((d,i)=>dayCard(d,i))
+      .join('')}
+
+  </div>
+`;
+
+/* =======================================
+   PAGE 2 — DAYS 3–5
+======================================= */
+
+const p2 = `
+  <h2 class="heading">
+    Azerbaijan Highlights <b>• Days 3–5</b>
+  </h2>
+
+  <div class="days three">
+
+    ${DAYS.slice(2,5)
+      .map((d,i)=>dayCard(d,i+2))
+      .join('')}
+
+  </div>
+`;
+
+/* =======================================
+   PAGE 3 — DAY 6 + COST + COVERAGE
+======================================= */
+
+const p3 = `
+
+  <h2 class="heading">
+    Departure & <b>Package Summary</b>
+  </h2>
+
+  <div class="lastday">
+
+    ${dayCard(DAYS[5],5)}
+
+  </div>
+
+  <!-- APPROVED PACKAGE COST -->
+
+  <div class="price">
+
+    <div class="total">
+
+      <small>STARTING PACKAGE PRICE</small>
+
+      <strong>₹36,999</strong>
+
+      <span>
+        Price basis to be confirmed
+      </span>
+
+    </div>
+
+    <div class="summary">
+
+      <div>🌙 5 Nights / 6 Days</div>
+
+      <div>🏨 3★ Hotels</div>
+
+      <div>🍳 Breakfast Included</div>
+
+      <div>🗺️ Baku 4N • Gabala 1N</div>
+
+    </div>
+
+  </div>
+
+  <!-- COMPACT PACKAGE INCLUSIONS -->
+
+  <div class="coverage">
+
+    <div class="panel yes">
+
+      <h4>✅ Package Inclusions</h4>
+
+      <div class="cells">
+
+        <div>🏨 5 nights accommodation</div>
+
+        <div>🍳 Daily breakfast</div>
+
+        <div>🏛️ Baku & Absheron tours</div>
+
+        <div>🏞️ Gabala & Tufandag tour</div>
+
+        <div>🪨 Gobustan & Mud Volcanoes</div>
+
+        <div>🚐 Airport & sightseeing transfers*</div>
+
+        <div>🎟️ Quoted attraction tickets*</div>
+
+        <div>🧾 Applicable taxes</div>
+
+      </div>
+
+    </div>
+
+    <!-- EXCLUSIONS -->
+
+    <div class="panel no">
+
+      <h4>❌ Exclusions</h4>
+
+      <div class="cells">
+
+        <div>✈️ International flights</div>
+
+        <div>🛂 Azerbaijan visa / e-visa</div>
+
+        <div>🍽️ Lunch & dinner</div>
+
+        <div>🧳 Travel insurance</div>
+
+        <div>💳 Personal expenses & tips</div>
+
+        <div>🎫 Unlisted museum/ride fees</div>
+
+        <div>🛎️ Room upgrades & late checkout</div>
+
+        <div>🎡 Optional activities</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- IMPORTANT NOTES -->
+
+  
+
+`;
+
+/* =======================================
+   RENDER EXACTLY THREE PAGES
+======================================= */
+
+document.getElementById('pages').innerHTML =
+  page(1,p1) +
+  page(2,p2) +
+  page(3,p3);
+
+/* =======================================
+   WORKING CAROUSEL CONTROLS
+======================================= */
+
+function move(i,delta){
+
+  const t=document.getElementById('gallery'+i);
+
+  if(!t)return;
+
+  const n=t.children.length;
+
+  const k=
+    (Number(t.dataset.index||0)+delta+n)%n;
+
+  t.dataset.index=String(k);
+
+  t.style.transform=
+    `translateX(-${k*100}%)`;
+
+  document.getElementById('counter'+i).textContent=
+    `${k+1} / ${n}`;
+
+}
+
+</script>
+
+</body>
+</html>
