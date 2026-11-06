@@ -1,0 +1,1077 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+
+<!-- CITYLAILA CLIENT SAMPLE • LEAD ID-0196 -->
+
+<title>CityLaila | Amazing Georgia – Tbilisi &amp; Batumi | 7N/8D | Lead ID-0196</title>
+
+<meta name="description" content="Georgia holiday for Hamza, 14–21 November 2026. Tbilisi 5 nights, Batumi 2 nights, 2 adults, one child and one infant.">
+
+<style>
+:root{
+  --navy:#0b1d36;
+  --blue:#0869bf;
+  --orange:#f36c19;
+  --line:#dce5f0;
+  --light:#f7f9fc;
+  --ink:#2e4158;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0}
+
+body{
+  padding:12px 0;
+  background:#edf2f8;
+  color:var(--ink);
+  font-family:Arial,'Segoe UI Emoji',
+    'Apple Color Emoji',sans-serif;
+}
+
+/* A4 LANDSCAPE */
+
+.page{
+  width:297mm;
+  height:210mm;
+  margin:0 auto 16px;
+  padding:16px 30px 42px;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  position:relative;
+  background:white;
+  break-after:page;
+  page-break-after:always;
+  box-shadow:0 5px 18px #081d3616;
+}
+
+/* HEADER & FOOTER */
+
+.head{
+  height:41px;
+  flex:0 0 41px;
+  margin-bottom:10px;
+  border-bottom:1px solid var(--line);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.head img{
+  height:35px;
+  max-width:146px;
+  object-fit:contain;
+}
+
+.head span{
+  color:#7889a0;
+  letter-spacing:1px;
+  font-size:10px;
+  font-weight:800;
+}
+
+.main{
+  flex:1;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+}
+
+.foot{
+  height:33px;
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  background:var(--light);
+  border-top:1px solid var(--line);
+  padding:0 30px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  color:#73849a;
+  font-size:10px;
+  font-weight:800;
+}
+
+.heading{
+  font-size:22px;
+  line-height:1.15;
+  color:var(--navy);
+  font-weight:900;
+  margin:0 0 10px;
+}
+
+.heading em{
+  color:var(--blue);
+  font-style:normal;
+}
+
+/* PREMIUM COVER */
+
+.hero{
+  flex:0 0 113px;
+  margin-bottom:10px;
+  display:grid;
+  grid-template-columns:1.2fr .8fr;
+  gap:12px;
+  align-items:center;
+  border-radius:13px;
+  padding:14px 20px;
+  color:#fff;
+
+  background:
+    linear-gradient(110deg,#071a33ee,#123b65c4),
+    url('https://images.trvl-media.com/place/6108462/67b224c1-3d2a-47c8-9f38-bfdbae2492fd.jpg')
+    center/cover;
+}
+
+.hero small{
+  font-size:9.5px;
+  letter-spacing:1.2px;
+  font-weight:900;
+  color:#ffc88b;
+}
+
+.hero h1{
+  font-size:27px;
+  line-height:1.08;
+  font-weight:900;
+  margin:5px 0;
+}
+
+.hero p{
+  font-size:11px;
+  line-height:1.35;
+  margin:0;
+  font-weight:750;
+}
+
+.facts{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:6px;
+}
+
+.facts div{
+  border:1px solid #ffffff50;
+  background:#071d39c7;
+  border-radius:7px;
+  padding:8px;
+  font-size:10px;
+  line-height:1.23;
+  font-weight:800;
+}
+
+.facts .wide{
+  grid-column:1/-1;
+}
+
+/* DAY CARDS */
+
+.days{
+  flex:1;
+  min-height:0;
+  display:grid;
+  grid-template-rows:repeat(2,minmax(0,1fr));
+  gap:10px;
+}
+
+.daycard{
+  min-height:0;
+  display:grid;
+  grid-template-columns:1.06fr .94fr;
+  gap:11px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:10px;
+  background:#fff;
+  box-shadow:0 2px 10px #071b320a;
+}
+
+.copy{
+  min-width:0;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:flex-start;
+}
+
+.tag{
+  background:var(--orange);
+  border-radius:5px;
+  color:white;
+  font-weight:900;
+  font-size:10px;
+  padding:5px 9px;
+}
+
+.copy h3{
+  color:var(--navy);
+  font-size:17.5px;
+  line-height:1.16;
+  margin:6px 0;
+  font-weight:900;
+}
+
+/* EXACTLY TWO DESCRIPTION LINES */
+
+.desc{
+  width:100%;
+  margin:0 0 8px;
+  display:flex;
+  flex-direction:column;
+  gap:3px;
+  color:#536781;
+  font-size:11px;
+  line-height:1.22;
+  font-weight:650;
+}
+
+.desc span{
+  display:block;
+  white-space:nowrap;
+}
+
+/* HIGHLIGHTS */
+
+.points{
+  width:100%;
+  margin:0;
+  padding:0;
+  list-style:none;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:5px;
+}
+
+.points li{
+  font-size:10.2px;
+  line-height:1.23;
+  font-weight:740;
+  padding:7px;
+  border:1px solid var(--line);
+  border-radius:6px;
+  background:var(--light);
+  overflow-wrap:anywhere;
+}
+
+/* LARGE FULL-SIZE IMAGE CAROUSELS */
+
+.gallery{
+  height:100%;
+  width:100%;
+  min-height:0;
+  position:relative;
+  border-radius:10px;
+  overflow:hidden;
+  background:#0b263e;
+}
+
+.track{
+  height:100%;
+  display:flex;
+  transition:transform .32s ease;
+}
+
+.frame{
+  height:100%;
+  min-width:0;
+  flex:0 0 100%;
+  width:100%;
+}
+
+.frame img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+
+.arrow{
+  position:absolute;
+  z-index:2;
+  top:50%;
+  transform:translateY(-50%);
+  background:#0b1f38dd;
+  border:1px solid #ffffff65;
+  color:white;
+  border-radius:50%;
+  width:31px;
+  height:31px;
+  cursor:pointer;
+  font-size:17px;
+}
+
+.prev{left:8px}
+.next{right:8px}
+
+.count{
+  position:absolute;
+  z-index:2;
+  right:9px;
+  bottom:9px;
+  background:#0b1f38ed;
+  color:white;
+  border-radius:17px;
+  padding:5px 9px;
+  font-size:10px;
+  font-weight:900;
+}
+
+/* PAGE 4: COMPACT DETAILS */
+
+.lastdays{
+  margin-bottom:8px;
+  gap:8px;
+}
+
+.lastdays .daycard{
+  padding:8px 10px;
+}
+
+.lastdays .copy h3{
+  font-size:16px;
+  margin:5px 0;
+}
+
+.lastdays .points li{
+  padding:5px 6px;
+  font-size:9.7px;
+}
+
+.lastdays .desc{
+  font-size:10.8px;
+  margin-bottom:5px;
+}
+
+.lastdays .tag{
+  padding:4px 8px;
+}
+
+/* HOTEL STAY AND CONDITIONS */
+
+.details{
+  flex:0 0 auto;
+  display:grid;
+  grid-template-columns:.95fr 1.05fr;
+  gap:9px;
+}
+
+.detail{
+  border:1px solid var(--line);
+  border-radius:9px;
+  padding:8px 10px;
+}
+
+.detail h4{
+  margin:0 0 5px;
+  color:var(--navy);
+  font-size:11.5px;
+}
+
+.detail.hotels{
+  border-top:4px solid #217bc6;
+}
+
+.detail.conditions{
+  background:#fffdf7;
+  border-top:4px solid #d6a238;
+}
+
+.nights{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:5px;
+}
+
+.nights div{
+  padding:7px 6px;
+  background:var(--light);
+  border:1px solid var(--line);
+  border-radius:6px;
+  font-size:9.5px;
+  font-weight:800;
+  text-align:center;
+}
+
+.nights b{
+  display:block;
+  color:var(--blue);
+  margin-bottom:2px;
+}
+
+.rules{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:5px;
+}
+
+.rules span{
+  display:block;
+  border:1px solid #efdbb5;
+  background:white;
+  border-radius:6px;
+  padding:6px;
+  font-size:9px;
+  line-height:1.18;
+  font-weight:740;
+}
+
+.endnote{
+  margin-top:7px;
+  border:1px solid #f0d8ac;
+  background:#fffaf1;
+  border-radius:7px;
+  padding:6px 9px;
+  font-size:9.2px;
+  font-weight:750;
+  color:#855b29;
+  line-height:1.3;
+}
+
+/* PRINT */
+
+@media print{
+  @page{
+    size:A4 landscape;
+    margin:0;
+  }
+
+  body{
+    padding:0;
+    background:white;
+    -webkit-print-color-adjust:exact;
+    print-color-adjust:exact;
+  }
+
+  .page{
+    margin:0;
+    box-shadow:none;
+  }
+
+  .arrow{
+    display:none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<main id="pages"></main>
+
+<script>
+
+/* CITYLAILA LOGO */
+
+const LOGO=
+'https://shamshad656.github.io/citylaila-itineraries/images/logo.png';
+
+/*
+  IMAGE EDITING:
+  Replace the URLs in DAYS.photos.
+  Delete [URL, Caption] to remove one image.
+  Carousel numbers will update automatically.
+*/
+
+const DAYS=[
+
+/* DAY 1 */
+
+{
+  title:'Arrival in Tbilisi',
+
+  lines:[
+    'Arrive at Tbilisi Airport, meet your representative and take a private hotel transfer.',
+    'Complete check-in and enjoy a peaceful evening in Georgia’s charming capital.'
+  ],
+
+  points:[
+    '🛬 Tbilisi International Airport',
+    '🤝 Meet & greet on arrival',
+    '🚘 Private transfer to hotel',
+    '🏨 Check-in & overnight Tbilisi'
+  ],
+
+  photos:[
+    [
+      'https://eurasianet.org/sites/default/files/styles/article/public/2023-06/tav%20tbilisi%20airport.jpg?h=3f560db1&itok=A_Aetqrf',
+      'Tbilisi International Airport'
+    ],
+    [
+      'https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1',
+      'Airport Transfer'
+    ],
+    [
+      'https://images.trvl-media.com/place/6108462/67b224c1-3d2a-47c8-9f38-bfdbae2492fd.jpg',
+      'Tbilisi City'
+    ]
+  ]
+},
+
+/* DAY 2 */
+
+{
+  title:'Tbilisi City Tour',
+
+  lines:[
+    'Explore Old Tbilisi, Narikala Fortress, Sulphur Baths and lively Shardeni Street.',
+    'Discover Anchiskhati Basilica and Gabriadze Clock Tower, with time for shopping.'
+  ],
+
+  points:[
+    '🍳 Breakfast at the hotel',
+    '🏰 Narikala Fortress & cable car*',
+    '🏘️ Sulphur Baths & Shardeni Street',
+    '🕰️ Anchiskhati & Gabriadze Clock Tower'
+  ],
+
+  photos:[
+    [
+      'https://commons.wikimedia.org/wiki/Special:FilePath/Narikala%20fortress%20in%20Tbilisi.jpg',
+      'Narikala Fortress'
+    ],
+    [
+      'https://i.pinimg.com/1200x/82/f5/48/82f548bd38fd4a7b8f48614d85c23f87.jpg',
+      'Tbilisi Old Town'
+    ],
+    [
+      'https://georgianjournal.ge/media/images/georgianews/2018/April/society/img_8918.jpg',
+      'Tbilisi City'
+    ]
+  ]
+},
+
+/* DAY 3 */
+
+{
+  title:'Kakheti Region – Sighnaghi & Bodbe',
+
+  lines:[
+    'Visit hilltop Sighnaghi, the City of Love, with views across the Alazani Valley.',
+    'Discover Bodbe Monastery and Tsinandali Museum before returning to Tbilisi.'
+  ],
+
+  points:[
+    '🍳 Breakfast & Kakheti day excursion',
+    '🏘️ Sighnaghi old town & valley views',
+    '⛪ Bodbe Monastery visit',
+    '🏛️ Tsinandali Museum; return Tbilisi'
+  ],
+
+  photos:[
+    [
+      'https://cdn.getyourguide.com/img/tour/646608d89db7f.jpeg/148.jpg',
+      'Sighnaghi City of Love'
+    ],
+    [
+      'https://cdn.getyourguide.com/image/format%3Dauto%2Cfit%3Dcrop%2Cgravity%3Dauto%2Cquality%3D60%2Cwidth%3D400%2Cheight%3D265%2Cdpr%3D2/tour_img/c6e70339bb7ccdb0b5936b2e82b5eb152362c900ea87091d445d906d949f9dd8.png',
+      'Bodbe Monastery'
+    ],
+    [
+      'https://www.advantour.com/img/georgia/tours/kakheti-day-tour/chavchavadze3.jpg',
+      'Tsinandali House Museum'
+    ]
+  ]
+},
+
+/* DAY 4 */
+
+{
+  title:'Tbilisi to Batumi via Prometheus Cave',
+
+  lines:[
+    'Travel towards Batumi and explore the incredible formations inside Prometheus Cave.',
+    'Continue to the Black Sea coast, check in at the hotel and relax in Batumi.'
+  ],
+
+  points:[
+    '🍳 Breakfast & Tbilisi hotel check-out',
+    '🪨 Prometheus Cave sightseeing',
+    '🚐 Scenic drive through western Georgia',
+    '🏨 Batumi hotel check-in & overnight'
+  ],
+
+  photos:[
+    [
+      'https://cdn.durable.co/getty/20JT1FUigoijX6y8sjAufEuRLOKKw2ChLu5sKMOKK8uV5UU5QUGZOagWV5EHNNDf.jpeg',
+      'Prometheus Cave'
+    ],
+    [
+      'https://www.skytowerbatumi.com/assets/argo_cable.webp',
+      'Batumi Skyline'
+    ]
+  ]
+},
+
+/* DAY 5 */
+
+{
+  title:'Batumi City Tour & Botanical Garden',
+
+  lines:[
+    'See Piazza Square, Medea Square, Ali and Nino and the beautiful Batumi promenade.',
+    'Enjoy cable car views and the Botanical Garden before relaxing by the seaside.'
+  ],
+
+  points:[
+    '🏛️ Piazza, Medea & Poseidon landmarks',
+    '💞 Ali and Nino sculpture & promenade',
+    '🚠 Batumi cable car, if operating',
+    '🌿 Botanical Garden & seaside leisure'
+  ],
+
+  photos:[
+    [
+      'https://www.advantour.com/img/georgia/tours/batumi-makhuntseti-waterfall/batumi11.jpg',
+      'Batumi Waterfront'
+    ],
+   
+    [
+      'https://hl-tourism.com/media/wysiwyg/5e9Zg6G95aPhpOKKFftyIchB1RYkGT75A9BxysxP.jpeg',
+      'Batumi Botanical Garden'
+    ]
+  ]
+},
+
+/* DAY 6 */
+
+{
+  title:'Batumi to Tbilisi via Martvili Canyon',
+
+  lines:[
+    'Leave Batumi and visit Martvili Canyon, known for green waters and dramatic cliffs.',
+    'Enjoy the canyon scenery and an optional boat ride if operating; return to Tbilisi.'
+  ],
+
+  points:[
+    '🍳 Breakfast & Batumi hotel check-out',
+    '🏞️ Martvili Canyon & waterfalls',
+    '🛶 Boat ride subject to safety conditions',
+    '🚐 Continue to Tbilisi & overnight'
+  ],
+
+  photos:[
+    [
+      'https://storage.georgia.travel/images/martvili-canyon-gnta.webp',
+      'Martvili Canyon'
+    ],
+    [
+      'https://cdn.getyourguide.com/image/format%3Dauto%2Cfit%3Dcrop%2Cgravity%3Dauto%2Cquality%3D60%2Cwidth%3D400%2Cheight%3D265%2Cdpr%3D2/tour_img/791c4f4e2f4b05a1186154bd8963fdb56b83596f138136d5a3d8287741b18503.png',
+      'Martvili Canyon Boat Tour'
+    ]
+  ]
+},
+
+/* DAY 7 */
+
+{
+  title:'Ananuri – Gudauri – Kazbegi',
+
+  lines:[
+    'Discover Ananuri Fortress and Jinvali Lake along the scenic Georgian Military Highway.',
+    'Continue through Gudauri towards Gergeti Trinity Church, weather permitting.'
+  ],
+
+  points:[
+    '🍳 Breakfast & mountain day excursion',
+    '🏰 Ananuri Fortress & Jinvali Lake',
+    '🏔️ Gudauri & Caucasus mountain scenery',
+    '⛪ Gergeti Trinity Church, if accessible'
+  ],
+
+  photos:[
+    [
+      'https://cdn.georgiantravelguide.com/storage/files/ananuris-kompleksi-ananuri-fortress.jpg',
+      'Ananuri Fortress'
+    ],
+    [
+      'https://i.pinimg.com/736x/d5/0d/d0/d50dd00fc01abf86c4bfa862edfc8bca.jpg',
+      'Gudauri Mountains'
+    ],
+    [
+      'https://tourguide.ge/wp-content/uploads/2019/03/Seeing-from-Gergeti.jpg',
+      'Gergeti Trinity Church'
+    ]
+  ]
+},
+
+/* DAY 8 */
+
+{
+  title:'Departure from Tbilisi',
+
+  lines:[
+    'Enjoy breakfast, complete hotel check-out and prepare for your onward journey.',
+    'Travel by private transfer to Tbilisi Airport with beautiful Georgia memories.'
+  ],
+
+  points:[
+    '🍳 Breakfast at Tbilisi hotel',
+    '🧳 Hotel check-out & luggage',
+    '🚘 Private airport departure transfer',
+    '✈️ Return flight & tour conclusion'
+  ],
+
+  /* CHECKOUT → TRANSFER → DEPARTURE */
+
+  photos:[
+    [
+      'https://static.toiimg.com/thumb/106057438/Hotel-checkout.jpg?width=1200&height=900',
+      'Hotel Checkout'
+    ],
+    [
+      'https://dynamic-media.tacdn.com/media/photo-o/2e/d3/a7/93/caption.jpg?w=1100&h=800&s=1',
+      'Private Airport Transfer'
+    ],
+    [
+      'https://m.media-amazon.com/images/I/71nXbtmuQlL.jpg',
+      'Airport Departure'
+    ]
+  ]
+}
+
+];
+
+/* DATE LABELS */
+
+const dates=[
+  '14','15','16','17',
+  '18','19','20','21'
+];
+
+/* HEADER */
+
+function head(){
+  return `
+    <header class="head">
+
+      <img src="${LOGO}" alt="CityLaila logo">
+
+      <span>
+        WHERE LUXURY MEETS AFFORDABILITY
+      </span>
+
+    </header>
+  `;
+}
+
+/* FOOTER */
+
+function foot(n){
+  return `
+    <footer class="foot">
+
+      <span>www.citylaila.com</span>
+
+      <span>
+        Page ${String(n).padStart(2,'0')}
+      </span>
+
+    </footer>
+  `;
+}
+
+/* PAGE */
+
+function page(n,content){
+  return `
+    <section class="page">
+
+      ${head()}
+
+      <div class="main">
+        ${content}
+      </div>
+
+      ${foot(n)}
+
+    </section>
+  `;
+}
+
+/* DAY CARD WITH IMAGE CAROUSEL */
+
+function card(d,i){
+
+  return `
+    <article class="daycard">
+
+      <div class="copy">
+
+        <span class="tag">
+          DAY ${i+1} • ${dates[i]} NOV
+        </span>
+
+        <h3>${d.title}</h3>
+
+        <p class="desc">
+          <span>${d.lines[0]}</span>
+          <span>${d.lines[1]}</span>
+        </p>
+
+        <ul class="points">
+
+          ${d.points.map(x=>`
+            <li>${x}</li>
+          `).join('')}
+
+        </ul>
+
+      </div>
+
+      <div class="gallery">
+
+        <div class="track"
+             id="g${i}"
+             data-index="0">
+
+          ${d.photos.map(([url,alt])=>`
+
+            <div class="frame">
+
+              <img
+                src="${url.replaceAll('&','&amp;')}"
+                alt="${alt}"
+                loading="lazy">
+
+            </div>
+
+          `).join('')}
+
+        </div>
+
+        <button
+          class="arrow prev"
+          type="button"
+          aria-label="Previous photo"
+          onclick="move(${i},-1)">❮</button>
+
+        <button
+          class="arrow next"
+          type="button"
+          aria-label="Next photo"
+          onclick="move(${i},1)">❯</button>
+
+        <span class="count" id="c${i}">
+          1 / ${d.photos.length}
+        </span>
+
+      </div>
+
+    </article>
+  `;
+}
+
+/* PAGE 1 — COVER + DAYS 1–2 */
+
+const hero=`
+
+  <div class="hero">
+
+    <div>
+
+      <small>
+        GEORGIA FAMILY HOLIDAY • 7 NIGHTS / 8 DAYS
+      </small>
+
+      <h1>🇬🇪 Amazing Georgia</h1>
+
+      <p>
+        Tbilisi • Kakheti • Batumi • Kazbegi
+        <br>14–21 November 2026
+      </p>
+
+    </div>
+
+    <div class="facts">
+
+      <div>👤 Guest: Hamza</div>
+
+      <div>🌙 7 Nights / 8 Days</div>
+
+      <div class="wide">
+        👨‍👩‍👧‍👶 2 Adults + Child (3) + Infant
+      </div>
+
+      <div class="wide">
+        Lead ID-0196
+      </div>
+
+    </div>
+
+  </div>
+
+`;
+
+const p1=hero+`
+
+  <div class="days">
+
+    ${DAYS.slice(0,2)
+      .map((d,i)=>card(d,i))
+      .join('')}
+
+  </div>
+
+`;
+
+/* PAGE 2 — DAYS 3–4 */
+
+const p2=`
+
+  <h2 class="heading">
+    Kakheti &amp; Batumi <em>• Days 3–4</em>
+  </h2>
+
+  <div class="days">
+
+    ${DAYS.slice(2,4)
+      .map((d,i)=>card(d,i+2))
+      .join('')}
+
+  </div>
+
+`;
+
+/* PAGE 3 — DAYS 5–6 */
+
+const p3=`
+
+  <h2 class="heading">
+    Batumi &amp; Martvili <em>• Days 5–6</em>
+  </h2>
+
+  <div class="days">
+
+    ${DAYS.slice(4,6)
+      .map((d,i)=>card(d,i+4))
+      .join('')}
+
+  </div>
+
+`;
+
+/* PAGE 4 — DAYS 7–8 + HOTEL PLAN */
+
+const p4=`
+
+  <h2 class="heading">
+    Kazbegi &amp; Departure <em>• Days 7–8</em>
+  </h2>
+
+  <div class="days lastdays">
+
+    ${DAYS.slice(6,8)
+      .map((d,i)=>card(d,i+6))
+      .join('')}
+
+  </div>
+
+  <div class="details">
+
+    <div class="detail hotels">
+
+      <h4>🏨 Hotel Stay Plan • 7 Nights</h4>
+
+      <div class="nights">
+
+        <div>
+          <b>Tbilisi • 3N</b>
+          14–17 Nov
+        </div>
+
+        <div>
+          <b>Batumi • 2N</b>
+          17–19 Nov
+        </div>
+
+        <div>
+          <b>Tbilisi • 2N</b>
+          19–21 Nov
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="detail conditions">
+
+      <h4>📋 Family &amp; Tour Information</h4>
+
+      <div class="rules">
+
+        <span>
+          🍳 Daily hotel breakfast included;
+          other meals at own expense
+        </span>
+
+        <span>
+          🌦️ Sightseeing, caves, cable car
+          &amp; boat subject to operation
+        </span>
+
+        <span>
+          👶 Child/infant bedding and transfer
+          arrangements to confirm
+        </span>
+
+        <span>
+          🛶 Canyon boat subject to safety
+          and minimum-height rules
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  
+
+`;
+
+/* GENERATE EXACTLY FOUR PAGES */
+
+document.getElementById('pages').innerHTML=
+  page(1,p1)+
+  page(2,p2)+
+  page(3,p3)+
+  page(4,p4);
+
+/* WORKING CAROUSEL CONTROLS */
+
+function move(i,delta){
+
+  const t=document.getElementById('g'+i);
+
+  if(!t)return;
+
+  const n=t.children.length;
+
+  const k=
+    (Number(t.dataset.index||0)+delta+n)%n;
+
+  t.dataset.index=String(k);
+
+  t.style.transform=
+    `translateX(-${k*100}%)`;
+
+  document.getElementById('c'+i).textContent=
+    `${k+1} / ${n}`;
+
+}
+
+</script>
+
+</body>
+</html>
