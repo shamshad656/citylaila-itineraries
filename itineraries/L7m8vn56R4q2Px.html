@@ -153,10 +153,205 @@ const inc=['🏨 7 nights in 3 quoted hotels, 1 room for 2 adults','🍳 Daily h
 const exc=['✈️ International flight tickets not stated as included','✈️ Domestic flight tickets PQC–DAD and DAD–HAN not stated as included','🛂 Vietnam e-visa / entry documentation costs','🧳 Travel insurance','🍽️ Meals not specifically included','💳 Personal expenses, beverages & tips','💵 Mandatory tip: USD 3 per person per day, per supplier','🎟️ Optional/unlisted attraction upgrades or services','🛎️ Room upgrades, early check-in/late check-out','🎉 Gala dinners and festive extras not quoted','🚐 Private sightseeing vehicle beyond listed private airport transfers','📋 Any service not expressly in the supplier quotation'];
 html.push(page(14,`<h2 class="h">Package Inclusions & <em>Exclusions</em></h2><div class="coverage"><div class="panel good"><h3>✅ Services Listed in Supplier Quote</h3><div class="services">${inc.map(x=>`<div class="service">${x}</div>`).join('')}</div></div><div class="panel bad"><h3>❌ Not Included / Not Confirmed</h3><div class="services">${exc.map(x=>`<div class="service">${x}</div>`).join('')}</div></div></div>`));
 html.push(page(15,`<h2 class="h">Land Package <em>Price Summary</em></h2><div class="pricegrid"><div class="total"><div class="kicker">GRAND TOTAL • 2 ADULTS</div><div class="amount">USD 1,075.17</div><div class="basis">Approximately INR 1,02,896</div><p style="font-size:13px;margin:15px 0 0">Source quotation • 7 Nights / 8 Days</p></div><div class="snapshot"><div class="snap">👥 Travellers: 2 Adults • 1 Room</div><div class="snap">📆 09–16 December 2026</div><div class="snap">🏝️ Phu Quoc 3N • Da Nang 2N • Hanoi 2N</div><div class="snap">🏨 Hotel B&B • Selected SIC sightseeing</div><div class="snap">🚘 Specified airport transfers are private</div></div></div></div></div>`));
-const locations=[['🇦🇪 Dubai','UAE Travel Desk'],['🇦🇪 Ras Al Khaimah','UAE Support'],['🇮🇳 Bengaluru','India Service Desk'],['🇸🇬 Singapore','Asia Network'],['🇪🇬 Alexandria','Regional Operations'],['🌍 Global Network','Premium Holidays']];
-html.push(page(16,`<h2 class="h">Global Presence <em>&amp; Contact</em></h2><div class="global-main"><div class="global-locations">${locations.map(([a,b])=>`<div class="location"><b>${a}</b><small>${b}</small></div>`).join('')}</div><div class="contact"><strong style="color:#ffd86d;font-size:16px">🎧 CITYLAILA TRAVEL CONCIERGE</strong><div><b>Direct Traveler Desk</b><p style="margin:6px 0">info@citylaila.com<br>+971 55 536 5508</p></div><div><b>Business Partnerships</b><p style="margin:6px 0">b2b@citylaila.com<br>+971 4 4451 625</p></div><div><b>Marketing & Media</b><p style="margin:6px 0">marketing@citylaila.com</p></div><div style="color:#cad8ed;font-size:11px">www.citylaila.com</div></div></div><div class="tagstrip"><span>🌍 International Holidays</span><span>🏨 Hotel Packages</span><span>🎟️ Tours & Activities</span><span>🚘 Transfers</span><span>🎧 Travel Assistance</span></div>`));
-document.getElementById('pages').innerHTML=html.join('');
-function move(i,delta){const e=document.getElementById('g'+i);if(!e)return;const n=e.children.length;if(!n)return;const j=(Number(e.dataset.index||0)+delta+n)%n;e.dataset.index=String(j);e.style.transform=`translateX(-${j*100}%)`;document.getElementById('c'+i).textContent=`${j+1} / ${n}`}
+const locations = [
+  [
+    '🇦🇪 Dubai',
+    'UAE Travel Desk',
+    'https://shamshad656.github.io/citylaila-itineraries/images/countries/dubai.jpg'
+  ],
+  [
+    '🇦🇪 Ras Al Khaimah',
+    'UAE Support',
+    'https://media.assettype.com/outlooktraveller/2024-07/34203ad1-fd27-4b76-b45b-ef066154f574/Ras%20Al%20Khaimah?w=1200&auto=format%2Ccompress&fit=max&format=webp&dpr=1.0'
+  ],
+  [
+    '🇮🇳 Bengaluru',
+    'India Service Desk',
+    'https://ayxhtlzyhpsjykxxnqqh.supabase.co/storage/v1/object/public/area_images/hsr-layout-bangalore/image-5.jpg'
+  ],
+  [
+    '🇸🇬 Singapore',
+    'Asia Network',
+    'https://shamshad656.github.io/citylaila-itineraries/images/countries/singapore.webp'
+  ],
+  [
+    '🇪🇬 Alexandria',
+    'Regional Operations',
+    'https://commons.wikimedia.org/wiki/Special:FilePath/Egypt%2C%20Alexandria%2C%20The%20Corniche%20of%20Alexandria.jpg'
+  ],
+  [
+    '🌍 Global Network',
+    'Premium Holidays',
+    'https://shamshad656.github.io/citylaila-itineraries/images/countries/global.avif'
+  ]
+];
+
+const locationFallbacks = [
+  '',
+  'https://shamshad656.github.io/citylaila-itineraries/images/countries/rak.jpg',
+  'https://shamshad656.github.io/citylaila-itineraries/images/countries/india.avif',
+  '',
+  'https://shamshad656.github.io/citylaila-itineraries/images/countries/egypt.jpg',
+  ''
+];
+
+html.push(page(16, `
+<h2 class="h">
+  Global Presence <em>&amp; Contact</em>
+</h2>
+
+<div class="global-main">
+
+  <div class="global-locations"
+    style="
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      grid-template-rows:repeat(2,minmax(0,1fr));
+      gap:12px;
+      min-height:0;
+      height:100%;
+    ">
+
+    ${locations.map(([name, description, image], index) => `
+      <div class="location"
+        style="
+          position:relative;
+          overflow:hidden;
+          border-radius:13px;
+          background:#0A192F;
+          min-width:0;
+          min-height:0;
+          display:flex;
+          flex-direction:column;
+          justify-content:flex-end;
+          padding:16px;
+          isolation:isolate;
+        ">
+
+        <img
+          src="${image}"
+          alt="${name}"
+          loading="eager"
+          onerror="this.onerror=null;${locationFallbacks[index] ? `this.src='${locationFallbacks[index]}'` : `this.style.display='none'`};"
+          style="
+            position:absolute;
+            inset:0;
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            object-position:center;
+            z-index:-2;
+          "
+        >
+
+        <div style="
+          position:absolute;
+          inset:0;
+          background:linear-gradient(
+            180deg,
+            rgba(10,25,47,.12) 0%,
+            rgba(10,25,47,.42) 45%,
+            rgba(10,25,47,.90) 100%
+          );
+          z-index:-1;
+        "></div>
+
+        <b style="
+          position:relative;
+          color:#ffffff;
+          font-size:15px;
+          font-weight:900;
+          line-height:1.4;
+          text-shadow:0 2px 5px rgba(0,0,0,.35);
+        ">${name}</b>
+
+        <small style="
+          position:relative;
+          color:#f1f5f9;
+          font-size:12px;
+          font-weight:700;
+          margin-top:5px;
+          line-height:1.4;
+          text-shadow:0 2px 5px rgba(0,0,0,.35);
+        ">${description}</small>
+
+      </div>
+    `).join('')}
+
+  </div>
+
+  <div class="contact">
+
+    <strong style="
+      color:#ffd86d;
+      font-size:16px;
+    ">
+      🎧 CITYLAILA TRAVEL CONCIERGE
+    </strong>
+
+    <div>
+      <b>Direct Traveler Desk</b>
+      <p style="margin:6px 0">
+        info@citylaila.com<br>
+        +971 55 536 5508
+      </p>
+    </div>
+
+    <div>
+      <b>Business Partnerships</b>
+      <p style="margin:6px 0">
+        b2b@citylaila.com<br>
+        +971 4 4451 625
+      </p>
+    </div>
+
+    <div>
+      <b>Marketing &amp; Media</b>
+      <p style="margin:6px 0">
+        marketing@citylaila.com
+      </p>
+    </div>
+
+    <div style="
+      color:#cad8ed;
+      font-size:11px;
+    ">
+      www.citylaila.com
+    </div>
+
+  </div>
+
+</div>
+
+<div class="tagstrip">
+  <span>🌍 International Holidays</span>
+  <span>🏨 Hotel Packages</span>
+  <span>🎟️ Tours &amp; Activities</span>
+  <span>🚘 Transfers</span>
+  <span>🎧 Travel Assistance</span>
+</div>
+`));
+
+document.getElementById('pages').innerHTML = html.join('');
+
+function move(i, delta) {
+  const e = document.getElementById('g' + i);
+  if (!e) return;
+
+  const n = e.children.length;
+  if (!n) return;
+
+  const j = (Number(e.dataset.index || 0) + delta + n) % n;
+
+  e.dataset.index = String(j);
+  e.style.transform = `translateX(-${j * 100}%)`;
+
+  const counter = document.getElementById('c' + i);
+
+  if (counter) {
+    counter.textContent = `${j + 1} / ${n}`;
+  }
+}
 </script>
 </body>
 </html>
