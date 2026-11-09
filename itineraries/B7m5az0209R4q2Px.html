@@ -994,35 +994,19 @@ const PAGE2 = `
 /* ==================================================
    PAGE 3: DAY 5 – DEPARTURE
 ================================================== */
+/* FIX: DAY 5 — SAME CARD & IMAGE SIZE AS OTHER DAYS */
 const PAGE3 = `
   <h2 class="heading">
     Departure from Baku <span>• Day 5</span>
   </h2>
 
   <p class="subheading">
-    Breakfast, check-out and airport transfer.
+    Breakfast, hotel checkout and airport transfer.
   </p>
 
-  <div class="departure-layout">
-    <div class="day-text">
-      <span class="day-badge">DAY 5</span>
-      <h3>${DAY5.title}</h3>
-      <p class="day-desc">${DAY5.desc}</p>
-
-      <ul class="highlights">
-        ${DAY5.items.map(item=>`<li>${item}</li>`).join("")}
-      </ul>
-
-      <div class="day-note">📌 ${DAY5.note}</div>
-
-      <div class="departure-steps">
-        <div>🏨<br>Hotel<br>Checkout</div>
-        <div>🚘<br>Airport<br>Transfer</div>
-        <div>✈️<br>Flight<br>Departure</div>
-      </div>
-    </div>
-
-    ${gallery(DAY5,4)}
+  <div class="day-cards">
+    ${dayCard(DAY5,4)}
+    <div></div>
   </div>
 `;
 
