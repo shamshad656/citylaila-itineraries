@@ -1457,13 +1457,13 @@ const DAY5 = {
   stay:"Dubai",
 
   description:
-    "After breakfast, depart from Dubai for a full-day private Abu Dhabi City Tour. Discover the UAE capital's famous architecture, cultural landmarks and impressive city scenery. Enjoy the included lunch and dinner during the day before returning to Dubai.",
+    "After breakfast, depart from Dubai for a full-day private Abu Dhabi City Tour. Discover the UAE capital's famous architecture, cultural landmarks and impressive city scenery.",
 
   highlights:[
     "🍳 Breakfast at the hotel",
     "🚘 Full-day Abu Dhabi City Tour with private transfers",
     "🏙️ Explore Abu Dhabi's major landmarks and city sights",
-    "🍽️ Lunch and dinner included"
+   
   ],
 
   note:
@@ -1596,8 +1596,8 @@ const MEALS = [
   {
     date:"01 Dec",
     breakfast:"Hotel Breakfast",
-    lunch:"Abu Dhabi Tour Lunch",
-    dinner:"Abu Dhabi Tour Dinner"
+    lunch:"Not Included",
+    dinner:"Not Included"
   },
   {
     date:"02 Dec",
@@ -1629,8 +1629,6 @@ const INCLUSIONS = [
   "🎭 Desert Safari Entertainment",
   "🍽️ Premium Desert Safari Dinner",
   "🕌 Full-Day Abu Dhabi City Tour",
-  "🍽️ Abu Dhabi City Tour Lunch",
-  "🍽️ Abu Dhabi City Tour Dinner",
   "🛫 Private Airport Departure Transfer"
 ];
 
@@ -2032,7 +2030,7 @@ const HOTEL_PAGE = `
 
       <div class="guest-item">
         <small>GUEST NAME</small>
-        To Be Provided
+        Mr. Enjeerappa Joganna
       </div>
 
       <div class="guest-item">
@@ -2240,11 +2238,7 @@ const MEAL_PAGE = `
     🏜️ <b>30 November:</b>
     Dinner included with Premium Desert Safari.
 
-    <br><br>
-
-    🕌 <b>01 December:</b>
-    Both lunch and dinner included with
-    the Abu Dhabi City Tour.
+    
 
     <br><br>
 
@@ -2319,13 +2313,10 @@ const PRICE_PAGE = `
       <strong>
         ${PRICE.amount
           ?esc(PRICE.currency+" "+PRICE.amount)
-          :"PRICE TO BE CONFIRMED"}
+          :"USD 505  - Per Person"}
       </strong>
 
-      <span>
-        Package amount was not supplied
-        in the client quotation.
-      </span>
+      
 
     </div>
 
